@@ -296,9 +296,29 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 ### 4.2.4. Searching Systems  
 ### 4.2.5. Navigation Systems  
 
-## 4.3. Landing Page UI Design  
-### 4.3.1. Landing Page Wireframe  
-### 4.3.2. Landing Page Mock-up  
+## 4.3. Landing Page UI Design
+La propuesta de diseño de la landing page de AventuraPe se construye a partir de decisiones orientadas a brindar una experiencia de usuario clara, atractiva y coherente con los objetivos de la plataforma. En donde se ha priorizó una arquitectura de información jerárquica, en la que el contenido se organiza desde lo más relevante hacia lo complementario, permitiendo una exploración progresiva del sitio. El diseño adopta un enfoque responsive e inclusivo, considerando la adaptabilidad a distintos dispositivos y el uso de tipografías legibles, contraste adecuado de colores y botones accesibles. Esta planificación asegura que los usuarios, tanto aventureros como emprendedores, encuentren rápidamente la información y las funcionalidades clave, alineadas con su perfil y expectativas dentro del ecosistema digital de AventuraPe.
+
+### 4.3.1. Landing Page Wireframe
+Los wireframes desarrollados para la landing page de AventuraPe contemplan versiones para navegadores de escritorio y dispositivos móviles, asegurando una experiencia responsive que se adapta a diferentes tamaños de pantalla. La estructura se organiza de la siguiente manera:
+
+- Encabezado (Header): Se implementa un menú de navegación fijo en la parte superior que incluye enlaces a secciones clave como "Servicios", "Sobre nosotros", "Testimonios", "Preguntas frecuentes" y "Contacto". Este diseño sigue el principio de consistencia, facilitando la navegación del usuario y permitiendo un acceso rápido a la información relevante.
+
+- Sección Principal: Presenta un mensaje de bienvenida y un llamado a la acción destacado, utilizando una jerarquía visual clara que guía la atención del usuario hacia las acciones deseadas. Se aplica el patrón de diseño en forma de "Z", que dirige la mirada del usuario a través de los elementos más importantes de la página.
+
+- Secciones Informativas: Detallan las funcionalidades de la plataforma, como calificar actividades, descubrir nuevas aventuras y publicar eventos si se es emprendedor. En cada sección se aplicó el principio de proximidad para agrupar información relacionada en secciones y facilitar así su comprensión.
+
+- Testimonios y Preguntas Frecuentes: Proporcionan evidencia social y resuelven dudas comunes, respectivamente, aumentando la confianza del usuario en la plataforma. Se utiliza el principio de retroalimentación para mostrar que las opiniones de otros usuarios son valoradas y consideradas.
+
+- Pie de Página (Footer): Contiene información de contacto y enlaces a nuestras redes sociales como Twitter, Facebook e Instagram, facilitando la comunicación y conexión con los usuarios.
+
+En cuanto al diseño inclusivo, se han considerado aspectos como el contraste adecuado entre texto y fondo para garantizar la legibilidad, el uso de tipografías claras y tamaños de fuente apropiados para diferentes dispositivos, y la disposición de elementos interactivos con suficiente espacio para facilitar su uso por personas con diversas capacidades. Además, la estructura de la información sigue una arquitectura jerárquica que prioriza el contenido más relevante, permitiendo una navegación intuitiva.<br>
+<img src="./images/landing-page/landing-wireframe1" alt="Landing Page Wireframe image" min-width="400" max-width="900"/>
+
+### 4.3.2. Landing Page Mock-up
+Los mock-ups representan visualmente el resultado final del diseño propuesto y consolidan las decisiones tomadas en cuanto a estética, funcionalidad y usabilidad. En ambas versiones, se mantiene una coherencia visual que refuerza la identidad de la marca, respetando el Design System definido para el proyecto.<br>
+<img src="./images/landing-page/landing-mockup" alt="Landing Page mockup image" min-width="400" max-width="900"/>
+<br>Se aplicaron principios clave de diseño como **contraste y jerarquía visual**, evidenciados en el uso de colores llamativos para los botones de acción y en la organización textual que dirige la atención desde el título hasta el botón "Explora ahora". La consistencia visual se mantiene en íconos, estilos y márgenes, lo cual genera una experiencia fluida. En cuanto a la **arquitectura de información**, el contenido se organiza de forma secuencial y lógica: inicia con una presentación de valor clara, continúa con las funcionalidades de la plataforma, testimonios y preguntas frecuentes, y finaliza con un llamado a la acción. Esta estructura guía de manera progresiva al usuario hacia el objetivo del sitio.
 
 ## 4.4. Mobile Applications UX/UI Design  
 ### 4.4.1. Mobile Applications Wireframes  
