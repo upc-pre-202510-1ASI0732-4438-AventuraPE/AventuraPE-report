@@ -235,6 +235,17 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 ## [Bibliografía](#bibliografía)
 ## [Anexos](#anexos)
 
+# Student Outcome
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|----|----|----|
+|4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software.| **Cama Salvatierra, Jimena Tamara**<br>*TB1*<br> TEXTO<br>**Castillo Castillo, Jair Alexander**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br> TEXTO <br> **Jaque Peña, Estefano Oscar**<br>*TB1*<br> TEXTO <br>**Quezada Portalatino, Barbara Susana**<br>*TB1*<br>TEXTO| TB1:<br> TEXTO.|
+
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|----|----|----|
+|4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales| **Cama Salvatierra, Jimena Tamara**<br>*TB1*<br> TEXTO<br>**Castillo Castillo, Jair Alexander**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br> TEXTO <br> **Jaque Peña, Estefano Oscar**<br>*TB1*<br> TEXTO <br>**Quezada Portalatino, Barbara Susana**<br>*TB1*<br>TEXTO| TB1:<br> TEXTO.|
+
 
 # Capítulo I: Introducción
 
