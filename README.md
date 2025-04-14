@@ -16,10 +16,10 @@
 
 | Member                              |    Code    |
 | :---------------------------------- | :--------: |
-| Jose Eduardo Gutierrez Garcia       | u202221518 |
-| Cama Salvatierra, Jimena Tamara     | u202210778 |
-| Castillo Castillo, Jair Alexander   | u202211390 |
-| Estefano Oscar Jaque Peña           | u202225466 |
+| Cama Salvatierra, Jimena Tamara     | u202221518 |
+| Castillo Castillo, Jair Alexander   | u202210778 |
+| Gutierrez Garcia, Jose Eduardo      | u202211390 |
+| Jaque Peña, Estefano Oscar          | u202225466 |
 | Quezada Portalatino, Barbara Susana | u202211800 |
 
 </div>
