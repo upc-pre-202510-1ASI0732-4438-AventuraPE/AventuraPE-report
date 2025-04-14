@@ -410,6 +410,7 @@ b.	*Características demográficas:* <br>
 Principalmente ubicadas en áreas urbanas, suburbanas y zonas turísticas que reciben un flujo constante de residentes y visitantes. Entre ellas pueden ser los cafés, restaurantes, tiendas de artesanía y centros de entretenimiento. <br><br>
 
 2.	**Usuarios** <br>
+
 a.	*Descripción:* <br> Los usuarios de AventuraPe son personas y grupos que buscan enriquecer su tiempo libre con experiencias diferentes y emocionantes, sin la necesidad de una planificación compleja. Son individuos interesados en explorar su entorno de manera espontánea y descubrir nuevas actividades que se ajusten a sus intereses y horarios. <br><br>
 b.	*Características demográficas:* <br> Principalmente jóvenes adultos entre 18 y 35 años, aunque también incluye a adultos de mediana edad que buscan nuevas formas de entretenimiento. <br>
 
