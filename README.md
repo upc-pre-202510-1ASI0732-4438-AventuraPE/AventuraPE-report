@@ -55,6 +55,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 </table>
 
 # Contenido
+- [**Student Outcome**](#student-outcome)
 
 ## [Capítulo I: Introducción](#capítulo-i-introducción)
 - [1.1. Startup Profile](#11-startup-profile)
