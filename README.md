@@ -287,7 +287,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 En AventuraPE, hemos creado un sistema de diseño que mantiene todo visualmente coherente en nuestras diferentes plataformas. Nuestras Style Guidelines son la columna de nuestra identidad visual, definiendo esos elementos clave que hacen única a nuestra marca. Cubrimos todo lo esencial, desde el branding y las fuentes hasta los colores que nos representan. También hemos definido un estilo de comunicación flexible que puede ser divertido según lo necesitemos, pero siempre manteniendo ese toque energético que nos caracteriza.
 
 ### 4.1.1. General Style Guidelines  
-<img src="images/general_style_guidelines/general_style_guidelines.png">
+<img src="images/style_guidelines/general_style_guidelines.png">
 
 ### 4.1.2. Web Style Guidelines 
 <img src="images/style_guidelines/web_style.png">
