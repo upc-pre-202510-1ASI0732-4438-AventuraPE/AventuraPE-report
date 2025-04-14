@@ -282,19 +282,136 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 # Capítulo IV: Product Design
 
-## 4.1. Style Guidelines  
-### 4.1.1. General Style Guidelines  
-### 4.1.2. Web Style Guidelines  
-### 4.1.3. Mobile Style Guidelines  
-#### 4.1.3.1. iOS Mobile Style Guidelines  
-#### 4.1.3.2. Android Mobile Style Guidelines  
+## 4.1. Style Guidelines
 
-## 4.2. Information Architecture  
-### 4.2.1. Organization Systems  
+En AventuraPE, hemos creado un sistema de diseño que mantiene todo visualmente coherente en nuestras diferentes plataformas. Nuestras Style Guidelines son la columna de nuestra identidad visual, definiendo esos elementos clave que hacen única a nuestra marca. Cubrimos todo lo esencial, desde el branding y las fuentes hasta los colores que nos representan. También hemos definido un estilo de comunicación flexible que puede ser divertido según lo necesitemos, pero siempre manteniendo ese toque energético que nos caracteriza.
+
+### 4.1.1. General Style Guidelines  
+<img src="images/general_style_guidelines/general_style_guidelines.png">
+
+### 4.1.2. Web Style Guidelines 
+<img src="images/style_guidelines/web_style.png">
+
+### 4.1.3. Mobile Style Guidelines
+#### 4.1.3.1. iOS Mobile Style Guidelines
+
+<img src="images/style_guidelines/iOS_mobile_style.png">
+
+#### 4.1.3.2. Android Mobile Style Guidelines  
+<img src="images/style_guidelines/android_mobile_style.png">
+
+## 4.2. Information Architecture
+### 4.2.1. Organization Systems
+
+**Aventurero**<br>
+En primer lugar el aventurero o emprendedor se encontrará en la landing, la cual lo redirija a la tienda de aplicación de su preferencia. Una vez descargada la aplicación. Se registrará o iniciará sesión, según el tipo de usuario que elija.
+<br>
+En el panel de aventurero la primera vista será la pantalla principal en donde podrá ver una lista de locales, posts recientes, y los posts más populares, aquí se encontrará el botón “Sorpréndeme”. En la siguiente vista tendrá el buscador y los posts. Finalmente, en el panel de cuenta, se encuentra la información del usuario.
+
+<img src="images/organization_system/organization_system_aventurero.png">
+
+<br>
+
+**Emprendedor**<br>
+En el panel del emprendedor la primera vista será la página principal con sus posts anteriormente publicados y un botón que le permita agregar un nuevo post. En el apartado de estadísticas podrá filtrar los posts con mejor calificación o con más comentarios. Finalmente, en el perfil del emprendedor se encontrará información del emprendimiento o empresa.
+
+<img src="images/organization_system/organization_system_emprendedor.png">
+
+
 ### 4.2.2. Labeling Systems  
-### 4.2.3. SEO Tags and Meta Tags  
-### 4.2.4. Searching Systems  
+
+Antes de implementar las etiquetas en nuestra página, debemos determinar qué requisitos necesitamos cumplir. Las etiquetas nos permiten agregar texto, imágenes y otros elementos a nuestra página. El sistema “Learn Sing” utilizará las siguientes etiquetas para representar conjuntos de información:
+
+| **Etiqueta**            | **Descripción**               |
+|---------------------|---------------------------|
+| **Tipo de tarea**       |                           |
+| [FEAT]              | Nueva característica      |
+| [FIX]               | Corrección de errores     |
+| [REFACTOR]          | Refactorización de código |
+| [DOCS]              | Documentación             |
+| [TEST]              | Pruebas                   |
+| **Prioridad**           |                           |
+| [P1]                | Alta prioridad            |
+| [P2]                | Prioridad media           |
+| [P3]                | Baja prioridad            |
+| **Módulo o componente** |                           |
+| [UI]                | Interfaz de usuario       |
+| [API]               | Lógica de la API          |
+| [DB]                | Base de datos             |
+| [AUTH]              | Autenticación             |
+| [PERF]              | Rendimiento               |
+| **Estado**              |                           |
+| [TODO]              | Por hacer                 |
+| [WIP]               | En progreso               |
+| [REVIEW]            | En revisión               |
+| [DONE]              | Completado                |
+
+
+### 4.2.3. SEO Tags and Meta Tags
+
+La implementación de estas etiquetas ayudan al posicionamiento de la página en los motores de búsqueda.
+Título
+Indica el tema de la página, debe ser corto y descriptivo, debe mantenerse entre los 55 y 60 caracteres.
+
+    <title>AventuraPe</title>
+
+**Descripción** <br>
+Es una breve descripción  de la página.
+
+	<meta name= “description” content= “No lo planees, explora y atrévete”/>
+
+Robots
+Indican a los motores de búsqueda de lo que deben hacer con la página.
+index/noindex: Indica al motor de búsqueda si debe mostrar la página en el SERP o no.
+follow/nofollow: Les dice a los motores qué hacer con los enlaces en ese objetivo.
+Tipo de contenido
+Es útil para que los motores de búsqueda identifiquen el idioma de la página.
+
+    <meta http-equiv= “tipo de contenido” content= “text/html charset-utf-8” />
+    <meta http-equiv= “tipo de contenido” content= “text/html charset-ISO-6059-1” />
+
+Searchbox de enlaces
+Se utiliza para controlar el cuadro de búsqueda de enlaces del sitio de Google
+
+    <meta name= “google” content = “nositelinkssearchbox”/>
+
+Viewport Meta Tag 
+Es crucial para asegurar que el contenido se vea bien en dispositivos móviles.
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+### 4.2.4. Searching Systems
+
+El sistema de búsqueda propuesto para AventuraPe permitirá a los usuarios personalizar su experiencia de aventurera de acuerdo a sus preferencias. Este sistema facilitará la personalización de duración, cantidad de personas, lugar, mejores puntuados, etc. Los filtros disponibles serán:
+
+| Nombre del filtro    | Descripción                                                                                                              |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Más comentados       | Permitirá ordenar los posts que tienen más comentarios de manera descendente.                                            |
+| Mejor puntuación     | Permitirá ordenar de mejor a peor puntuación.                                                                            |
+| Costo                | Permitirá ordenar de menor a mayor costo o viceversa.                                                                    |
+| Duración             | El usuario puede seleccionar el tiempo aproximado que le tomará realizar la actividad.                                   |
+| Cantidad de personas | El usuario podrá filtrar de acuerdo al tipo de actividad que desee de acuerdo a la cantidad de personas que se requiera. |
+
+
 ### 4.2.5. Navigation Systems  
+El sistema de navegación de la aplicación AventuraPe guiará a los usuarios a través de las distintas secciones y ventanas de la aplicación móvil, proporcionándoles la información que necesitan. A continuación, se detallan las acciones técnicas que facilitarán la navegación de los usuarios:
+
+**Aventurero**
+| Nombre | Descripción                                                                                                              |
+|--------|--------------------------------------------------------------------------------------------------------------------------|
+| Inicio | Le muestra los posts más recientes, los locales más populares al entrar a la aplicación. Además del botón "Sorpréndeme"  |
+| Buscar | El usuario podrá buscar por palabra clave, nombre de local, etc.                                                         |
+| Cuenta | Este apartado permite que el usuario gestione su cuenta.                                                                 |
+<br>
+
+**Emprendedor**
+| Nombre       | Descripción                                                                                          |
+|--------------|------------------------------------------------------------------------------------------------------|
+| Inicio       | Le muestra los posts publicados, asimismo podrá gestionar estps, como eliminar, editar.              |
+| Estadísticas | El emprendedor podrá filtrar sus posts por, más comentados, mejores puntuados y ver todos sus posts. |
+| Cuenta       | Este apartado permite que el usuario gestione su cuenta.                                             |
+
 
 ## 4.3. Landing Page UI Design
 La propuesta de diseño de la landing page de AventuraPe se construye a partir de decisiones orientadas a brindar una experiencia de usuario clara, atractiva y coherente con los objetivos de la plataforma. En donde se ha priorizó una arquitectura de información jerárquica, en la que el contenido se organiza desde lo más relevante hacia lo complementario, permitiendo una exploración progresiva del sitio. El diseño adopta un enfoque responsive e inclusivo, considerando la adaptabilidad a distintos dispositivos y el uso de tipografías legibles, contraste adecuado de colores y botones accesibles. Esta planificación asegura que los usuarios, tanto aventureros como emprendedores, encuentren rápidamente la información y las funcionalidades clave, alineadas con su perfil y expectativas dentro del ecosistema digital de AventuraPe.
