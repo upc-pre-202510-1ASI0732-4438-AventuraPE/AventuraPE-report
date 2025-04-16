@@ -462,12 +462,17 @@ Los mock-ups representan visualmente el resultado final del diseño propuesto y 
 
 ## 4.8. Domain-Driven Software Architecture  
 ### 4.8.1. Software Architecture Context Diagram  
-### 4.8.2. Software Architecture Container Diagrams  
+<img src="images/c4/Software_Architecture_Context_Diagram.png">
+
+### 4.8.2. Software Architecture Container Diagrams
+<img src="images/c4/Software_Architecture_Container_Diagrams.png">
+
 ### 4.8.3. Software Architecture Components Diagrams  
+<img src="images/c4/_Software_Architecture_Components_Diagrams.png">
 
 ## 4.9. Software Object-Oriented Design  
 ### 4.9.1. Class Diagrams
-<img src="images/diagrama_clases/Diagrama de clases-Expe.png">
+<img src="images/diagrama_clases/Diagrama de clases.png">
 
 ### 4.9.2. Class Dictionary
 
@@ -602,7 +607,7 @@ Representa la suscripción de una empresa a un plan.
   - **renewSubscription()**: Renueva una suscripción
   - **cancelSubscription()**: Cancela una suscripción
 
-**PaymentReceipt**:
+#### PaymentReceipt
 Representa un comprobante de pago por una suscripción.
 - **id**: Identificador único del recibo
 - **companySubscriptionId**: Identificador de la suscripción
@@ -615,9 +620,30 @@ Representa un comprobante de pago por una suscripción.
   - **generateReceipt()**: Genera un nuevo recibo
   - **verifyPayment()**: Verifica el estado del pago
 
+#### Statistics
+Representa un informe estadístico generado para una empresa.
+- **id**: Identificador único del informe estadístico.
+- **companyId**: Identificador de la empresa propietaria del informe.
+- **reportType**: Tipo de informe estadístico
+- **parameters**: Parámetros utilizados para generar el informe.
+- Operaciones:
+  - **filterByTopRated**: Filtra los posts de la empresa por calificación y devuelve los mejor calificados.
+  - **filterByMostCommented**: Filtra los posts de la empresa por número de comentarios.
+
+#### PostStatistics
+Representa la relación entre un informe estadístico y los posts incluidos en él.
+
+- **id**: Identificador único de la estadística de post.
+- **statisticsId**: Identificador del informe estadístico al que pertenece.
+- **postId**: Identificador del post incluido en las estadísticas.
+- **ranking**: Posición del post en el ranking generado.
+- **metricValue**: Valor numérico de la métrica utilizada
+- **Operaciones**:
+  - **getPostDetails**: Obtiene información detallada del post asociado.
+
 ## 4.10. Database Design  
 ### 4.10.1. Relational/Non-Relational Database Diagram
-<img src="images/diagrama_base_de_datos/Diagrama base de datos Experimentos.png">
+<img src="images/diagrama_base_de_datos/Diagrama_base_datos.png">
 
 
 # Capítulo V: Product Implementation
