@@ -438,22 +438,27 @@ Los mock-ups representan visualmente el resultado final del diseño propuesto y 
 <br>Se aplicaron principios clave de diseño como **contraste y jerarquía visual**, evidenciados en el uso de colores llamativos para los botones de acción y en la organización textual que dirige la atención desde el título hasta el botón "Explora ahora". La consistencia visual se mantiene en íconos, estilos y márgenes, lo cual genera una experiencia fluida. En cuanto a la **arquitectura de información**, el contenido se organiza de forma secuencial y lógica: inicia con una presentación de valor clara, continúa con las funcionalidades de la plataforma, testimonios y preguntas frecuentes, y finaliza con un llamado a la acción. Esta estructura guía de manera progresiva al usuario hacia el objetivo del sitio.
 
 ## 4.4. Mobile Applications UX/UI Design  
-### 4.4.1. Mobile Applications Wireframes  
-### 4.4.2. Mobile Applications Wireflow Diagrams  
-### 4.4.3. Mobile Applications Mock-ups  
-### 4.4.4. Mobile Applications User Flow Diagrams  
+### 4.4.1. Mobile Applications Wireframes
 
-## 4.5. Mobile Applications Prototyping  
-### 4.5.1. Android Mobile Applications Prototyping  
-### 4.5.2. iOS Mobile Applications Prototyping  
 
-## 4.6. Web Applications UX/UI Design  
-### 4.6.1. Web Applications Wireframes  
-### 4.6.2. Web Applications Wireflow Diagrams  
-### 4.6.3. Web Applications Mock-ups  
-### 4.6.4. Web Applications User Flow Diagrams  
+### 4.4.2. Mobile Applications Wireflow Diagrams
 
-## 4.7. Web Applications Prototyping  
+### 4.4.3. Mobile Applications Mock-ups
+
+### 4.4.4. Mobile Applications User Flow Diagrams
+
+
+## 4.5. Mobile Applications Prototyping
+### 4.5.1. Android Mobile Applications Prototyping
+### 4.5.2. iOS Mobile Applications Prototyping
+
+## 4.6. Web Applications UX/UI Design
+### 4.6.1. Web Applications Wireframes
+### 4.6.2. Web Applications Wireflow Diagrams
+### 4.6.3. Web Applications Mock-ups
+### 4.6.4. Web Applications User Flow Diagrams
+
+## 4.7. Web Applications Prototyping
 
 ## 4.8. Domain-Driven Software Architecture  
 ### 4.8.1. Software Architecture Context Diagram  
@@ -461,11 +466,159 @@ Los mock-ups representan visualmente el resultado final del diseño propuesto y 
 ### 4.8.3. Software Architecture Components Diagrams  
 
 ## 4.9. Software Object-Oriented Design  
-### 4.9.1. Class Diagrams  
-### 4.9.2. Class Dictionary  
+### 4.9.1. Class Diagrams
+<img src="images/diagrama_clases/Diagrama de clases-Expe.png">
+
+### 4.9.2. Class Dictionary
+
+#### User
+Representa un usuario del sistema con credenciales de acceso.
+- **id**: Identificador único del usuario
+- **username**: Nombre de usuario para acceder al sistema
+- **password**: Contraseña para autenticación
+- **role**: Rol asignado al usuario (puede ser empresario o aventurero)
+- **Operaciones**:
+  - **register()**: Registra un nuevo usuario en el sistema
+  - **login()**: Inicia sesión en el sistema
+  - **logout()**: Cierra la sesión del usuario
+  - **manageProfile()**: Gestiona la información del perfil
+
+#### Role
+Define los roles disponibles en el sistema.
+- **id**: Identificador único del rol
+- **roleName**: Nombre del rol (ej. administrador, empresario, aventurero)
+- **Operaciones**:
+  - **assignToUser()**: Asigna un rol a un usuario
+  - **removeFromUser()**: Elimina un rol de un usuario
+
+#### Company
+Representa un negocio o emprendimiento registrado en la plataforma.
+- **id**: Identificador único de la empresa
+- **name**: Nombre de la empresa
+- **userId**: Identificador del usuario asociado (dueño o administrador)
+- **Operaciones**:
+  - **registerCompany()**: Registra una nueva empresa
+  - **updateProfile()**: Actualiza la información del perfil empresarial
+  - **viewStatistics()**: Visualiza estadísticas de actividades y reseñas
+
+#### Adventurous
+Representa un usuario consumidor que busca actividades locales.
+- **id**: Identificador único del aventurero
+- **name**: Nombre del usuario aventurero
+- **lastName**: Apellido del usuario aventurero
+- **birthday**: Fecha de nacimiento
+- **userId**: Identificador del usuario asociado
+- **Operaciones**:
+  - **updateProfile()**: Actualiza la información personal
+  - **viewFavorites()**: Visualiza actividades guardadas como favoritas
+  - **rateActivity()**: Califica una actividad
+
+#### Activity
+Representa una actividad o evento publicado por una empresa.
+- **id**: Identificador único de la actividad
+- **name**: Nombre de la actividad
+- **description**: Descripción detallada
+- **duration**: Duración aproximada
+- **quantityPerson**: Capacidad de personas
+- **price**: Precio de la actividad
+- **companyId**: Identificador de la empresa que publica
+- **addressId**: Identificador de la ubicación
+- **Operaciones**:
+  - **createActivity()**: Crea una nueva actividad
+  - **updateActivity()**: Actualiza información de la actividad
+  - **deleteActivity()**: Elimina una actividad
+  - **viewStatistics()**: Visualiza estadísticas de la actividad
+
+#### Review
+Representa una reseña o comentario sobre una actividad.
+- **id**: Identificador único de la reseña
+- **adventurousId**: Identificador del aventurero que escribe
+- **activityId**: Identificador de la actividad reseñada
+- **rating**: Calificación numérica
+- **description**: Comentario descriptivo
+- **Operaciones**:
+  - **createReview()**: Crea una nueva reseña
+  - **updateReview()**: Actualiza una reseña existente
+  - **deleteReview()**: Elimina una reseña
+
+#### Photo
+Representa imágenes asociadas a una actividad.
+- **id**: Identificador único de la foto
+- **photoLink**: Enlace a la imagen almacenada
+- **activityId**: Identificador de la actividad relacionada
+- **Operaciones**:
+  - **uploadPhoto()**: Sube una nueva foto
+  - **deletePhoto()**: Elimina una foto
+
+#### Address
+Representa la ubicación física de una actividad.
+- **id**: Identificador único de la dirección
+- **streetDescription**: Descripción de calle y número
+- **cityId**: Identificador de la ciudad
+- **Operaciones**:
+  - **createAddress()**: Crea una nueva dirección
+  - **updateAddress()**: Actualiza una dirección existente
+
+#### City
+Representa una ciudad donde se ubican las actividades.
+- **id**: Identificador único de la ciudad
+- **cityName**: Nombre de la ciudad
+- **countryId**: Identificador del país
+
+#### Country
+Representa un país en el sistema.
+- **id**: Identificador único del país
+- **countryName**: Nombre del país
+
+#### Favorite
+Representa una actividad marcada como favorita por un usuario.
+- **adventurousId**: Identificador del aventurero
+- **activityId**: Identificador de la actividad favorita
+- **Operaciones**:
+  - **addFavorite()**: Añade una actividad a favoritos
+  - **removeFavorite()**: Elimina una actividad de favoritos
+
+#### SubscriptionPlan
+Define los planes de suscripción disponibles para empresas.
+- **id**: Identificador único del plan
+- **name**: Nombre del plan
+- **priceMonthly**: Precio mensual
+- **features**: Características incluidas
+- **Operaciones**:
+  - **createPlan()**: Crea un nuevo plan
+  - **updatePlan()**: Actualiza un plan existente
+  - **deletePlan()**: Elimina un plan
+
+#### CompanySubscription
+Representa la suscripción de una empresa a un plan.
+- **id**: Identificador único de la suscripción
+- **companyId**: Identificador de la empresa
+- **startDate**: Fecha de inicio
+- **endDate**: Fecha de finalización
+- **trialEndDate**: Fecha de finalización del período de prueba
+- **subscriptionPlanId**: Identificador del plan suscrito
+- **Operaciones**:
+  - **subscribe()**: Suscribe una empresa a un plan
+  - **renewSubscription()**: Renueva una suscripción
+  - **cancelSubscription()**: Cancela una suscripción
+
+**PaymentReceipt**:
+Representa un comprobante de pago por una suscripción.
+- **id**: Identificador único del recibo
+- **companySubscriptionId**: Identificador de la suscripción
+- **amount**: Monto pagado
+- **paymentDate**: Fecha del pago
+- **receiptFilePath**: Ruta al archivo del comprobante
+- **verificationStatus**: Estado de verificación del pago
+- **verificationDate**: Fecha de verificación
+- **Operaciones**:
+  - **generateReceipt()**: Genera un nuevo recibo
+  - **verifyPayment()**: Verifica el estado del pago
 
 ## 4.10. Database Design  
-### 4.10.1. Relational/Non-Relational Database Diagram  
+### 4.10.1. Relational/Non-Relational Database Diagram
+<img src="images/diagrama_base_de_datos/Diagrama base de datos Experimentos.png">
+
 
 # Capítulo V: Product Implementation
 
