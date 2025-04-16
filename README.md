@@ -497,6 +497,18 @@ Para el segmento de Empresas Locales:
 
 ## 2.3. Needfinding  
 ### 2.3.1. User Personas  
+
+Para el desarrollo de AventuraPe, es esencial entender a nuestros usuarios y clientes, y así crear una experiencia que realmente cubra sus necesidades. Hemos identificado dos grupos clave: los usuarios que buscan aventuras espontáneas y las empresas locales que desean atraer a estos usuarios. A continuación, presentamos un perfil detallado de un ***user persona*** para cada grupo, describiendo sus datos demográficos, motivaciones, frustraciones y objetivos. Estos perfiles nos ayudarán a tomar decisiones informadas en el diseño y desarrollo de la aplicación, garantizando que AventuraPe cumpla con las expectativas y deseos de nuestros usuarios y clientes. 
+
+User persona de los clientes:** 
+
+![](assets/images/011.jpeg)
+
+User persona de los dueños de pequeños emprendimientos: 
+
+![](assets/images/012.jpeg)  
+
+
 ### 2.3.2. User Task Matrix  
 ### 2.3.3. User Journey Mapping  
 ### 2.3.4. Empathy Mapping  
