@@ -459,6 +459,39 @@ Tácticas:
 
 ## 2.2. Entrevistas  
 ### 2.2.1. Diseño de entrevistas  
+Para el segmento de Usuarios:
+1. Sobre la experiencia del usuario:
+   - ¿Cómo decides qué actividades realizar en tu tiempo libre?
+   - ¿Qué factores son más importantes al elegir una actividad espontánea?
+   - ¿Cómo influye la cercanía geográfica en tus decisiones de actividades?
+   - ¿Cómo prefieres recibir sugerencias para actividades? (Filtros, recomendaciones, etc.)
+   - ¿Qué tan seguido utilizas aplicaciones móviles para descubrir nuevas experiencias?
+2. Sobre la interacción con la app:
+   - ¿Qué funcionalidades te gustaría encontrar en una aplicación que sugiere actividades?
+   - ¿Cómo influye la personalización en tu decisión de usar una aplicación para explorar actividades?
+   - ¿Qué tan importante es para ti la simplicidad y facilidad de uso en una aplicación móvil?
+   - ¿Cuáles son las principales dificultades que enfrentas al utilizar apps para planificar actividades?
+   - ¿Qué tipo de notificaciones o recordatorios consideramos útiles para mejorar tu experiencia?
+ 3. Sobre la disposición a pagar:
+   - ¿Qué características consideras valiosas para pagar por una suscripción en la app?
+   - ¿Qué tipo de beneficios adicionales te incentivarán a pagar por experiencias en una app de aventuras?
+   - ¿Cuánto estarías dispuesto a pagar por acceder a actividades personalizadas o exclusivas?
+     
+Para el segmento de Empresas Locales:
+1. Sobre la promoción del negocio:
+   - ¿Qué estrategias utilizas actualmente para promocionar tu negocio a nivel local?
+   - ¿Qué tan efectivas consideramos las redes sociales para atraer nuevos clientes?
+   - ¿Qué factores te motivarían a utilizar una aplicación para promocionar actividades o eventos de tu negocio?
+   - ¿Cómo evalúas la efectividad de las promociones y descuentos en tu negocio?
+2. Sobre la participación en la app:
+   - ¿Qué tipo de actividades o promociones te gustaría ofrecer a través de una aplicación de micro aventuras?
+   - ¿Qué esperas de una plataforma que conecte a usuarios con negocios locales?
+   - ¿Qué tan importante es la posibilidad de recibir feedback de los usuarios sobre tus actividades?
+   - ¿Cómo influiría en tu negocio poder ofrecer descuentos o promociones exclusivas a través de una app?
+ 3. Sobre la satisfacción del cliente:
+   - ¿Qué tipo de experiencias te gustaría brindar para atraer a más clientes?
+   - ¿Cómo crees que una plataforma digital podría mejorar la interacción con tus clientes?
+   - ¿Qué tipo de recompensas o programas de lealtad estarías dispuesto a implementar para retener a clientes?
 ### 2.2.2. Registro de entrevistas  
 ### 2.2.3. Análisis de entrevistas  
 
