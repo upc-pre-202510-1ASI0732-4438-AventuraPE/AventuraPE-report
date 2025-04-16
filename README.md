@@ -419,7 +419,43 @@ b.	*Características demográficas:* <br> Principalmente jóvenes adultos entre 
 
 ## 2.1. Competidores  
 ### 2.1.1. Análisis competitivo  
+Este análisis proporciona una visión detallada del panorama competitivo, destacando las áreas clave donde AventuraPe puede diferenciarse y ofrecer un valor único a sus clientes. 
+
+
+
+|**Competitive analysis Landscape** ||||||
+| - | :- | :- | :- | :- | :- |
+|¿Por qué llevar a cabo este análisis? |Permite a AventuraPe entender mejor el mercado en el que opera, identificar las fortalezas y debilidades de sus competidores, y desarrollar estrategias que permitan diferenciarse y ofrecer un valor superior a los clientes. |||||
+|||<p>Eventbrite </p><p>![](assets/images/001.png)</p>|<p>All Events in City </p><p>![](assets/images/002.png)</p>|<p>TickPick </p><p>![](assets/images/003.png)</p>|<p>Meetup </p><p>![](assets/images/004.png)</p>||
+|Perfil |Overview |Una plataform a global que permite a los organizad ores de eventos planificar, promocionar y vender entradas para sus eventos, así como gestionar la asistencia. |Una plataforma que ayuda a los usuarios a descubrir eventos en su ciudad, ofreciendo una amplia lista de actividades que incluyen conciertos, talleres, festivales y más.|<p>Un mercado en línea para la compra y venta de entradas a eventos deportivos, conciertos y otros espectáculos. TickPick se distingue por no cobrar tarifas adicionales a los comprador es.</p>|Una plataform a que conecta a personas con intereses similares a través de eventos y reuniones en persona. |
+||Ventaja competitiva</p><p> ¿Qué valor ofrece a los clientes? |Amplia cobertura de eventos, herramien tas robustas para organizad ores, y una plataform a global reconocid a que facilita la promoció n y venta de entradas.|Proporciona una guía completa de eventos locales, permitiendo a los usuarios explorar y participar en actividades cerca de ellos sin necesidad de una planificación extensa. |Ofrece una experiencia de compra transparent e sin tarifas ocultas, lo que atrae a comprador es de entradas que buscan evitar costos adicionales. |Facilita la creación y participac ión en comunida des locales basadas en intereses comunes, fomentan do la interacció n y las conexion es personale s. </td></tr>
+|Perfil de marketing|Mercado Objetivo |Organizadores de eventos de todos los tamaños, desde pequeñas reuniones hasta grandes conferencias y festivales.|Residentes urbanos y turistas que desean descubrir y participar en eventos y actividades locales.|Aficionados a los deportes, la música y el entretenimiento en vivo que buscan entradas a eventos sin cargos adicionales.|Personas que buscan conectar con otros que comparten intereses similares.|
+||Estrategias de marketing|Enfocada en la colaboración con organizadores de eventos y asociaciones con plataformas de redes sociales|Utiliza SEO local (Optimización para Motores de Búsqueda) y publicidad en redes sociales para atraer a usuarios que buscan actividades en su área.|Se apoya en campañas de marketing digital dirigidas a fanáticos de eventos en vivo.|Se basa en la creación de contenido generado por usuarios y el boca a boca, aprovechando la viralidad de las comunidades.|
+|Perfil del producto	|Productos & Servicios	|Venta de entradas y herramientas de marketing.| 	Listado de eventos locales, recomendaciones personalizadas, y herramientas para descubrir nuevas actividades.|	Plataforma de compra y venta de entradas con precios transparentes, comparaciones de precios.|	Gestión de eventos y comunidad online.|
+|                                            | Canales de distribución <br>(Web y/o Móvil)                   | Web y app móvil (iOS y Android).|Web y app móvil (iOS y Android).|Web y app móvil (iOS y Android).|Web y app móvil (iOS y Android).|
+| Análisis SWOT| Fortalezas                                                    |Amplia presencia global, herramientas completas para organizadores.	|Enfoque local, cobertura amplia de eventos.	|Precios transparentes, sin cargos adicionales.|	Red activa de comunidades, alta interacción entre usuarios.|
+|| Debilidades|  Dependencia de grandes eventos para ingresos significativos.|	Limitada capacidad de atracción para eventos masivos.|	Menor visibilidad frente a competidores más grandes.|	Competencia con redes sociales para la creación de comunidades.|
+|| Oportunidades| Expansión a nuevos mercados, colaboración con grandes eventos| Mayor enfoque en el turismo local y las experiencias personalizadas.| Aumento de la demanda para eventos en vivo post-pandemia.| Crecimiento en eventos virtuales.|
+|| Amenazas| Competencia de plataformas de redes sociales y eventos gratuitos.| Competencia de nuevas plataformas locales con enfoques similares. | Competencia de revendedores de entradas y plataformas de tickets oficiales.  | Cambios en las tendencias de consumo de eventos. |               
+
 ### 2.1.2. Estrategias y tácticas frente a competidores  
+Fortalezas de la App:
+•	Personalización en tiempo real basada en la ubicación y preferencias.
+•	Sorpresa y novedad como valor diferencial.
+•	Colaboración con negocios locales para ofertas y descuentos exclusivos.
+Debilidades a Superar:
+•	Dependencia de la participación activa de empresas locales.
+•	Necesidad de construir una base de usuarios que confíen en la app para experiencias espontáneas.
+Oportunidades:
+•	Aumento en la demanda de experiencias locales y únicas.
+•	Creciente interés en actividades que no requieren planificación.
+Amenazas:
+•	Competencia de otras apps que ofrecen servicios similares pero con un enfoque diferente.
+•	Cambios en las restricciones locales que pueden afectar la disponibilidad de ciertas actividades.
+Tácticas:
+1.	Alianzas estratégicas: Establecer relaciones con empresas locales para asegurar contenido exclusivo y descuentos.
+2.	Marketing dirigido: Enfocar campañas en redes sociales y anuncios en áreas urbanas con alta densidad de usuarios.
+3.	Diferenciación: Resaltar la capacidad de sorprender y ofrecer experiencias únicas, a diferencia de otras apps que solo listan actividades estándar.
 
 ## 2.2. Entrevistas  
 ### 2.2.1. Diseño de entrevistas  
