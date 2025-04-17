@@ -293,6 +293,22 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 - Resumen: El entrevistado indicó que actualmente utiliza anuncios en Facebook e Instagram como parte de su estrategia de marketing, destacando que las redes sociales son fundamentales para la visibilidad de su emprendimiento. Además, expresó interés en contar con una plataforma que le permita ajustar su estrategia de marketing mediante la realización de eventos. Finalmente, mencionó que los comentarios y calificaciones de los usuarios generarían mayor confianza en las personas para asistir a los eventos que organiza.
 - Link: [https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing](https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing)
 
+<img src="images/interviews/emprendedor_fabian.png"><br>
+
+2.
+Entrevistado:
+Duración:
+Resumen:
+Link:
+
+
+3.
+Entrevistado:
+Duración:
+Resumen:
+Link:
+
+
 ### 2.2.3. Análisis de entrevistas  
 
 ## 2.3. Needfinding  
