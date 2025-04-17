@@ -260,8 +260,39 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 ### 2.1.2. Estrategias y tácticas frente a competidores  
 
 ## 2.2. Entrevistas  
-### 2.2.1. Diseño de entrevistas  
+### 2.2.1. Diseño de entrevistas
+
+
 ### 2.2.2. Registro de entrevistas  
+
+**Segmento de aventureros**
+1. 
+- Entrevistado: 
+- Duración: 
+- Resumen:
+- Link:
+
+2.  
+- Entrevistado: 
+- Duración: 
+- Resumen:
+- Link:
+
+3. 
+- Entrevistado:
+- Duración:
+- Resumen:
+- Link:
+
+
+**Segmento de emprendedores**
+
+1.
+- Entrevistado: Fabián Castro Lujan-Ripoll
+- Duración: 4.16
+- Resumen: El entrevistado indicó que actualmente utiliza anuncios en Facebook e Instagram como parte de su estrategia de marketing, destacando que las redes sociales son fundamentales para la visibilidad de su emprendimiento. Además, expresó interés en contar con una plataforma que le permita ajustar su estrategia de marketing mediante la realización de eventos. Finalmente, mencionó que los comentarios y calificaciones de los usuarios generarían mayor confianza en las personas para asistir a los eventos que organiza.
+- Link: [https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing](https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing)
+
 ### 2.2.3. Análisis de entrevistas  
 
 ## 2.3. Needfinding  
