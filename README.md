@@ -437,28 +437,140 @@ Los mock-ups representan visualmente el resultado final del diseño propuesto y 
 <img src="./images/landing-page/landing-mockup" alt="Landing Page mockup image" min-width="400" max-width="900"/>
 <br>Se aplicaron principios clave de diseño como **contraste y jerarquía visual**, evidenciados en el uso de colores llamativos para los botones de acción y en la organización textual que dirige la atención desde el título hasta el botón "Explora ahora". La consistencia visual se mantiene en íconos, estilos y márgenes, lo cual genera una experiencia fluida. En cuanto a la **arquitectura de información**, el contenido se organiza de forma secuencial y lógica: inicia con una presentación de valor clara, continúa con las funcionalidades de la plataforma, testimonios y preguntas frecuentes, y finaliza con un llamado a la acción. Esta estructura guía de manera progresiva al usuario hacia el objetivo del sitio.
 
-## 4.4. Mobile Applications UX/UI Design  
+## 4.4. Mobile Applications UX/UI Design
+
 ### 4.4.1. Mobile Applications Wireframes
 
+**ANEXO C:**<br>[https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1)
+
+**Sección Aventurero**<br>
+A través de estos wireframes, se presentan las pantallas que guiarán a los usuarios en su travesía, destacando la importancia de la navegabilidad, el diseño centrado en el usuario y las funcionalidades que les permiten interactuar de manera fluida y natural con la aplicación.
+
+<img src="images/mobile_wireframes/Mobile_Applications_Wireframes_Av.png"><br>
+
+**Sección Emprendedor**<br>
+Esta sección está diseñada para aquellos usuarios con un espíritu innovador y emprendedor, interesados en gestionar y desarrollar sus propios proyectos a través de la aplicación móvil.
+
+<img src="images/mobile_applications_design/wireframes_emprendedor.png ">
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams
 
 ### 4.4.3. Mobile Applications Mock-ups
+**ANEXO E:**<br> [https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=0-1&t=cwavRBbaqEngEViE-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=0-1&t=cwavRBbaqEngEViE-1)
+
+
+**Sección aventurero**
+- **Registro e inicio de sesión:** Esta pantalla permite al usuario aventurero registrarse en la aplicación con su nombre completo, correo electrónico y una contraseña. El diseño sigue siendo simple, con campos de entrada claros y un botón destacado de "Sign Up" en la parte inferior para completar el proceso de registro.<br>
+<img src="images/mobile_applications_design/RegistroAventurero.png">
+
+- **Inicio:** Esta pantalla principal muestra una vista general de los locales disponibles y las publicaciones o actividades más populares. La interfaz es visualmente clara y organizada, con espacios amplios para mostrar imágenes o tarjetas de locales y actividades que el aventurero puede explorar.<br>
+<img src="images/mobile_applications_design/homeAventurero.png">
+
+- **Búsqueda de actividades:** En esta sección, se encuentra la barra de búsqueda. Una vez seleccione una actividad, el aventurero puede ver el nombre de la publicación o actividad, el nombre de la empresa o usuario emprendedor, y una imagen destacada. También se permite al usuario calificar y comentar sobre la actividad, lo que fomenta la interacción y retroalimentación.<br>
+<img src="images/mobile_applications_design/buscarAventurero.png">
+
+- **Mi cuenta:** En esta sección, el aventurero puede gestionar su perfil personal. La interfaz incluye un botón de "Guardar" para confirmar cualquier actualización de la información personal.<br>
+<img src="images/mobile_applications_design/miCuentaAventurero.png">
+
+<br>
+
+**Sección emprendedor**
+- **Registro e inicio de sesión:** Esta pantalla permite al usuario emprendedor registrarse en la aplicación. La interfaz es simple y clara, con un botón de "Registro" destacado en la parte inferior para completar el proceso de registro. Y si ya tiene una cuenta el botón de "Iniciar sesión".<br>
+<img src="images/mobile_applications_design/RegistroEmprendedor.png">
+
+- **Registro de comprobante:** Esta pantalla muestra la sección para que el emprendedor pueda subir el comprobante de pago de su suscripción.<br>
+<img src="images/mobile_applications_design/registrarComprobante.png">
+
+- **Inicio:** Una vez registrado, el usuario es llevado a la pantalla principal donde puede ver sus publicaciones o agregar una nueva actividad mediante un botón "Agregar actividad".<br>
+<img src="images/mobile_applications_design/homeEmprendedor.png">
+
+- **Estadísticas:** Esta pantalla muestra las estadísticas de las publicaciones más exitosas del usuario emprendedor. Se presentan en un formato visual sencillo con espacio para gráficos o datos relevantes sobre el rendimiento de las actividades publicadas.<br>
+<img src="images/mobile_applications_design/estadisticasEmprendedor.png">
+
+- **Mi cuenta:** En esta sección, el emprendedor puede gestionar su perfil personal y los detalles de su negocio, como el nombre del local, la localización, sector y correo electrónico. La interfaz incluye un botón de "Guardar" para confirmar cualquier actualización de la información personal. Además puede visualizar los beneficios de su plan de suscripción.<br>
+<img src="images/mobile_applications_design/miCuentaEmprendedor.png">
+
 
 ### 4.4.4. Mobile Applications User Flow Diagrams
 
 
 ## 4.5. Mobile Applications Prototyping
 ### 4.5.1. Android Mobile Applications Prototyping
+
+**Inicio - Emprendedor:** La pantalla de inicio para el usuario emprendedor ofrece una vista rápida de sus publicaciones actuales y un botón destacado "Agregar actividad". 
+**Inicio - Aventurero:** La página de inicio del aventurero es visualmente atractiva y funcional, presentando una lista de actividades recomendadas y populares basadas en la ubicación del usuario.
+
+### **Funcionalidades**
+
+**Sección Emprendedor**
+
+- **Ver Publicaciones:** Permite al emprendedor revisar todas las actividades que ha creado en la aplicación.
+- **Agregar Actividad:** Un botón claro y accesible para que los emprendedores añadan nuevas actividades o promociones.
+- **Editar/Eliminar Actividades:** Funcionalidades que permiten la edición rápida o eliminación de publicaciones ya creadas.
+- **Estadísticas de Actividades:** El emprendedor puede filtrar sus publicaciones por, más comentadas y mejor calificadas.
+
+**Sección Aventurero**
+
+- **Explorar Actividades:** Muestra una lista o tarjetas con actividades cercanas, destacando las más populares.
+- **Buscar Actividades:** El aventurero puede utilizar una barra de búsqueda para encontrar actividades específicas.
+- **Comentar y calificar:** El aventurero puede comentar en las actividades que desee y calificarlas.
+
+**Video de explicación del flujo:** <br>
+[https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing](https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing)
+
+
 ### 4.5.2. iOS Mobile Applications Prototyping
+
+**Inicio - Emprendedor:** La pantalla de inicio para el usuario emprendedor ofrece una vista rápida de sus publicaciones actuales y un botón destacado "Agregar actividad". 
+**Inicio - Aventurero:** La página de inicio del aventurero es visualmente atractiva y funcional, presentando una lista de actividades recomendadas y populares basadas en la ubicación del usuario.
+
+### **Funcionalidades**
+
+**Sección Emprendedor**
+
+- **Ver Publicaciones:** Permite al emprendedor revisar todas las actividades que ha creado en la aplicación.
+- **Agregar Actividad:** Un botón claro y accesible para que los emprendedores añadan nuevas actividades o promociones.
+- **Editar/Eliminar Actividades:** Funcionalidades que permiten la edición rápida o eliminación de publicaciones ya creadas.
+- **Estadísticas de Actividades:** El emprendedor puede filtrar sus publicaciones por, más comentadas y mejor calificadas.
+
+**Sección Aventurero**
+
+- **Explorar Actividades:** Muestra una lista o tarjetas con actividades cercanas, destacando las más populares.
+- **Buscar Actividades:** El aventurero puede utilizar una barra de búsqueda para encontrar actividades específicas.
+- **Comentar y calificar:** El aventurero puede comentar en las actividades que desee y calificarlas.
+
+**Video de explicación del flujo:** <br>
+[https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing](https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing)
 
 ## 4.6. Web Applications UX/UI Design
 ### 4.6.1. Web Applications Wireframes
+
 ### 4.6.2. Web Applications Wireflow Diagrams
 ### 4.6.3. Web Applications Mock-ups
 ### 4.6.4. Web Applications User Flow Diagrams
 
 ## 4.7. Web Applications Prototyping
+
+**Inicio - Emprendedor:** La pantalla de inicio para el usuario emprendedor ofrece una vista rápida de sus publicaciones actuales y un botón destacado "Agregar actividad". 
+**Inicio - Aventurero:** La página de inicio del aventurero es visualmente atractiva y funcional, presentando una lista de actividades recomendadas y populares basadas en la ubicación del usuario.
+
+### **Funcionalidades**
+
+**Sección Emprendedor**
+
+- **Ver Publicaciones:** Permite al emprendedor revisar todas las actividades que ha creado en la aplicación.
+- **Agregar Actividad:** Un botón claro y accesible para que los emprendedores añadan nuevas actividades o promociones.
+- **Editar/Eliminar Actividades:** Funcionalidades que permiten la edición rápida o eliminación de publicaciones ya creadas.
+- **Estadísticas de Actividades:** El emprendedor puede filtrar sus publicaciones por, más comentadas y mejor calificadas.
+
+**Sección Aventurero**
+
+- **Explorar Actividades:** Muestra una lista o tarjetas con actividades cercanas, destacando las más populares.
+- **Buscar Actividades:** El aventurero puede utilizar una barra de búsqueda para encontrar actividades específicas.
+- **Comentar y calificar:** El aventurero puede comentar en las actividades que desee y calificarlas.
+
+**Video de explicación del flujo:**<br>
+[https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing](https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing)
 
 ## 4.8. Domain-Driven Software Architecture  
 ### 4.8.1. Software Architecture Context Diagram  
@@ -771,3 +883,4 @@ Representa la relación entre un informe estadístico y los posts incluidos en �
 
 # Anexos  
 
+- **ANEXO C:**<br>[https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1)
