@@ -458,41 +458,61 @@ Tácticas:
 3.	Diferenciación: Resaltar la capacidad de sorprender y ofrecer experiencias únicas, a diferencia de otras apps que solo listan actividades estándar.
 
 ## 2.2. Entrevistas  
-### 2.2.1. Diseño de entrevistas  
-Para el segmento de Usuarios:
-1. Sobre la experiencia del usuario:
-   - ¿Cómo decides qué actividades realizar en tu tiempo libre?
-   - ¿Qué factores son más importantes al elegir una actividad espontánea?
-   - ¿Cómo influye la cercanía geográfica en tus decisiones de actividades?
-   - ¿Cómo prefieres recibir sugerencias para actividades? (Filtros, recomendaciones, etc.)
-   - ¿Qué tan seguido utilizas aplicaciones móviles para descubrir nuevas experiencias?
-2. Sobre la interacción con la app:
-   - ¿Qué funcionalidades te gustaría encontrar en una aplicación que sugiere actividades?
-   - ¿Cómo influye la personalización en tu decisión de usar una aplicación para explorar actividades?
-   - ¿Qué tan importante es para ti la simplicidad y facilidad de uso en una aplicación móvil?
-   - ¿Cuáles son las principales dificultades que enfrentas al utilizar apps para planificar actividades?
-   - ¿Qué tipo de notificaciones o recordatorios consideramos útiles para mejorar tu experiencia?
- 3. Sobre la disposición a pagar:
-   - ¿Qué características consideras valiosas para pagar por una suscripción en la app?
-   - ¿Qué tipo de beneficios adicionales te incentivarán a pagar por experiencias en una app de aventuras?
-   - ¿Cuánto estarías dispuesto a pagar por acceder a actividades personalizadas o exclusivas?
-     
-Para el segmento de Empresas Locales:
-1. Sobre la promoción del negocio:
-   - ¿Qué estrategias utilizas actualmente para promocionar tu negocio a nivel local?
-   - ¿Qué tan efectivas consideramos las redes sociales para atraer nuevos clientes?
-   - ¿Qué factores te motivarían a utilizar una aplicación para promocionar actividades o eventos de tu negocio?
-   - ¿Cómo evalúas la efectividad de las promociones y descuentos en tu negocio?
-2. Sobre la participación en la app:
-   - ¿Qué tipo de actividades o promociones te gustaría ofrecer a través de una aplicación de micro aventuras?
-   - ¿Qué esperas de una plataforma que conecte a usuarios con negocios locales?
-   - ¿Qué tan importante es la posibilidad de recibir feedback de los usuarios sobre tus actividades?
-   - ¿Cómo influiría en tu negocio poder ofrecer descuentos o promociones exclusivas a través de una app?
- 3. Sobre la satisfacción del cliente:
-   - ¿Qué tipo de experiencias te gustaría brindar para atraer a más clientes?
-   - ¿Cómo crees que una plataforma digital podría mejorar la interacción con tus clientes?
-   - ¿Qué tipo de recompensas o programas de lealtad estarías dispuesto a implementar para retener a clientes?
+
+### 2.2.1. Diseño de entrevistas
+
 ### 2.2.2. Registro de entrevistas  
+
+**Segmento de aventureros**
+1. 
+- **Entrevistado**: Salvador Diaz Aguirre
+- **Duración**: 2.50
+- **Resumen**: El entrevistado indicó que suele buscar actividades para realizar a través de redes sociales como Instagram y TikTok, especialmente cuando planea salir con amigos, lo cual ocurre al menos una vez por semana. Señaló que la simplicidad de la plataforma es un aspecto clave, ya que prefiere no invertir demasiado tiempo en planear qué hacer. Además, destacó la importancia de los comentarios y calificaciones de otros usuarios, ya que estos le permiten obtener diferentes perspectivas y tomar decisiones más informadas sobre las experiencias disponibles.
+- **Link**:<br>
+[https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing)
+<img src="images/interviews/aventurero_salvador.png"><br>
+
+2.  
+- **Entrevistado**: Diego Salinas
+- **Duración**: 3.03
+- **Resumen**: El entrevistado, un joven de 20 años de Callao, opina sobre la startup Aventura P, una plataforma donde empresas y emprendedores pueden crear y compartir actividades. Él la describe como un tipo de "Facebook de aventuras" donde los usuarios podrían buscar planes . En cuanto a sus propios intereses para encontrar nuevas actividades, menciona que le gustaría algo cercano, vinculado a la actividad física y los deportes extremos que le generen adrenalina, valorando especialmente la proximidad del lugar.
+
+- **Link**:<br>
+[https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/10eVCj7I82mNq8Ye0QHmL6lae7SKMdXty/view?usp=sharing)
+<img src="images/interviews/aventurero_diego.jpg"><br>
+
+3. 
+- **Entrevistado**: Sebastian Cachis
+- **Duración**: 4.24
+- **Resumen**: El entrevistado, Sebastián Nicolás Cachi González, de 20 años y residente del distrito de San Miguel, compartió que en su tiempo libre disfruta principalmente de salir, ya sea a caminar, pasear o realizar actividades como ir de compras, consumir servicios de entretenimiento o reunirse con amigos. Señaló que estaría abierto a hacer cosas nuevas si recibe una invitación o si se le presenta la oportunidad.
+- **Link**:<br>
+[https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/1auAbtxfxbmQmkZEBzCa8vFG4sR9X2c8P/view?usp=sharing)
+<img src="images/interviews/Entrevista_sebastian_cachis.jpg"><br>
+
+
+**Segmento de emprendedores**
+
+1.
+- **Entrevistado**: Fabián Castro Lujan-Ripoll
+- **Duración**: 4.16
+- **Resumen**: El entrevistado indicó que actualmente utiliza anuncios en Facebook e Instagram como parte de su estrategia de marketing, destacando que las redes sociales son fundamentales para la visibilidad de su emprendimiento. Además, expresó interés en contar con una plataforma que le permita ajustar su estrategia de marketing mediante la realización de eventos. Finalmente, mencionó que los comentarios y calificaciones de los usuarios generarían mayor confianza en las personas para asistir a los eventos que organiza.
+- **Link**: [https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing](https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing)
+<img src="images/interviews/emprendedor_fabian.png"><br>
+
+2.
+**Entrevistado**:
+**Duración**:
+**Resumen**:
+**Link**:
+
+
+3.
+**Entrevistado**:
+**Duración**:
+**Resumen**:
+**Link**:
+
+
 ### 2.2.3. Análisis de entrevistas  
 
 ## 2.3. Needfinding  
