@@ -267,46 +267,47 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 **Segmento de aventureros**
 1. 
-- Entrevistado: 
-- Duración: 
-- Resumen:
-- Link:
+- **Entrevistado**: Salvador Diaz Aguirre
+- **Duración**: 2.50
+- **Resumen**: El entrevistado indicó que suele buscar actividades para realizar a través de redes sociales como Instagram y TikTok, especialmente cuando planea salir con amigos, lo cual ocurre al menos una vez por semana. Señaló que la simplicidad de la plataforma es un aspecto clave, ya que prefiere no invertir demasiado tiempo en planear qué hacer. Además, destacó la importancia de los comentarios y calificaciones de otros usuarios, ya que estos le permiten obtener diferentes perspectivas y tomar decisiones más informadas sobre las experiencias disponibles.
+- **Link**:<br>
+[https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing)
+<img src="images/interviews/aventurero_salvador.png"><br>
 
 2.  
-- Entrevistado: 
-- Duración: 
-- Resumen:
-- Link:
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
 
 3. 
-- Entrevistado:
-- Duración:
-- Resumen:
-- Link:
+- **Entrevistado**:
+- **Duración**:
+- **Resumen**:
+- **Link**:
 
 
 **Segmento de emprendedores**
 
 1.
-- Entrevistado: Fabián Castro Lujan-Ripoll
-- Duración: 4.16
-- Resumen: El entrevistado indicó que actualmente utiliza anuncios en Facebook e Instagram como parte de su estrategia de marketing, destacando que las redes sociales son fundamentales para la visibilidad de su emprendimiento. Además, expresó interés en contar con una plataforma que le permita ajustar su estrategia de marketing mediante la realización de eventos. Finalmente, mencionó que los comentarios y calificaciones de los usuarios generarían mayor confianza en las personas para asistir a los eventos que organiza.
-- Link: [https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing](https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing)
-
+- **Entrevistado**: Fabián Castro Lujan-Ripoll
+- **Duración**: 4.16
+- **Resumen**: El entrevistado indicó que actualmente utiliza anuncios en Facebook e Instagram como parte de su estrategia de marketing, destacando que las redes sociales son fundamentales para la visibilidad de su emprendimiento. Además, expresó interés en contar con una plataforma que le permita ajustar su estrategia de marketing mediante la realización de eventos. Finalmente, mencionó que los comentarios y calificaciones de los usuarios generarían mayor confianza en las personas para asistir a los eventos que organiza.
+- **Link**: [https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing](https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing)
 <img src="images/interviews/emprendedor_fabian.png"><br>
 
 2.
-Entrevistado:
-Duración:
-Resumen:
-Link:
+**Entrevistado**:
+**Duración**:
+**Resumen**:
+**Link**:
 
 
 3.
-Entrevistado:
-Duración:
-Resumen:
-Link:
+**Entrevistado**:
+**Duración**:
+**Resumen**:
+**Link**:
 
 
 ### 2.2.3. Análisis de entrevistas  
