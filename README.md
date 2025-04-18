@@ -439,24 +439,24 @@ Este análisis proporciona una visión detallada del panorama competitivo, desta
 || Amenazas| Competencia de apps de planificación tradicionales (ej. Google Things to Do).|Competencia de plataformas de redes sociales y eventos gratuitos.| Competencia de nuevas plataformas locales con enfoques similares. | Competencia de revendedores de entradas y plataformas de tickets oficiales.  | Cambios en las tendencias de consumo de eventos. |               
 
 ### 2.1.2. Estrategias y tácticas frente a competidores  
-Fortalezas de la App:
-•	Personalización en tiempo real basada en la ubicación y preferencias.
-•	Sorpresa y novedad como valor diferencial.
-•	Colaboración con negocios locales para ofertas y descuentos exclusivos.
-Debilidades a Superar:
-•	Dependencia de la participación activa de empresas locales.
-•	Necesidad de construir una base de usuarios que confíen en la app para experiencias espontáneas.
-Oportunidades:
-•	Aumento en la demanda de experiencias locales y únicas.
-•	Creciente interés en actividades que no requieren planificación.
-Amenazas:
-•	Competencia de otras apps que ofrecen servicios similares pero con un enfoque diferente.
-•	Cambios en las restricciones locales que pueden afectar la disponibilidad de ciertas actividades.
-Tácticas:
-1.	Alianzas estratégicas: Establecer relaciones con empresas locales para asegurar contenido exclusivo y descuentos.
-2.	Marketing dirigido: Enfocar campañas en redes sociales y anuncios en áreas urbanas con alta densidad de usuarios.
-3.	Diferenciación: Resaltar la capacidad de sorprender y ofrecer experiencias únicas, a diferencia de otras apps que solo listan actividades estándar.
-
+Fortalezas de la App:  
+•	Personalización en tiempo real basada en la ubicación y preferencias.  
+•	Sorpresa y novedad como valor diferencial.  
+•	Colaboración con negocios locales para ofertas y descuentos exclusivos.  
+Debilidades a Superar:  
+•	Dependencia de la participación activa de empresas locales.  
+•	Necesidad de construir una base de usuarios que confíen en la app para experiencias espontáneas.  
+Oportunidades:  
+•	Aumento en la demanda de experiencias locales y únicas.  
+•	Creciente interés en actividades que no requieren planificación.  
+Amenazas:  
+•	Competencia de otras apps que ofrecen servicios similares pero con un enfoque diferente.  
+•	Cambios en las restricciones locales que pueden afectar la disponibilidad de ciertas actividades.  
+Tácticas:  
+1.	Alianzas estratégicas: Establecer relaciones con empresas locales para asegurar contenido exclusivo y descuentos.  
+2.	Marketing dirigido: Enfocar campañas en redes sociales y anuncios en áreas urbanas con alta densidad de usuarios.  
+3.	Diferenciación: Resaltar la capacidad de sorprender y ofrecer experiencias únicas, a diferencia de otras apps que solo listan actividades estándar.  
+  
 ## 2.2. Entrevistas  
 
 ### 2.2.1. Diseño de entrevistas
