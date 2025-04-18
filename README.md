@@ -275,10 +275,13 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 <img src="images/interviews/aventurero_salvador.png"><br>
 
 2.  
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**:
-- **Link**:
+- **Entrevistado**: Diego Salinas
+- **Duración**: 3.03
+- **Resumen**: El entrevistado, un joven de 20 años de Callao, opina sobre la startup Aventura P, una plataforma donde empresas y emprendedores pueden crear y compartir actividades. Él la describe como un tipo de "Facebook de aventuras" donde los usuarios podrían buscar planes . En cuanto a sus propios intereses para encontrar nuevas actividades, menciona que le gustaría algo cercano, vinculado a la actividad física y los deportes extremos que le generen adrenalina, valorando especialmente la proximidad del lugar.
+
+- **Link**:<br>
+[https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/10eVCj7I82mNq8Ye0QHmL6lae7SKMdXty/view?usp=sharing)
+<img src="images/interviews/aventurero_diego.jpg"><br>
 
 3. 
 - **Entrevistado**:
