@@ -284,10 +284,12 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 <img src="images/interviews/aventurero_diego.jpg"><br>
 
 3. 
-- **Entrevistado**:
-- **Duración**:
-- **Resumen**:
-- **Link**:
+- **Entrevistado**: Sebastian Cachis
+- **Duración**: 4.24
+- **Resumen**: El entrevistado, Sebastián Nicolás Cachi González, de 20 años y residente del distrito de San Miguel, compartió que en su tiempo libre disfruta principalmente de salir, ya sea a caminar, pasear o realizar actividades como ir de compras, consumir servicios de entretenimiento o reunirse con amigos. Señaló que estaría abierto a hacer cosas nuevas si recibe una invitación o si se le presenta la oportunidad.
+- **Link**:<br>
+[https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/1auAbtxfxbmQmkZEBzCa8vFG4sR9X2c8P/view?usp=sharing)
+<img src="images/interviews/Entrevista_sebastian_cachis.jpg"><br>
 
 
 **Segmento de emprendedores**
