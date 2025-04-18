@@ -16,10 +16,10 @@
 
 | Member                              |    Code    |
 | :---------------------------------- | :--------: |
-| Jose Eduardo Gutierrez Garcia       | u202221518 |
-| Cama Salvatierra, Jimena Tamara     | u202210778 |
-| Castillo Castillo, Jair Alexander   | u202211390 |
-| Estefano Oscar Jaque Peña           | u202225466 |
+| Cama Salvatierra, Jimena Tamara     | u202221518 |
+| Castillo Castillo, Jair Alexander   | u202210778 |
+| Gutierrez Garcia, Jose Eduardo      | u202211390 |
+| Jaque Peña, Estefano Oscar          | u202225466 |
 | Quezada Portalatino, Barbara Susana | u202211800 |
 
 </div>
@@ -55,6 +55,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 </table>
 
 # Contenido
+- [**Student Outcome**](#student-outcome)
 
 ## [Capítulo I: Introducción](#capítulo-i-introducción)
 - [1.1. Startup Profile](#11-startup-profile)
@@ -234,34 +235,231 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 ## [Bibliografía](#bibliografía)
 ## [Anexos](#anexos)
 
+# Student Outcome
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|----|----|----|
+|4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software.| **Cama Salvatierra, Jimena Tamara**<br>*TB1*<br> TEXTO<br>**Castillo Castillo, Jair Alexander**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br> TEXTO <br> **Jaque Peña, Estefano Oscar**<br>*TB1*<br> TEXTO <br>**Quezada Portalatino, Barbara Susana**<br>*TB1*<br>TEXTO| TB1:<br> TEXTO.|
+
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+|----|----|----|
+|4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales| **Cama Salvatierra, Jimena Tamara**<br>*TB1*<br> TEXTO<br>**Castillo Castillo, Jair Alexander**<br>*TB1*<br> TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br>TEXTO <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*<br> TEXTO <br> **Jaque Peña, Estefano Oscar**<br>*TB1*<br> TEXTO <br>**Quezada Portalatino, Barbara Susana**<br>*TB1*<br>TEXTO| TB1:<br> TEXTO.|
+
 
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
-
 ### 1.1.1. Descripción de la Startup  
+
+"AventuraPe" es una innovadora aplicación móvil diseñada para revolucionar la forma en que las personas descubren y disfrutan experiencias únicas y emocionantes en su entorno cotidiano. Nuestra aplicación móvil ofrece micro aventuras personalizadas que se adaptan a las preferencias individuales y grupales, eliminando la necesidad de una planificación exhaustiva o inversiones significativas de tiempo y recursos. En un mundo donde la rutina y la monotonía pueden opacar el sentido de exploración y diversión, AventuraPe surge como una solución integral que conecta a los usuarios con actividades y experiencias locales únicas. Utilizando tecnología avanzada de geolocalización y un diseño centrado en el usuario, facilitamos el acceso a una amplia gama de opciones de entretenimiento que fomentan la espontaneidad y el descubrimiento constante.
+
+Nuestro enfoque se fundamenta en tres pilares esenciales: Optimización de tiempo, comodidad y conexión con la comunidad local. A través de AventuraPe, redefinimos la experiencia de entretenimiento y exploración, brindando a las personas la oportunidad de enriquecer sus vidas cotidianas con momentos memorables y significativos, mientras impulsamos el crecimiento y la visibilidad de negocios locales que ofrecen propuestas únicas y valiosas.
+
+- **Misión:** Empoderar a las personas para que descubran y vivan experiencias únicas y enriquecedoras en su entorno cotidiano, facilitando el acceso a micro aventuras personalizadas que fomenten la exploración, la diversión y la conexión con la comunidad local. Buscamos ser el puente que une a los usuarios con oportunidades de entretenimiento auténticas, promoviendo la espontaneidad y la alegría en la vida diaria.
+
+- **Visión:** Aspiramos a ser la aplicación móvil líder a nivel nacional en la promoción y facilitación de experiencias locales únicas, transformando la manera en que las personas interactúan con su entorno y contribuyendo al desarrollo sostenible de comunidades vibrantes y conectadas.
+
+
 ### 1.1.2. Perfiles de integrantes del equipo  
+
+|Photo|Description|
+|:------------------------------------------------: | :-------------------------: |
+| ![Jimena](./assets/chapter01/Jimenapfp.png) |                                                                         Mi Nombre es , Jimena Cama.  |
+| ![Jair](./assets/chapter01/Jairpfp.png)  | Mi nombre , Jair Castillo                                                                        |
+| ![Jose](./assets/chapter01/Josepfp.png)  | Mi nombre es Jose Gutierrez, tengo 20 años, actualmente me encuentro cruzando mi 7mo ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable. |
+|  ![Estefano](./assets/chapter01/Estefanopfp.png)  |  Mi nombre es Estefano Jaque. 
+|![Barbara](./assets/chapter01/Barbarapfp.png) | Mi nombre es Barbara Quezada. 
+|    |
 
 ## 1.2. Solution Profile
 
-### 1.2.1. Antecedentes y problemática  
+### 1.2.1. Antecedentes y problemática
+
+Antecedentes: En la era actual, las personas buscan constantemente nuevas formas de entretenimiento que no requieran una planificación extensa ni grandes inversiones de tiempo. Las aplicaciones móviles han facilitado la exploración de experiencias locales, pero a menudo están orientadas hacia un público que prefiere planificar con antelación o que busca actividades más tradicionales.
+Problemática: Existe un vacío en el mercado para aquellos usuarios que desean experiencias espontáneas y únicas, ajustadas a su disponibilidad de tiempo. Muchas aplicaciones actuales no ofrecen suficiente personalización o sorpresas en sus recomendaciones, lo que lleva a una experiencia monótona y predecible. Además, los negocios locales no siempre tienen una plataforma eficiente para atraer a estos usuarios espontáneos y promocionar sus servicios de manera innovadora y atractiva.
+
+#### Uso de la técnica The 5'W's w Y 2'H's
+
+| LAS 5W y 2H | Pregunta   | Descripción    |
+| ----------- | ------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| What?        | ¿Cuál es el problema?                                     | Muchas personas desean vivir experiencias nuevas y emocionantes sin necesidad de planear mucho, pero actualmente no existen aplicaciones que ofrezcan micro aventuras espontáneas, personalizadas y accesibles en su entorno local. Las plataformas disponibles son rígidas, repetitivas y no fomentan la sorpresa ni el descubrimiento. Además, los negocios locales no tienen canales efectivos para atraer a este tipo de público espontáneo.                                                                                                                  |
+| When?       | ¿Cuándo sucede el problema?                                   | El problema ocurre en momentos libres no planificados, como fines de semana, tardes libres, pausas del trabajo o incluso durante viajes cortos, cuando las personas desean hacer algo diferente pero no saben qué ni dónde.                                                                                                                                                                                                            |
+| Where?       | ¿Dónde sucede el problema?                             | En áreas urbanas y semiurbanas, especialmente en ciudades donde hay muchas opciones de entretenimiento, pero poca visibilidad sobre experiencias originales, poco convencionales o fuera del circuito turístico/comercial habitual.                                                                                                                                            |
+| Why?      | ¿Por qué sucede el problema?                               | Porque las aplicaciones actuales están orientadas a planes estructurados, no aprovechan la espontaneidad ni se adaptan de forma dinámica al tiempo libre real de las personas. Tampoco brindan una experiencia gamificada o personalizada que invite a explorar lo inesperado en el entorno cercano.                                                                                                                                                                                        |
+| Who?        | ¿Qué llevara a las personas a usar nuestro producto?                         | Personas jóvenes, adultos y grupos de amigos que buscan aventuras rápidas, originales y sin complicaciones. También empresas locales que quieren atraer a este tipo de público con propuestas únicas y divertidas. Los usuarios valorarán la personalización, la facilidad de uso, la sorpresa y la posibilidad de compartir sus aventuras. 
+| How?        | ¿En qué condiciones los clientes usaran nuestro producto?     | Los usuarios abrirán la app cuando tengan tiempo libre y quieran hacer algo diferente, sin necesidad de investigar o planear. Usarán AventuraPe para descubrir en tiempo real qué pueden hacer cerca según sus preferencias, el clima, su presupuesto o el tiempo disponible. 
+| How Much?   | ¿Con qué frecuencia o en qué cantidad se utilizará nuestro producto? |  La app puede ser usada varias veces por semana, especialmente en momentos de ocio o fines de semana. La frecuencia dependerá de la variedad y frescura de las recomendaciones. Se espera una alta recurrencia si se incluye un sistema de recompensas, gamificación o retos por zonas exploradas.
+|
+
+
 ### 1.2.2. Lean UX Process  
-#### 1.2.2.1. Lean UX Problem Statements  
+#### 1.2.2.1. Lean UX Problem Statements 
+
+En la vida moderna, muchas personas se sienten atrapadas en la rutina diaria y buscan activamente experiencias nuevas y emocionantes para revitalizar su día a día. Sin embargo, a menudo se encuentran con el obstáculo de la falta de tiempo, energía, o motivación para planificar actividades que requieren organización previa. Al mismo tiempo, las empresas locales, especialmente las pequeñas y medianas, enfrentan una fuerte competencia en un mercado saturado y luchan por atraer nuevos clientes, así como por diferenciarse de otras ofertas disponibles en su área.
+
+Como resultado de estas barreras, muchas personas permanecen ajenas a las numerosas oportunidades de aventura y experiencias únicas que existen en su propio entorno, perdiéndose la posibilidad de disfrutar de lo que está a su alcance sin una planificación extensa. Paralelamente, las empresas locales, que podrían beneficiarse significativamente de atraer a estos usuarios, no logran conectar de manera efectiva con ellos, lo que limita su capacidad de destacarse y crecer en un mercado altamente competitivo.
+
+Nuestra app, AventuraPe, surge como una solución integral que facilita tanto el descubrimiento como la participación en micro aventuras cercanas, personalizadas y accesibles para los usuarios. Además, proporciona a las empresas locales una plataforma eficiente para ofrecer experiencias únicas, promociones exclusivas, y atraer a clientes que buscan actividades novedosas y diferentes en su entorno inmediato. A través de una interfaz amigable y herramientas de geolocalización, AventuraPe conecta a las personas con las aventuras disponibles cerca de ellos, al mismo tiempo que permite a las empresas locales destacar y captar nuevos clientes.
+¿Cómo podemos crear una aplicación móvil que, mediante una integración eficaz de funcionalidades y un enfoque centrado en la experiencia del usuario, permita a las personas descubrir y disfrutar fácilmente de micro aventuras personalizadas en su entorno, al mismo tiempo que ayuda a las empresas locales a atraer nuevos clientes, diferenciarse en el mercado, y ofrecer experiencias auténticas y diferenciadas?
+
+
 #### 1.2.2.2. Lean UX Assumptions  
+
+ <u>**Business Assumptions:**</u>
+1.	Creo que nuestros clientes tienen la necesidad de descubrir y participar en microaventuras locales espontáneas.
+2.	Estas necesidades se pueden resolver con una aplicación móvil que ofrezca sugerencias de actividades personalizadas basadas en la ubicación y otros filtros.
+3.	Nuestros clientes iniciales son adultos jóvenes y grupos de amigos que buscan experiencias divertidas.
+4.	El valor n.° 1 que un cliente quiere obtener de nuestro servicio es un acceso fácil a experiencias locales únicas sin una planificación extensa.
+5.	El cliente también puede obtener estos beneficios adicionales: conexiones sociales, promociones especiales, descubrimiento de negocios locales y espontaneidad en su rutina.
+6.	Adquiriremos la mayoría de nuestros clientes a través del marketing en redes sociales y asociaciones con empresas locales.
+7.	Ganaremos dinero cobrando por comisión de 
+8.	Nuestra principal competencia en el mercado serán las aplicaciones de aventuras tradicionales y las plataformas de listados de eventos locales.
+9.	Los superaremos gracias a nuestro enfoque único en micro aventuras y descuentos por colaboración.
+10.	El mayor riesgo de nuestro servicio es que los usuarios no confíen en las sugerencias de aventuras aleatorias o las utilicen.
+11.	Resolveremos esto mediante un sistema de calificación sólido, agregando comentarios y rating que los mismos usuarios pueden hacer en la aplicación.
+12.	¿Qué otras suposiciones tenemos que, si se demuestra que son falsas, harán que nuestro negocio/proyecto fracase? Si las empresas locales no interactúan con la plataforma para ofrecer experiencias, o, si los usuarios o comentan/califican las aventuras de cada local.
+
+ <u>**User assumptions:**</u>
+1.	¿Quién es el usuario? Adultos jóvenes y grupos de amigos de entre 18 y 45 años que buscan nuevas experiencias.
+2.	¿Dónde encaja nuestro producto en su trabajo o vida? Como herramienta para la toma de decisiones espontáneas y para romper con la rutina.
+3.	¿Qué problemas resuelve nuestro producto? La falta de ideas para actividades, la planificación que requiere mucho tiempo y el deseo de vivir nuevas experiencias.
+4.	¿Cuándo y cómo se utiliza nuestro producto? En movimiento, cuando los usuarios tienen tiempo libre y buscan algo que hacer.
+5.	¿Qué características son importantes? Filtros personalizados, sugerencias basadas en la geolocalización y el botón "Sorpréndeme".
+6.	¿Cómo debería verse y comportarse nuestro producto? Intuitivo, visualmente atractivo, con acceso rápido a sugerencias de aventuras.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements  
+
+Creemos que los usuarios desean microaventuras locales espontáneas sin una planificación exhaustiva. Sabremos que tenemos razón cuando veamos una tasa de participación del 40 % con la función "Sorpréndeme" dentro del primer mes de lanzamiento o comentarios positivos de los usuarios que citen la facilidad para encontrar actividades como un beneficio clave.
+Creemos que las empresas locales participarán activamente en la publicación de actividades en nuestra plataforma. Sabremos que tenemos razón cuando veamos que al menos 100 empresas se registran y publican actividades dentro de los primeros tres meses.
+Creemos que las sugerencias de actividades personalizadas basadas en la ubicación generarán una mayor satisfacción del usuario. Sabremos que tenemos razón cuando veamos una calificación promedio de los usuarios de 4,5/5 estrellas para las actividades sugeridas.
+Creemos que nuestra aplicación ayudará a las empresas locales a aumentar su base de clientes. Sabremos que estamos en lo cierto cuando veamos que las empresas participantes informan un aumento del 15 % en nuevos clientes atribuidos a nuestra aplicación en los primeros seis meses o testimonios positivos de los propietarios de empresas sobre el impacto de nuestra plataforma.
+
+
 #### 1.2.2.4. Lean UX Canvas  
 
-## 1.3. Segmentos objetivo  
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <td><strong>Lean UX Canvas</strong></td>
+        <td><strong>Fecha:</strong> 14/04/2025</td>
+        <td><strong>Primera Iteración</strong></td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Business Problem</strong><br>
+             - A las personas les cuesta encontrar y participar en actividades locales espontáneas.<br>
+             - Las empresas locales tienen dificultades para atraer nuevos clientes.<br>
+             - Las soluciones existentes no se adaptan a las microaventuras ni a la planificación espontánea.
+        </td>
+        <td>
+            <strong>Solutions</strong><br>
+            - Aplicación móvil con sugerencias de actividades basadas en la geolocalización.<br>
+            - Filtros personalizados (tipo, duración, costo).<br>
+            - Botón "Sorpréndeme" para aventuras aleatorias.<br>
+            - Plataforma para que las empresas publiquen actividades.<br>
+            - Sistema de calificación y comentarios de usuarios.
+        </td>
+        <td>
+            <strong>Business Outcomes</strong><br>
+            - Aumentar la participación de los usuarios en las actividades locales.<br>
+            - Impulsar la visibilidad de las empresas locales y la base de clientes.<br>
+            - Lograr altos índices de retención y satisfacción de los usuarios.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Users</strong><br>
+            - Adultos jóvenes (18-45) que buscan nuevas experiencias.<br>
+            - Grupos de amigos que buscan actividades compartidas.<br>
+            - Empresas locales que ofrecen actividades o experiencias.<br>
+        </td>
+        <td>
+            <strong>Hypotheses</strong><br>
+            - Los usuarios desean microaventuras locales espontáneas sin una planificación extensa.<br>
+            - Las empresas locales participarán activamente en la publicación de actividades. <br>
+            - Las sugerencias personalizadas basadas en la ubicación generarán una mayor satisfacción del usuario <br>
+        </td>
+        <td>
+            <strong>User Outcomes & Benefits</strong><br>
+            - Mayor espontaneidad y novedad en la vida diaria. <br>
+            - Conexión social a través de experiencias compartidas.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>What's the most important thing we need to learn first?</strong><br>
+            - Validar la demanda de microaventuras locales espontáneas.<br>
+            - Confirmar la voluntad de las empresas locales de participar.
+        </td>
+        <td colspan="2">
+            <strong>What's the least amount of work we need to do to learn the next most important?</strong><br>
+            - Realizar entrevistas y encuestas a usuarios potenciales y empresas locales. <br>
+            - Desarrollar un prototipo de baja fidelidad para pruebas de usuario.
+        </td>
+    </tr>
+</table>
+
+## 1.3. Segmentos objetivo 
+
+Para realizar un análisis concreto sobre los segmentos objetivo de AventuraPe, es importante profundizar en las características de cada grupo:
+
+1.	**Empresas Locales** <br>
+
+a.	*Descripción:* <br> Las empresas locales son negocios que buscan atraer a una audiencia más amplia y diversa mediante la promoción de sus servicios y la oferta de experiencias únicas a través de la aplicación móvil AventuraPe. Estas empresas se benefician de la visibilidad que les proporciona la app, ayudándolas a destacar frente a la competencia y a conectar con una comunidad más amplia. <br> <br>
+b.	*Características demográficas:* <br>
+Principalmente ubicadas en áreas urbanas, suburbanas y zonas turísticas que reciben un flujo constante de residentes y visitantes. Entre ellas pueden ser los cafés, restaurantes, tiendas de artesanía y centros de entretenimiento. <br><br>
+
+2.	**Usuarios** <br>
+
+a.	*Descripción:* <br> Los usuarios de AventuraPe son personas y grupos que buscan enriquecer su tiempo libre con experiencias diferentes y emocionantes, sin la necesidad de una planificación compleja. Son individuos interesados en explorar su entorno de manera espontánea y descubrir nuevas actividades que se ajusten a sus intereses y horarios. <br><br>
+b.	*Características demográficas:* <br> Principalmente jóvenes adultos entre 18 y 35 años, aunque también incluye a adultos de mediana edad que buscan nuevas formas de entretenimiento. <br>
+
 
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores  
 ### 2.1.1. Análisis competitivo  
+Este análisis proporciona una visión detallada del panorama competitivo, destacando las áreas clave donde AventuraPe puede diferenciarse y ofrecer un valor único a sus clientes. 
+
+
+
+|**Competitive analysis Landscape** |||||||
+| - | :- | :- | :- | :- | :- |:-|
+|¿Por qué llevar a cabo este análisis? |Permite a AventuraPe entender mejor el mercado en el que opera, identificar las fortalezas y debilidades de sus competidores, y desarrollar estrategias que permitan diferenciarse y ofrecer un valor superior a los clientes. |||||
+|||<p> AventuraPe </p><p>![](assets/images/0020.png)</p>|<p>Eventbrite </p><p>![](assets/images/001.png)</p>|<p>All Events in City </p><p>![](assets/images/002.png)</p>|<p>TickPick </p><p>![](assets/images/003.png)</p>|<p>Meetup </p><p>![](assets/images/004.png)</p>||
+|Perfil |Overview |App de microaventuras espontáneas y personalizadas, conectando usuarios con experiencias locales únicas.|Una plataform a global que permite a los organizad ores de eventos planificar, promocionar y vender entradas para sus eventos, así como gestionar la asistencia. |Una plataforma que ayuda a los usuarios a descubrir eventos en su ciudad, ofreciendo una amplia lista de actividades que incluyen conciertos, talleres, festivales y más.|<p>Un mercado en línea para la compra y venta de entradas a eventos deportivos, conciertos y otros espectáculos. TickPick se distingue por no cobrar tarifas adicionales a los comprador es.</p>|Una plataform a que conecta a personas con intereses similares a través de eventos y reuniones en persona. |
+||Ventaja competitiva</p><p> ¿Qué valor ofrece a los clientes? |Enfoque en espontaneidad, gamificación, y conexión con negocios locales mediante experiencias personalizadas.|Amplia cobertura de eventos, herramien tas robustas para organizad ores, y una plataform a global reconocid a que facilita la promoció n y venta de entradas.|Proporciona una guía completa de eventos locales, permitiendo a los usuarios explorar y participar en actividades cerca de ellos sin necesidad de una planificación extensa. |Ofrece una experiencia de compra transparent e sin tarifas ocultas, lo que atrae a comprador es de entradas que buscan evitar costos adicionales. |Facilita la creación y participac ión en comunida des locales basadas en intereses comunes, fomentan do la interacció n y las conexion es personale s. </td></tr>
+|Perfil de marketing|Mercado Objetivo |Jóvenes adultos (18-45 años) y grupos que buscan experiencias rápidas, únicas y sin planificación.|Organizadores de eventos de todos los tamaños, desde pequeñas reuniones hasta grandes conferencias y festivales.|Residentes urbanos y turistas que desean descubrir y participar en eventos y actividades locales.|Aficionados a los deportes, la música y el entretenimiento en vivo que buscan entradas a eventos sin cargos adicionales.|Personas que buscan conectar con otros que comparten intereses similares.|
+||Estrategias de marketing|Alianzas con negocios locales, marketing en redes sociales (ej. TikTok/Instagram) y gamificación (recompensas por explorar).Alianzas con negocios locales, marketing en redes sociales (ej. TikTok/Instagram) y gamificación (recompensas por explorar).|Enfocada en la colaboración con organizadores de eventos y asociaciones con plataformas de redes sociales|Utiliza SEO local (Optimización para Motores de Búsqueda) y publicidad en redes sociales para atraer a usuarios que buscan actividades en su área.|Se apoya en campañas de marketing digital dirigidas a fanáticos de eventos en vivo.|Se basa en la creación de contenido generado por usuarios y el boca a boca, aprovechando la viralidad de las comunidades.|
+|Perfil del producto	|Productos & Servicios	|Microaventuras personalizadas, filtros por tiempo/presupuesto, botón "Sorpréndeme", y sistema de rating para negocios.|Venta de entradas y herramientas de marketing.| 	Listado de eventos locales, recomendaciones personalizadas, y herramientas para descubrir nuevas actividades.|	Plataforma de compra y venta de entradas con precios transparentes, comparaciones de precios.|	Gestión de eventos y comunidad online.|
+|| Canales de distribución <br>(Web y/o Móvil)                   |Web y app móvil (iOS y Android).| Web y app móvil (iOS y Android).|Web y app móvil (iOS y Android).|Web y app móvil (iOS y Android).|Web y app móvil (iOS y Android).|
+| Análisis SWOT| Fortalezas|Diferenciación con experiencias espontáneas, gamificación y apoyo a negocios locales.|Amplia presencia global, herramientas completas para organizadores.	|Enfoque local, cobertura amplia de eventos.	|Precios transparentes, sin cargos adicionales.|	Red activa de comunidades, alta interacción entre usuarios.|
+|| Debilidades|Dependencia de la participación activa de negocios locales y adopción inicial de usuarios.| Dependencia de grandes eventos para ingresos significativos.|	Limitada capacidad de atracción para eventos masivos.|	Menor visibilidad frente a competidores más grandes.|	Competencia con redes sociales para la creación de comunidades.|
+|| Oportunidades|Crecimiento de la demanda por experiencias "quick & unique" y alianzas con municipios para promoción.| Expansión a nuevos mercados, colaboración con grandes eventos| Mayor enfoque en el turismo local y las experiencias personalizadas.| Aumento de la demanda para eventos en vivo post-pandemia.| Crecimiento en eventos virtuales.|
+|| Amenazas| Competencia de apps de planificación tradicionales (ej. Google Things to Do).|Competencia de plataformas de redes sociales y eventos gratuitos.| Competencia de nuevas plataformas locales con enfoques similares. | Competencia de revendedores de entradas y plataformas de tickets oficiales.  | Cambios en las tendencias de consumo de eventos. |               
+
 ### 2.1.2. Estrategias y tácticas frente a competidores  
+Fortalezas de la App:
+•	Personalización en tiempo real basada en la ubicación y preferencias.
+•	Sorpresa y novedad como valor diferencial.
+•	Colaboración con negocios locales para ofertas y descuentos exclusivos.
+Debilidades a Superar:
+•	Dependencia de la participación activa de empresas locales.
+•	Necesidad de construir una base de usuarios que confíen en la app para experiencias espontáneas.
+Oportunidades:
+•	Aumento en la demanda de experiencias locales y únicas.
+•	Creciente interés en actividades que no requieren planificación.
+Amenazas:
+•	Competencia de otras apps que ofrecen servicios similares pero con un enfoque diferente.
+•	Cambios en las restricciones locales que pueden afectar la disponibilidad de ciertas actividades.
+Tácticas:
+1.	Alianzas estratégicas: Establecer relaciones con empresas locales para asegurar contenido exclusivo y descuentos.
+2.	Marketing dirigido: Enfocar campañas en redes sociales y anuncios en áreas urbanas con alta densidad de usuarios.
+3.	Diferenciación: Resaltar la capacidad de sorprender y ofrecer experiencias únicas, a diferencia de otras apps que solo listan actividades estándar.
 
 ## 2.2. Entrevistas  
-### 2.2.1. Diseño de entrevistas
 
+### 2.2.1. Diseño de entrevistas
 
 ### 2.2.2. Registro de entrevistas  
 
@@ -319,13 +517,110 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 ## 2.3. Needfinding  
 ### 2.3.1. User Personas  
+
+Para el desarrollo de AventuraPe, es esencial entender a nuestros usuarios y clientes, y así crear una experiencia que realmente cubra sus necesidades. Hemos identificado dos grupos clave: los usuarios que buscan aventuras espontáneas y las empresas locales que desean atraer a estos usuarios. A continuación, presentamos un perfil detallado de un ***user persona*** para cada grupo, describiendo sus datos demográficos, motivaciones, frustraciones y objetivos. Estos perfiles nos ayudarán a tomar decisiones informadas en el diseño y desarrollo de la aplicación, garantizando que AventuraPe cumpla con las expectativas y deseos de nuestros usuarios y clientes. 
+
+User persona de los clientes:** 
+
+![](assets/images/011.png)
+
+User persona de los dueños de pequeños emprendimientos: 
+
+![](assets/images/012.png)  
+
 ### 2.3.2. User Task Matrix  
+
+Segmento Usuarios: 
+
+
+
+|Tarea |Frecuencia |Severidad |
+| - | - | - |
+|Buscar microaventuras cerca de su ubicación |Alta |Media |
+|Usar la función "Sorpréndeme" para actividades aleatorias |Media |Media |
+|Filtrar actividades por tipo, duración, o costo |Alta |Alta |
+|Guardar actividades como favoritas para futuras referencias |Media |Media |
+|Compartir experiencias en redes sociales |Media |Alta |
+|Calificar y comentar sobre las aventuras realizadas |Baja |Media |
+|Recibir notificaciones de nuevas actividades disponibles |Media |Alta |
+
+Segmento Empresas Locales: 
+
+
+
+|Tarea |Frecuencia |Severidad |
+| - | - | - |
+|Publicar nuevas experiencias o actividades en la aplicación |Alta |Alta |
+|Actualizar la información de sus actividades |Media |Media |
+|Revisar estadísticas de participación y feedback de usuarios |Media |Alta |
+|Ofrecer promociones exclusivas a través de la aplicación |Media |Alta |
+|Interactuar con usuarios a través de comentarios y mensajes |Media |Alta |
+|Recibir notificaciones sobre interacciones de usuarios |Baja |Media |
+
 ### 2.3.3. User Journey Mapping  
+Segmento Usuarios: 
+
+![](assets/images/013.png)  
+
+[https://imgur.com/a/7i1hv10 ](https://imgur.com/a/7i1hv10) 
+
+
+
+Segmento Empresas Locales:   
+
+![](assets/images/014.png)  
+
+[https://imgur.com/a/FZnhbLQ ](https://imgur.com/a/FZnhbLQ) 
+
+
 ### 2.3.4. Empathy Mapping  
+Segmento Usuarios: 
+
+![](assets/images/015.png)  
+
+[https://imgur.com/a/rOEsUvd ](https://imgur.com/a/rOEsUvd)  
+
+Segmento Empresas Locales: 
+
+![](assets/images/016.png)  
+
+[https://imgur.com/a/YgYs5Qp ](https://imgur.com/a/YgYs5Qp)  
+
 ### 2.3.5. As-is Scenario Mapping  
+
+
+|What is the Local Entrepreneur…|||||
+|:-|:-|:-|:-|:-|
+|Phases	|Búsqueda de un lugar publicitario	|Registro de los servicios del local|	Publicación de actividades|	Análisis del acogimiento del local|
+|Doing|	•	Encontró un puesto de periodico cercano.</p><p>•	Escoger alguna red social donde publicitar el local.|	•	Llenó un formulario sobre los datos de su local: Nombre, tipo de local, servicios y ubicación.	|•	Imprimió un afiche de las actividades para hacer en su local. </p><p>•	Pagó por la estadía de esa publicidad en el puesto de periodico.</p><p>•	Realizó un afiche para postear en su red social.	|•	Visualizó el flujo de clientes que hay en su local después de la publicación de su local.</p><p>•	Analizó las estadísticas en la configuración de la red social.|
+|Thinking	|•	“Espero encontrar algún puesto donde pegar los afiches.”</p><p>•	“Ojalá esta red social sea la mejor opción para publicitar negocios.”	|•	“Qué trabajoso es colocar todos los datos de mi local.”|	•	“Ojala lo que pagué por la estadía de esta  publicación de esta actividad en el periódico valga la pena.”</p><p>•	“Quizás esta publicación sea lo suficientemente buena como para que tenga alcance en la red social.”	|•	“No creo que todos hayan visto mi publicación.”</p><p>•	“Según esta sección, mi publicación no alcanzó tanta acogida.”|
+|Feeling|	•	Angustia</p><p>•	Ansiedad|	•	Estresado	|•	Abrumado</p><p>•	Enojado	|•	Ansiedad|
+
+
+|What is the user…|||||
+|:-|:-|:-|:-|:-|
+|Phases	|Descubrimiento de aplicaciones	|Registro de datos personales|	Exploración de opciones|Realización de reseña|
+|Doing	|•	Buscar referencias de buenas aplicaciones en Google.</p><p>•	Preguntar a allegados sobre alguna página web.|	•	Entré a alguna aplicación web.</p><p>•	Registrar tus datos en la app.|	•	Filtré en la búsqueda de google.</p><p>•	Entré a la aplicación que descargué y busqué lugares cercanos que visitar.|	•	Conversé con mis allegados sobre los mejores y peores lugares que encontré|
+|Thinking|	•	“Ojalá alguien de mis amigos conozca una aplicación para buscar microaventuras.”</p><p>•	“Que cansado es buscar recomendaciones en google”	|•	“Espero que esta app me ayude, porque el proceso de autenticación es muy tedioso.”</p><p>•	“Que bueno que pueda ingresar con cuenta de Google o Outlook.”|	•	“Que bueno, que estas aplicaciones tengan filtro de búsqueda.”|	•	“Que mal que solo pueda dar el feedback de mi experiencia por boca.”|
+|Feeling|	•	Angustiado	|•	Ansioso</p><p>•	Abrumado|	•	Tranquilo	|•	Estresado|
+
 
 ## 2.4. Ubiquitous Language  
 
+El ubiquitous language es un vocabulario común compartido por todos los miembros del equipo y stakeholders para describir los conceptos clave del dominio de AventuraPe. Aquí presentamos los términos fundamentales:
+
+|Término|	Definición|
+|:-|:-|
+|Microaventura|	Experiencia única y breve (de 1-4 horas) que los usuarios pueden realizar en su entorno local|
+|Botón "Sorpréndeme"	|Función que recomienda aleatoriamente una actividad basada en preferencias del usuario|
+|Geolocalización	|Tecnología que identifica la ubicación del usuario para sugerir actividades cercanas|
+|Gamificación	|Sistema de recompensas (puntos, insignias) por participar en aventuras|
+|Perfil de usuario|	Datos personales e intereses del usuario para personalizar recomendaciones|
+|Negocio asociado	|Establecimiento local registrado que ofrece experiencias en la plataforma|
+|Sistema de rating|	Valoración (1-5 estrellas) y comentarios que los usuarios dan a las experiencias|
+|Filtros inteligentes|	Opciones para ajustar búsquedas por tiempo, presupuesto o tipo de actividad|
+|Experiencia premium|	Aventura exclusiva disponible mediante suscripción o pago único|
+|Panel de negocio	|Interfaz donde los locales gestionan sus publicaciones y ven estadísticas|
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping  
