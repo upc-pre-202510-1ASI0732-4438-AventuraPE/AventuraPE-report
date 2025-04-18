@@ -340,12 +340,143 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 ## 5.2. Product Implementation & Deployment  
 ### 5.2.1. Sprint Backlogs  
-### 5.2.2. Implemented Landing Page Evidence  
+### 5.2.2. Implemented Landing Page Evidence
+#### *Link del despliegue de la landing:* https://aventurape-androidsoftware.github.io/AventuraPe_LandingPage/
+
+
+### Evidencia de la Landing Page :
+<img src="images/evidence/Evidence_landing_1.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_2.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_3.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_4.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_5.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_6.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_7.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_8.jpg"></img><br>
+
+
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
+
 ### 5.2.4. Implemented Native-Mobile Application Evidence  
+
+### Login Management
+<img src="images/evidence/Evidence_login_management.jpg"></img><br>
+
+### Register Management
+<img src="images/evidence/Evidence_register_management.jpg"></img><br>
+
+<img src="images/evidence/Evidence_register_management_2.jpg"></img><br>
+
+### Post Activity  Management
+<img src="images/evidence/Evidence_post_activity_management.jpg"></img><br>
+
+<img src="images/evidence/Evidence_post_activity_management_2.jpg"></img><br>
+
+### Account Adventurer 
+<img src="images/evidence/Evidence_account_adventurer.jpg"></img><br>
+
+<img src="images/evidence/Evidence_account_adventurer_2.jpg"></img><br>
+
+### Account Entrepreneur 
+<img src="images/evidence/Evidence_account_entrepreneur.jpg"></img><br>
+
+<img src="images/evidence/Evidence_account_entrepreneur_2.jpg"></img><br>
+
+### All Publitacions
+<img src="images/evidence/Evidence_all_publications.jpg"></img><br>
+
+### Detail Publitacions
+<img src="images/evidence/Evidence_detail_publication.jpg"></img><br>
+
+<img src="images/evidence/Evidence_detail_publication_2.jpg"></img><br>
+
+
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence  
+
+Hemos añadido correctamente nuestros servicios web bajo una arquitectura RESTful, implementando correcciones en todos los endpoints existentes. Además, hemos añadido un nuevo endpoint llamado favorite-publications, que permite a los usuarios gestionar sus publicaciones favoritas de manera más eficiente.
+La nueva funcionalidad de favorite-publications permite a los usuarios obtener, añadir y eliminar publicaciones de su lista de favoritos, mejorando la interacción con el contenido que más les interesa. La documentación de todos los endpoints está disponible a través de Swagger, lo que facilita la interacción con la API.
+
+Acción | Endpoint | Detalles | Enlace
+------- | -------- | -------- | --------
+POST | /authentication/sign-up | Registro de un nuevo usuario | http://localhost:8090/swagger-ui/index.html#/  
+ | /authentication/sign-in | Autenticación de usuario (inicio de sesión) |
+ | /publication/{publicationId}/add-comment | Añadir comentario a una publicación específica |
+ | /publication/create-publication | Crear una nueva publicación |
+ | /profiles | Crear un nuevo perfil de usuario |
+GET | /publication/{publicationId}/comments | Obtener comentarios de una publicación específica |
+ | /publication/{entrepreneurId}/publications | Obtener todas las publicaciones de un emprendedor específico |
+ | /publication/all-publications | Obtener todas las publicaciones disponibles |
+ | /publication/all-comments | Obtener todos los comentarios |
+ | /publication/{publicationId} | Obtener detalles de una publicación específica |
+ | /profiles | Obtener todos los perfiles de usuarios |
+ | /profiles/name/{name} | Buscar perfiles por nombre |
+ | /profiles/location/{location} | Buscar perfiles por ubicación |
+ | /profiles/id/{profileId} | Obtener perfil por ID específico |
+PUT | /publication/{publicationId}/update-publication | Actualización de una publicación específica |
+ | /profiles/{profileId} | Actualizar el perfil de un usuario específico |
+DELETE | /publication/{publicationId}/delete-publication | Eliminar una publicación específica |
+
+
 ### 5.2.6. RESTful API documentation  
+Utilizamos Swagger para documentar y probar los endpoints de la API de manera interactiva, lo que facilita a los desarrolladores la integración y verificación de los servicios RESTful.
+
+### Api Documentation
+
+<img src="images/evidence/Evidence_api_documentation.jpg"></img><br>
+
+<img src="images/evidence/Evidence_api_documentation (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_api_documentation (3).jpg"></img><br>
+
+
+### Login Management
+<img src="images/evidence/Evidence_sign_in.jpg"></img><br>
+
+<img src="images/evidence/Evidence_sign_up.jpg"></img><br>
+
+### Publication Management
+
+<img src="images/evidence/Evidence_publication (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (3).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (4).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (5).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (6).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication.jpg"></img><br>
+
+### Account Management
+
+<img src="images/evidence/Evidence_profiles_management (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_profiles_management (3).jpg"></img><br>
+
+<img src="images/evidence/Evidence_profiles_management.jpg"></img><br>
+
+### User Management
+
+<img src="images/evidence/Evidence_user_management (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_user_management.jpg"></img><br>
+
+### Role Management
+
+<img src="images/evidence/Evidence_role_management.jpg"></img><br>
+
 ### 5.2.7. Team Collaboration Insights  
+*Durante cada sprint, la colaboración efectiva dentro del equipo es fundamental para garantizar el éxito del proyecto. En el primer sprint, nuestro enfoque principal fue la implementación del backend.*
+
+
 
 ## 5.3. Video About-the-Product  
 
