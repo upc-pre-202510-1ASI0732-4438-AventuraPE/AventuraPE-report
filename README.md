@@ -265,7 +265,7 @@ Nuestro enfoque se fundamenta en tres pilares esenciales: Optimización de tiemp
 
 |Photo|Description|
 |:------------------------------------------------: | :-------------------------: |
-| ![Jimena](./assets/chapter01/Jimenapfp.png) |                                                                         Mi Nombre es , Jimena Cama.  |
+| ![Jimena](./assets/chapter01/Jimenapfp.png) |                                                                         Mi Soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto.  |
 | ![Jair](./assets/chapter01/Jairpfp.png)  | Mi nombre , Jair Castillo                                                                        |
 | ![Jose](./assets/chapter01/Josepfp.png)  | Mi nombre es Jose Gutierrez, tengo 20 años, actualmente me encuentro cruzando mi 7mo ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable. |
 |  ![Estefano](./assets/chapter01/Estefanopfp.png)  |  Mi nombre es Estefano Jaque. 
