@@ -446,7 +446,7 @@ Los mock-ups representan visualmente el resultado final del diseño propuesto y 
 **Sección Aventurero**<br>
 A través de estos wireframes, se presentan las pantallas que guiarán a los usuarios en su travesía, destacando la importancia de la navegabilidad, el diseño centrado en el usuario y las funcionalidades que les permiten interactuar de manera fluida y natural con la aplicación.
 
-<img src="images/mobile_wireframes/Mobile_Applications_Wireframes_Av.png"><br>
+<img src="images/mobile_applications_design/wireframes_aventurero.png"><br>
 
 **Sección Emprendedor**<br>
 Esta sección está diseñada para aquellos usuarios con un espíritu innovador y emprendedor, interesados en gestionar y desarrollar sus propios proyectos a través de la aplicación móvil.
@@ -515,8 +515,9 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 - **Buscar Actividades:** El aventurero puede utilizar una barra de búsqueda para encontrar actividades específicas.
 - **Comentar y calificar:** El aventurero puede comentar en las actividades que desee y calificarlas.
 
-**Video de explicación del flujo:** <br>
-[https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing](https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing)
+**Video de explicación del flujo:** <br>[https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing](https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing)
+<img src="images/mobile_applications_design/android_mobile_prototype_video.png">
+
 
 
 ### 4.5.2. iOS Mobile Applications Prototyping
@@ -541,6 +542,8 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 
 **Video de explicación del flujo:** <br>
 [https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing](https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing)
+<img src="images/mobile_applications_design/ios_mobile_prototype_video.png">
+
 
 ## 4.6. Web Applications UX/UI Design
 ### 4.6.1. Web Applications Wireframes
@@ -571,6 +574,7 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 
 **Video de explicación del flujo:**<br>
 [https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing](https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing)
+<img src="images/web_application_prototyping/web_prototype_video.png">
 
 ## 4.8. Domain-Driven Software Architecture  
 ### 4.8.1. Software Architecture Context Diagram  
