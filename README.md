@@ -430,14 +430,30 @@ Los wireframes desarrollados para la landing page de AventuraPe contemplan versi
 - Pie de Página (Footer): Contiene información de contacto y enlaces a nuestras redes sociales como Twitter, Facebook e Instagram, facilitando la comunicación y conexión con los usuarios.
 
 En cuanto al diseño inclusivo, se han considerado aspectos como el contraste adecuado entre texto y fondo para garantizar la legibilidad, el uso de tipografías claras y tamaños de fuente apropiados para diferentes dispositivos, y la disposición de elementos interactivos con suficiente espacio para facilitar su uso por personas con diversas capacidades. Además, la estructura de la información sigue una arquitectura jerárquica que prioriza el contenido más relevante, permitiendo una navegación intuitiva.<br>
-<img src="./images/landing-page/landing-wireframe1" alt="Landing Page Wireframe image" min-width="400" max-width="900"/>
+<br>ANEXO A:https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1<br>
+
+<img src="https://github.com/user-attachments/assets/3d5ce5a1-1e2c-4c69-8892-237008a8f6ee" alt="Captura 1" width="750">
+<img src="https://github.com/user-attachments/assets/f15aea92-8834-410d-a528-5858d5ff1478" alt="Captura 3" width="750">
+<img src="https://github.com/user-attachments/assets/690a4e5e-2d4e-4502-a43c-64cfdaf8dd9a" alt="Captura 4" width="750">
+
+
 
 ### 4.3.2. Landing Page Mock-up
 Los mock-ups representan visualmente el resultado final del diseño propuesto y consolidan las decisiones tomadas en cuanto a estética, funcionalidad y usabilidad. En ambas versiones, se mantiene una coherencia visual que refuerza la identidad de la marca, respetando el Design System definido para el proyecto.<br>
 <img src="./images/landing-page/landing-mockup" alt="Landing Page mockup image" min-width="400" max-width="900"/>
-<br>Se aplicaron principios clave de diseño como **contraste y jerarquía visual**, evidenciados en el uso de colores llamativos para los botones de acción y en la organización textual que dirige la atención desde el título hasta el botón "Explora ahora". La consistencia visual se mantiene en íconos, estilos y márgenes, lo cual genera una experiencia fluida. En cuanto a la **arquitectura de información**, el contenido se organiza de forma secuencial y lógica: inicia con una presentación de valor clara, continúa con las funcionalidades de la plataforma, testimonios y preguntas frecuentes, y finaliza con un llamado a la acción. Esta estructura guía de manera progresiva al usuario hacia el objetivo del sitio.
+<br>Se aplicaron principios clave de diseño como **contraste y jerarquía visual**, evidenciados en el uso de colores llamativos para los botones de acción y en la organización textual que dirige la atención desde el título hasta el botón "Explora ahora". La consistencia visual se mantiene en íconos, estilos y márgenes, lo cual genera una experiencia fluida. En cuanto a la **arquitectura de información**, el contenido se organiza de forma secuencial y lógica: inicia con una presentación de valor clara, continúa con las funcionalidades de la plataforma, testimonios y preguntas frecuentes, y finaliza con un llamado a la acción. Esta estructura guía de manera progresiva al usuario hacia el objetivo del sitio.<br>
+<br>ANEXO B:https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1<br>
+<img src="https://github.com/user-attachments/assets/c3b3b7b3-d1dc-4ce8-93ce-d8d6fbc153f7" alt="Captura 5" width="750">
+<img src="https://github.com/user-attachments/assets/b134c650-0995-4c9c-8b8b-bf11830d6b5a" alt="Captura 6" width="750">
+<img src="https://github.com/user-attachments/assets/3b3867b6-46cf-4868-8cad-71891477cb86" alt="Captura 7" width="750">
+<img src="https://github.com/user-attachments/assets/1c15894f-a8dd-45de-ad54-99535535c9b8" alt="Captura 8" width="750">
+<img src="https://github.com/user-attachments/assets/ccd88c01-6f42-47fb-b822-b0f54466bb2a" alt="Captura 9" width="750">
+<img src="https://github.com/user-attachments/assets/4f40a9bf-9635-4756-8d54-785153d45975" alt="Captura 10" width="750">
+
+
 
 ## 4.4. Mobile Applications UX/UI Design
+El diseño UX/UI de las aplicaciones móviles de AventuraPe ha sido concebido con el objetivo de brindar una experiencia de usuario intuitiva, atractiva y accesible. Esta sección detalla el proceso de diseño centrado en el usuario, que abarca desde la creación de wireframes hasta la elaboración de diagramas de wireflow, asegurando la coherencia visual y funcional en todas las pantallas. Se ha trabajado cuidadosamente para que cada elemento de la interfaz permita una navegación fluida, responda a las necesidades de los distintos tipos de usuarios, y promueva la interacción efectiva con las funcionalidades clave de la aplicación.<br>
 
 ### 4.4.1. Mobile Applications Wireframes
 
@@ -454,6 +470,42 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 <img src="images/mobile_applications_design/wireframes_emprendedor.png ">
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams
+<br>ANEXO D:https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?viewport_loc=-5149%2C-2964%2C15846%2C6519%2CVuP_hvOzbZtf&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794<br>
+## Seccion de aventurero
+**User Goal:** Como aventurero, quiero ingresar a mi cuenta en AventuraPe.  
+<img src="https://github.com/user-attachments/assets/504d8624-5860-4ae9-8132-3a3c203fb12e" width="750"><br>
+
+**User Goal:** Como aventurero, navegar en la sección Home.  
+<img src="https://github.com/user-attachments/assets/736fdd12-ee7b-43fa-be0d-63900ed20dc0" width="750"><br>
+
+**User Goal:** Como aventurero, quiero buscar alguna actividad de mi interés.  
+<img src="https://github.com/user-attachments/assets/ba91fb7b-2f00-4b06-926c-8312dd44b930" width="750"><br>
+
+**User Goal:** Como aventurero, quiero tener una aventura espontánea.  
+<img src="https://github.com/user-attachments/assets/4792a404-5698-43c6-9940-7359724d3db7" width="750"><br>
+
+**User Goal:** Como aventurero, quiero filtrar mi búsqueda.  
+<img src="https://github.com/user-attachments/assets/33c13942-2dc9-41b8-bf67-d056717650b0" width="750"><br>
+
+**User Goal:** Como aventurero, quiero calificar la actividad que realicé.  
+<img src="https://github.com/user-attachments/assets/04b44f5f-b866-4aab-a1cc-6779f3ec5676" width="750"><br>
+
+**User Goal:** Como aventurero, quiero actualizar mis datos personales de mi cuenta.  
+<img src="https://github.com/user-attachments/assets/52a354c7-a9c9-4608-a002-9dd52d069c64" width="750"><br>
+
+
+## Seccion de empresario
+**User Goal:** Como emprendedor, quiero ingresar a mi cuenta en AventuraPe.  
+<img src="https://github.com/user-attachments/assets/52f0891b-f573-47c3-a25b-5280e65a34ea" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero publicar una actividad para mi local.  
+<img src="https://github.com/user-attachments/assets/f43d6200-9c28-42b4-a8ae-06b41ce4feeb" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero ver las mejores publicaciones que tuve.  
+<img src="https://github.com/user-attachments/assets/adef7cb1-6ece-4ee6-b533-b94e1bc98b00" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero actualizar los datos de mi local.  
+<img src="https://github.com/user-attachments/assets/48d2374a-14cc-499c-80dc-5489b58ead11" width="750"><br>
 
 ### 4.4.3. Mobile Applications Mock-ups
 **ANEXO E:**<br> [https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=0-1&t=cwavRBbaqEngEViE-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=0-1&t=cwavRBbaqEngEViE-1)
@@ -492,6 +544,54 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 
 
 ### 4.4.4. Mobile Applications User Flow Diagrams
+ANEXO F: https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?view_items=m-N_lZ8pzENG&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794 <br>
+### Segmento de Aventurero
+**USER GOAL: Como aventurero, quiero ingresar a mi cuenta en AventuraPe:**
+Este objetivo se refiere a la necesidad del usuario de acceder a su perfil personal en la plataforma AventuraPe. Incluye el proceso de autenticación mediante credenciales (usuario/contraseña).<br>
+<img src="https://github.com/user-attachments/assets/a78200f8-7b6c-4439-a8c9-e26b13108afd" alt="Descripción" width="750">
+
+**USER GOAL: Como aventurero, navegar en la sección Home:**
+Este objetivo abarca la experiencia del usuario al explorar la página principal de la plataforma. El aventurero busca una interfaz intuitiva que le muestre contenido relevante como actividades destacadas y emprendedores<br>
+<img src="https://github.com/user-attachments/assets/e4274b00-bce4-45dc-b65c-9d0e302d8a96" alt="Descripción" width="750">
+
+**USER GOAL: Como aventurero, quiero buscar alguna actividad de mi interés:**
+Este objetivo refleja la necesidad del usuario de encontrar actividades específicas que se alineen con sus preferencias. Implica la utilización de la sección de Publicaciones, donde ve una galería de actividades.
+<img src="https://github.com/user-attachments/assets/1d8010cb-77ce-40bb-8f7b-c54bf2f3290a" alt="Descripción" width="750">
+
+**USER GOAL: Como aventurero, quiero filtrar mi búsqueda:**
+Este objetivo complementa al anterior, permitiendo al usuario refinar sus resultados de búsqueda mediante criterios específicos como el nombre de las actividades. Los filtros ayudan al aventurero a encontrar exactamente el tipo de experiencia que está buscando.<br>
+<img src="https://github.com/user-attachments/assets/f014bacf-596f-462a-af0f-91df1919bf52" alt="Descripción" width="750">
+
+**USER GOAL: Como aventurero, quiero calificar/comentar la actividad que realicé:**
+Este objetivo responde a la necesidad del usuario de compartir su experiencia después de participar en una actividad. Incluye la posibilidad de asignar una puntuación y redactar una reseña detallando aspectos positivos y negativos.<br>
+<img src="https://github.com/user-attachments/assets/757ed1e5-2a1c-424b-832f-00a2943f1e7b" alt="Descripción" width="750">
+
+
+**USER GOAL: Como aventurero, quiero actualizar mis datos personales de mi cuenta:**
+Este objetivo se relaciona con la gestión del perfil personal, permitiendo al usuario modificar información como datos de contacto. Es importante para mantener la cuenta actualizada y personalizada según las necesidades cambiantes del usuario.<br>
+<img src="https://github.com/user-attachments/assets/25557a8a-28d3-4c4a-8a92-39e458e246c4" alt="Descripción" width="750">
+
+**USER GOAL: Como aventurero, quiero guardar en favoritos publicaciones que me gustaron:**
+Este objetivo refleja la necesidad de crear una lista personalizada de actividades que han llamado la atención del usuario. La función de favoritos permite al aventurero marcar experiencias interesantes para considerarlas posteriormente, facilitando la planificación de futuras aventuras.<br>
+<img src="https://github.com/user-attachments/assets/e1dad7f4-6083-4c45-9cae-ebd310e9ae11" alt="Descripción" width="750">
+
+
+### Segmento de Empresario
+**USER GOAL: Como emprendedor, quiero ingresar a mi cuenta en AventuraPe:**
+Este objetivo se refiere a la necesidad del emprendedor de acceder a su cuenta profesional en la plataforma. Implica un proceso de autenticación específico para usuarios de tipo negocio, que les da acceso a un panel de control o dashboard con funcionalidades especializadas para la gestión de su oferta de actividades.<br>
+<img src="https://github.com/user-attachments/assets/1df9e4e6-9b58-47c4-a98d-5743be59322d" alt="Descripción" width="750">
+
+**USER GOAL: Como emprendedor, quiero publicar una actividad para mi local:**
+Este objetivo representa la función principal que busca un emprendedor en la plataforma: dar visibilidad a las experiencias o actividades que ofrece su negocio. Incluye el proceso de creación de anuncios con detalles como descripción, imágenes, precios, horarios y ubicación. Esta funcionalidad es esencial para que el emprendedor pueda comercializar sus servicios de aventura a los usuarios de la plataforma.<br>
+<img src="https://github.com/user-attachments/assets/09fe515c-ae6f-4527-a769-540ef8b1e8a5" alt="Descripción" width="750">
+
+**USER GOAL: Como emprendedor, quiero ver las mejores publicaciones que tuve:**
+Este objetivo refleja la necesidad del emprendedor de analizar el rendimiento de sus publicaciones para identificar cuáles han sido más exitosas. Esto implica acceder a métricas como número de los más comentados o valoraciones. Esta información es crucial para que el emprendedor pueda entender las preferencias de los clientes y optimizar su oferta de actividades.<br>
+<img src="https://github.com/user-attachments/assets/bbe04b55-2eba-4b2d-bee9-7df595fb1370" alt="Descripción" width="750">
+
+**USER GOAL: Como emprendedor, quiero actualizar los datos de mi local:**
+Este objetivo se relaciona con la gestión del perfil comercial, permitiendo al emprendedor mantener actualizada la información de su negocio, como ubicación, horarios de atención, métodos de pago aceptados, servicios adicionales, etc. La actualización periódica de esta información es crucial para mantener una presencia profesional y confiable en la plataforma.<br>
+<img src="https://github.com/user-attachments/assets/469f04fe-974e-40f7-b528-61bbadbb2030" alt="Descripción" width="750">
 
 
 ## 4.5. Mobile Applications Prototyping
@@ -546,11 +646,211 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 
 
 ## 4.6. Web Applications UX/UI Design
+
+La experiencia de usuario (UX) y el diseño de interfaz (UI) para la plataforma web de *AventuraPe* han sido pensados para ofrecer una navegación sencilla, visualmente coherente y adaptada a las necesidades de sus dos tipos principales de usuarios: aventureros y empresarios. 
+
+A lo largo de esta sección, se presentan los wireframes y wireflows que muestran cómo los usuarios interactúan con la plataforma en distintos escenarios clave. El objetivo es asegurar que cada pantalla y cada paso dentro del flujo de navegación sean intuitivos, accesibles y útiles, promoviendo una experiencia digital fluida desde el inicio de sesión hasta la ejecución de acciones específicas como publicar actividades, buscar aventuras o actualizar información personal.
+
 ### 4.6.1. Web Applications Wireframes
 
+En esta sección se presentan los wireframes de la versión web de *AventuraPe*, organizados en función de los dos perfiles principales de usuario: **empresario** y **aventurero**. Cada diseño busca ofrecer una experiencia clara, coherente y centrada en las necesidades del usuario, asegurando una navegación intuitiva y fluida a lo largo de la plataforma.
+
+## Sección de Empresario
+
+**Inicio de sesión del empresario**  
+Interfaz diseñada para facilitar el acceso rápido y seguro al panel del emprendedor.  
+<img src="https://github.com/user-attachments/assets/df1df3c8-22fe-45d1-8740-f16d32b2f874" width="750"><br>
+
+**Mi cuenta – Información personal del empresario**  
+Permite al usuario gestionar sus datos personales y mantener su perfil actualizado.  
+<img src="https://github.com/user-attachments/assets/43c7a04e-efa4-4bc2-9f15-1e011694bacb" width="750"><br>
+
+**Estadísticas de publicaciones**  
+Vista con métricas sobre el rendimiento de las actividades publicadas, para facilitar la toma de decisiones.  
+<img src="https://github.com/user-attachments/assets/c91e680f-b2db-4bbf-bd8d-35a5273f889e" width="750"><br>
+
+**Formulario para publicar una nueva actividad**  
+Pantalla diseñada para que los empresarios puedan registrar y promocionar nuevas experiencias.  
+<img src="https://github.com/user-attachments/assets/cbb0ec21-177f-4eea-bc19-ca849c0ce846" width="750"><br>
+
+**Galería principal del empresario**  
+Sección visual destacada en la página de inicio del empresario, que muestra contenido clave.  
+<img src="https://github.com/user-attachments/assets/b8f6377a-a601-4761-b3b7-2c70279e4d91" width="750"><br>
+
+
+## Sección de Aventurero
+
+**Pantalla de selección de tipo de cuenta**  
+El usuario puede elegir entre crear una cuenta como aventurero o como empresario.  
+<img src="https://github.com/user-attachments/assets/aeef5950-b0a5-4f06-bc09-671a8043d43b" width="750"><br>
+
+**Inicio de sesión del aventurero**  
+Diseño centrado en facilitar el acceso a la cuenta personal del usuario aventurero.  
+<img src="https://github.com/user-attachments/assets/7e9f7a2a-6fa9-4444-9718-004bfad495c9" width="750"><br>
+
+**Pantalla principal tras inicio de sesión**  
+Vista general del contenido destacado e información relevante para el usuario.  
+<img src="https://github.com/user-attachments/assets/ab099f7a-af8a-43a2-87a3-03594cbb4894" width="750"><br>
+
+**Sección de favoritos del aventurero**  
+Muestra actividades guardadas por el usuario para una consulta rápida posterior.  
+<img src="https://github.com/user-attachments/assets/95a32ae9-b8c2-4e8b-a7ca-630ca3b372c5" width="750"><br>
+
+**Exploración y búsqueda de actividades**  
+Diseño que permite filtrar, ordenar y explorar aventuras disponibles en la plataforma.  
+<img src="https://github.com/user-attachments/assets/e16413ce-76a4-4b29-928e-2b18624f5551" width="750"><br>
+
+**Detalle de publicación de una actividad**  
+Pantalla donde el usuario puede conocer más información sobre una actividad específica.  
+<img src="https://github.com/user-attachments/assets/70658648-5ce9-4186-aca0-d7ea40295502" width="750"><br>
+
+**Mi cuenta – Información personal del aventurero**  
+Permite al usuario gestionar sus datos y modificar configuraciones de su cuenta.  
+<img src="https://github.com/user-attachments/assets/0539f420-0b1f-403e-8fa8-cde69e843fda" width="750"><br>
+
+
 ### 4.6.2. Web Applications Wireflow Diagrams
+Esta sección presenta los diagramas de wireflow correspondientes a la versión web de *AventuraPe*, diseñados tanto para usuarios aventureros como para emprendedores. Cada flujo de navegación representa una necesidad específica del usuario, permitiéndole lograr sus objetivos de manera clara, eficiente y centrada en una experiencia digital intuitiva.
+
+#### Sección de Aventurero
+
+**User Goal:** Como aventurero, quiero ingresar a mi cuenta en AventuraPe,  
+**para** acceder a todas las funcionalidades personalizadas dentro de la plataforma.  
+<img src="https://github.com/user-attachments/assets/f021848d-cbdf-4827-9cc5-013d8941178f" width="750"><br>
+
+**User Goal:** Como aventurero, navegar en la sección Home,  
+**para** explorar de forma general las actividades disponibles y novedades destacadas.  
+<img src="https://github.com/user-attachments/assets/1f6851cf-2794-4656-b18c-c00f5eef3a56" width="750"><br>
+
+**User Goal:** Como aventurero, quiero buscar alguna actividad de mi interés,  
+**para** encontrar experiencias que se alineen con mis preferencias y ubicación.  
+<img src="https://github.com/user-attachments/assets/552f49d8-215a-43bd-9994-4ed69f2993b5" width="750"><br>
+
+**User Goal:** Como aventurero, quiero filtrar mi búsqueda,  
+**para** refinar los resultados y encontrar exactamente lo que deseo realizar.  
+<img src="https://github.com/user-attachments/assets/1ebd76b5-512e-44b4-987c-b06ed6eb7300" width="750"><br>
+
+**User Goal:** Como aventurero, quiero calificar la actividad que realicé,  
+**para** compartir mi experiencia con otros usuarios y contribuir al sistema de reputación.  
+<img src="https://github.com/user-attachments/assets/31c04c5e-0471-49b7-991a-e660ecaf92b4" width="750"><br>
+
+**User Goal:** Como aventurero, quiero actualizar mis datos personales de mi cuenta,  
+**para** mantener mi perfil actualizado y seguro.  
+<img src="https://github.com/user-attachments/assets/ee57705c-45e2-4537-a9f5-0d20b5cacace" width="750"><br>
+
+#### Sección de Empresario
+
+**User Goal:** Como emprendedor, quiero ingresar a mi cuenta en AventuraPe,  
+**para** gestionar mis actividades y acceder al panel de administración de mi negocio.  
+<img src="https://github.com/user-attachments/assets/c880c669-52b5-4839-90dc-cd4bb633c741" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero publicar una actividad para mi local,  
+**para** promocionar nuevas experiencias o eventos a través de la plataforma.  
+<img src="https://github.com/user-attachments/assets/e7fed5b9-a1c3-4aa5-b4cc-0025f460b08a" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero ver las mejores publicaciones que tuve,  
+**para** analizar el rendimiento y popularidad de mis ofertas anteriores.  
+<img src="https://github.com/user-attachments/assets/a01b1a94-7348-4610-808d-7770d0290818" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero actualizar los datos de mi local,  
+**para** asegurarme de que la información mostrada a los usuarios sea precisa y actualizada.  
+<img src="https://github.com/user-attachments/assets/94e00f28-1944-481e-8dee-f7d804f4d568" width="750"><br>
+
 ### 4.6.3. Web Applications Mock-ups
+En esta sección se presentan los mock-ups de alta fidelidad desarrollados para la plataforma *AventuraPe*. Estas vistas permiten visualizar cómo lucirá la interfaz web tanto para usuarios aventureros como para emprendedores, simulando su interacción real con la plataforma. El diseño se enfoca en ofrecer una experiencia fluida, accesible y visualmente atractiva.
+
+#### Elección de rol
+**Pantalla de selección de tipo de cuenta (Aventurero o Emprendedor)**  
+<img src="https://github.com/user-attachments/assets/7321ab49-0b83-4bca-94d5-7e919e4fb021" width="750"><br>
+
+#### Mock-ups para Usuario Emprendedor
+**Registro del empresario**  
+<img src="https://github.com/user-attachments/assets/7f9230a5-01b3-4fb9-8ba9-a65ea5af25be" width="750"><br>
+
+**Suscripción a un plan**  
+<img src="https://github.com/user-attachments/assets/2ac8aa1f-3b54-4680-a598-6b694ba7bb75" width="750"><br>
+
+**Subida de comprobante de validación del negocio**  
+<img src="https://github.com/user-attachments/assets/f42853e6-3eb6-48c5-a1a8-5581319f343d" width="750"><br>
+
+**Pantalla de inicio del empresario**  
+<img src="https://github.com/user-attachments/assets/d486ea1a-3d8d-4ed1-83f2-1fa60372b00a" width="750"><br>
+
+**Agregar nueva actividad**  
+<img src="https://github.com/user-attachments/assets/45573a92-625a-463a-8368-1a0800ef40f7" width="750"><br>
+
+**Mi cuenta - perfil del empresario**  
+<img src="https://github.com/user-attachments/assets/6cc3c8f4-b7aa-407c-a506-13fb0a87094a" width="750"><br>
+
+**Estadísticas de publicaciones**  
+<img src="https://github.com/user-attachments/assets/efc23e62-1775-41c8-9669-f249572e76b5" width="750"><br>
+
+
+#### Mock-ups para Usuario Aventurero
+
+**Registro del aventurero**  
+<img src="https://github.com/user-attachments/assets/1d14037e-0dae-4f11-a421-2e610570e122" width="750"><br>
+
+**Inicio de sesión del aventurero**  
+<img src="https://github.com/user-attachments/assets/4d7eda71-465b-42c6-9379-e97cd259c189" width="750"><br>
+
+**Inicio de la interfaz del aventurero**  
+<img src="https://github.com/user-attachments/assets/6eaa202e-a531-49d6-bf7d-94840e872a25" width="750"><br>
+
+**Búsqueda de actividades**  
+<img src="https://github.com/user-attachments/assets/ec1a2a25-be2a-4190-b324-52fa7aead0b3" width="750"><br>
+
+**Favoritos - Mejores aventuras guardadas**  
+<img src="https://github.com/user-attachments/assets/5833b95a-4226-4aa1-883f-d90cc6f55f45" width="750"><br>
+
+**Detalle de actividad**  
+<img src="https://github.com/user-attachments/assets/a9f16060-473b-43e1-913d-757117ffd78b" width="750"><br>
+
+**Mi cuenta del aventurero**  
+<img src="https://github.com/user-attachments/assets/cad62b79-8b37-4231-a4a5-e8597d4f893a" width="750"><br>
+
+
 ### 4.6.4. Web Applications User Flow Diagrams
+A continuación, se presentan los diagramas de flujo de usuario (User Flow) para la plataforma web de *AventuraPe*, diferenciados según el tipo de usuario: **Aventurero** y **Emprendedor**. Estos flujos reflejan los pasos que cada usuario debe seguir para lograr objetivos clave dentro de la plataforma, asegurando una navegación clara, eficiente y alineada con sus necesidades.
+
+#### Usuario Aventurero
+**User Goal:** Como aventurero, quiero ingresar a mi cuenta en *AventuraPe* para acceder a las funcionalidades personalizadas de la plataforma.  
+<img src="https://github.com/user-attachments/assets/64663e8d-c1fe-4b76-a72a-6b87824825aa" width="750"><br>
+
+**User Goal:** Como aventurero, quiero navegar en la sección *Home* para descubrir actividades destacadas y novedades.  
+<img src="https://github.com/user-attachments/assets/b789bb8a-97f1-4e57-9898-52762f1376d8" width="750"><br>
+
+**User Goal:** Como aventurero, quiero buscar alguna actividad de mi interés para planificar mi próxima experiencia.  
+<img src="https://github.com/user-attachments/assets/c259fe35-2ae5-4e88-b18a-1bbaa00ee119" width="750"><br>
+
+**User Goal:** Como aventurero, quiero filtrar mi búsqueda para encontrar opciones que se ajusten a mis preferencias.  
+<img src="https://github.com/user-attachments/assets/8274b619-2f5a-441c-b014-5e92e4555ee2" width="750"><br>
+
+**User Goal:** Como aventurero, quiero calificar y comentar la actividad que realicé para aportar retroalimentación a otros usuarios.  
+<img src="https://github.com/user-attachments/assets/cd96f860-1a3a-4c9e-9717-24a6a4ebc756" width="750"><br>
+
+**User Goal:** Como aventurero, quiero actualizar mis datos personales de mi cuenta para mantener mi perfil al día.  
+<img src="https://github.com/user-attachments/assets/4a8facc0-9489-40f3-a764-9f7b102de6be" width="750"><br>
+
+**User Goal:** Como aventurero, quiero guardar en favoritos las publicaciones que me gustaron para acceder a ellas rápidamente en el futuro.  
+<img src="https://github.com/user-attachments/assets/586a05cb-16a4-47e7-b6a4-d50ae5bfeb77" width="750"><br>
+
+#### Usuario Emprendedor
+
+**User Goal:** Como emprendedor, quiero ingresar a mi cuenta en *AventuraPe* para gestionar mi perfil y mis actividades publicadas.  
+<img src="https://github.com/user-attachments/assets/983fcd83-5522-4907-aac3-25e66776c3fa" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero publicar una actividad para mi local para atraer a nuevos aventureros.  
+<img src="https://github.com/user-attachments/assets/c1d5cc27-6dca-4cd8-9a66-ec73f642755a" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero ver las mejores publicaciones que tuve para analizar su rendimiento y mejorar mi oferta.  
+<img src="https://github.com/user-attachments/assets/1554b0a5-7fc1-403e-a025-7cd740b138c0" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero actualizar los datos de mi local para que la información mostrada esté siempre actualizada.  
+<img src="https://github.com/user-attachments/assets/00602a2c-da69-4ce9-b366-6d952689432d" width="750"><br>
+
+**User Goal:** Como emprendedor, quiero crear mi cuenta en *AventuraPe* para comenzar a publicar y gestionar mis actividades.  
+<img src="https://github.com/user-attachments/assets/04593aec-4047-44eb-9830-aff6f48c463a" width="750"><br>
 
 ## 4.7. Web Applications Prototyping
 
