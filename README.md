@@ -265,11 +265,11 @@ Nuestro enfoque se fundamenta en tres pilares esenciales: Optimización de tiemp
 
 |Photo|Description|
 |:------------------------------------------------: | :-------------------------: |
-| ![Jimena](./images/chapter01/Jimenapfp.png) |                                                                         Mi Nombre es Jimena Cama, soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto..  |
-| ![Jair](./images/chapter01/Jairpfp.png)  | Mi nombre , Jair Castillo                                                                        |
+| ![Jimena](./images/chapter01/Jimenapfp.png) |  Mi Nombre es Jimena Cama, soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto..  |
+| ![Jair](./images/chapter01/Jairpfp.png)  | Mi nombre es Jair Castillo, soy estudiante de la carrera de Ingeniería de Software en la UPC y me encuentro en el 7to ciclo. Me considero una persona dedicada, comprensiva y metódica. Con mis habilidades de liderazgo y mi capacidad para trabajar en equipo en un ambiente de respeto, estoy segura de que podré dirigir la implementación de la startup de nuestro proyecto de manera exitosa.                                                                      |
 | ![Jose](./images/chapter01/Josepfp.png)  | Mi nombre es Jose Gutierrez, tengo 20 años, actualmente me encuentro cruzando mi 7mo ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable. |
-|  ![Estefano](./images/chapter01/Estefanopfp.png)  |  Mi nombre es Estefano Jaque. 
-|![Barbara](./images/chapter01/Barbarapfp.png) | Mi nombre es Barbara Quezada. 
+|  ![Estefano](./images/chapter01/Estefanopfp.png)  |  mi nombre es estefano 
+|![Barbara](./images/chapter01/Barbarapfp.png) | Barbara Susana Quezada Portalatino, cursando el séptimo ciclo de la carrera de software, trabajo mayormente bajo un rol de líder que me ayuda a poder organizar no solo la ideas de mi grupo sino que las ideas aterricen en la ejecución. Soy una persona muy disciplinada y detallista. 
 |    |
 
 ## 1.2. Solution Profile
