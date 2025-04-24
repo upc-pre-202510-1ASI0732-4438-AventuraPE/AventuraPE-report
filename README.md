@@ -727,10 +727,6 @@ El ubiquitous language es un vocabulario común compartido por todos los miembro
 
 ## 3.2. User Stories
 
-#### Navegación y Acceso (EP01)
-
-Voy a reorganizar las User Stories manteniendo todo el contenido original, incluyendo criterios de aceptación, agrupándolas por Epic ID.
-
 ### Tabla de Epics para AventuraPe
 
 | Epic ID | Nombre | Descripción | Usuario Principal | Funcionalidades Clave |
@@ -779,6 +775,24 @@ Voy a reorganizar las User Stories manteniendo todo el contenido original, inclu
 | US10 | Borrar actividad (Móvil) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | EP03 | Empresario |**Escenario 1: Borrado exitoso**<br>Dado que el empresario ha iniciado sesión y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en 'Eliminar'<br>Entonces el sistema elimina la actividad de la plataforma<br>Y de la lista de actividades activas del empresario |
 
 ## 3.3. Product Backlog  
+
+| **Nombre del User Story**       | **Descripción**                                                                                      | **Story Points** |
+|----------------------------------|--------------------------------------------------------------------------------------------------------|------------------|
+| Registro Emprendedor             | Como **emprendedor**, quiero registrarme en la app para poder publicar mis experiencias               | 3                |
+| Registro Aventurero             | Como **aventurero**, quiero registrarme en la app para poder explorar actividades                     | 3                |
+| Inicio de Sesión Emprendedor     | Como **emprendedor**, quiero iniciar sesión para acceder a mi cuenta                                  | 2                |
+| Inicio de Sesión Aventurero     | Como **aventurero**, quiero iniciar sesión para acceder a mi cuenta                                   | 2                |
+| Publicar Experiencia            | Como **emprendedor**, quiero publicar una experiencia con título, descripción, imagen y ubicación     | 5                |
+| Recomendaciones por Ubicación   | Como **aventurero**, quiero ver experiencias recomendadas según mi ubicación                          | 8                |
+| Búsqueda de Experiencias        | Como **aventurero**, quiero buscar experiencias por nombre o categoría                                | 5                |
+| Estadísticas para Emprendedor   | Como **emprendedor**, quiero ver estadísticas de mis experiencias (visualizaciones, favoritos, etc.)  | 8                |
+| Guardar Favoritos               | Como **aventurero**, quiero guardar experiencias como favoritas para revisarlas luego                 | 3                |
+| Editar/Eliminar Experiencia     | Como **emprendedor**, quiero editar y eliminar experiencias publicadas                                | 5                |
+| Ver Detalles de Experiencia     | Como **aventurero**, quiero ver detalles de una experiencia (descripción, ubicación, emprendedor)     | 3                |
+| Notificaciones para Emprendedor | Como **emprendedor**, quiero recibir notificaciones sobre interacciones con mis experiencias          | 5                |
+| Reseñas y Calificaciones        | Como **aventurero**, quiero dejar reseñas o calificaciones en experiencias                            | 5                |
+| Gestión Administrativa          | Como **administrador**, quiero gestionar usuarios y experiencias para moderar el contenido            | 8                |
+
 ## 3.4. Impact Mapping  
 
 <img src="images/impact_mapping/impact_mapping.png">
