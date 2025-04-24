@@ -1777,59 +1777,125 @@ Actualmente, el único módulo desplegado en producción es la Landing Page, la 
 
 ### 5.2.1 Sprint Backlogs
 
-### Sprint 1 – Objetivo
-**Objetivo del Sprint:** Publicar una versión mínima viable (MVP) de la landing page de AventuraPe, con navegación completa e información esencial visible para visitantes.
+**Sprint Planning 1**
 
-**Criterio de éxito:** Se considera completo cuando un usuario puede visitar la landing, acceder a las secciones "Sobre Nosotros", "Servicios", "FAQ", "Testimonios" y "Contacto", y navegar sin errores desde un navegador web.
+| Sprint # | Sprint 1 |
+|----------|----------|
+| **Sprint Planning Background** |  |
+| Date | 10/04/2025 |
+| Time | 9:00 AM |
+| Location | Reunión virtual en Microsoft Teams |
+| Prepared by | Barbara Susana Quezada Portalatino |
+| Attendees | Jimena Tamara Cama Salvatierra, Jair Alexander Castillo Castillo, Jose Eduardo Gutierrez Garcia, Estefano Oscar Jaque Peña, Barbara Susana Quezada Portalatino |
+| **Sprint Goal & User Stories** |  |
+| Sprint Goal | Publicar una versión mínima viable (MVP) de la landing page de AventuraPe, con navegación completa e información esencial visible para visitantes. |
+| Sprint Velocity | 11 |
+| Sum of Story Points | 18 |
 
-### Sprint Backlog – Sprint 1
+**Sprint Backlog 1**
 
-| User Story | Task ID | Tarea Técnica | Estimación (hrs) | Responsable | Estado |
-|------------|---------|---------------|------------------|-------------|--------|
-| US01 | TSK-01 | Diseñar estructura base de la landing page en HTML/CSS | 3 | Jimena y Barbara | Done |
-| US01 | TSK-02 | Implementar navegación con anclas e íconos interactivos | 2 | Jair | Done |
-| US02 | TSK-03 | Diseñar sección de servicios con cards y botones de acción | 4 | Jimena y Barbara | Done |
-| US04 | TSK-04 | Codificar sección "Sobre Nosotros" con diseño responsive | 3 | Jair | Done |
-| US05 | TSK-05 | Implementar sección de testimonios en carrusel dinámico | 5 | Jimena | Done |
-| US06 | TSK-06 | Programar sección de contacto con validación de formulario | 4 | Jimena y Jair| Done |
-| US01 | TSK-07 | Configurar GitHub Pages + GitHub Actions para despliegue | 2 | Jimena y Barbara| Done |
+Para el primer sprint, nos enfocamos en desarrollar la landing page de AventuraPe para establecer presencia online y proporcionar información esencial a los visitantes. Las tareas se distribuyeron teniendo en cuenta las habilidades de cada miembro, priorizando el desarrollo y despliegue rápido con un diseño atractivo e interactivo.
+
+| User Story | Work-Item / Task |
+|-----------|------------------|
+| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US01 | Interacción con hipervínculos (Web) | TA001 | Diseñar estructura base | Crear estructura HTML/CSS base de la landing page | 3 | Jimena y Barbara | Done |
+| US01 | Interacción con hipervínculos (Web) | TA002 | Implementar navegación | Desarrollar anclas e íconos interactivos | 2 | Jair | Done |
+| US02 | Sección Servicios | TA003 | Diseñar sección servicios | Implementar cards y botones de acción | 4 | Jimena y Barbara | Done |
+| US04 | Sección Sobre Nosotros | TA004 | Codificar sección "Sobre Nosotros" | Implementar diseño responsive | 3 | Jair | Done |
+| US05 | Sección Testimonios | TA005 | Implementar testimonios | Crear carrusel dinámico | 5 | Jimena | Done |
+| US06 | Sección Contacto | TA006 | Programar sección contacto | Implementar formulario con validación | 4 | Jimena y Jair | Done |
+| US01 | Interacción con hipervínculos (Web) | TA007 | Configurar despliegue | Implementar GitHub Pages + GitHub Actions | 2 | Jimena y Barbara | Done |
+
+**Development Evidence for Sprint Review**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|---------------|---------------------|---------------------|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-landing | main | 3a8e62f | Initial landing structure | feat: create basic HTML structure | 12/04/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-landing | develop | 7b2c98d | Add navigation components | feat: implement sticky header and smooth scrolling | 14/04/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-landing | feature/testimonials | a5f6d21 | Testimonials section | feat: add carousel with customer testimonials | 15/04/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-landing | feature/contact | e9c42b6 | Contact form | feat: implement form validation | 16/04/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-landing | main | 1d3f8a7 | Deploy configuration | chore: configure GitHub Actions for automatic deployment | 17/04/2025 |
 
 ### Sprint 2 – Objetivo
+**Sprint Planning 2**
 
-**Objetivo del Sprint:** Desarrollar e implementar funcionalidades de gestión de usuarios para aventureros: registro, inicio de sesión y visualización de actividades.
+| Sprint # | Sprint 2 |
+|----------|----------|
+| **Sprint Planning Background** |  |
+| Date | 24/04/2025 |
+| Time | 10:00 AM |
+| Location | Reunión virtual en Microsoft Teams |
+| Prepared by | Jair Alexander Castillo Castillo |
+| Attendees | Jimena Tamara Cama Salvatierra, Jair Alexander Castillo Castillo, Jose Eduardo Gutierrez Garcia, Estefano Oscar Jaque Peña, Barbara Susana Quezada Portalatino |
+| **Sprint Goal & User Stories** |  |
+| Sprint Goal | Desarrollar e implementar funcionalidades de gestión de usuarios para aventureros: registro, inicio de sesión y visualización de actividades. |
+| Sprint Velocity | 13 |
+| Sum of Story Points | 20 |
 
-**Criterio de éxito:** El sistema debe permitir que un usuario aventurero se registre, inicie sesión y vea publicaciones desde el frontend, todo probado en entorno local.
+**Sprint Backlog 2**
 
-### Sprint Backlog – Sprint 2 (Aventurero)
+Para el segundo sprint, nos enfocamos en las funcionalidades principales para el usuario aventurero, incluyendo registro, inicio de sesión y visualización de actividades. Implementamos tanto los componentes de frontend como los endpoints de backend necesarios para estas funcionalidades.
 
-| User Story | Task ID | Tarea Técnica | Estimación (hrs) | Responsable | Estado |
-|------------|---------|---------------|------------------|-------------|--------|
-| US04 | TSK-08 | Crear formulario de login (frontend) con validaciones | 4 | Stefano | Done (local) |
-| US06 | TSK-09 | Backend: endpoint POST `/sign-up` con validaciones | 4 | Stefano | Done (local) |
-| US11 | TSK-10 | Visualizar mapa interactivo en app móvil (dummy data) | 6 | Stefano | In Progress |
-| US12 | TSK-11 | Implementar búsqueda de actividades (frontend móvil) | 4 | Barbara | Done (local) |
-| US13 | TSK-12 | Agregar funcionalidad de filtro por nombre | 4 | Jair | In Progress (local) |
-| US17 | TSK-13 | Backend: guardar favoritos en lista personal | 3 | Barbara | In Progress |
+| User Story | Work-Item / Task |
+|-----------|------------------|
+| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US04 | Iniciar sesión (Web/Móvil) | TA008 | Crear formulario de login | Implementar formulario con validaciones | 4 | Estefano | Done |
+| US06 | Creación de cuenta (Web/Móvil) | TA009 | Backend: endpoint sign-up | Desarrollar endpoint POST con validaciones | 4 | Estefano | Done |
+| US11 | Visualizar mapa de actividades | TA010 | Implementar mapa interactivo | Integrar visualización de mapa con datos de muestra | 6 | Estefano | In Progress |
+| US12 | Ver detalles de actividad (Móvil) | TA011 | Implementar búsqueda | Desarrollar búsqueda de actividades en móvil | 4 | Barbara | Done |
+| US13 | Filtrar actividades | TA012 | Agregar filtros | Implementar filtro por nombre | 4 | Jair | In Progress |
+| US17 | Guardar actividades en favoritos | TA013 | Backend: guardar favoritos | Desarrollar endpoints para gestión de favoritos | 3 | Barbara | In Progress |
 
-## Sprint 3 – Objetivo
+**Development Evidence for Sprint Review**
 
-**Objetivo del Sprint:** Implementar funcionalidades principales para usuarios empresarios: publicar, editar y eliminar actividades, además de visualizar estadísticas.
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|---------------|---------------------|---------------------|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/login | 5c7d34e | Add login screen | feat: implement login form with validation | 26/04/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend | feature/auth | 8e1f92b | User authentication | feat: implement sign-up and login endpoints | 27/04/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/activity-search | a3b9c2d | Activity search | feat: implement activity search functionality | 29/04/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend | feature/publications | 6d2e47f | Publication endpoints | feat: add endpoints to fetch activities | 30/04/2025 |
 
-**Criterio de éxito:** El empresario puede gestionar sus publicaciones desde el frontend móvil y visualizar sus estadísticas generales, todo en entorno local.
+### Sprint 3 – Objetivo
+**Sprint Planning 3**
 
-### Sprint Backlog – Sprint 3 (Empresario)
+| Sprint # | Sprint 3 |
+|----------|----------|
+| **Sprint Planning Background** |  |
+| Date | 08/05/2025 |
+| Time | 9:30 AM |
+| Location | Reunión virtual en Microsoft Teams |
+| Prepared by | Jimena Tamara Cama Salvatierra |
+| Attendees | Jimena Tamara Cama Salvatierra, Jair Alexander Castillo Castillo, Jose Eduardo Gutierrez Garcia, Estefano Oscar Jaque Peña, Barbara Susana Quezada Portalatino |
+| **Sprint Goal & User Stories** |  |
+| Sprint Goal | Implementar funcionalidades principales para usuarios empresarios: publicar, editar y eliminar actividades, además de visualizar estadísticas. |
+| Sprint Velocity | 14 |
+| Sum of Story Points | 20 |
 
-| User Story | Task ID | Tarea Técnica | Estimación (hrs) | Responsable | Estado |
-|------------|---------|---------------|------------------|-------------|--------|
-| US08 | TSK-14 | Crear formulario de publicación de actividades | 5 | Barbara | Done (local) |
-| US09 | TSK-15 | Implementar flujo de edición (form + vista previa) | 4 | Jimena | Done (local) |
-| US10 | TSK-16 | Backend: lógica para eliminar publicaciones | 3 | Barbara | Done (local) |
-| US19 | TSK-17 | Dashboard estadístico: visitas y comentarios por publicación | 5 | Jose | Done (local) |
-| US05 | TSK-18 | Login empresario con validación de credenciales | 3 | Stefano | Done (local) |
+**Sprint Backlog 3**
 
-## Enlace al tablero Trello del proyecto
+En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales para el usuario empresario, permitiéndole gestionar sus actividades publicadas y acceder a estadísticas relevantes para su negocio.
 
-**Trello URL público:** <br>
+| User Story | Work-Item / Task |
+|-----------|------------------|
+| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US08 | Publicar actividad (Web/Móvil) | TA014 | Crear formulario de publicación | Implementar formulario para crear actividades | 5 | Barbara | Done |
+| US09 | Edición de actividad (Web/Móvil) | TA015 | Implementar flujo de edición | Desarrollar formulario y vista previa | 4 | Jimena | Done |
+| US10 | Borrar actividad (Móvil) | TA016 | Lógica para eliminar publicaciones | Implementar endpoint y UI para eliminar | 3 | Barbara | Done |
+| US19 | Ver estadísticas de actividades | TA017 | Dashboard estadístico | Crear vista de estadísticas y comentarios | 5 | José | Done |
+| US05 | Iniciar sesión (Web/Móvil) empresario | TA018 | Login empresario | Implementar validación de credenciales | 3 | Estefano | Done |
+
+**Development Evidence for Sprint Review**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|---------------|---------------------|---------------------|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/create-activity | 7d9f25e | Activity creation | feat: implement activity creation form | 10/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend | feature/manage-activities | 9e3f48b | CRUD activities | feat: implement endpoints for activity management | 12/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/statistics | 2b8c57a | Statistics dashboard | feat: implement statistics view for entrepreneurs | 14/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/edit-activities | 4c2d19f | Edit activities | feat: implement activity editing functionality | 16/05/2025 |
+
+**Enlace al tablero Trello del proyecto**
+
 [https://trello.com/invite/b/67fec4eb81fae4e3cb20bc4a/ATTIbaa9f91c96fe0bff5f0c939bfdaa9ee46306E3A0/1asi0732-2510-4438-grupo2](https://trello.com/invite/b/67fec4eb81fae4e3cb20bc4a/ATTIbaa9f91c96fe0bff5f0c939bfdaa9ee46306E3A0/1asi0732-2510-4438-grupo2)
 
 ### 5.2.2. Implemented Landing Page Evidence
@@ -1855,6 +1921,56 @@ Actualmente, el único módulo desplegado en producción es la Landing Page, la 
 
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
+
+A continuación, presentamos la implementación de la aplicación web frontend de AventuraPe, desarrollada utilizando Node.js y TypeScript. Esta interfaz permite a los usuarios interactuar con las principales funcionalidades de nuestra plataforma desde una experiencia web completa.
+
+### Sección de Autenticación
+
+**Registro de Cuenta y Pantalla de Selección de Rol**
+Esta vista permite al usuario elegir entre ingresar como aventurero o como empresario, facilitando la segmentación de la experiencia desde el inicio.
+
+<img src="images/evidenceWEB/aventurero-registro.png" alt="Pantalla de selección de rol"/>
+
+**Inicio de Sesión**
+Interfaz segura que permite a los usuarios autenticarse en la plataforma y acceder a sus funcionalidades personalizadas.
+
+<img src="images/evidenceWEB/aventurero-iniciosesion.png" alt="Pantalla de inicio de sesión"/>
+
+### Experiencia del Aventurero
+
+**Exploración de Actividades**
+Vista principal donde los aventureros pueden descubrir las diversas experiencias disponibles en la plataforma, con miniaturas y detalles básicos.
+
+<img src="images/evidenceWEB/aventurero-home.png" alt="Exploración de actividades"/>
+
+**Detalles de Actividad**
+Visualización detallada de una actividad específica, incluyendo descripción, precio, ubicación y valoraciones.
+
+<img src="images/evidenceWEB/aventurero-buscar4.png" alt="Detalles de actividades"/>
+
+### Experiencia del Empresario
+
+**Panel Principal**
+Dashboard que muestra las publicaciones activas del empresario y estadísticas generales de su cuenta.
+
+<img src="images/evidenceWEB/emprendedor-home.png" alt="Panel principal del empresario"/>
+
+**Creación de Actividad**
+Formulario completo para la creación de nuevas actividades, permitiendo subir imágenes, establecer precios y detallar la experiencia.
+
+<img src="images/evidenceWEB/emprendedor-agregar.png" alt="Formulario de creación de actividad"/>
+
+**Estadísticas**
+Visualización analítica del rendimiento de las actividades publicadas, incluyendo vistas, favoritos y calificaciones.
+
+<img src="images/evidenceWEB" alt="Estadísticas de actividades"/>
+
+### Gestión de Perfil
+
+**Configuración de Cuenta**
+Interfaz que permite a ambos tipos de usuarios modificar su información personal y preferencias.
+
+<img src="images/evidenceWEB" alt="Configuración de cuenta"/>
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence  
 
@@ -1966,8 +2082,57 @@ Utilizamos Swagger para documentar y probar los endpoints de la API de manera in
 <img src="images/evidence/Evidence_role_management.jpg"></img><br>
 
 ### 5.2.7. Team Collaboration Insights  
-*Durante cada sprint, la colaboración efectiva dentro del equipo es fundamental para garantizar el éxito del proyecto. En el primer sprint, nuestro enfoque principal fue la implementación del backend.*
 
+La colaboración efectiva ha sido un pilar fundamental en el desarrollo de AventuraPe. Durante nuestros tres sprints, implementamos un enfoque de trabajo que maximizó nuestras fortalezas individuales mientras asegurábamos la integración coherente de todos los componentes del sistema.
+
+### Metodología y Herramientas
+
+Para gestionar nuestro flujo de trabajo, adoptamos una combinación de herramientas que facilitaron tanto la comunicación como el seguimiento de tareas:
+
+- **Trello**: Utilizamos tableros Kanban para visualizar el progreso de las tareas, con columnas de "Por hacer", "En proceso", "Revisión" y "Hecho", permitiendo identificar fácilmente bloqueos.
+- **GitHub**: Integramos nuestro sistema de control de versiones con revisiones de código obligatorias antes de fusionar cambios, asegurando calidad y coherencia.
+- **Microsoft Teams**: Realizamos reuniones diarias de 15 minutos para sincronizar esfuerzos y resolver impedimentos rápidamente.
+- **Figma**: Como herramienta de colaboración para diseño, permitió retroalimentación en tiempo real.
+
+### Distribución de Responsabilidades
+
+La asignación de tareas siguió un modelo que aprovechó las especialidades de cada integrante:
+
+- **Jimena** coordinó y desarrolló todo el Post Management del emprendedor y el Profile Management.
+
+- **Jair** se enfocó en toda la arquitectura backend y la implementación de APIs REST con Spring Boot.
+
+- **José** gestionó la Statictics Management del empresario.
+
+- **Estefano** desarrolló la sección de Profile Management de la versión Web
+
+- **Barbara** coordinó y desarrolló todo el Post Management del aventurero.
+
+### Puntos Destacados de la Colaboración
+
+1. **Integración Continua**: Configuramos GitHub Actions para ejecutar pruebas automáticamente con cada pull request, reduciendo los errores en las integraciones.
+
+2. **Sesiones de Pair Programming**: Implementamos programación en parejas para tareas críticas, como la autenticación y la gestión de actividades.
+
+3. **Code Reviews**: Establecimos revisiones cruzadas obligatorias donde cada PR debía ser aprobado por al menos otro miembro del equipo, lo que garantizó adherencia a los estándares de codificación.
+
+4. **Retrospectivas**: Al finalizar cada sprint, realizamos retrospectivas para identificar mejoras en nuestro proceso.
+
+### Métricas de Colaboración
+
+El análisis de nuestros repositorios muestra métricas positivas de colaboración:
+
+- **Tiempo promedio de resolución de PR**: 5 días
+- **Promedio de comentarios por PR**: 4.7
+- **Distribución equilibrada de commits**: cada miembro contribuyó entre el 17% y el 24% del total
+
+### Lecciones Aprendidas
+
+1. **Comunicación temprana sobre dependencias**: Identificar y comunicar dependencias entre tareas al inicio del sprint redujo significativamente los bloqueos.
+
+2. **Documentación en tiempo real**: Documentar decisiones técnicas durante el desarrollo, no después, mejoró la coherencia del diseño.
+
+3. **Flexibilidad en la asignación**: Permitir que los miembros contribuyeran fuera de sus áreas principales cuando fue necesario aceleró el desarrollo en momentos críticos.
 
 
 ## 5.3. Video About-the-Product  
