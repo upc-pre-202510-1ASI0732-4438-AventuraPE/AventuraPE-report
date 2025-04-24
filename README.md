@@ -497,14 +497,15 @@ Para el segmento de Empresas Locales:
 
 ### 2.2.2. Registro de entrevistas  
 
-**Segmento de aventureros**
+**Segmento de aventureros** <br>
+
 1. 
 - **Entrevistado**: Salvador Diaz Aguirre
 - **Duración**: 2.50
 - **Resumen**: El entrevistado indicó que suele buscar actividades para realizar a través de redes sociales como Instagram y TikTok, especialmente cuando planea salir con amigos, lo cual ocurre al menos una vez por semana. Señaló que la simplicidad de la plataforma es un aspecto clave, ya que prefiere no invertir demasiado tiempo en planear qué hacer. Además, destacó la importancia de los comentarios y calificaciones de otros usuarios, ya que estos le permiten obtener diferentes perspectivas y tomar decisiones más informadas sobre las experiencias disponibles.
 - **Link**:<br>
 [https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing)
-<img src="images/interviews/aventurero_salvador.png"><br>
+<img src="images/interviews/aventurero_salvador.png"><br><br>
 
 2.  
 - **Entrevistado**: Diego Salinas
@@ -513,7 +514,7 @@ Para el segmento de Empresas Locales:
 
 - **Link**:<br>
 [https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/10eVCj7I82mNq8Ye0QHmL6lae7SKMdXty/view?usp=sharing)
-<img src="images/interviews/aventurero_diego.jpg"><br>
+<img src="images/interviews/aventurero_diego.jpg"><br><br>
 
 3. 
 - **Entrevistado**: Sebastian Cachis
@@ -521,7 +522,7 @@ Para el segmento de Empresas Locales:
 - **Resumen**: El entrevistado, Sebastián Nicolás Cachi González, de 20 años y residente del distrito de San Miguel, compartió que en su tiempo libre disfruta principalmente de salir, ya sea a caminar, pasear o realizar actividades como ir de compras, consumir servicios de entretenimiento o reunirse con amigos. Señaló que estaría abierto a hacer cosas nuevas si recibe una invitación o si se le presenta la oportunidad.
 - **Link**:<br>
 [https://drive.google.com/file/d/1ce04nBqyOjyxaB6vpfY9SCI-2bd2Y6M8/view?usp=sharing](https://drive.google.com/file/d/1auAbtxfxbmQmkZEBzCa8vFG4sR9X2c8P/view?usp=sharing)
-<img src="images/interviews/Entrevista_sebastian_cachis.jpg"><br>
+<img src="images/interviews/Entrevista_sebastian_cachis.jpg"><br><br>
 
 4. 
 - **Entrevistado**: Pamela Vela
@@ -529,7 +530,7 @@ Para el segmento de Empresas Locales:
 - **Resumen**: Pamela Vela, estudiante universitaria de 22 años, valora actividades en su tiempo libre que ofrezcan exclusividad, innovación o beneficios como promociones y lanzamientos de productos. Prefiere recomendaciones personalizadas y usa apps móviles con frecuencia para descubrir eventos, destacando la importancia de filtros como "muestras gratis" o "solo con invitación". Busca en una app funcionalidades como alertas, mapas interactivos y secciones de tendencias, priorizando la simplicidad y personalización. Estaría dispuesta a pagar una suscripción (5−15 dolares mensuales) por acceso anticipado a eventos exclusivos, descuentos o experiencias VIP, siempre que el valor sea claro. La cercanía geográfica es relevante, pero no determinante si la actividad lo merece.
 - **Link**:<br>
 [https://drive.google.com/file/d/1TlYYeQKX9zZIUYuLcDEvXlYT-2N0NyCB/view?usp=sharing](https://drive.google.com/file/d/1TlYYeQKX9zZIUYuLcDEvXlYT-2N0NyCB/view?usp=sharing)
-<img src="images/interviews/Entrevista_estefano.png"><br>
+<img src="images/interviews/Entrevista_estefano.png"><br><br>
 
 
 **Segmento de emprendedores**
@@ -539,24 +540,56 @@ Para el segmento de Empresas Locales:
 - **Duración**: 4.16
 - **Resumen**: El entrevistado indicó que actualmente utiliza anuncios en Facebook e Instagram como parte de su estrategia de marketing, destacando que las redes sociales son fundamentales para la visibilidad de su emprendimiento. Además, expresó interés en contar con una plataforma que le permita ajustar su estrategia de marketing mediante la realización de eventos. Finalmente, mencionó que los comentarios y calificaciones de los usuarios generarían mayor confianza en las personas para asistir a los eventos que organiza.
 - **Link**: [https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing](https://drive.google.com/file/d/1V4XJTtJC00TLO5Z74WxukIkKkQ_FcBZR/view?usp=sharing)
-<img src="images/interviews/emprendedor_fabian.png"><br>
+<img src="images/interviews/emprendedor_fabian.png"><br><br>
 
 2.
 - **Entrevistado**: Nasthya del Carpio
 - **Duración**: 5:12
 - **Resumen**: Nasthya, una joven emprendedora de 21 años que vende tote bags personalizadas por Instagram, destacó la importancia de las redes sociales como su principal canal de promoción, valorando especialmente las colaboraciones, sorteos y el contenido visual. Señaló que las promociones y descuentos son clave para atraer clientes, y mostró interés en una app que le permita lanzar ofertas exclusivas y conectar con personas cercanas. Además, considera fundamental recibir feedback para mejorar sus productos y brindarle a sus clientes una experiencia personalizada. También está dispuesta a implementar recompensas para fomentar la lealtad de sus compradores frecuentes.
 - **Link**: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw)<br>
-<img src="images/interviews/emprendedor_nasthya.png"><br>
+<img src="images/interviews/emprendedor_nasthya.png"><br><br>
 
 
 3.
-**Entrevistado**:
-**Duración**:
-**Resumen**:
-**Link**:
+
+- **Entrevistado**:
+- **Duración**:
+- **Resumen**:
+- **Link**:
 
 
-### 2.2.3. Análisis de entrevistas  
+### 2.2.3. Análisis de entrevistas 
+
+**Segmento aventureros**<br>
+En este grupo hemos identificado a jóvenes con una actitud activa y curiosa frente a su tiempo libre, quienes valoran la simplicidad, la espontaneidad y las recomendaciones sociales al momento de decidir qué hacer. A través de sus testimonios, entendemos mejor sus comportamientos y expectativas hacia una plataforma como AventuraPe.
+
+- Observamos que las redes sociales como Instagram y TikTok son su principal fuente de inspiración para actividades, ya que priorizan contenido visual, rápido y accesible.
+
+- Coincidimos en que la simplicidad de uso es esencial: prefieren apps intuitivas que no requieran una planificación extensa.
+
+- La validación social es clave: los comentarios y calificaciones influyen directamente en sus decisiones. Buscan seguridad y confianza en las experiencias que eligen.
+
+- Valoramos la cercanía geográfica, aunque hay apertura a trasladarse si la experiencia lo amerita, especialmente si hay un componente innovador o exclusivo.
+
+- Existe un interés por actividades físicas, deportivas o que generen adrenalina, especialmente entre los varones entrevistados.
+
+- La posibilidad de recibir recomendaciones personalizadas, filtros por tipo de actividad, y funcionalidades como mapas interactivos o alertas, elevan el atractivo de una app como AventuraPe.
+
+
+**Segmento emprendedores**<br>
+
+En este segmento encontramos a jóvenes con iniciativas comerciales, interesados en potenciar su visibilidad y conectar con nuevos clientes a través de canales digitales. Vemos una gran oportunidad de valor si les brindamos herramientas para mejorar su estrategia de marketing y su relación con la comunidad.
+
+- Todos los entrevistados utilizan activamente redes sociales, en especial Instagram y Facebook, como sus principales canales de venta.
+
+- Coincidimos en que las colaboraciones, los sorteos y las promociones son esenciales para captar atención y fidelizar clientes.
+
+- Vemos interés en una plataforma que les permita organizar eventos o actividades promocionales como parte de su estrategia de posicionamiento.
+
+- Consideramos crucial el poder lanzar promociones para captar clientes cercanos y generar experiencias más personalizadas.
+
+- El feedback del cliente es sumamente valorado, tanto para mejorar productos como para construir confianza.
+
 
 ## 2.3. Needfinding  
 ### 2.3.1. User Personas  
