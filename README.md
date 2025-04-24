@@ -707,6 +707,8 @@ El ubiquitous language es un vocabulario común compartido por todos los miembro
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping  
+<img src="images/to_be_scenario/to_be_scenario_mapping.png">
+
 ## 3.2. User Stories
 
 #### Navegación y Acceso (EP01)
