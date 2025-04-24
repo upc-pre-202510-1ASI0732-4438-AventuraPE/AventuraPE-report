@@ -1623,9 +1623,11 @@ Actualmente, el único módulo desplegado en producción es la Landing Page, la 
  - Frontend Web: ejecutado localmente vía servidor de desarrollo (npm run dev).
 
 ## 5.2. Product Implementation & Deployment  
-# 5.2.1 Sprint Backlogs
 
-## Sprint 1 – Objetivo
+
+### 5.2.1 Sprint Backlogs
+
+### Sprint 1 – Objetivo
 **Objetivo del Sprint:** Publicar una versión mínima viable (MVP) de la landing page de AventuraPe, con navegación completa e información esencial visible para visitantes.
 
 **Criterio de éxito:** Se considera completo cuando un usuario puede visitar la landing, acceder a las secciones "Sobre Nosotros", "Servicios", "FAQ", "Testimonios" y "Contacto", y navegar sin errores desde un navegador web.
@@ -1642,7 +1644,7 @@ Actualmente, el único módulo desplegado en producción es la Landing Page, la 
 | US06 | TSK-06 | Programar sección de contacto con validación de formulario | 4 | Jimena y Jair| Done |
 | US01 | TSK-07 | Configurar GitHub Pages + GitHub Actions para despliegue | 2 | Jimena y Barbara| Done |
 
-## Sprint 2 – Objetivo
+### Sprint 2 – Objetivo
 
 **Objetivo del Sprint:** Desarrollar e implementar funcionalidades de gestión de usuarios para aventureros: registro, inicio de sesión y visualización de actividades.
 
