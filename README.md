@@ -682,7 +682,9 @@ Voy a reorganizar las User Stories manteniendo todo el contenido original, inclu
 | EP05 | Experiencia Aventurero | Interacción con actividades y funcionalidades específicas para aventureros | Aventurero | Consulta de detalles, calificaciones, reseñas, navegación del home |
 | EP06 | Gestión de Actividades | Administración de actividades por parte de los empresarios | Empresario | Publicación, edición y eliminación de actividades |
 <br>
+
 ### Epic: Navegación y Acceso (EP01)
+
 | Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
 |----------|--------|-------------|---------|---------|-------------------------|
 | US01 | Interacción con hipervínculos (Web) | Como visitante, quiero interactuar con los enlaces de navegación para ir a las diferentes secciones de la plataforma web. | EP01 | Visitante | **Escenario 1: Búsqueda de Aventurape**<br>Dado que el visitante quiere saber sobre los servicios de AventuraPe<br>Cuando el visitante busca en Internet AventuraPe<br>Entonces el sistema le muestra la landing page de AventuraPe<br><br>**Escenario 2: Navegación exitosa**<br>Dado que el visitante se encuentra en la plataforma web de AventuraPe<br>Cuando el visitante hace clic en una sección de la barra de navegación<br>Entonces el sistema muestra la sección correspondiente |
