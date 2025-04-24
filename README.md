@@ -534,7 +534,7 @@ Para el segmento de Empresas Locales:
 
 5. 
 - **Entrevistado**: Diego Real
-- **Duración**: 4.30
+- **Duración**: 6.29
 - **Resumen**: Diego Real, un joven de 25 años, elige sus actividades de tiempo libre buscando experiencias dinámicas, únicas y relacionadas con sus intereses como deportes, tecnología y música. Valora eventos irrepetibles, descuentos, y oportunidades para socializar. Aunque prefiere actividades cercanas, está dispuesto a desplazarse por algo realmente atractivo. Utiliza apps y redes sociales frecuentemente para descubrir nuevas experiencias, y le gustaría que una app incluyera mapas en tiempo real, filtros personalizados, venta de entradas y notificaciones útiles. Destaca la importancia de la personalización y la simplicidad en la interfaz. Estaría dispuesto a pagar entre $10 y $20 mensuales por acceso exclusivo, descuentos, contenido premium y beneficios adicionales como merchandising o entradas VIP.
 - **Link**:<br>
 [https://drive.google.com/file/d/1XQWBYGyoSQiw1YOmGVTH4rQ6tqeWWC3G/view?usp=sharing](https://drive.google.com/file/d/1XQWBYGyoSQiw1YOmGVTH4rQ6tqeWWC3G/view?usp=sharing)
@@ -559,11 +559,11 @@ Para el segmento de Empresas Locales:
 
 
 3. 
-- **Entrevistado**:
-- **Duración**:
-- **Resumen**:
-- **Link**:
-
+- **Entrevistado**: Piero Delgado
+- **Duración**: 5.04
+- **Resumen**: Piero Delgado, fundador de la óptica GRUPO COLOR VISION S.A.C., destaca el rol clave de las redes sociales para atraer clientes locales, apoyándose en influencers y campañas visuales. Considera que una app con buen alcance y funciones promocionales sería una gran herramienta para visibilizar su negocio. Está interesado en ofrecer experiencias como sorteos o campañas de cambio de look, y valora mucho el feedback de los usuarios para mejorar sus servicios. Además, ve con buenos ojos implementar promociones exclusivas y programas de fidelización para fortalecer la relación con sus clientes. Para él, una app debe ser una herramienta cercana, práctica y que motive a los usuarios a regresar.
+- **Link**:[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9)<br>
+<img src="images/interviews/entrevista-piero.png"><br><br>
 
 ### 2.2.3. Análisis de entrevistas 
 
