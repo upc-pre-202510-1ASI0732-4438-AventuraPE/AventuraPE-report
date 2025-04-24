@@ -46,9 +46,9 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   <tbody>
     <tr>
       <td>0.1</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td>24/04/2025</td>
+      <td>AventuraPE</td>
+      <td>Redacción del Capítulo I: Introduccion, Capítulo II: Requirements Elicitation & Analysis, Capítulo III:Requirements Specification, Capítulo IV: Product Design, Capítulo V: Product Implementation</td>
     </tr>
     
   </tbody>
