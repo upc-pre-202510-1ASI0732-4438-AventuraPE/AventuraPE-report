@@ -1937,56 +1937,43 @@ En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales
 
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
-
-A continuación, presentamos la implementación de la aplicación web frontend de AventuraPe, desarrollada utilizando Node.js y TypeScript. Esta interfaz permite a los usuarios interactuar con las principales funcionalidades de nuestra plataforma desde una experiencia web completa.
+<br>A continuación, presentamos la implementación de la aplicación web frontend de AventuraPe, desarrollada utilizando Node.js y TypeScript. Esta interfaz permite a los usuarios interactuar con las principales funcionalidades de nuestra plataforma desde una experiencia web completa.
 
 ### Sección de Autenticación
 
 **Registro de Cuenta y Pantalla de Selección de Rol**
-Esta vista permite al usuario elegir entre ingresar como aventurero o como empresario, facilitando la segmentación de la experiencia desde el inicio.
+<br>Esta vista permite al usuario elegir entre ingresar como aventurero o como empresario, facilitando la segmentación de la experiencia desde el inicio.
 
 <img src="images/evidenceWEB/aventurero-registro.png" alt="Pantalla de selección de rol"/>
 
 **Inicio de Sesión**
-Interfaz segura que permite a los usuarios autenticarse en la plataforma y acceder a sus funcionalidades personalizadas.
+<br>Interfaz segura que permite a los usuarios autenticarse en la plataforma y acceder a sus funcionalidades personalizadas.
 
 <img src="images/evidenceWEB/aventurero-iniciosesion.png" alt="Pantalla de inicio de sesión"/>
 
 ### Experiencia del Aventurero
 
 **Exploración de Actividades**
-Vista principal donde los aventureros pueden descubrir las diversas experiencias disponibles en la plataforma, con miniaturas y detalles básicos.
+<br>Vista principal donde los aventureros pueden descubrir las diversas experiencias disponibles en la plataforma, con miniaturas y detalles básicos.
 
 <img src="images/evidenceWEB/aventurero-home.png" alt="Exploración de actividades"/>
 
 **Detalles de Actividad**
-Visualización detallada de una actividad específica, incluyendo descripción, precio, ubicación y valoraciones.
+<br>Visualización detallada de una actividad específica, incluyendo descripción, precio, ubicación y valoraciones.
 
 <img src="images/evidenceWEB/aventurero-buscar4.png" alt="Detalles de actividades"/>
 
 ### Experiencia del Empresario
 
 **Panel Principal**
-Dashboard que muestra las publicaciones activas del empresario y estadísticas generales de su cuenta.
+<br>Dashboard que muestra las publicaciones activas del empresario y estadísticas generales de su cuenta.
 
 <img src="images/evidenceWEB/emprendedor-home.png" alt="Panel principal del empresario"/>
 
 **Creación de Actividad**
-Formulario completo para la creación de nuevas actividades, permitiendo subir imágenes, establecer precios y detallar la experiencia.
+<br>Formulario completo para la creación de nuevas actividades, permitiendo subir imágenes, establecer precios y detallar la experiencia.
 
 <img src="images/evidenceWEB/emprendedor-agregar.png" alt="Formulario de creación de actividad"/>
-
-**Estadísticas**
-Visualización analítica del rendimiento de las actividades publicadas, incluyendo vistas, favoritos y calificaciones.
-
-<img src="images/evidenceWEB" alt="Estadísticas de actividades"/>
-
-### Gestión de Perfil
-
-**Configuración de Cuenta**
-Interfaz que permite a ambos tipos de usuarios modificar su información personal y preferencias.
-
-<img src="images/evidenceWEB" alt="Configuración de cuenta"/>
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence  
 
