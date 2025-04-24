@@ -1517,18 +1517,249 @@ Representa la relación entre un informe estadístico y los posts incluidos en �
 
 ## 5.1. Software Configuration Management  
 ### 5.1.1. Software Development Environment Configuration  
-### 5.1.2. Source Code Management  
+El entorno de desarrollo estuvo basado en Webstorm para frontend web, Android Studio (Ladybug) para móvil, y Swagger para pruebas de APIs. El backend fue desarrollado en Java con Spring Boot 3.2, ejecutado localmente en la base de datos PostgreSQL. Se utilizó GitHub Actions para despliegue automatizado en la landing.
+
+### 5.1.2. Source Code Management 
+Se empleó GitHub como sistema de control de versiones, siguiendo la estrategia Git Flow: main para producción, develop para integración, y ramas de características (feature/login, feature/publication) para desarrollo paralelo. Cada commit seguía la convención: 
+<li>feat: descripción
+<li>fix: descripción
+<li>docs: actualización.
 ### 5.1.3. Source Code Style Guide & Conventions  
+Para mantener un código limpio, legible y fácil de mantener en equipo, se definieron guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack.
+
+#### **Frontend Web (Webstorm.js con TypeScript)**
+- Las reglas aplicadas incluyeron:
+  - **CamelCase** para variables y funciones (`handleClick`, `userList`).
+  - **PascalCase** para nombres de componentes (`UserCard`, `ActivityCard`).
+  - Uso estricto de `const` y `let` (evitando `var`).
+  - Separación lógica de hooks y lógica de presentación en archivos distintos (`useActivityFetch.ts` vs `ActivityCard.tsx`).
+
+#### **Backend (Spring Boot + Java)**
+- Se adoptó la guía oficial de estilo de Java + convención de Spring:
+  - Clases en **PascalCase** (`UserService`, `PublicationController`).
+  - Variables y métodos en **camelCase** (`getPublications()`, `userId`).
+  - Separación en paquetes según capa: `controller`, `service`, `repository`, `model`.
+  - Uso de anotaciones estándar (`@RestController`, `@Autowired`, `@GetMapping`).
+  - Código documentado con comentarios Javadoc (`/** */`) en servicios y endpoints principales.
+
+#### **Android Mobile (Kotlin)**
+- Se usó la convención oficial de Kotlin:
+  - Nombres claros, concisos y expresivos.
+  - Propiedades inmutables por defecto (`val`) y mutables solo cuando es estrictamente necesario (`var`).
+  - Nombres de vistas en XML en snake_case (`btn_register`, `txt_user_email`).
+  - En el código Kotlin, nombres de clases y funciones en PascalCase y camelCase respectivamente.
+  - Arquitectura basada en **MVVM**, separando `ViewModel`, `Repository` y `UI`.
+
+#### **General**
+- Todos los equipos usaron **pre-commit hooks** con `Husky` (para frontend) y scripts personalizados en backend para evitar commits con errores de formato o linters.
+- Se definieron **convenciones de nomenclatura de commits** usando el formato:
+  - `feat:` para nuevas funcionalidades.
+  - `fix:` para corrección de errores.
+  - `docs:` para documentación.
+  - `refactor:` para mejoras internas sin cambios funcionales.
+  - `style:` para cambios de formato sin alterar la lógica.
+Estas convenciones fueron aplicadas de forma continua mediante integración con GitHub Actions y revisión manual por parte del líder técnico antes de cada merge a `develop`.
+
 ### 5.1.4. Software Deployment Configuration  
+Actualmente, el único módulo desplegado en producción es la Landing Page, la cual se publica automáticamente mediante GitHub Actions a través de GitHub Pages. Este despliegue ocurre tras cada push a la rama main, garantizando acceso inmediato a la última versión.
+ - El backend RESTful y la aplicación frontend web aún no han sido desplegados en un entorno público. Ambos se ejecutan de forma local para pruebas y desarrollo:
+ - Backend: Spring Boot 3.2 corriendo en localhost (http://localhost:8090) con base de datos PostgreSQL.
+ - Frontend Web: ejecutado localmente vía servidor de desarrollo (npm run dev).
 
 ## 5.2. Product Implementation & Deployment  
-### 5.2.1. Sprint Backlogs  
-### 5.2.2. Implemented Landing Page Evidence  
+# 5.2.1 Sprint Backlogs
+
+## Sprint 1 – Objetivo
+**Objetivo del Sprint:** Publicar una versión mínima viable (MVP) de la landing page de AventuraPe, con navegación completa e información esencial visible para visitantes.
+
+**Criterio de éxito:** Se considera completo cuando un usuario puede visitar la landing, acceder a las secciones "Sobre Nosotros", "Servicios", "FAQ", "Testimonios" y "Contacto", y navegar sin errores desde un navegador web.
+
+### Sprint Backlog – Sprint 1
+
+| User Story | Task ID | Tarea Técnica | Estimación (hrs) | Responsable | Estado |
+|------------|---------|---------------|------------------|-------------|--------|
+| US01 | TSK-01 | Diseñar estructura base de la landing page en HTML/CSS | 3 | Jimena y Barbara | Done |
+| US01 | TSK-02 | Implementar navegación con anclas e íconos interactivos | 2 | Jair | Done |
+| US02 | TSK-03 | Diseñar sección de servicios con cards y botones de acción | 4 | Jimena y Barbara | Done |
+| US04 | TSK-04 | Codificar sección "Sobre Nosotros" con diseño responsive | 3 | Jair | Done |
+| US05 | TSK-05 | Implementar sección de testimonios en carrusel dinámico | 5 | Jimena | Done |
+| US06 | TSK-06 | Programar sección de contacto con validación de formulario | 4 | Jimena y Jair| Done |
+| US01 | TSK-07 | Configurar GitHub Pages + GitHub Actions para despliegue | 2 | Jimena y Barbara| Done |
+
+## Sprint 2 – Objetivo
+
+**Objetivo del Sprint:** Desarrollar e implementar funcionalidades de gestión de usuarios para aventureros: registro, inicio de sesión y visualización de actividades.
+
+**Criterio de éxito:** El sistema debe permitir que un usuario aventurero se registre, inicie sesión y vea publicaciones desde el frontend, todo probado en entorno local.
+
+### Sprint Backlog – Sprint 2 (Aventurero)
+
+| User Story | Task ID | Tarea Técnica | Estimación (hrs) | Responsable | Estado |
+|------------|---------|---------------|------------------|-------------|--------|
+| US04 | TSK-08 | Crear formulario de login (frontend) con validaciones | 4 | Stefano | Done (local) |
+| US06 | TSK-09 | Backend: endpoint POST `/sign-up` con validaciones | 4 | Stefano | Done (local) |
+| US11 | TSK-10 | Visualizar mapa interactivo en app móvil (dummy data) | 6 | Stefano | In Progress |
+| US12 | TSK-11 | Implementar búsqueda de actividades (frontend móvil) | 4 | Barbara | Done (local) |
+| US13 | TSK-12 | Agregar funcionalidad de filtro por nombre | 4 | Jair | In Progress (local) |
+| US17 | TSK-13 | Backend: guardar favoritos en lista personal | 3 | Barbara | In Progress |
+
+## Sprint 3 – Objetivo
+
+**Objetivo del Sprint:** Implementar funcionalidades principales para usuarios empresarios: publicar, editar y eliminar actividades, además de visualizar estadísticas.
+
+**Criterio de éxito:** El empresario puede gestionar sus publicaciones desde el frontend móvil y visualizar sus estadísticas generales, todo en entorno local.
+
+### Sprint Backlog – Sprint 3 (Empresario)
+
+| User Story | Task ID | Tarea Técnica | Estimación (hrs) | Responsable | Estado |
+|------------|---------|---------------|------------------|-------------|--------|
+| US08 | TSK-14 | Crear formulario de publicación de actividades | 5 | Barbara | Done (local) |
+| US09 | TSK-15 | Implementar flujo de edición (form + vista previa) | 4 | Jimena | Done (local) |
+| US10 | TSK-16 | Backend: lógica para eliminar publicaciones | 3 | Barbara | Done (local) |
+| US19 | TSK-17 | Dashboard estadístico: visitas y comentarios por publicación | 5 | Jose | Done (local) |
+| US05 | TSK-18 | Login empresario con validación de credenciales | 3 | Stefano | Done (local) |
+
+## Enlace al tablero Trello del proyecto
+
+**Trello URL público:** [https://trello.com/invite/b/67fec4eb81fae4e3cb20bc4a/ATTIbaa9f91c96fe0bff5f0c939bfdaa9ee46306E3A0/1asi0732-2510-4438-grupo2](#)
+
+### 5.2.2. Implemented Landing Page Evidence
+#### *Link del despliegue de la landing:* https://aventurape-androidsoftware.github.io/AventuraPe_LandingPage/
+
+
+### Evidencia de la Landing Page :
+<img src="images/evidence/Evidence_landing_1.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_2.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_3.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_4.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_5.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_6.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_7.jpg"></img><br>
+
+<img src="images/evidence/Evidence_landing_8.jpg"></img><br>
+
+
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
+
 ### 5.2.4. Implemented Native-Mobile Application Evidence  
+
+### Login Management
+<img src="images/evidence/Evidence_login_management.jpg"></img><br>
+
+### Register Management
+<img src="images/evidence/Evidence_register_management.jpg"></img><br>
+
+<img src="images/evidence/Evidence_register_management_2.jpg"></img><br>
+
+### Post Activity  Management
+<img src="images/evidence/Evidence_post_activity_management.jpg"></img><br>
+
+<img src="images/evidence/Evidence_post_activity_management_2.jpg"></img><br>
+
+### Account Adventurer 
+<img src="images/evidence/Evidence_account_adventurer.jpg"></img><br>
+
+<img src="images/evidence/Evidence_account_adventurer_2.jpg"></img><br>
+
+### Account Entrepreneur 
+<img src="images/evidence/Evidence_account_entrepreneur.jpg"></img><br>
+
+<img src="images/evidence/Evidence_account_entrepreneur_2.jpg"></img><br>
+
+### All Publitacions
+<img src="images/evidence/Evidence_all_publications.jpg"></img><br>
+
+### Detail Publitacions
+<img src="images/evidence/Evidence_detail_publication.jpg"></img><br>
+
+<img src="images/evidence/Evidence_detail_publication_2.jpg"></img><br>
+
+
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence  
+
+Hemos añadido correctamente nuestros servicios web bajo una arquitectura RESTful, implementando correcciones en todos los endpoints existentes. Además, hemos añadido un nuevo endpoint llamado favorite-publications, que permite a los usuarios gestionar sus publicaciones favoritas de manera más eficiente.
+La nueva funcionalidad de favorite-publications permite a los usuarios obtener, añadir y eliminar publicaciones de su lista de favoritos, mejorando la interacción con el contenido que más les interesa. La documentación de todos los endpoints está disponible a través de Swagger, lo que facilita la interacción con la API.
+
+Acción | Endpoint | Detalles | Enlace
+------- | -------- | -------- | --------
+POST | /authentication/sign-up | Registro de un nuevo usuario | http://localhost:8090/swagger-ui/index.html#/  
+ | /authentication/sign-in | Autenticación de usuario (inicio de sesión) |
+ | /publication/{publicationId}/add-comment | Añadir comentario a una publicación específica |
+ | /publication/create-publication | Crear una nueva publicación |
+ | /profiles | Crear un nuevo perfil de usuario |
+GET | /publication/{publicationId}/comments | Obtener comentarios de una publicación específica |
+ | /publication/{entrepreneurId}/publications | Obtener todas las publicaciones de un emprendedor específico |
+ | /publication/all-publications | Obtener todas las publicaciones disponibles |
+ | /publication/all-comments | Obtener todos los comentarios |
+ | /publication/{publicationId} | Obtener detalles de una publicación específica |
+ | /profiles | Obtener todos los perfiles de usuarios |
+ | /profiles/name/{name} | Buscar perfiles por nombre |
+ | /profiles/location/{location} | Buscar perfiles por ubicación |
+ | /profiles/id/{profileId} | Obtener perfil por ID específico |
+PUT | /publication/{publicationId}/update-publication | Actualización de una publicación específica |
+ | /profiles/{profileId} | Actualizar el perfil de un usuario específico |
+DELETE | /publication/{publicationId}/delete-publication | Eliminar una publicación específica |
+
+
 ### 5.2.6. RESTful API documentation  
+Utilizamos Swagger para documentar y probar los endpoints de la API de manera interactiva, lo que facilita a los desarrolladores la integración y verificación de los servicios RESTful.
+
+### Api Documentation
+
+<img src="images/evidence/Evidence_api_documentation.jpg"></img><br>
+
+<img src="images/evidence/Evidence_api_documentation (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_api_documentation (3).jpg"></img><br>
+
+
+### Login Management
+<img src="images/evidence/Evidence_sign_in.jpg"></img><br>
+
+<img src="images/evidence/Evidence_sign_up.jpg"></img><br>
+
+### Publication Management
+
+<img src="images/evidence/Evidence_publication (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (3).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (4).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (5).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication (6).jpg"></img><br>
+
+<img src="images/evidence/Evidence_publication.jpg"></img><br>
+
+### Account Management
+
+<img src="images/evidence/Evidence_profiles_management (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_profiles_management (3).jpg"></img><br>
+
+<img src="images/evidence/Evidence_profiles_management.jpg"></img><br>
+
+### User Management
+
+<img src="images/evidence/Evidence_user_management (2).jpg"></img><br>
+
+<img src="images/evidence/Evidence_user_management.jpg"></img><br>
+
+### Role Management
+
+<img src="images/evidence/Evidence_role_management.jpg"></img><br>
+
 ### 5.2.7. Team Collaboration Insights  
+*Durante cada sprint, la colaboración efectiva dentro del equipo es fundamental para garantizar el éxito del proyecto. En el primer sprint, nuestro enfoque principal fue la implementación del backend.*
+
+
 
 ## 5.3. Video About-the-Product  
 
