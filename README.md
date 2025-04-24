@@ -532,6 +532,14 @@ Para el segmento de Empresas Locales:
 [https://drive.google.com/file/d/1TlYYeQKX9zZIUYuLcDEvXlYT-2N0NyCB/view?usp=sharing](https://drive.google.com/file/d/1TlYYeQKX9zZIUYuLcDEvXlYT-2N0NyCB/view?usp=sharing)
 <img src="images/interviews/Entrevista_estefano.png"><br><br>
 
+5. 
+- **Entrevistado**: Diego Real
+- **Duración**: 4.30
+- **Resumen**: Diego Real, un joven de 25 años, elige sus actividades de tiempo libre buscando experiencias dinámicas, únicas y relacionadas con sus intereses como deportes, tecnología y música. Valora eventos irrepetibles, descuentos, y oportunidades para socializar. Aunque prefiere actividades cercanas, está dispuesto a desplazarse por algo realmente atractivo. Utiliza apps y redes sociales frecuentemente para descubrir nuevas experiencias, y le gustaría que una app incluyera mapas en tiempo real, filtros personalizados, venta de entradas y notificaciones útiles. Destaca la importancia de la personalización y la simplicidad en la interfaz. Estaría dispuesto a pagar entre $10 y $20 mensuales por acceso exclusivo, descuentos, contenido premium y beneficios adicionales como merchandising o entradas VIP.
+- **Link**:<br>
+[https://drive.google.com/file/d/1XQWBYGyoSQiw1YOmGVTH4rQ6tqeWWC3G/view?usp=sharing](https://drive.google.com/file/d/1XQWBYGyoSQiw1YOmGVTH4rQ6tqeWWC3G/view?usp=sharing)
+<img src="images/interviews/entrevista-estefano2.jpg"><br><br>
+
 
 **Segmento de emprendedores**
 
@@ -550,8 +558,7 @@ Para el segmento de Empresas Locales:
 <img src="images/interviews/emprendedor_nasthya.png"><br><br>
 
 
-3.
-
+3. 
 - **Entrevistado**:
 - **Duración**:
 - **Resumen**:
