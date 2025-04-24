@@ -283,8 +283,12 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
-
-En AventuraPE, hemos creado un sistema de diseño que mantiene todo visualmente coherente en nuestras diferentes plataformas. Nuestras Style Guidelines son la columna de nuestra identidad visual, definiendo esos elementos clave que hacen única a nuestra marca. Cubrimos todo lo esencial, desde el branding y las fuentes hasta los colores que nos representan. También hemos definido un estilo de comunicación flexible que puede ser divertido según lo necesitemos, pero siempre manteniendo ese toque energético que nos caracteriza.
+En AventuraPe, el sistema de diseño visual ha sido construido a partir de los insights obtenidos en entrevistas con nuestros principales usuarios, especialmente los perfiles aventurero espontáneo y emprendedor visualmente orientado. Detectamos que estos usuarios valoran una interfaz dinámica, energética y fácil de explorar, por lo que desarrollamos un sistema visual que combina:
+<li>Paletas de colores vibrantes que refuerzan la acción y la aventura.
+<li>Tipografía sans serif moderna que mejora la legibilidad en distintos dispositivos.
+<li>Íconos ilustrativos simples que permiten escanear funcionalidades rápidamente.
+<li>Contraste alto y uso consistente de layouts responsivos para mejorar la accesibilidad.<br>
+<br>En particular, adoptamos un tono comunicacional versátil, que puede adaptarse a diferentes segmentos: lúdico para el aventurero casual, y profesional para el emprendedor. Estas decisiones están respaldadas por los principios de diseño universal (WCAG), Mobile First, y las guías de estilo de Material Design (Android) y Human Interface Guidelines (iOS).<br>Las siguientes subsecciones presentan el desglose visual aplicado a los distintos entornos (web y móviles), con capturas de los componentes base del sistema visual.<br>
 
 ### 4.1.1. General Style Guidelines  
 <img src="images/style_guidelines/general_style_guidelines.png">
@@ -319,9 +323,7 @@ En el panel del emprendedor la primera vista será la página principal con sus 
 
 
 ### 4.2.2. Labeling Systems  
-
-Antes de implementar las etiquetas en nuestra página, debemos determinar qué requisitos necesitamos cumplir. Las etiquetas nos permiten agregar texto, imágenes y otros elementos a nuestra página. El sistema “Learn Sing” utilizará las siguientes etiquetas para representar conjuntos de información:
-
+<br>Este sistema de etiquetado se integró en nuestro tablero de gestión de tareas (Trello/Jira) y permite identificar rápidamente el tipo de trabajo pendiente ([FEAT], [FIX]), su prioridad ([P1], [P2]) y el módulo involucrado ([UI], [DB]). Por ejemplo, la tarea [FEAT][P1][UI][TODO] Crear pantalla de inicio indica que es una nueva funcionalidad prioritaria de interfaz aún pendiente de desarrollo.<br>
 | **Etiqueta**            | **Descripción**               |
 |---------------------|---------------------------|
 | **Tipo de tarea**       |                           |
@@ -395,12 +397,12 @@ El sistema de búsqueda propuesto para AventuraPe permitirá a los usuarios pers
 
 
 ### 4.2.5. Navigation Systems  
-El sistema de navegación de la aplicación AventuraPe guiará a los usuarios a través de las distintas secciones y ventanas de la aplicación móvil, proporcionándoles la información que necesitan. A continuación, se detallan las acciones técnicas que facilitarán la navegación de los usuarios:
+En la app móvil se optó por el patrón de navegación tipo bottom tab bar, alineado con las guías de Human Interface (iOS) y Material Design (Android), facilitando el acceso a secciones críticas con el pulgar. En la web, se emplea una barra superior fija, siguiendo principios de navegación persistente, para evitar pérdida de contexto. Este diseño prioriza las tareas más frecuentes: explorar, buscar y gestionar cuenta, con énfasis visual en los íconos y retroalimentación activa al seleccionar secciones.
 
 **Aventurero**
 | Nombre | Descripción                                                                                                              |
 |--------|--------------------------------------------------------------------------------------------------------------------------|
-| Inicio | Le muestra los posts más recientes, los locales más populares al entrar a la aplicación. Además del botón "Sorpréndeme"  |
+| Inicio | Le muestra los posts más recientes, los locales más populares al entrar a la aplicación.|
 | Buscar | El usuario podrá buscar por palabra clave, nombre de local, etc.                                                         |
 | Cuenta | Este apartado permite que el usuario gestione su cuenta.                                                                 |
 <br>
@@ -414,7 +416,11 @@ El sistema de navegación de la aplicación AventuraPe guiará a los usuarios a 
 
 
 ## 4.3. Landing Page UI Design
-La propuesta de diseño de la landing page de AventuraPe se construye a partir de decisiones orientadas a brindar una experiencia de usuario clara, atractiva y coherente con los objetivos de la plataforma. En donde se ha priorizó una arquitectura de información jerárquica, en la que el contenido se organiza desde lo más relevante hacia lo complementario, permitiendo una exploración progresiva del sitio. El diseño adopta un enfoque responsive e inclusivo, considerando la adaptabilidad a distintos dispositivos y el uso de tipografías legibles, contraste adecuado de colores y botones accesibles. Esta planificación asegura que los usuarios, tanto aventureros como emprendedores, encuentren rápidamente la información y las funcionalidades clave, alineadas con su perfil y expectativas dentro del ecosistema digital de AventuraPe.
+El diseño de la landing page de AventuraPe fue construido bajo un enfoque centrado en el usuario, basado en los principales User Personas identificados: el aventurero espontáneo y el emprendedor en búsqueda de visibilidad. El diseño prioriza una arquitectura jerárquica de información que guía al usuario desde un mensaje de valor claro, hacia funcionalidades clave y mecanismos de confianza como testimonios. Para lograr una navegación fluida, se aplicó el **patrón visual en forma de “Z”**, optimizando la disposición de títulos, botones de acción y contenido visual.
+<br><br>
+En cuanto a accesibilidad, se respetaron las pautas WCAG 2.1: uso de alto contraste (mínimo 4.5:1), tipografías legibles en distintos tamaños, estructura **semántica clara y botones suficientemente grandes para interacción táctil** . El diseño es totalmente responsive, asegurando adaptabilidad desde desktop hasta smartphones.
+<br><br>
+Este diseño se evaluó con usuarios potenciales mediante **entrevistas cortas y pruebas de clics en prototipos de Figma**. Las observaciones nos permitieron reorganizar la sección de Testimonios más arriba en la jerarquía visual, al notar que generaba mayor confianza antes del registro. Este tipo de iteraciones nos permitió alinear la estructura visual con las expectativas del usuario real.
 
 ### 4.3.1. Landing Page Wireframe
 Los wireframes desarrollados para la landing page de AventuraPe contemplan versiones para navegadores de escritorio y dispositivos móviles, asegurando una experiencia responsive que se adapta a diferentes tamaños de pantalla. La estructura se organiza de la siguiente manera:
@@ -453,8 +459,11 @@ Los mock-ups representan visualmente el resultado final del diseño propuesto y 
 
 
 ## 4.4. Mobile Applications UX/UI Design
-El diseño UX/UI de las aplicaciones móviles de AventuraPe ha sido concebido con el objetivo de brindar una experiencia de usuario intuitiva, atractiva y accesible. Esta sección detalla el proceso de diseño centrado en el usuario, que abarca desde la creación de wireframes hasta la elaboración de diagramas de wireflow, asegurando la coherencia visual y funcional en todas las pantallas. Se ha trabajado cuidadosamente para que cada elemento de la interfaz permita una navegación fluida, responda a las necesidades de los distintos tipos de usuarios, y promueva la interacción efectiva con las funcionalidades clave de la aplicación.<br>
-
+El diseño UX/UI de las aplicaciones móviles de AventuraPe se desarrolló siguiendo un enfoque **User-Centered Design**, partiendo de **entrevistas y mapas de empatía** realizados en fases previas. Se identificaron dos flujos principales: aventurero explorador y emprendedor gestor, cuyas prioridades divergentes guiaron la estructuración de funcionalidades y jerarquía visual.
+El proceso de diseño incluyó:
+<li>Sketches rápidos en papel para idear flujos iniciales.
+<li>Wireframes en Figma que permitieron validar la disposición de componentes clave (buscador, filtros, perfil).
+<li>Wireflows detallados que reflejan los caminos más usados por cada tipo de usuario.<br>
 ### 4.4.1. Mobile Applications Wireframes
 
 **ANEXO C:**<br>[https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1)
@@ -643,7 +652,7 @@ Este objetivo se relaciona con la gestión del perfil comercial, permitiendo al 
 **Video de explicación del flujo:** <br>
 [https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing](https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing)
 <img src="images/mobile_applications_design/ios_mobile_prototype_video.png">
-
+Los prototipos resultaron esenciales para anticipar problemas de usabilidad antes del desarrollo, permitiendo realizar iteraciones tempranas basadas en observación y comentarios reales. La consistencia entre plataformas y la claridad en las rutas de navegación facilitaron **la validación de las funcionalidades clave** para cada tipo de usuario.
 
 ## 4.6. Web Applications UX/UI Design
 
