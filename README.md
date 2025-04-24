@@ -74,7 +74,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 - [2.1. Competidores](#21-competidores)
   - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
   - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-- [2.2. Entrevistas](#22-entrevistas)
+- [2.2. s](#22-entrevistas)
   - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
   - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
   - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
@@ -564,6 +564,15 @@ Para el segmento de Empresas Locales:
 - **Resumen**: Piero Delgado, fundador de la óptica GRUPO COLOR VISION S.A.C., destaca el rol clave de las redes sociales para atraer clientes locales, apoyándose en influencers y campañas visuales. Considera que una app con buen alcance y funciones promocionales sería una gran herramienta para visibilizar su negocio. Está interesado en ofrecer experiencias como sorteos o campañas de cambio de look, y valora mucho el feedback de los usuarios para mejorar sus servicios. Además, ve con buenos ojos implementar promociones exclusivas y programas de fidelización para fortalecer la relación con sus clientes. Para él, una app debe ser una herramienta cercana, práctica y que motive a los usuarios a regresar.
 - **Link**:[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9)<br>
 <img src="images/interviews/entrevista-piero.png"><br><br>
+
+4.
+- **Entrevistado**: Jenna Portalatino
+- **Duración**: 7:41
+- **Resumen**: Jenna manifestó que valora especialmente las actividades recreativas propuestas por los emprendedores, en las que pueda participar activamente y generar una conexión con la marca. Comentó que disfruta de iniciativas donde los emprendedores integran dinámicas como dibujar algo relacionado al producto o crear merchandising temático, ya que estas actividades le permiten fidelizarse emocionalmente con la propuesta del negocio de una forma lúdica y participativa. Respecto al modelo de una plataforma de pago, Jenna señaló que estaría dispuesta a invertir siempre que se le ofrezca un nivel de exclusividad, y que se valoren aspectos como la automatización de funciones que suelen resultar tediosas. Destacó que una de las cosas que más aprecia en una plataforma es que no sea necesario realizar múltiples clics para ejecutar una acción simple, por lo que una interfaz intuitiva y con flujos optimizados es fundamental para su experiencia como usuaria.
+
+- **Link**:
+https://drive.google.com/file/d/1hg_3fQw48KTpwLTR9jCZGnjP2fcCkUQU/view?usp=sharing
+- ![image](https://github.com/user-attachments/assets/199b665d-111f-4aab-8889-abe69908b237)
 
 ### 2.2.3. Análisis de entrevistas 
 
