@@ -268,7 +268,7 @@ Nuestro enfoque se fundamenta en tres pilares esenciales: Optimización de tiemp
 | ![Jimena](./images/chapter01/Jimenapfp.png) |  Mi Nombre es Jimena Cama, soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto..  |
 | ![Jair](./images/chapter01/Jairpfp.png)  | Mi nombre es Jair Castillo, soy estudiante de la carrera de Ingeniería de Software en la UPC y me encuentro en el 7to ciclo. Me considero una persona dedicada, comprensiva y metódica. Con mis habilidades de liderazgo y mi capacidad para trabajar en equipo en un ambiente de respeto, estoy segura de que podré dirigir la implementación de la startup de nuestro proyecto de manera exitosa.                                                                      |
 | ![Jose](./images/chapter01/Josepfp.png)  | Mi nombre es Jose Gutierrez, tengo 20 años, actualmente me encuentro cruzando mi 7mo ciclo de la carrera de ingeniería de software en la UPC. Me gusta jugar videojuegos y practicar natación, soy un gran aficionado de la tecnología y del ensamblaje de computadoras. Me considero una persona dispuesta siempre a aprender tecnologías nuevas, creativa y responsable. |
-|  ![Estefano](./images/chapter01/Estefanopfp.png)  |  mi nombre es estefano 
+|  ![Estefano](./images/chapter01/Estefanopfp.png)  |  Soy Estefano Oscar Jaque Peña, tengo 23 años y soy estudiante de la carrera de Ingeniería de Software, una disciplina enfocada en el diseño, desarrollo y gestión de software para solucionar problemas complejos. Desde temprana edad, he sentido fascinación por la tecnología y he buscado aprender constantemente sobre las últimas tendencias en programación. He ampliado mis conocimientos a través de cursos en Python, SQL, y C++, así como también explorando otros lenguajes de programación por mi cuenta. Además, tengo habilidades en el uso avanzado de Excel para análisis de datos y gestión de información. Mi experiencia trabajando en equipos me ha brindado habilidades de comunicación y colaboración que considero fundamentales para contribuir de manera efectiva a proyectos innovadores en el área de la Ingeniería de Software. 
 |![Barbara](./images/chapter01/Barbarapfp.png) | Barbara Susana Quezada Portalatino, cursando el séptimo ciclo de la carrera de software, trabajo mayormente bajo un rol de líder que me ayuda a poder organizar no solo la ideas de mi grupo sino que las ideas aterricen en la ejecución. Soy una persona muy disciplinada y detallista. 
 |    |
 
@@ -426,7 +426,7 @@ Este análisis proporciona una visión detallada del panorama competitivo, desta
 |**Competitive analysis Landscape** |||||||
 | - | :- | :- | :- | :- | :- |:-|
 |¿Por qué llevar a cabo este análisis? |Permite a AventuraPe entender mejor el mercado en el que opera, identificar las fortalezas y debilidades de sus competidores, y desarrollar estrategias que permitan diferenciarse y ofrecer un valor superior a los clientes. |||||
-|||<p> AventuraPe </p><p>![](assets/images/0020.png)</p>|<p>Eventbrite </p><p>![](assets/images/001.png)</p>|<p>All Events in City </p><p>![](assets/images/002.png)</p>|<p>TickPick </p><p>![](assets/images/003.png)</p>|<p>Meetup </p><p>![](assets/images/004.png)</p>||
+|||<p> AventuraPe </p><p>![](images/chapter_2/0020.png)</p>|<p>Eventbrite </p><p>![](images/chapter_2/001.png)</p>|<p>All Events in City </p><p>![](images/chapter_2//002.png)</p>|<p>TickPick </p><p>![](images/chapter_2/003.png.png)</p>|<p>Meetup </p><p>![](images/chapter_2/004.png)</p>||
 |Perfil |Overview |App de microaventuras espontáneas y personalizadas, conectando usuarios con experiencias locales únicas.|Una plataform a global que permite a los organizad ores de eventos planificar, promocionar y vender entradas para sus eventos, así como gestionar la asistencia. |Una plataforma que ayuda a los usuarios a descubrir eventos en su ciudad, ofreciendo una amplia lista de actividades que incluyen conciertos, talleres, festivales y más.|<p>Un mercado en línea para la compra y venta de entradas a eventos deportivos, conciertos y otros espectáculos. TickPick se distingue por no cobrar tarifas adicionales a los comprador es.</p>|Una plataform a que conecta a personas con intereses similares a través de eventos y reuniones en persona. |
 ||Ventaja competitiva</p><p> ¿Qué valor ofrece a los clientes? |Enfoque en espontaneidad, gamificación, y conexión con negocios locales mediante experiencias personalizadas.|Amplia cobertura de eventos, herramien tas robustas para organizad ores, y una plataform a global reconocid a que facilita la promoció n y venta de entradas.|Proporciona una guía completa de eventos locales, permitiendo a los usuarios explorar y participar en actividades cerca de ellos sin necesidad de una planificación extensa. |Ofrece una experiencia de compra transparent e sin tarifas ocultas, lo que atrae a comprador es de entradas que buscan evitar costos adicionales. |Facilita la creación y participac ión en comunida des locales basadas en intereses comunes, fomentan do la interacció n y las conexion es personale s. </td></tr>
 |Perfil de marketing|Mercado Objetivo |Jóvenes adultos (18-45 años) y grupos que buscan experiencias rápidas, únicas y sin planificación.|Organizadores de eventos de todos los tamaños, desde pequeñas reuniones hasta grandes conferencias y festivales.|Residentes urbanos y turistas que desean descubrir y participar en eventos y actividades locales.|Aficionados a los deportes, la música y el entretenimiento en vivo que buscan entradas a eventos sin cargos adicionales.|Personas que buscan conectar con otros que comparten intereses similares.|
@@ -545,8 +545,9 @@ Para el segmento de Empresas Locales:
 - **Entrevistado**: Nasthya del Carpio
 - **Duración**: 5:12
 - **Resumen**: Nasthya, una joven emprendedora de 21 años que vende tote bags personalizadas por Instagram, destacó la importancia de las redes sociales como su principal canal de promoción, valorando especialmente las colaboraciones, sorteos y el contenido visual. Señaló que las promociones y descuentos son clave para atraer clientes, y mostró interés en una app que le permita lanzar ofertas exclusivas y conectar con personas cercanas. Además, considera fundamental recibir feedback para mejorar sus productos y brindarle a sus clientes una experiencia personalizada. También está dispuesta a implementar recompensas para fomentar la lealtad de sus compradores frecuentes.
-- **Link**: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw)
+- **Link**: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw)<br>
 <img src="images/interviews/emprendedor_nasthya.png"><br>
+
 
 3.
 **Entrevistado**:
@@ -564,11 +565,11 @@ Para el desarrollo de AventuraPe, es esencial entender a nuestros usuarios y cli
 
 User persona de los clientes:** 
 
-![](assets/images/011.png)
+![](images/chapter_2/011.png)
 
 User persona de los dueños de pequeños emprendimientos: 
 
-![](assets/images/012.png)  
+![](images/chapter_2/012.png)  
 
 ### 2.3.2. User Task Matrix  
 
@@ -600,33 +601,40 @@ Segmento Empresas Locales:
 |Recibir notificaciones sobre interacciones de usuarios |Baja |Media |
 
 ### 2.3.3. User Journey Mapping  
-Segmento Usuarios: 
 
-![](assets/images/013.png)  
+**Segmento Usuarios:** 
 
-[https://imgur.com/a/7i1hv10 ](https://imgur.com/a/7i1hv10) 
+**ANEXO C:**  [https://imgur.com/a/7i1hv10 ](https://imgur.com/a/7i1hv10)
+
+![](images/chapter_2/013.png)  
 
 
 
-Segmento Empresas Locales:   
+**Segmento Empresas Locales:**
+
+**ANEXO D:**  [https://imgur.com/a/FZnhbLQ ](https://imgur.com/a/FZnhbLQ) 
 
 ![](assets/images/014.png)  
 
-[https://imgur.com/a/FZnhbLQ ](https://imgur.com/a/FZnhbLQ) 
 
 
 ### 2.3.4. Empathy Mapping  
-Segmento Usuarios: 
 
-![](assets/images/015.png)  
+**Segmento Usuarios:**
 
-[https://imgur.com/a/rOEsUvd ](https://imgur.com/a/rOEsUvd)  
+**ANEXO E:**  [https://imgur.com/a/rOEsUvd ](https://imgur.com/a/rOEsUvd) 
 
-Segmento Empresas Locales: 
+![](images/chapter_2/015.png)  
 
-![](assets/images/016.png)  
+ 
+**Segmento Empresas Locales:** 
 
-[https://imgur.com/a/YgYs5Qp ](https://imgur.com/a/YgYs5Qp)  
+**ANEXO F:** [https://imgur.com/a/YgYs5Qp ](https://imgur.com/a/YgYs5Qp)
+
+![](images/chapter_2/016.png)  
+
+  
+
 
 ### 2.3.5. As-is Scenario Mapping  
 
@@ -721,6 +729,10 @@ Voy a reorganizar las User Stories manteniendo todo el contenido original, inclu
 
 ## 3.3. Product Backlog  
 ## 3.4. Impact Mapping  
+
+<img src="images/impact_mapping/impact_mapping.png">
+
+<br>
 
 # Capítulo IV: Product Design
 
@@ -878,7 +890,7 @@ Los wireframes desarrollados para la landing page de AventuraPe contemplan versi
 - Pie de Página (Footer): Contiene información de contacto y enlaces a nuestras redes sociales como Twitter, Facebook e Instagram, facilitando la comunicación y conexión con los usuarios.
 
 En cuanto al diseño inclusivo, se han considerado aspectos como el contraste adecuado entre texto y fondo para garantizar la legibilidad, el uso de tipografías claras y tamaños de fuente apropiados para diferentes dispositivos, y la disposición de elementos interactivos con suficiente espacio para facilitar su uso por personas con diversas capacidades. Además, la estructura de la información sigue una arquitectura jerárquica que prioriza el contenido más relevante, permitiendo una navegación intuitiva.<br>
-<br>ANEXO A:https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1<br>
+<br>ANEXO A: https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1<br>
 
 <img src="https://github.com/user-attachments/assets/3d5ce5a1-1e2c-4c69-8892-237008a8f6ee" alt="Captura 1" width="750">
 <img src="https://github.com/user-attachments/assets/f15aea92-8834-410d-a528-5858d5ff1478" alt="Captura 3" width="750">
@@ -890,7 +902,9 @@ En cuanto al diseño inclusivo, se han considerado aspectos como el contraste ad
 Los mock-ups representan visualmente el resultado final del diseño propuesto y consolidan las decisiones tomadas en cuanto a estética, funcionalidad y usabilidad. En ambas versiones, se mantiene una coherencia visual que refuerza la identidad de la marca, respetando el Design System definido para el proyecto.<br>
 <img src="./images/landing-page/landing-mockup" alt="Landing Page mockup image" min-width="400" max-width="900"/>
 <br>Se aplicaron principios clave de diseño como **contraste y jerarquía visual**, evidenciados en el uso de colores llamativos para los botones de acción y en la organización textual que dirige la atención desde el título hasta el botón "Explora ahora". La consistencia visual se mantiene en íconos, estilos y márgenes, lo cual genera una experiencia fluida. En cuanto a la **arquitectura de información**, el contenido se organiza de forma secuencial y lógica: inicia con una presentación de valor clara, continúa con las funcionalidades de la plataforma, testimonios y preguntas frecuentes, y finaliza con un llamado a la acción. Esta estructura guía de manera progresiva al usuario hacia el objetivo del sitio.<br>
-<br>ANEXO B:https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1<br>
+<br>
+**ANEXO B:** <br> [https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1) <br>
+
 <img src="https://github.com/user-attachments/assets/c3b3b7b3-d1dc-4ce8-93ce-d8d6fbc153f7" alt="Captura 5" width="750">
 <img src="https://github.com/user-attachments/assets/b134c650-0995-4c9c-8b8b-bf11830d6b5a" alt="Captura 6" width="750">
 <img src="https://github.com/user-attachments/assets/3b3867b6-46cf-4868-8cad-71891477cb86" alt="Captura 7" width="750">
@@ -908,7 +922,7 @@ El proceso de diseño incluyó:
 <li>Wireflows detallados que reflejan los caminos más usados por cada tipo de usuario.<br>
 ### 4.4.1. Mobile Applications Wireframes
 
-**ANEXO C:**<br>[https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1)
+**ANEXO G:**<br>[https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1)
 
 **Sección Aventurero**<br>
 A través de estos wireframes, se presentan las pantallas que guiarán a los usuarios en su travesía, destacando la importancia de la navegabilidad, el diseño centrado en el usuario y las funcionalidades que les permiten interactuar de manera fluida y natural con la aplicación.
@@ -921,7 +935,12 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 <img src="images/mobile_applications_design/wireframes_emprendedor.png ">
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams
-<br>ANEXO D:https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?viewport_loc=-5149%2C-2964%2C15846%2C6519%2CVuP_hvOzbZtf&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794<br>
+
+<br>
+
+**ANEXO H:** [https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?viewport_loc=-5149%2C-2964%2C15846%2C6519%2CVuP_hvOzbZtf&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794](https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?viewport_loc=-5149%2C-2964%2C15846%2C6519%2CVuP_hvOzbZtf&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794)
+
+
 ## Seccion de aventurero
 **User Goal:** Como aventurero, quiero ingresar a mi cuenta en AventuraPe.  
 <img src="https://github.com/user-attachments/assets/504d8624-5860-4ae9-8132-3a3c203fb12e" width="750"><br>
@@ -995,7 +1014,8 @@ Esta sección está diseñada para aquellos usuarios con un espíritu innovador 
 
 
 ### 4.4.4. Mobile Applications User Flow Diagrams
-ANEXO F: https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?view_items=m-N_lZ8pzENG&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794 <br>
+**ANEXO I**: [https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?view_items=m-N_lZ8pzENG&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794](https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?view_items=m-N_lZ8pzENG&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794)
+<br>
 ### Segmento de Aventurero
 **USER GOAL: Como aventurero, quiero ingresar a mi cuenta en AventuraPe:**
 Este objetivo se refiere a la necesidad del usuario de acceder a su perfil personal en la plataforma AventuraPe. Incluye el proceso de autenticación mediante credenciales (usuario/contraseña).<br>
@@ -1066,7 +1086,8 @@ Este objetivo se relaciona con la gestión del perfil comercial, permitiendo al 
 - **Buscar Actividades:** El aventurero puede utilizar una barra de búsqueda para encontrar actividades específicas.
 - **Comentar y calificar:** El aventurero puede comentar en las actividades que desee y calificarlas.
 
-**Video de explicación del flujo:** <br>[https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing](https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing)
+**Video de explicación del flujo:** 
+**ANEXO J:** <br>[https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing](https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing)
 <img src="images/mobile_applications_design/android_mobile_prototype_video.png">
 
 
@@ -1092,6 +1113,7 @@ Este objetivo se relaciona con la gestión del perfil comercial, permitiendo al 
 - **Comentar y calificar:** El aventurero puede comentar en las actividades que desee y calificarlas.
 
 **Video de explicación del flujo:** <br>
+**ANEXO K:**
 [https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing](https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing)
 <img src="images/mobile_applications_design/ios_mobile_prototype_video.png">
 Los prototipos resultaron esenciales para anticipar problemas de usabilidad antes del desarrollo, permitiendo realizar iteraciones tempranas basadas en observación y comentarios reales. La consistencia entre plataformas y la claridad en las rutas de navegación facilitaron **la validación de las funcionalidades clave** para cada tipo de usuario.
@@ -1324,6 +1346,7 @@ A continuación, se presentan los diagramas de flujo de usuario (User Flow) para
 - **Comentar y calificar:** El aventurero puede comentar en las actividades que desee y calificarlas.
 
 **Video de explicación del flujo:**<br>
+**ANEXO L:**
 [https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing](https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing)
 <img src="images/web_application_prototyping/web_prototype_video.png">
 
@@ -1621,7 +1644,8 @@ Actualmente, el único módulo desplegado en producción es la Landing Page, la 
 
 ## Enlace al tablero Trello del proyecto
 
-**Trello URL público:** [https://trello.com/invite/b/67fec4eb81fae4e3cb20bc4a/ATTIbaa9f91c96fe0bff5f0c939bfdaa9ee46306E3A0/1asi0732-2510-4438-grupo2](#)
+**Trello URL público:** <br>
+[https://trello.com/invite/b/67fec4eb81fae4e3cb20bc4a/ATTIbaa9f91c96fe0bff5f0c939bfdaa9ee46306E3A0/1asi0732-2510-4438-grupo2](https://trello.com/invite/b/67fec4eb81fae4e3cb20bc4a/ATTIbaa9f91c96fe0bff5f0c939bfdaa9ee46306E3A0/1asi0732-2510-4438-grupo2)
 
 ### 5.2.2. Implemented Landing Page Evidence
 #### *Link del despliegue de la landing:* https://aventurape-androidsoftware.github.io/AventuraPe_LandingPage/
@@ -1868,5 +1892,17 @@ Utilizamos Swagger para documentar y probar los endpoints de la API de manera in
 # Bibliografía  
 
 # Anexos  
-
-- **ANEXO C:**<br>[https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1)
+- **ANEXO A**:<br> [https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1)
+- **ANEXO B:** <br> [https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1)
+- **ANEXO C:**  [https://imgur.com/a/7i1hv10 ](https://imgur.com/a/7i1hv10)
+- **ANEXO D:**  [https://imgur.com/a/FZnhbLQ ](https://imgur.com/a/FZnhbLQ) 
+- **ANEXO E:**  [https://imgur.com/a/rOEsUvd ](https://imgur.com/a/rOEsUvd) 
+- **ANEXO F:** [https://imgur.com/a/YgYs5Qp ](https://imgur.com/a/YgYs5Qp)
+- **ANEXO G:**<br>[https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=47-1888&t=8uKwyhtfkQTKMvj6-1)
+- **ANEXO H:** <br> [https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?viewport_loc=-5149%2C-2964%2C15846%2C6519%2CVuP_hvOzbZtf&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794](https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?viewport_loc=-5149%2C-2964%2C15846%2C6519%2CVuP_hvOzbZtf&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794)
+- **ANEXO I:** <br> [https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?view_items=m-N_lZ8pzENG&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794](https://lucid.app/lucidchart/4ca0657e-5e53-4b71-8dcd-e84862e13c3f/edit?view_items=m-N_lZ8pzENG&invitationId=inv_9f16f8d8-1ba4-4fb5-9bd6-670978bd7794)
+- **ANEXO J:** <br>[https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing](https://drive.google.com/file/d/1HK6GOXkf34y08Jlw23Pg49A2nIlxzWvP/view?usp=sharing)
+- **ANEXO K:**<br>
+[https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing](https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing)
+- **ANEXO L:** <br>
+[https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing](https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing)
