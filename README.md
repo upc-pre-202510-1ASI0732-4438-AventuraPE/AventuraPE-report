@@ -1575,48 +1575,196 @@ Representa la relación entre un informe estadístico y los posts incluidos en �
 
 ## 5.1. Software Configuration Management  
 ### 5.1.1. Software Development Environment Configuration  
-El entorno de desarrollo estuvo basado en Webstorm para frontend web, Android Studio (Ladybug) para móvil, y Swagger para pruebas de APIs. El backend fue desarrollado en Java con Spring Boot 3.2, ejecutado localmente en la base de datos PostgreSQL. Se utilizó GitHub Actions para despliegue automatizado en la landing.
+
+Antes de iniciar el desarrollo de AventuraPe, establecimos una configuración clara de los **entornos de desarrollo para cada componente del sistema**, asegurando la compatibilidad y eficiencia del flujo de trabajo del equipo.
+
+### Requisitos y Stack Tecnológico Seleccionado
+
+Basados en las necesidades de nuestra aplicación, seleccionamos el siguiente stack tecnológico:
+
+- **Frontend Web**: Node.js con TypeScript para una experiencia de usuario fluida e interactiva
+- **Frontend Móvil**: Kotlin con Jetpack Compose para una aplicación Android moderna
+- **Backend**: Java con Spring Boot para una arquitectura escalable y robusta
+- **Base de datos**: PostgreSQL para almacenamiento relacional de datos
+- **Documentación API**: Swagger para endpoints RESTful
+
+### Entornos de Desarrollo Configurados
+
+#### Frontend Web
+- **IDE**: WebStorm 2023.1
+- **Propósito**: Desarrollo de la interfaz web y gestión de dependencias JS
+- **Ruta de descarga**: https://www.jetbrains.com/webstorm/
+- **Tecnologías principales**: Node.js, TypeScript, React
+
+#### Frontend Móvil
+- **IDE**: Android Studio Hedgehog (2023.1.1)
+- **Propósito**: Desarrollo de la aplicación Android nativa
+- **Ruta de descarga**: https://developer.android.com/studio
+- **Tecnologías principales**: Kotlin, Jetpack Compose, Material Design 3
+
+#### Landing Page
+- **IDE**: Visual Studio Code 1.77
+- **Propósito**: Desarrollo de landing page estática con HTML, CSS y JavaScript
+- **Ruta de descarga**: https://code.visualstudio.com/
+- **Despliegue**: GitHub Pages (automáticamente mediante GitHub Actions)
+
+#### Backend
+- **IDE**: IntelliJ IDEA 2023.1 (Ultimate Edition)
+- **Propósito**: Desarrollo de servicios RESTful y lógica de negocio
+- **Ruta de descarga**: https://www.jetbrains.com/idea/
+- **Tecnologías principales**: Spring Boot 3.2, Java 17, JPA/Hibernate
+
+#### Control de Versiones
+- **Herramienta**: Git 2.40.0
+- **Repositorio**: https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE
+- **Estrategia de ramificación**: GitFlow (main, develop, feature/*)
+
+### Herramientas de Diseño y Pruebas
+
+- **Diseño UI/UX**: 
+  - **Herramienta**: Figma
+  - **Propósito**: Mockups, wireframes y prototipos
+  - **URL**: https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=0-1&t=2PMCISPv6qm1ZGJR-1 
+
+- **Pruebas de API**:
+  - **Herramienta**: Swagger UI integrado
+  - **Propósito**: Documentación y prueba de endpoints RESTful
+  - **URL local**: http://localhost:8090/swagger-ui/index.html
+
+### Estado Actual de Despliegue
+
+Actualmente, nuestros entornos funcionan de la siguiente manera:
+
+- **Landing Page**: Desplegada en producción mediante GitHub Pages
+- **Aplicación Web**: Ejecución local con servidor de desarrollo (npm run dev)
+- **Aplicación Móvil**: Ejecución en emulador Android o dispositivos físicos vía USB
+- **Backend**: Ejecutándose localmente en http://localhost:8090
+- **Base de datos**: PostgreSQL local en puerto predeterminado
+
+Esta configuración nos permite desarrollar de manera eficiente mientras mantenemos un control preciso sobre cada componente del sistema, facilitando la colaboración entre los miembros del equipo y una integración fluida de los diferentes módulos.
 
 ### 5.1.2. Source Code Management 
-Se empleó GitHub como sistema de control de versiones, siguiendo la estrategia Git Flow: main para producción, develop para integración, y ramas de características (feature/login, feature/publication) para desarrollo paralelo. Cada commit seguía la convención: 
-<li>feat: descripción
-<li>fix: descripción
-<li>docs: actualización.
+
+En esta sección, nuestro equipo establece los medios y el esquema de organización que aplicará para el seguimiento de modificaciones, utilizando GitHub como plataforma y sistema de control de versiones.
+
+### Repositorios
+
+Configuramos diversos repositorios remotos en GitHub para almacenar el código fuente y facilitar la colaboración entre los miembros del equipo. Los URLs de los repositorios son los siguientes:
+
+- **Landing Page:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-landing 
+- **Frontend App Web:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/aventurape-web-app 
+- **Frontend App Mobile:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app 
+- **Backend:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend 
+
+### Estructura del Repositorio
+
+Organizamos cada repositorio en ramas específicas para diferentes entornos de desarrollo. Las ramas principales y su propósito son:
+
+- **Main branch (rama principal):** Contiene la versión estable de producción.
+- **Develop branch:** Contiene el código en desarrollo, que eventualmente será fusionado en la rama principal.
+
+Implementamos GitFlow siguiendo el modelo descrito por Vincent Driessen, lo que nos permite mantener un flujo de trabajo ordenado y eficiente:
+
+- **Feature branches:** Se crean a partir de develop para implementar nuevas funcionalidades. Nomenclatura: `feature/<nombre-funcionalidad>`
+- **Hotfix branches:** Para correcciones urgentes sobre la rama principal. Nomenclatura: `hotfix/<descripción-error>`
+- **Release branches:** Para preparar lanzamientos específicos. Nomenclatura: `release/v<versión>`
+
+### Convenciones de Nomenclatura
+
+Aplicamos semantic versioning para nombrar nuestras releases siguiendo el esquema vMAJOR.MINOR.PATCH (por ejemplo, v1.0.0):
+
+- **MAJOR:** Cambios incompatibles con versiones anteriores
+- **MINOR:** Nuevas funcionalidades compatibles con versiones anteriores
+- **PATCH:** Correcciones de errores compatibles con versiones anteriores
+
+### Mensajes de Commits
+
+Utilizamos Conventional Commits para estandarizar los mensajes en nuestros commits, lo que facilita la generación automática de changelogs y mejora la legibilidad del historial del proyecto. Algunos ejemplos de mensajes de commits son:
+
+- `feat: implementar autenticación de usuario aventurero`
+- `fix: corregir validación en formulario de registro`
+- `docs: actualizar documentación de API de publicaciones`
+- `style: aplicar formato consistente al código de componentes`
+- `refactor: optimizar módulo de filtrado de actividades`
+- `test: añadir pruebas unitarias para servicio de calificaciones`
+
+
+### Backup y Recuperación
+
+Implementamos las siguientes estrategias para proteger nuestro código:
+- Backups automáticos semanales de todos los repositorios
+- Uso de GitHub Actions para exportar y almacenar versiones críticas en almacenamiento externo
+- Política de no eliminación de ramas principales sin aprobación del equipo completo
+
+### Monitoreo y Control
+
+Utilizamos las siguientes herramientas para mantener la calidad del código y seguimiento de cambios:
+- GitHub Issues para tracking de tareas y bugs
+- Pull Requests obligatorios con al menos una aprobación antes de fusionar código
+- GitHub Actions para verificación automática de estilo de código y tests
+
+Esta estructura de gestión de código nos permite mantener un desarrollo ordenado, colaborativo y con capacidad de respuesta rápida ante necesidades del proyecto.
+
 ### 5.1.3. Source Code Style Guide & Conventions  
-Para mantener un código limpio, legible y fácil de mantener en equipo, se definieron guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack.
 
-#### **Frontend Web (Webstorm.js con TypeScript)**
-- Las reglas aplicadas incluyeron:
-  - **CamelCase** para variables y funciones (`handleClick`, `userList`).
-  - **PascalCase** para nombres de componentes (`UserCard`, `ActivityCard`).
-  - Uso estricto de `const` y `let` (evitando `var`).
-  - Separación lógica de hooks y lógica de presentación en archivos distintos (`useActivityFetch.ts` vs `ActivityCard.tsx`).
+Para mantener un código limpio, legible y fácil de mantener en equipo, hemos definido guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack tecnológico utilizado en AventuraPe.
 
-#### **Backend (Spring Boot + Java)**
-- Se adoptó la guía oficial de estilo de Java + convención de Spring:
-  - Clases en **PascalCase** (`UserService`, `PublicationController`).
-  - Variables y métodos en **camelCase** (`getPublications()`, `userId`).
-  - Separación en paquetes según capa: `controller`, `service`, `repository`, `model`.
-  - Uso de anotaciones estándar (`@RestController`, `@Autowired`, `@GetMapping`).
-  - Código documentado con comentarios Javadoc (`/** */`) en servicios y endpoints principales.
+### **Frontend Web (Node.js con TypeScript)**
+- **Nomenclatura y estructura:**
+  - **CamelCase** para variables y funciones (`handleClick`, `userList`)
+  - **PascalCase** para nombres de componentes (`UserCard`, `ActivityCard`)
+  - Separación lógica de hooks y lógica de presentación en archivos distintos
+  - Nombres descriptivos y significativos para variables y funciones
 
-#### **Android Mobile (Kotlin)**
-- Se usó la convención oficial de Kotlin:
-  - Nombres claros, concisos y expresivos.
-  - Propiedades inmutables por defecto (`val`) y mutables solo cuando es estrictamente necesario (`var`).
-  - Nombres de vistas en XML en snake_case (`btn_register`, `txt_user_email`).
-  - En el código Kotlin, nombres de clases y funciones en PascalCase y camelCase respectivamente.
-  - Arquitectura basada en **MVVM**, separando `ViewModel`, `Repository` y `UI`.
+### **Frontend Móvil (Kotlin con Jetpack Compose)**
+- **Convenciones de Kotlin:**
+  - Nombres claros, concisos y expresivos
+  - Nombres de vistas en XML en snake_case (`btn_register`, `txt_user_email`)
+  - Clases y funciones en PascalCase y camelCase respectivamente
 
-#### **General**
-- Todos los equipos usaron **pre-commit hooks** con `Husky` (para frontend) y scripts personalizados en backend para evitar commits con errores de formato o linters.
-- Se definieron **convenciones de nomenclatura de commits** usando el formato:
-  - `feat:` para nuevas funcionalidades.
-  - `fix:` para corrección de errores.
-  - `docs:` para documentación.
-  - `refactor:` para mejoras internas sin cambios funcionales.
-  - `style:` para cambios de formato sin alterar la lógica.
-Estas convenciones fueron aplicadas de forma continua mediante integración con GitHub Actions y revisión manual por parte del líder técnico antes de cada merge a `develop`.
+- **Arquitectura y estructura:**
+  - Arquitectura MVVM (Model-View-ViewModel)
+  - Separación clara entre `ViewModel`, `Repository` y componentes UI
+  - Composables aislados y reusables
+
+### **Backend (Java con Spring Boot)**
+- **Convenciones de Java y Spring:**
+  - Clases en **PascalCase** (`UserService`, `PublicationController`)
+  - Variables y métodos en **camelCase** (`getPublications()`, `userId`)
+  - Constantes en UPPERCASE_SNAKE_CASE (`MAX_RETRY_COUNT`)
+  - Separación en capas: `controller`, `service`, `repository`, `model`, `exception`
+
+- **Documentación:**
+  - Comentarios Javadoc (`/** */`) en todos los servicios y endpoints
+  - Anotaciones claras para mapeos REST (`@GetMapping`, `@PostMapping`)
+  - Respuestas HTTP documentadas con códigos apropiados
+
+- **Gestión de excepciones:**
+  - Centralización de manejo de excepciones
+  - Mensajes de error descriptivos y apropiados para el cliente
+
+### **Landing Page (HTML/CSS/JavaScript)**
+- **HTML:**
+  - Uso de etiquetas semánticas (`<header>`, `<nav>`, `<main>`, `<footer>`)
+  - Indentación consistente para mejorar legibilidad
+  - Atributos alt descriptivos para imágenes
+  
+- **CSS:**
+  - Preferencia por clases sobre IDs para estilos reutilizables
+  - Uso de variables CSS para colores, fuentes y dimensiones clave
+  - Medidas relativas (`em`, `rem`, `%`) para mejorar responsividad
+
+- **JavaScript:**
+  - Funciones con propósito único y bien definido
+  - Evitar código global utilizando módulos ES6
+
+### **General**
+- **Control de versiones:**
+  - Commits pequeños y enfocados en una sola tarea
+  - Mensajes de commit descriptivos siguiendo Conventional Commits
+  - Pull requests documentados con descripción clara de los cambios
+
+Estas convenciones son aplicadas de forma continua mediante revisión manual por parte del equipo **antes de cada merge a la rama `develop`**, asegurando la calidad y consistencia del código en todo el proyecto AventuraPe.
 
 ### 5.1.4. Software Deployment Configuration  
 Actualmente, el único módulo desplegado en producción es la Landing Page, la cual se publica automáticamente mediante GitHub Actions a través de GitHub Pages. Este despliegue ocurre tras cada push a la rama main, garantizando acceso inmediato a la última versión.
