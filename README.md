@@ -2250,6 +2250,13 @@ El análisis de nuestros repositorios muestra métricas positivas de colaboraci�
 ## 8.6. To-Be Software Platform Pre-launch  
 ### 8.6.1. About-the-Product Intro Video  
 
+AventuraPe es una aplicación móvil y web diseñada para conectar a los usuarios con micro aventuras locales sin necesidad de planificación extensa. En este video, mostramos cómo nuestra plataforma utiliza filtros y una interfaz intuitiva para ofrecer experiencias cercanas, auténticas y accesibles, fomentando además el crecimiento de negocios locales.
+
+<img src="images/video_about_the_product/video_about.png">
+
+
+**ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)
+
 # Conclusiones  
 ## Conclusiones y recomendaciones  
 
@@ -2272,3 +2279,5 @@ El análisis de nuestros repositorios muestra métricas positivas de colaboraci�
 [https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing](https://drive.google.com/file/d/1uggz0v3AH3j-hx7pL0xatOB6yl6AihsS/view?usp=sharing)
 - **ANEXO L:** <br>
 [https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing](https://drive.google.com/file/d/12urYf_hGV8UgoOGzn-Dvs7sSAo41HFxj/view?usp=sharing)
+- **ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)
+
