@@ -334,13 +334,69 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 ## 5.1. Software Configuration Management  
 ### 5.1.1. Software Development Environment Configuration  
-El entorno de desarrollo estuvo basado en Webstorm para frontend web, Android Studio (Ladybug) para móvil, y Swagger para pruebas de APIs. El backend fue desarrollado en Java con Spring Boot 3.2, ejecutado localmente en la base de datos PostgreSQL. Se utilizó GitHub Actions para despliegue automatizado en la landing.
+
+En esta sección se describen las herramientas y plataformas clave que utilizamos para orquestar, automatizar y ejecutar el despliegue de los distintos componentes de AventuraPe.
+
+- **Git**  
+  **Descripción:** Sistema de control de versiones distribuido que registra cada cambio en el código fuente.  
+  **Uso:** Gestiona las versiones de nuestro código, permite crear ramas (`main`, `feat/deploy`, `develop`, etc.) y coordinar el flujo de trabajo entre desarrolladores.
+
+- **GitHub**  
+  **Descripción:** Plataforma de hosting de repositorios Git con funcionalidades de colaboración.  
+  **Uso:** Aloja el código de backend, frontend y landing; gestiona issues, pull requests y sirve como origen para los despliegues.
+
+- **GitHub Actions**  
+  **Descripción:** Servicio de CI/CD nativo de GitHub que automatiza flujos de trabajo definidos mediante archivos YML.  
+  **Uso:** Orquesta los build, test y deploy cada vez que se realiza un `push` o `pull request` en ramas designadas (`main` para landing, `feat/deploy` para back/front).
+
+- **Firebase Hosting**  
+  **Descripción:** Servicio de Google Firebase para servir contenido estático a través de una CDN global.  
+  **Uso:** Hospeda la aplicación web desarrollada con Vue.js. Cada `push` a `feat/deploy` dispara el CLI de Firebase que realiza el build y publica los assets en producción con SSL automático.
+
+- **Azure App Services**  
+  **Descripción:** Plataforma PaaS de Microsoft Azure para ejecutar aplicaciones web y APIs en contenedores o directamente sobre el runtime.  
+  **Uso:** Despliega el backend Spring Boot con Java 21 y PostgreSQL; Ya que `feat/deploy` compila, prueba y actualiza el servicio bajo HTTPS con escalado automático.
+
+- **GitHub Pages**  
+  **Descripción:** Servicio de hosting estático integrado en GitHub, ideal para landing pages.  
+  **Uso:** Publica automáticamente los archivos de la carpeta `docs/` tras cada `push` a `main`, sirviendo la página de introducción y captación de usuarios.
+
+- **Azure CLI**  
+  **Descripción:** Interfaz de línea de comandos para gestionar recursos de Azure de forma programática.  
+  **Uso:** Se integra con GitHub Actions para automatizar configuraciones del App Service, gestión de variables de entorno y despliegues sin intervención manual.
+
+Con esta suite de herramientas desplegadas y coordinadas, AventuraPe mantiene un flujo de entrega continua robusto, minimiza el tiempo de inactividad y asegura que cada nueva versión llegue rápida y de forma fiable a todos los usuarios.
 
 ### 5.1.2. Source Code Management 
-Se empleó GitHub como sistema de control de versiones, siguiendo la estrategia Git Flow: main para producción, develop para integración, y ramas de características (feature/login, feature/publication) para desarrollo paralelo. Cada commit seguía la convención: 
-<li>feat: descripción
-<li>fix: descripción
-<li>docs: actualización.
+
+**Gestión del Código Fuente:**
+
+En esta sección, se detalla cómo gestionamos y supervisamos el desarrollo del código para el proyecto de AventuraPe. Utilizamos GitHub como nuestra plataforma principal para la gestión del código fuente, complementada por Git como sistema de control de versiones. Además, seguimos el flujo de trabajo GitFlow para estructurar el desarrollo de manera eficiente.
+
+
+**Ramas Principales:**
+- **main:** Esta rama, a menudo llamada "master", contiene la versión más estable y final del proyecto, lista para ser desplegada en producción. Los cambios integrados en esta rama han pasado todas las pruebas y revisiones necesarias, y se consideran completamente preparados para su lanzamiento.
+
+- **develop:** La rama develop es el punto central de integración para las nuevas funcionalidades y mejoras en desarrollo. Las características y correcciones se fusionan en esta rama, donde se realizan pruebas adicionales antes de su eventual integración en la rama main.
+
+**Ramas Auxiliares:**
+
+- **releases:** Las ramas de tipo releases se crean para preparar nuevas versiones del proyecto. En estas ramas se llevan a cabo las pruebas finales y se corrigen errores menores antes del lanzamiento oficial. Una vez que una versión ha sido validada, los cambios se integran en la rama develop para futuros desarrollos y luego se fusionan en la rama main para su despliegue.
+
+**Uso de GitFlow:**
+
+- **Feature Branches:** Se utilizan ramas de características para desarrollar nuevas funcionalidades. Estas ramas se crean a partir de la rama develop y, una vez que se completa el desarrollo y se aprueban las revisiones, se fusionan nuevamente en la rama develop.
+
+- **Bugfix Branches:** Para solucionar errores que necesitan ser corregidos antes de la siguiente versión, se utilizan ramas de corrección de errores. Estas ramas se crean a partir de la rama develop o, en casos críticos, desde la rama main.
+
+- **Hotfix Branches:** Se emplean para abordar errores críticos que requieren una solución urgente en producción. Estas ramas se crean a partir de la rama main, y una vez que el problema se resuelve, los cambios se fusionan tanto en la rama main como en la rama develop.
+
+Este enfoque estructurado con GitFlow nos permite gestionar el desarrollo del código de manera eficiente, facilitando la integración de nuevas características, la corrección de errores y la preparación de versiones estables para producción.
+
+**Commits Conventions:**
+
+En AventuraPe, los commits se nombran de acuerdo con el avance y el contenido específico del trabajo realizado. No seguimos una convención rígida para los nombres de los commits; en su lugar, los desarrolladores utilizan descripciones claras y concisas para reflejar las modificaciones implementadas. Esto nos permite una mayor flexibilidad a la hora de registrar el progreso, asegurando que cada commit tenga un nombre que represente con precisión el trabajo efectuado.
+
 ### 5.1.3. Source Code Style Guide & Conventions  
 Para mantener un código limpio, legible y fácil de mantener en equipo, se definieron guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack.
 
@@ -377,13 +433,63 @@ Para mantener un código limpio, legible y fácil de mantener en equipo, se defi
   - `style:` para cambios de formato sin alterar la lógica.
 Estas convenciones fueron aplicadas de forma continua mediante integración con GitHub Actions y revisión manual por parte del líder técnico antes de cada merge a `develop`.
 
-### 5.1.4. Software Deployment Configuration  
-Actualmente, el único módulo desplegado en producción es la Landing Page, la cual se publica automáticamente mediante GitHub Actions a través de GitHub Pages. Este despliegue ocurre tras cada push a la rama main, garantizando acceso inmediato a la última versión.
- - El backend RESTful y la aplicación frontend web aún no han sido desplegados en un entorno público. Ambos se ejecutan de forma local para pruebas y desarrollo:
- - Backend: Spring Boot 3.2 corriendo en localhost (http://localhost:8090) con base de datos PostgreSQL.
- - Frontend Web: ejecutado localmente vía servidor de desarrollo (npm run dev).
+### 5.1.4. Software Deployment Configuration
 
-## 5.2. Product Implementation & Deployment  
+A continuación se detalla la configuración de el deployment de los tres componentes de AventuraPe, cada uno con su propio flujo de integración y entrega continua para asegurar despliegues automáticos, controlados y siempre actualizados.
+
+#### 1. Landing Page
+
+La página de entrada al producto, centrada en captar la atención de potenciales usuarios y presentar nuestra propuesta de valor:
+
+- **Tecnologías**  
+  - HTML5 semántico  
+  - CSS3 con animaciones ligeras  
+  - JavaScript vanilla para interactividad básica  
+
+- **Despliegue**  
+  - **Plataforma:** GitHub Pages  
+  - **Branch:** `main`  
+  - **Flujo:** mediante GitHub Actions, tras cada `push` a `main`, los archivos de la carpeta `docs/` se publican en el dominio configurado.  
+  - **Beneficios:** publicación inmediata, versión de revisión histórica disponible, y control de versiones integrado con Git.  
+
+Esta configuración asegura que la landing esté siempre al día, sirviendo como escaparate público y primer punto de contacto para nuevos usuarios e inversores.
+
+
+#### 2. Frontend Web  
+La Aplicacion web desarrollada en Vue.js que ofrece la experiencia de usuario rica e interactiva:
+
+- **Tecnologías**  
+  - Vue.js 3  
+
+- **Despliegue**  
+  - **Plataforma:** Firebase Hosting  
+  - **Branch:** `feat/deploy`  
+  - **Flujo:** un `push` a la rama `feat/deploy` ejecuta un script de build y luego publica automáticamente los archivos estáticos en Firebase  para entregas ultrarrápidas.  
+  - **Beneficios:** SSL automático, previews de despliegue y rollback sencillo en caso de rollback.  
+
+Con esto cualquier mejora o corrección en la interfaz llega casi instantáneamente a los usuarios finales, sin interrupciones.
+
+
+#### 3. Backend RESTful  
+Un servicio construido con Spring Boot que gestiona toda la lógica de negocio y persistencia de datos:
+
+- **Tecnologías**  
+  - Spring Boot 3.2
+  - Java 21  
+  - PostgreSQL
+
+- **Despliegue**  
+  - **Plataforma:** Azure App Services  
+  - **Branch:** `feat/deploy`  
+  - **Flujo:** cada vez que se hace un `push` a `feat/deploy`, un pipeline en Azure se dispara automáticamente, compila y actualiza el entorno productivo.  
+  - **Beneficios:** escalado automático, monitorización nativa, configuración de variables de entorno (como cadenas de conexión y claves secretas) directamente en el portal de Azure.  
+
+Este esquema garantiza que el backend esté siempre disponible bajo HTTPS, con tolerancia a fallos y capacidad de crecer según la demanda.
+
+Con estos tres componentes automatizados, AventuraPe dispone de un entorno de producción sólido y escalable, listo para crecer con cada nueva funcionalidad y mantener la continuidad del servicio sin fricciones.
+
+
+## 5.2. Product Implementation & Deployment
 # 5.2.1 Sprint Backlogs
 
 ## Sprint 1 – Objetivo
