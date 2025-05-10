@@ -2158,10 +2158,85 @@ El análisis de nuestros repositorios muestra métricas positivas de colaboraci�
 
 # Capítulo VI: Product Verification & Validation
 
-## 6.1. Testing Suites & Validation  
-### 6.1.1. Core Entities Unit Tests  
-### 6.1.2. Core Integration Tests  
-### 6.1.3. Core Behavior-Driven Development  
+# 6.1. Testing Suites & Validation
+
+## 6.1.1. Core Entities Unit Tests
+
+Las pruebas unitarias implementadas se centran en validar el comportamiento correcto de los componentes individuales del sistema, enfocándose principalmente en las entidades centrales y los servicios que las gestionan.
+
+Para los componentes del dominio de usuario, se han desarrollado pruebas exhaustivas que garantizan la integridad de los datos y el comportamiento esperado en diferentes situaciones. El servicio UserService ha sido comprobado en escenarios como la creación de nuevos usuarios, la asignación correcta de roles y la autenticación.
+
+<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-1.png"   alt=""/><br>
+
+Para el servicio de perfiles, se han verificado tanto los perfiles de aventureros como de empresarios. Las pruebas comprueban la correcta asignación de valores y la validación de restricciones de negocio.
+
+<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-2.png"   alt=""/><br>
+
+
+El servicio de publicaciones también ha sido rigurosamente probado, especialmente en aspectos críticos como el cálculo de valoraciones, la modificación de datos y las restricciones de negocio asociadas.
+
+<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-3.png"   alt=""/><br>
+
+
+Estas pruebas unitarias han permitido identificar y corregir problemas en etapas tempranas del desarrollo, garantizando la solidez de los componentes fundamentales del sistema.
+
+## 6.1.2. Core Integration Tests
+
+Las pruebas de integración implementadas verifican la correcta interacción entre los diferentes componentes del sistema, con especial atención a la comunicación entre controladores, servicios y repositorios.
+
+El controlador de usuarios ha sido probado para verificar el correcto funcionamiento de los endpoints de registro e inicio de sesión, así como la gestión de errores y excepciones.
+
+<img src="./images/Testing-Suites-&-Validation/core-integration-tests-1.png"   alt=""/><br>
+
+Para el controlador de perfiles, se ha verificado tanto la creación como la consulta y actualización de perfiles, asegurando que los datos se transmitan correctamente entre las capas de la aplicación.
+
+<img src="./images/Testing-Suites-&-Validation/core-integration-tests-2.png"   alt=""/><br>
+
+El controlador de publicaciones ha sido sometido a pruebas que verifican el ciclo completo de gestión de publicaciones, desde su creación hasta su eliminación, pasando por actualizaciones y consultas.
+
+<img src="./images/Testing-Suites-&-Validation/core-integration-tests-3.png"   alt=""/><br>
+
+Estas pruebas de integración han sido fundamentales para garantizar que los diferentes componentes del sistema trabajen correctamente en conjunto, identificando problemas de interoperabilidad que no serían evidentes en las pruebas unitarias.
+
+### 6.1.3. Core Behavior-Driven Development
+
+Las pruebas BDD (Behavior-Driven Development) se centran en el comportamiento de la aplicación desde la perspectiva del usuario, utilizando un lenguaje natural para describir los escenarios de prueba.
+
+#### Escenarios probados:
+
+- **Gestión de publicaciones**: Creación, búsqueda y listado de publicaciones.
+  - Archivo: `publication.feature`
+  - Escenarios:
+    - Crear una nueva publicación de aventura
+    - Buscar una publicación por ID
+    - Listar todas las publicaciones
+
+```gherkin
+# language: es
+Característica: Gestión de publicaciones de aventuras
+
+  Escenario: Crear una nueva publicación de aventura
+    Dado un emprendedor con ID 1
+    Y una aventura con título "Aventura en los Andes", descripción "Una increíble aventura en las montañas", capacidad 5 personas y duración 3 horas
+    Y un costo de 500 soles
+    Y una imagen "https://example.com/image.jpg"
+    Cuando el emprendedor crea una nueva publicación
+    Entonces la publicación se guarda correctamente con ID 1
+    Y la publicación contiene la información correcta de la aventura
+    Y la publicación tiene el costo correcto
+    Y la publicación muestra la imagen correcta
+```
+
+- **Implementación**: Los pasos definidos en los archivos feature se implementan en clases Java que contienen la lógica de prueba.
+  - Archivo: `PublicationStepDefinitions.java`
+  - Funcionalidad: Implementa los pasos definidos en los escenarios BDD.
+
+<img src="./images/Testing-Suites-&-Validation/core-behavior-driven-development-1.png"   alt=""/><br>
+
+<img src="./images/Testing-Suites-&-Validation/core-behavior-driven-development-2.png"   alt=""/><br>
+
+Este enfoque BDD permite una mejor comunicación entre los desarrolladores, testers y stakeholders, ya que los escenarios de prueba están escritos en un lenguaje comprensible para todos.
+
 ### 6.1.4. Core System Tests  
 
 ## 6.2. Static testing & Verification  
