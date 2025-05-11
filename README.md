@@ -2239,6 +2239,26 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 
 ### 6.1.4. Core System Tests  
 
+### Landing
+
+<img src="./images/user-stories-test/user-stories-test-1.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-1-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-2.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-2-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-3.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-3-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-4.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-4-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-5.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-5-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-6.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-6-selenium.png" alt=""/><br>
+
 ## 6.2. Static testing & Verification  
 ### 6.2.1. Static Code Analysis  
 #### 6.2.1.1. Coding standard & Code conventions  
