@@ -490,7 +490,7 @@ Con estos tres componentes automatizados, AventuraPe dispone de un entorno de pr
 
 
 ## 5.2. Product Implementation & Deployment
-# 5.2.1 Sprint Backlogs
+### 5.2.1 Sprint Backlogs
 
 ## Sprint 1 – Objetivo
 **Objetivo del Sprint:** Publicar una versión mínima viable (MVP) de la landing page de AventuraPe, con navegación completa e información esencial visible para visitantes.
@@ -570,7 +570,75 @@ Con estos tres componentes automatizados, AventuraPe dispone de un entorno de pr
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence  
 
-### 5.2.4. Implemented Native-Mobile Application Evidence  
+### 5.2.4. Acuerdo de Servicio - SaaS  
+
+Este Acuerdo de Servicio regula el uso de la plataforma AventuraPe, un servicio proporcionado bajo el modelo Software como Servicio (SaaS). Al acceder o utilizar la plataforma, el usuario acepta las condiciones establecidas en el presente documento.
+
+1. **Derechos de uso**
+
+El usuario recibe una licencia limitada, no exclusiva, intransferible y revocable para acceder y utilizar la plataforma AventuraPe, exclusivamente conforme a los fines previstos por el servicio.
+
+2. **Obligaciones del usuario**
+El usuario se compromete a:
+
+- Utilizar el servicio conforme a la legislación vigente y a las normas de convivencia establecidas por AventuraPe.
+- No publicar contenido que sea ofensivo, discriminatorio, difamatorio o que infrinja derechos de terceros.
+- No manipular, alterar ni realizar ingeniería inversa sobre la plataforma.
+- Proporcionar información veraz y actualizada en su perfil y en las actividades que publique.
+- Mantener la confidencialidad de sus credenciales de acceso.
+
+3. **Moderación y eliminación de contenido**
+
+AventuraPe se reserva el derecho de:
+- Eliminar actividades que infrinjan los términos del servicio, como la publicación de información falsa, ilegal o contraria a las normas de la comunidad.
+- Eliminar comentarios que contengan lenguaje inapropiado, ofensivo, discriminatorio o que violen las políticas de uso establecidas.
+- Moderar el contenido y las valoraciones para mantener la calidad y seguridad del servicio.
+
+4. **Disponibilidad y mantenimiento**
+AventuraPe hará esfuerzos razonables para garantizar la disponibilidad continua del servicio, sin embargo, no se garantiza disponibilidad ininterrumpida. La plataforma puede estar sujeta a mantenimientos periódicos programados o no programados.
+
+5. **Propiedad intelectual y contenido generado por usuarios**
+
+- El usuario conserva los derechos sobre el contenido original que publique en la plataforma.
+- Al publicar contenido en AventuraPe, el usuario otorga una licencia mundial, no exclusiva, gratuita, sublicenciable y transferible para usar, reproducir, distribuir y mostrar dicho contenido en relación con el servicio.
+- AventuraPe respeta los derechos de propiedad intelectual y espera que los usuarios hagan lo mismo.
+
+6. **Protección de datos personales**
+- AventuraPe recopila y procesa datos personales de acuerdo con su Política de Privacidad.
+- Los datos personales proporcionados se utilizan para la gestión de perfiles, la personalización de experiencias, la comunicación con usuarios y la mejora del servicio.
+- La plataforma implementa medidas técnicas y organizativas adecuadas para proteger los datos personales.
+
+7. **Sistema de calificaciones y reseñas**
+- Las calificaciones y reseñas deben basarse en experiencias reales y ser honestas.
+- AventuraPe se reserva el derecho de eliminar reseñas falsas, maliciosas o que no cumplan con las directrices de la comunidad.
+- Las calificaciones promedio se calculan mediante algoritmos que pueden incluir factores de ponderación para garantizar la representatividad.
+
+8. **Responsabilidad**
+- AventuraPe no se responsabiliza por el contenido generado por los usuarios.
+- La plataforma actúa como intermediario y no garantiza la calidad, seguridad o legalidad de las actividades publicadas.
+- Los usuarios son responsables de la veracidad de la información proporcionada y de las consecuencias de su uso de la plataforma.
+
+9. **Modificaciones del servicio**
+AventuraPe puede modificar, suspender o discontinuar cualquier aspecto del servicio en cualquier momento, incluyendo la disponibilidad de funciones, bases de datos o contenido.
+
+10. **Comunicaciones**
+AventuraPe podrá enviar comunicaciones relacionadas con el servicio, incluyendo notificaciones sobre cambios en los términos, nuevas funcionalidades o alertas de seguridad.
+
+11. **Resolución de conflictos**
+Cualquier controversia derivada del uso del servicio se resolverá mediante negociación de buena fe. En caso de no alcanzar un acuerdo, las partes se someterán a la jurisdicción competente.
+
+12. **Cumplimiento normativo**
+Este acuerdo cumple con los marcos normativos aplicables en materia de protección de datos personales, derechos digitales y servicios digitales. El uso del servicio implica el consentimiento del usuario a las prácticas descritas.
+
+13. **Disposiciones finales**
+-	Si alguna disposición de este Acuerdo fuese declarada inválida, las demás disposiciones mantendrán su vigencia.
+-	Este Acuerdo constituye el entendimiento completo entre las partes respecto al uso del servicio.
+-	AventuraPe puede modificar este Acuerdo en cualquier momento, publicando una versión actualizada en la plataforma e informando a los usuarios.
+
+Este Acuerdo de Servicio regula el uso de la plataforma AventuraPe, un servicio proporcionado bajo el modelo Software como Servicio (SaaS). Al acceder o utilizar la plataforma, el usuario acepta las condiciones establecidas en el presente documento.
+
+
+### 5.2.5. Implemented Native-Mobile Application Evidence  
 
 ### Login Management
 <img src="images/evidence/Evidence_login_management.jpg"></img><br>
@@ -604,7 +672,7 @@ Con estos tres componentes automatizados, AventuraPe dispone de un entorno de pr
 <img src="images/evidence/Evidence_detail_publication_2.jpg"></img><br>
 
 
-### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence  
+### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence  
 
 Hemos añadido correctamente nuestros servicios web bajo una arquitectura RESTful, implementando correcciones en todos los endpoints existentes. Además, hemos añadido un nuevo endpoint llamado favorite-publications, que permite a los usuarios gestionar sus publicaciones favoritas de manera más eficiente.
 La nueva funcionalidad de favorite-publications permite a los usuarios obtener, añadir y eliminar publicaciones de su lista de favoritos, mejorando la interacción con el contenido que más les interesa. La documentación de todos los endpoints está disponible a través de Swagger, lo que facilita la interacción con la API.
@@ -630,7 +698,7 @@ PUT | /publication/{publicationId}/update-publication | Actualización de una pu
 DELETE | /publication/{publicationId}/delete-publication | Eliminar una publicación específica |
 
 
-### 5.2.6. RESTful API documentation  
+### 5.2.7. RESTful API documentation  
 Utilizamos Swagger para documentar y probar los endpoints de la API de manera interactiva, lo que facilita a los desarrolladores la integración y verificación de los servicios RESTful.
 
 ### Api Documentation
@@ -679,7 +747,7 @@ Utilizamos Swagger para documentar y probar los endpoints de la API de manera in
 
 <img src="images/evidence/Evidence_role_management.jpg"></img><br>
 
-### 5.2.7. Team Collaboration Insights  
+### 5.2.8. Team Collaboration Insights  
 *Durante cada sprint, la colaboración efectiva dentro del equipo es fundamental para garantizar el éxito del proyecto. En el primer sprint, nuestro enfoque principal fue la implementación del backend.*
 
 
