@@ -775,23 +775,69 @@ El ubiquitous language es un vocabulario común compartido por todos los miembro
 | US10 | Borrar actividad (Móvil) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | EP03 | Empresario |**Escenario 1: Borrado exitoso**<br>Dado que el empresario ha iniciado sesión y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en 'Eliminar'<br>Entonces el sistema elimina la actividad de la plataforma<br>Y de la lista de actividades activas del empresario |
 
 ## 3.3. Product Backlog  
+# Product Backlog AventuraPe
 
-| **Nombre del User Story**       | **Descripción**                                                                                      | **Story Points** |
-|----------------------------------|--------------------------------------------------------------------------------------------------------|------------------|
-| Registro Emprendedor             | Como **emprendedor**, quiero registrarme en la app para poder publicar mis experiencias               | 3                |
-| Registro Aventurero             | Como **aventurero**, quiero registrarme en la app para poder explorar actividades                     | 3                |
-| Inicio de Sesión Emprendedor     | Como **emprendedor**, quiero iniciar sesión para acceder a mi cuenta                                  | 2                |
-| Inicio de Sesión Aventurero     | Como **aventurero**, quiero iniciar sesión para acceder a mi cuenta                                   | 2                |
-| Publicar Experiencia            | Como **emprendedor**, quiero publicar una experiencia con título, descripción, imagen y ubicación     | 5                |
-| Recomendaciones por Ubicación   | Como **aventurero**, quiero ver experiencias recomendadas según mi ubicación                          | 8                |
-| Búsqueda de Experiencias        | Como **aventurero**, quiero buscar experiencias por nombre o categoría                                | 5                |
-| Estadísticas para Emprendedor   | Como **emprendedor**, quiero ver estadísticas de mis experiencias (visualizaciones, favoritos, etc.)  | 8                |
-| Guardar Favoritos               | Como **aventurero**, quiero guardar experiencias como favoritas para revisarlas luego                 | 3                |
-| Editar/Eliminar Experiencia     | Como **emprendedor**, quiero editar y eliminar experiencias publicadas                                | 5                |
-| Ver Detalles de Experiencia     | Como **aventurero**, quiero ver detalles de una experiencia (descripción, ubicación, emprendedor)     | 3                |
-| Notificaciones para Emprendedor | Como **emprendedor**, quiero recibir notificaciones sobre interacciones con mis experiencias          | 5                |
-| Reseñas y Calificaciones        | Como **aventurero**, quiero dejar reseñas o calificaciones en experiencias                            | 5                |
-| Gestión Administrativa          | Como **administrador**, quiero gestionar usuarios y experiencias para moderar el contenido            | 8                |
+## Landing Page
+
+| ID | Nombre del User Story | Descripción | Story Points |
+|----|----------------------|-------------|--------------|
+| US01 | Interacción con hipervínculos | Como visitante, quiero interactuar con los enlaces de navegación para ir a las diferentes secciones de la plataforma web. | 3 |
+| US02 | Sección características | Como visitante, quiero ver una sección de servicios para entender qué ofrece AventuraPe. | 5 |
+| US03 | Sección Como Funciona | Como usuario nuevo quiero entender el proceso de funcionamiento de AventuraPe, para saber cómo registrarme y comenzar a usar la plataforma. | 5 |
+| US04 | Sección Sobre Nosotros | Como visitante, quiero ver la sección "Sobre Nosotros" para conocer más sobre el propósito y valores de AventuraPe. | 3 |
+| US05 | Sección Testimonios | Como visitante, quiero leer testimonios de otros usuarios para confiar en los servicios de AventuraPe. | 5 |
+| US06 | Sección Planes | Como visitante, quiero ver la sección "Planes de Suscripción" claramente diferenciada, para entender las opciones disponibles y elegir la que mejor se adapte a mis necesidades. | 8 |
+
+## Web - Aventurero
+
+| ID | Nombre del User Story | Descripción | Story Points |
+|----|----------------------|-------------|--------------|
+| US07 | Iniciar sesión (Web - Aventurero) | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | 5 |
+| US08 | Creación de cuenta (Web - Aventurero) | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | 8 |
+| US09 | Configuración del perfil de aventurero | Como usuario aventurero registrado, quiero completar mi perfil personal para personalizar mi experiencia. | 5 |
+| US12 | Ver detalles de actividad (Web) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles como: Nombre de la actividad, cantidad de personas, duración y precio. | 5 |
+| US13 | Búsqueda por filtro (Web) | Como aventurero, quiero filtrar la lista de actividades por su nombre para encontrar rápidamente lo que busco en la versión web. | 8 |
+| US14 | Calificación de publicación (Web) | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | 5 |
+| US15 | Publicar reseña/comentario (Web) | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | 5 |
+| US21 | Navegar interfaz home (Web) | Como aventurero, quiero ver una pantalla principal (home) con opciones claras para navegar por la plataforma desde mi computadora. | 8 |
+| US22 | Gestión de Favoritos (Web) | Como aventurero, quiero guardar actividades como favoritos para poder acceder a ellas rápidamente más tarde. | 8 |
+
+## Móvil - Aventurero
+
+| ID | Nombre del User Story | Descripción | Story Points |
+|----|----------------------|-------------|--------------|
+| US07 | Iniciar sesión (Móvil - Aventurero) | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | 5 |
+| US08 | Creación de cuenta (Móvil - Aventurero) | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | 8 |
+| US12 | Ver detalles de actividad (Móvil) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles en mi dispositivo móvil. | 5 |
+| US14 | Calificación de publicación (Móvil) | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | 3 |
+| US15 | Publicar reseña/comentario (Móvil) | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | 5 |
+| US21 | Navegar interfaz home (Móvil) | Como aventurero, quiero ver una pantalla principal (home) con un resumen de actividades para tener una vista general al ingresar a la plataforma. | 5 |
+
+## Web - Empresario
+
+| ID | Nombre del User Story | Descripción | Story Points |
+|----|----------------------|-------------|--------------|
+| US05 | Iniciar sesión (Web - Empresario) | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | 5 |
+| US08 | Creación de cuenta (Web - Empresario) | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | 8 |
+| US09 | Publicar actividad (Web) | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | 8 |
+| US10 | Edición de actividad (Web) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | 5 |
+| US11 | Borrar actividad (Web) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | 3 |
+| US16 | Ver comentarios de mis publicaciones (Web) | Como empresario, quiero poder acceder y ver los comentarios de mis publicaciones para conocer la opinión de los aventureros. | 5 |
+| US17 | Visualización de estadísticas (Web) | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | 8 |
+| US18 | Personalizar cuenta de perfil (Web - Empresario) | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | 5 |
+| US19 | Gestión de Suscripción (Web) | Como empresario registrado, quiero gestionar mi suscripción para mantenerla activa. | 8 |
+
+## Móvil - Empresario
+
+| ID | Nombre del User Story | Descripción | Story Points |
+|----|----------------------|-------------|--------------|
+| US05 | Iniciar sesión (Móvil - Empresario) | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | 5 |
+| US08 | Creación de cuenta (Móvil - Empresario) | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | 8 |
+| US09 | Publicar actividad (Móvil) | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | 8 |
+| US10 | Edición de actividad (Móvil) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | 5 |
+| US11 | Borrar actividad (Móvil) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | 3 |
+| US17 | Visualización de estadísticas (Móvil) | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | 8 |
+| US18 | Personalizar cuenta de perfil (Móvil - Empresario) | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | 5 |
 
 ## 3.4. Impact Mapping  
 
