@@ -2289,6 +2289,57 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 <img src="./images/user-stories-test/user-stories-test-6.png"   alt=""/><br>
 <img src="./images/user-stories-test/user-stories-test-6-selenium.png" alt=""/><br>
 
+### Web App
+
+<img src="./images/user-stories-test/web/user-stories-test-web-1.png"  alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-1.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-2.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-2.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-3.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-3.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-4.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-4.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-5.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-5.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-6.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-6.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-7.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-7.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-8.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-8.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-9.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-9.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-10.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-10.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-11.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-11.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-12.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-12.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-13.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-13.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-14.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-14.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-15.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-15.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-16.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-16.png" alt=""><br>
+
+
 ## 6.2. Static testing & Verification  
 ### 6.2.1. Static Code Analysis  
 #### 6.2.1.1. Coding standard & Code conventions  
