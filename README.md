@@ -542,6 +542,26 @@ Con estos tres componentes automatizados, AventuraPe dispone de un entorno de pr
 | US19 | TSK-17 | Dashboard estadístico: visitas y comentarios por publicación | 5 | Jose | Done (local) |
 | US05 | TSK-18 | Login empresario con validación de credenciales | 3 | Stefano | Done (local) |
 
+## Sprint 4 – Objetivo
+
+**Objetivo del Sprint:** Desarrollar e implementar las funcionalidades internas del módulo Intranet para el administrador, como gestión de actividades y comentarios.
+
+**Criterio de éxito:** El administrador puede visualizar, buscar y eliminar actividades y comentarios desde el sistema, todo funcional en entorno local.
+
+### Sprint Backlog – Sprint 4 (Administrador)
+
+| User Story | Task ID | Tarea Técnica | Estimación (hrs) | Responsable | Estado |
+|------------|---------|-----------------------------|------------------|-------------|--------|
+| US38 | TSK-19 | Implementar navbar fijo con enlaces a secciones principales | 2 | Jair | To Do |
+| US39 | TSK-20 | Renderizar lista de actividades con datos desde backend | 4 | Jimena | To Do |
+| US40 | TSK-21 | Programar funcionalidad de eliminación de actividades y envío de correo | 5 | Jose | To Do |
+| US41 | TSK-22 | Crear vista de detalle de actividad con comentarios | 4 | Barbara | To Do |
+| US42 | TSK-23 | Habilitar eliminación de comentarios inapropiados con alerta y notificación | 4 | Stefano | To Do |
+| US43 | TSK-24 | Implementar búsqueda de actividades por nombre (input + lógica) | 3 | Jair | To Do |
+| US44 | TSK-25 | Alternar vista de resultados: lista ↔ cuadrícula | 3 | Barbara | To Do |
+| US45 | TSK-26 | Implementar botón “Cerrar sesión” con limpieza de sesión y redirección | 2 | Jose | To Do |
+
+
 ## Enlace al tablero Trello del proyecto
 
 **Trello URL público:** [https://trello.com/invite/b/67fec4eb81fae4e3cb20bc4a/ATTIbaa9f91c96fe0bff5f0c939bfdaa9ee46306E3A0/1asi0732-2510-4438-grupo2](#)
