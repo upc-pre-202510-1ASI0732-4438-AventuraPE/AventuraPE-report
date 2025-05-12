@@ -291,6 +291,7 @@ Voy a reorganizar las User Stories manteniendo todo el contenido original, inclu
 | EP03 | Usuario Empresario (Web/Móvil) | Gestión de cuenta y funcionalidades para empresarios | Empresario | Registro, inicio de sesión, perfil, publicación de actividades |
 | EP05 | Experiencia Aventurero | Interacción con actividades y funcionalidades específicas para aventureros | Aventurero | Consulta de detalles, calificaciones, reseñas, navegación del home |
 | EP06 | Gestión de Actividades | Administración de actividades por parte de los empresarios | Empresario | Publicación, edición y eliminación de actividades |
+| EP07 | Intranet Administrador  | Funcionalidades exclusivas para administradores dentro del sistema de intranet. | Administrador | Navegación interna, gestión de actividades, moderación de comentarios, cierre de sesión |
 <br>
 ### Epic: Navegación y Acceso (EP01)
 | Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
@@ -327,7 +328,22 @@ Voy a reorganizar las User Stories manteniendo todo el contenido original, inclu
 | US09 | Edición de actividad (Web/Móvil) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | EP03 | Empresario | **Escenario 1: Edición exitosa**<br>Dado que el empresario ha iniciado sesión y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en 'Editar', modifica uno o más campos<br>Y hace clic en 'Guardar Cambios'<br>Entonces el sistema guarda los cambios<br>Y la información actualizada de la actividad se refleja en la plataforma |
 | US10 | Borrar actividad (Móvil) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | EP03 | Empresario |**Escenario 1: Borrado exitoso**<br>Dado que el empresario ha iniciado sesión y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en 'Eliminar'<br>Entonces el sistema elimina la actividad de la plataforma<br>Y de la lista de actividades activas del empresario |
 
-## 3.3. Product Backlog  
+## Epic: Intranet Administrador (EP07)
+
+| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
+|----------|--------|-------------|---------|---------|-------------------------|
+| US38 | Opciones de Navegación en la Intranet | El administrador necesita ver un navbar con opciones “Inicio”, “Buscar Actividades” y “Cerrar Sesión”. | EP07 | Administrador | **Escenario 1: Visualización del menú de navegación en todas las páginas**<br>Dado que el administrador ha iniciado sesión en la intranet.<br>Cuando carga cualquier página de la intranet.<br>Entonces el sistema muestra un navbar fijo con los enlaces “Inicio”, “Buscar Actividades” y “Cerrar Sesión”. |
+| US39 | Listar Actividades | El administrador necesita ver la lista de todas las actividades registradas en el sistema. | EP07 | Administrador | **Escenario 1: Visualización de la lista completa de actividades**<br>Dado que el administrador está en la sección “Inicio”.<br>Cuando la página termina de cargar.<br>Entonces el sistema muestra una lista de todas las actividades con nombre, capacidad, imagen, precio y descripción. |
+| US40 | Eliminar Actividad | El administrador necesita poder eliminar una actividad del sistema. | EP07 | Administrador | **Escenario 1: Eliminación exitosa de una actividad**<br>Dado que el administrador ve la lista de actividades en “Inicio”.<br>Cuando hace clic en “Eliminar” junto a una actividad y confirma la acción.<br>Entonces el sistema borra la actividad, actualiza la lista y envía un correo al empresario dueño notificando la eliminación. |
+| US41 | Ver Detalle de Actividad | El administrador necesita poder ver el detalle completo de una actividad. | EP07 | Administrador | **Escenario 1: Visualización del detalle de una actividad**<br>Dado que el administrador está en la lista de actividades.<br>Cuando hace clic en el nombre o imagen de una actividad.<br>Entonces el sistema muestra el detalle con imagen ampliada, información importante y sección de comentarios. |
+| US42 | Eliminar Comentario | El administrador necesita poder eliminar comentarios inapropiados de una actividad. | EP07 | Administrador | **Escenario 1: Eliminación de comentario inapropiado**<br>Dado que el administrador está viendo la sección de comentarios en el detalle de una actividad.<br>Cuando hace clic en “Eliminar” junto a un comentario y confirma.<br>Entonces el sistema borra el comentario y envía un correo al usuario notificando la eliminación por infracción de normas. |
+| US43 | Buscar Actividades por Nombre | El administrador necesita buscar actividades por su nombre en la intranet. | EP07 | Administrador | **Escenario 1: Búsqueda por nombre de actividad**<br>Dado que el administrador está en la sección “Buscar Actividades”.<br>Cuando ingresa texto en el campo de búsqueda y pulsa “Buscar”.<br>Entonces el sistema filtra y muestra sólo las actividades cuyo nombre coincida. |
+| US44 | Alternar Vista de Resultados | El administrador necesita alternar entre Vista de Lista y Vista de Cuadrícula en la sección “Buscar Actividades”. | EP07 | Administrador | **Escenario 1: Vista en modo lista**<br>Dado que el administrador ve resultados en “Buscar Actividades”.<br>Cuando selecciona “Vista de lista”.<br>Entonces el sistema muestra los resultados en una columna.<br><br>**Escenario 2: Vista en modo cuadrícula**<br>Dado que el administrador ve resultados en “Buscar Actividades”.<br>Cuando selecciona “Vista de cuadrícula”.<br>Entonces los resultados se ven en una grilla de 4 por fila. |
+| US45 | Cerrar Sesión | El administrador necesita cerrar su sesión para salir de la intranet de forma segura. | EP07 | Administrador | **Escenario 1: Cierre exitoso de sesión**<br>Dado que el administrador está en cualquier sección de la intranet.<br>Cuando hace clic en “Cerrar Sesión”.<br>Entonces el sistema cierra la sesión y redirige al usuario a la página de login. |
+
+
+## 3.3. Product Backlog
+
 ## 3.4. Impact Mapping  
 
 # Capítulo IV: Product Design
