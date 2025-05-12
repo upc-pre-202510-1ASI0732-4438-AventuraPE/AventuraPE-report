@@ -726,72 +726,102 @@ El ubiquitous language es un vocabulario común compartido por todos los miembro
 <img src="images/to_be_scenario/to_be_scenario_mapping.png">
 
 ## 3.2. User Stories
+# User Stories y Épicas - AventuraPe
 
-### Tabla de Epics para AventuraPe
+## Tabla de Épicas
 
-| Epic ID | Nombre | Descripción | Usuario Principal | Funcionalidades Clave |
-|---------|--------|-------------|------------------|----------------------|
-| EP01 | Navegación y Acceso | Funcionalidades relacionadas con la navegación de visitantes en la plataforma web | Visitante | Secciones informativas, hipervínculos, preguntas frecuentes |
-| EP02 | Usuario Aventurero (Web/Móvil) | Gestión de cuenta y funcionalidades para usuarios aventureros | Aventurero | Registro, inicio de sesión, perfil, visualización de actividades |
-| EP03 | Usuario Empresario (Web/Móvil) | Gestión de cuenta y funcionalidades para empresarios | Empresario | Registro, inicio de sesión, perfil, publicación de actividades |
-| EP05 | Experiencia Aventurero | Interacción con actividades y funcionalidades específicas para aventureros | Aventurero | Consulta de detalles, calificaciones, reseñas, navegación del home |
-| EP06 | Gestión de Actividades | Administración de actividades por parte de los empresarios | Empresario | Publicación, edición y eliminación de actividades |
-<br>
+| ID | Nombre de la Épica |
+|---|---|
+| EP01 | Visitante |
+| EP02 | Gestión de Experiencia de Aventurero |
+| EP03 | Gestión de Experiencia Empresario |
+| EP04 | Gestión de Perfil Empresario |
+| EP05 | Gestión de Favoritos |
+| EP06 | Estadísticas |
 
-### Epic: Navegación y Acceso (EP01)
-
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|----------|--------|-------------|---------|---------|-------------------------|
-| US01 | Interacción con hipervínculos (Web) | Como visitante, quiero interactuar con los enlaces de navegación para ir a las diferentes secciones de la plataforma web. | EP01 | Visitante | **Escenario 1: Búsqueda de Aventurape**<br>Dado que el visitante quiere saber sobre los servicios de AventuraPe<br>Cuando el visitante busca en Internet AventuraPe<br>Entonces el sistema le muestra la landing page de AventuraPe<br><br>**Escenario 2: Navegación exitosa**<br>Dado que el visitante se encuentra en la plataforma web de AventuraPe<br>Cuando el visitante hace clic en una sección de la barra de navegación<br>Entonces el sistema muestra la sección correspondiente |
-| US02 | Sección Servicios | Como visitante, quiero ver la sección "Servicios" para entender qué servicios ofrece AventuraPe. | EP01 | Visitante | **Escenario 1: Acceso a la sección Servicios**<br>Dado que el visitante está en la página principal de AventuraPe<br>Cuando el visitante navega hasta la sección de Servicios<br>Entonces el sistema muestra un resumen claro de las funcionalidades clave de AventuraPe<br><br>**Escenario 2: Visualización de detalles de servicios**<br>Dado que el visitante está en la sección de Servicios<br>Cuando el visitante hace clic en un servicio específico<br>Entonces el sistema muestra información detallada sobre ese servicio |
-| US03 | Sección preguntas frecuentes (Web) | Como visitante, quiero consultar la sección "Preguntas frecuentes" para resolver mis dudas sobre la plataforma. | EP01 | Visitante | **Escenario 1: Acceso a la sección FAQ**<br>Dado que el visitante está navegando en la plataforma<br>Cuando el visitante hace clic en la sección "Preguntas Frecuentes"<br>Entonces el sistema muestra una lista de preguntas comunes organizadas por categorías<br><br>**Escenario 2: Consulta de respuestas específicas**<br>Dado que el visitante está en la sección de "Preguntas Frecuentes"<br>Cuando el visitante hace clic en una pregunta específica<br>Entonces el sistema expande esa pregunta y muestra la respuesta detallada |
-| US04 | Sección Sobre Nosotros | Como visitante, quiero ver la sección "Sobre Nosotros" para conocer más sobre el propósito y valores de AventuraPe. | EP01 | Visitante | **Escenario 1: Exploración inicial**<br>Dado que el visitante quiere saber más sobre AventuraPe<br>Cuando el visitante accede a la página principal y navega hacia la sección "Sobre Nosotros"<br>Entonces el sistema una breve desripción sobre el equipo de AventuraPe<br><br>**Escenario 2: Contenido accesible y claro**<br>Dado que el visitante está viendo la sección "Sobre Nosotros"<br>Cuando el visitante revisa el contenido<br>Entonces el sistema le presenta información en un formato visualmente atractivo y fácil de leer |
-| US05 | Sección Testimonios | Como visitante, quiero leer testimonios de otros usuarios para confiar en los servicios de AventuraPe. | EP01 | Visitante | **Escenario 1: Acceso a testimonios**<br>Dado que el visitante quiere conocer experiencias de otros usuarios<br>Cuando el visitante navega hacia la sección de Testimonios<br>Entonces el sistema muestra una serie de opiniones o experiencias compartidas por usuarios reales<br><br>**Escenario 2: Presentación dinámica**<br>Dado que el visitante está en la sección de Testimonios<br>Cuando el visitante revisa los distintos comentarios<br>Entonces el sistema presenta los testimonios en un formato atractivo con nombre, foto y experiencia destacada |
-| US06 | Sección Contacto | Como visitante, quiero acceder a la sección de contacto para comunicarme con el equipo de AventuraPe. | EP01 | Visitante | **Escenario 1: Visualización del formulario de contacto**<br>Dado que el visitante necesita hacer una consulta<br>Cuando el visitante accede a la sección "Contacto"<br>Entonces el sistema muestra un formulario con campos como nombre, correo y mensaje<br><br>**Escenario 2: Envío exitoso de mensaje**<br>Dado que el visitante ha llenado correctamente el formulario<br>Cuando el visitante hace clic en "Enviar"<br>Entonces el sistema muestra un mensaje "Gracias por tu mensaje. Nos pondremos en contacto pronto." |
-
-## Epic: Usuario Aventurero (EP02 / EP05)
+## Tabla de User Stories
 
 | Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|----------|--------|-------------|---------|---------|-------------------------|
-| US04 | Iniciar sesión (Web/Móvil) | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | EP02 | Aventurero | **Escenario 1: Inicio de sesión exitoso**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa su usuario y contraseña correctos <br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema valida las credenciales <br>Y redirige al aventurero a su home personalizado<br><br>**Escenario 2: Inicio de sesión fallido**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa un usuario o contraseña incorrectos <br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema muestra un mensaje de error <br>Y permanece en la página de inicio de sesión |
-| US06 | Creación de cuenta (Web/Móvil) | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | EP02 | Aventurero | **Escenario 1: Registro exitoso**<br>Dado que el visitante se encuentra en la página de registro para aventureros<br>Cuando el visitante completa los campos obligatorios como usuairo y contraseña<br>Y hace clic en el botón 'Registrar'<br>Entonces el sistema crea la nueva cuenta de aventurero <br>Y lo dirige a la sección de Iniciar Sesión<br><br>**Escenario 2: Validación de datos obligatorios**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin completar todos los campos obligatorios: usuario y contraseña<br>Entonces el sistema le muestra un mensaje de error<br>Y el sistema no registra la cuenta |
-| US07 | Configuración del perfil de aventurero (Móvil) | Como usuario aventurero registrado, quiero completar mi perfil personal para personalizar mi experiencia. | EP02 | Aventurero | **Escenario 1: Actualización exitosa del perfil** <br>Dado que el aventurero ha iniciado sesión en su cuenta<br>Cuando accede a la sección "Mi cuenta" y completa campos adicionales como dirección y género<br>Y hace clic en el botón "Guardar cambios"<br>Entonces el sistema actualiza la información del perfil<br> **Escenario 2: Validación de campos del perfil**<br>Dado que el aventurero está en la sección "Mi cuenta" completando su perfil<br>Cuando ingresa información incompleta<br>Entonces el sistema resalta los campos a rellenar<br>Y no guarda los cambios hasta que se corrijan los errores |
-| US12 | Ver detalles de actividad (Web) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles como: Nombre de la actividad, cantidad de personas, duración y precio.| EP02 | Aventurero | **Escenario 1: Navegación a la sección de búsqueda**<br>Dado que el aventurero se encuentra en la página de inicio<br>Cuando el aventurero hace clic a la sección Buscar<br>Entonces el sistema le muestra una galería de actividades de diferentes emprendedores<br><br>**Escenario 2: Acceso a detalles**<br>Dado que el aventurero está viendo la galería de actividades<br>Cuando el aventurero hace clic en la tarjeta de una actividad específica<br>Entonces el sistema carga <br>Y muestra una página dedicada con toda la información detallada de esa actividad |
-| US12 | Ver detalles de actividad (Aventurero - Móvil) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles en mi dispositivo móvil. | EP02 | Aventurero | **Escenario 1: Navegación a la sección de búsqueda**<br>Dado que el aventurero se encuentra en la sección de inicio<br>Cuando el aventurero hace clic al icono de la lupa<br>Entonces el sistema le muestra una lista de actividades<br><br>**Escenario 2: Acceso a detalles**<br>Dado que el aventurero está viendo la lista de actividades<br>Cuando el aventurero hace clic en la tarjeta de una actividad específica<br>Entonces el sistema carga<br>Y muestra una página dedicada con toda la información detallada como: Título, descripción, imagen, costo, precio, cantidad de personas, comentarios y calificación de esa actividad|
-| US14 | Calificación de publicación (Aventurero - Web/Móvil) | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | EP02 | Aventurero | **Escenario 1: Acceso a detalles de la actividad**<br>Dado que el aventurero se encuentra en la sección de buscar<br>Cuando el aventurero selecciona una actividad específica<br>Entonces el sistema le muestra los detalles de esa actividad<br><br>**Escenario 2: Registrar calificación**<br>Dado que el aventurero está viendo la página de detalles de una actividad<br>Cuando el aventurero selecciona un número de estrellas en el control de calificación<br>Entonces el sistema pinta las estrellas dependiendo de lo que el usuario eligió <br>Y registra la calificación para esa actividad |
-| US15 | Publicar reseña/comentario (Aventurero - Web/Móvil) | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | EP02 | Aventurero | **Escenario 1: Acceso a detalles de la actividad**<br>Dado que el aventurero se encuentra en la sección de buscar<br>Cuando el aventurero selecciona una actividad específica<br>Entonces el sistema le muestra los detalles de esa actividad<br><br>**Escenario 2: Publicar comentario exitoso**<br>Dado que el aventurero está en la página de detalles de una actividad en la que participó<br>Cuando el aventurero escribe un texto en el campo de reseña <br>Y hace clic en el botón 'Publicar'<br>Entonces el sistema guarda el comentario <br>Y lo muestra en la lista de comentarios visibles para otros usuarios |
-| US21 | Navegar interfaz home (Aventurero - Móvil) | Como aventurero, quiero ver una pantalla principal (home) con una lista o resumen de actividades para tener una vista general al ingresar a la plataforma. | EP02 | Aventurero | **Escenario 1: Vista del Home**<br>Dado que el aventurero ha iniciado sesión<br>Cuando accede a la página principal (home) de la plataforma<br>Entonces el sistema le presenta una pantalla que muestra una galería de emprendedores y publicaciones de actividades<br><br>**Escenario 2: Interacción con la galería**<br>Dado que el aventurero está viendo la pantalla de inicio<br>Cuando el aventurero desliza la pantalla para explorar más contenido<br>Entonces el sistema carga más elementos en la galería de forma dinámica |
-| US21 | Navegar interfaz home (Aventurero - Web) | Como aventurero, quiero ver una pantalla principal (home) con opciones claras para navegar por la plataforma desde mi computadora. | EP02 | Aventurero | **Escenario 1: Vista del Home**<br>Dado que el aventurero ha iniciado sesión<br>Cuando accede a la página principal (home) de la plataforma<br>Entonces el sistema le presenta una pantalla con dos botones donde puede ver emprendedores y publicaciones<br><br>**Escenario 2: Navegación por categorías**<br>Dado que el aventurero está en la página principal<br>Cuando el aventurero hace clic en uno de los botones disponibles<br>Entonces el sistema le muestra el contenido correspondiente a la opción seleccionada |
-
-## Epic: Usuario Empresario (EP03 / EP06)
-
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|----------|--------|-------------|---------|---------|-------------------------|
-| US05 | Iniciar sesión (Web/Móvil) | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | EP03 | Empresario | **Escenario 1: Inicio de sesión exitoso**<br>Dado que el empresario registrado se encuentra en la página de inicio de sesión<br>Cuando el empresario ingresa su email y contraseña correctos <br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema valida las credenciales <br>Y redirige al empresario a su sección de inicio<br><br>**Escenario 2: Inicio de sesión fallido**<br>Dado que el empresario registrado se encuentra en la página de inicio de sesión<br>Cuando el empresario ingresa un email o contraseña incorrectos <br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema muestra un mensaje de error indicando "Credenciales inválidas" <br>Y permanece en la página de inicio de sesión |
-| US07 | Configuración del perfil de empresario (Móvil) | Como usuario empresario registrado, quiero completar mi perfil personal para personalizar mi experiencia. | EP03 | Empresario | **Escenario 1: Actualización exitosa del perfil** <br>Dado que el empresario ha iniciado sesión en su cuenta<br>Cuando accede a la sección "Mi cuenta" y completa campos adicionales como dirección y género<br>Y hace clic en el botón "Guardar cambios"<br>Entonces el sistema actualiza la información del perfil<br> **Escenario 2: Validación de campos del perfil**<br>Dado que el empresario está en la sección "Mi cuenta" completando su perfil<br>Cuando ingresa información incompleta<br>Entonces el sistema resalta los campos a rellenar<br>Y no guarda los cambios hasta que se corrijan los errores |
-| US07 | Creación de cuenta (Web/Móvil) | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | EP03 | Empresario |**Escenario 1: Registro exitoso**<br>Dado que el visitante se encuentra en la página de registro para empresarios<br>Cuando el visitante completa los campos obligatorios como usuario y contraseña,<br>Y hace clic en el botón 'Registrar'<br>Entonces el sistema crea la nueva cuenta de empresario, inicia sesión automáticamente<br>Y redirige al usuario a su página de inicio<br>**Escenario 2: Validación de datos del negocio**<br>Dado que el visitante está completando el formulario de registro para empresarios<br>Cuando el visitante ingresa información incompleta o inválida<br>Entonces el sistema le muestra un mensaje de "Error de registro, vuelve a intentar"|
-| US08 | Publicar actividad (Web/Móvil) | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | EP03 | Empresario | **Escenario 1: Publicación exitosa**<br>Dado que el empresario ha iniciado sesión<br>Y se encuentra en la sección de home<br>Cuando el empresario navega a la opción 'Agregar Actividad', completa todos los campos requeridos del formulario como: título de la actividad, imagen (URL o desde la galería), descripción, cantidad de personas, precio y hora<br>Y hace clic en 'Publicar'<br>Entonces el sistema guarda la nueva actividad<br>Y esta se vuelve visible en la plataforma para los aventureros<br><br>**Escenario 2: Validación de campos obligatorios**<br>Dado que el empresario está completando el formulario para publicar una actividad<br>Cuando el empresario intenta publicar sin completar todos los campos obligatorios<br>Entonces el sistema no registra la publicación hasta que estén completos  |
-| US09 | Edición de actividad (Web/Móvil) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | EP03 | Empresario | **Escenario 1: Edición exitosa**<br>Dado que el empresario ha iniciado sesión y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en 'Editar', modifica uno o más campos<br>Y hace clic en 'Guardar Cambios'<br>Entonces el sistema guarda los cambios<br>Y la información actualizada de la actividad se refleja en la plataforma |
-| US10 | Borrar actividad (Móvil) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | EP03 | Empresario |**Escenario 1: Borrado exitoso**<br>Dado que el empresario ha iniciado sesión y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en 'Eliminar'<br>Entonces el sistema elimina la actividad de la plataforma<br>Y de la lista de actividades activas del empresario |
-
+|---|---|---|---|---|---|
+| US01 | Interacción con hipervínculos | Como visitante, quiero interactuar con los enlaces de navegación para ir a las diferentes secciones de la plataforma web. | EP01 | Visitante | **Escenario 1: Búsqueda de Aventurape**<br>Dado que el visitante quiere saber sobre los servicios de AventuraPe<br>Cuando el visitante busca en Internet AventuraPe<br>Entonces el sistema le muestra la landing page de AventuraPe<br><br>**Escenario 2: Navegación exitosa**<br>Dado que el visitante se encuentra en la landing page de AventuraPe<br>Cuando el visitante hace clic en una sección de la barra de navegación<br>Entonces el sistema muestra la sección correspondiente |
+| US02 | Sección características | Como visitante, quiero ver una sección de servicios para entender qué ofrece AventuraPe. | EP01 | Visitante | **Escenario 1: Acceso a la sección de Servicios**<br>Dado que el visitante está en la página principal de AventuraPe<br>Cuando el visitante hace clic en la opción "Servicios" del menú de navegación<br>Entonces el sistema muestra las funcionalidades clave de AventuraPe<br><br>**Escenario 2: Visualización de detalles de servicios**<br>Dado que el visitante está en la sección de Servicios<br>Cuando el visitante desplaza la página hacia abajo (scrollea)<br>Entonces el sistema muestra progresivamente información detallada de cada servicio |
+| US03 | Sección Como Funciona | Como usuario nuevo quiero entender el proceso de funcionamiento de AventuraPe, para saber cómo registrarme y comenzar a usar la plataforma | EP01 | Visitante | **Escenario 1: Visualización de la sección**<br>Dado que el visitante esta en la página principal de AventuraPe<br>Cuando el visitante accede a la sección "¿Cómo funciona?"<br>Entonces el sistema le muestra un resumen guiado de los pasos sencillos para comenzar a utilizar la plataforma de AventuraPe<br><br>**Escenario 2: Guía sencilla**<br>Dado que el visitante esta en la sección de "¿Cómo funciona?"<br>Cuando el visitante revisa la información de los pasos<br>Entonces el sistema debe mostrarle cada paso enumerado con su descripción respectiva |
+| US04 | Sección Sobre Nosotros | Como visitante, quiero ver la sección "Sobre Nosotros" para conocer más sobre el propósito y valores de AventuraPe. | EP01 | Visitante | **Escenario 1: Acceso a la información corporativa**<br>Dado que el visitante está en la página principal<br>Cuando hace clic en "Sobre Nosotros" en el menú de navegación<br>Entonces el sistema muestra una descripción de la misión, visión y valores corporativos.<br><br>**Escenario 2: Contenido accesible y claro**<br>Dado que el visitante está viendo la sección "Sobre Nosotros"<br>Cuando el visitante revisa el contenido<br>Entonces el sistema le presenta información en un formato visualmente atractivo y fácil de leer |
+| US05 | Sección Testimonios | Como visitante, quiero leer testimonios de otros usuarios para confiar en los servicios de AventuraPe. | EP01 | Visitante | **Escenario 1: Acceso a testimonios**<br>Dado que el visitante quiere conocer experiencias de otros usuarios<br>Cuando el visitante navega hacia la sección de Testimonios<br>Entonces el sistema muestra una serie de opiniones o experiencias compartidas por usuarios reales<br><br>**Escenario 2: Presentación dinámica**<br>Dado que el visitante está en la sección de Testimonios<br>Cuando el visitante revisa los distintos comentarios<br>Entonces el sistema presenta los testimonios en un formato atractivo con nombre y experiencia destacada que el equipo de Aventurape recolectó |
+| US06 | Sección Planes | Como visitante, quiero ver la sección "Planes de Suscripción" claramente diferenciada, para entender las opciones disponibles y elegir la que mejor se adapte a mis necesidades. | EP01 | Visitante | **Escenario 1: Visualización Correcta de los Planes**<br>Como visitante en la página principal de AventuraPe<br>Cuando accedo a la sección de Planes de Suscripción<br>Entonces el sistema debe mostrarme dos columnas claramente diferenciadas: una para Aventureros a la izquierda y otra para Emprendedores a la derecha<br>Y el sistema debe presentar una lista de beneficios, destacando claramente que el plan para aventureros es gratuito<br><br>**Escenario 2: Confirmación de gratuidad para aventureros**<br>Dado que estoy en la sección de Planes de Suscripción<br>Cuando reviso la columna "Para Aventureros"<br>Entonces el sistema debe mostrar el texto "GRATIS" resaltado visualmente<br><br>**Escenario 3: Visualización de beneficios para emprendedores**<br>Dado que estoy en la sección de Planes de Suscripción<br>Cuando reviso la columna "Para Emprendedores"<br>Entonces el sistema debe mostrar el texto "Pago único" en la descripción |
+| US07 | Iniciar sesión | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | EP02 | Aventurero | **Escenario 1: Inicio de sesión exitoso**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa su usuario y contraseña correcta<br>Y pasa la verificación Captcha<br>Y hace clic en el botón "Iniciar sesión"<br>Entonces el sistema valida las credenciales<br>Y redirige al aventurero a su home personalizado<br><br>**Escenario 2: Inicio de sesión fallido por credenciales**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa un usuario o contraseña incorrecta<br>Y pasa la verificación Captcha<br>Y hace clic en el botón "Iniciar sesión"<br>Entonces el sistema muestra un mensaje de error indicando "Credenciales inválidas"<br>Y permanece en la página de inicio de sesión<br><br>**Escenario 3: Inicio de sesión fallido por Captcha**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa un usuario o contraseña incorrecta<br>Y no pasa la verificación Captcha<br>Y hace clic en el botón "Iniciar sesión"<br>Entonces el sistema muestra un mensaje de error indicando "Por favor, verifica que eres no un robot"<br>Y permanece en la página de inicio de sesión |
+| US08 | Iniciar sesión | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | EP02 | Aventurero | **Escenario 1: Inicio de sesión exitoso**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa su usuario, correo y contraseña correcta<br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema valida las credenciales<br>Y redirige al aventurero a su home personalizado<br><br>**Escenario 2: Inicio de sesión fallido**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa un usuario, correo o contraseña incorrecta<br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema muestra un mensaje de "Error de registro"<br>Y permanece en la página de inicio de sesión |
+| US09 | Creación de cuenta | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | EP02 | Aventurero | **Escenario 1: Registro exitoso**<br>Dado que el visitante se encuentra en la página de registro para aventureros<br>Cuando el visitante completa los campos obligatorios: usuario, correo y contraseña<br>Y hace clic en el botón 'Registrar'<br>Entonces el sistema crea la nueva cuenta de aventurero y lo dirige a la sección de Iniciar Sesión<br><br>**Escenario 2: Validación de datos obligatorios**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin completar todos los campos obligatorios: usuario, correo y contraseña<br>Entonces el sistema le muestra un mensaje<br>Y el sistema no registra la cuenta |
+| US10 | Creación de cuenta | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | EP02 | Aventurero | **Escenario 1: Registro exitoso**<br>Dado que el visitante se encuentra en la página de registro para aventureros<br>Cuando el visitante completa los campos obligatorios: usuario, correo y contraseña<br>Y acepta los términos y condiciones<br>Y pasa la verificación Captcha<br>Y hace clic en el botón 'Registrar'<br>Entonces el sistema crea la nueva cuenta de aventurero<br>Y lo dirige a la sección de Iniciar Sesión<br><br>**Escenario 2: Validación de datos obligatorios**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin completar todos los campos obligatorios: usuario, correo y contraseña<br>Entonces el sistema resalta el campo incorrecto o incompleto<br>Y el sistema no registra la cuenta<br><br>**Escenario 3: Validación de Captcha**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin verificarse mediante el Captcha<br>Entonces el sistema le muestra un mensaje de "Por favor, verifique que no es un robot"<br>Y el sistema no registra la cuenta<br><br>**Escenario 4: Validación de la aceptación de los términos y condiciones**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin aceptar los términos y condiciones<br>Entonces el sistema le muestra un mensaje de "Debe aceptar los términos y políticas para continuar"<br>Y el sistema no registra la cuenta |
+| US11 | Configuración del perfil de aventurero | Como usuario aventurero registrado, quiero completar mi perfil personal para personalizar mi experiencia. | EP02 | Aventurero | **Escenario 1: Edición exitosa**<br>Dado que el aventurero selecciona la opción de "Mi cuenta"<br>Cuando el aventurero agrega uno o más campos como nombre, apellido, correo, cuidad, calle, país, género, número de contacto y código postal<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema guarda<br>Y muestra la información agregada<br><br>**Escenario 2: Edición fallida**<br>Dado que el aventurero registrado ha iniciado sesión<br>Y selecciona la opción de "Mi cuenta"<br>Cuando el aventurero intenta agregar información pero deja uno o más campos obligatorios vacíos (nombre, apellido, correo, cuidad, calle, país, género, número de contacto y código postal)<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema resalta los campos obligatorios incompletos<br>Y el botón 'Guardar' permanece desactivado hasta que todos los campos requeridos sean completados |
+| US12 | Ver detalles de actividad | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles como: Nombre de la actividad, cantidad de personas, duración y precio. | EP02 | Aventurero | **Escenario 1: Acceso a detalles desde Buscar**<br>Dado que el aventurero está viendo la galería de actividades en la sección Buscar<br>Cuando el aventurero hace clic "Detalles" en la tarjeta de una actividad específica<br>Entonces el sistema carga<br>Y muestra una página dedicada con toda la información detallada de esa actividad como nombre de la actividad, descripción, precio, duración, cantidad de personas, información importante, comentarios<br>Y el sistema le da la opción de escribir una reseña<br><br>**Escenario 2: Acceso a detalles desde Inicio**<br>Dado que el aventurero está viendo la galería de actividades en la sección Inicio<br>Cuando el aventurero hace clic en la tarjeta de una actividad específica<br>Entonces el sistema carga<br>Y muestra una página dedicada con toda la información detallada de esa actividad como nombre de la actividad, descripción, precio, duración, cantidad de personas, información importante, comentarios<br>Y el sistema le da la opción de escribir una reseña |
+| US13 | Ver detalles de actividad | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles en mi dispositivo móvil. | EP02 | Aventurero | **Escenario 1: Navegación a la sección de búsqueda**<br>Dado que el aventurero se encuentra en la sección de inicio<br>Cuando el aventurero hace clic al icono de la lupa<br>Entonces el sistema le muestra una lista de actividades<br><br>**Escenario 2: Acceso a detalles**<br>Dado que el aventurero está viendo la lista de actividades<br>Cuando el aventurero hace clic en la tarjeta de una actividad específica<br>Entonces el sistema carga<br>Y muestra una página dedicada con toda la información detallada como: Título, descripción, imagen, costo, precio, cantidad de personas, comentarios y calificación de esa actividad |
+| US14 | Calificación de publicación | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | EP02 | Aventurero | **Escenario 1: Acceso a detalles de la actividad**<br>Dado que el aventurero se encuentra en la sección de buscar<br>Cuando el aventurero selecciona una actividad específica<br>Entonces el sistema le muestra los detalles de esa actividad<br><br>**Escenario 2: Registrar calificación**<br>Dado que el aventurero está viendo la página de detalles de una actividad<br>Cuando el aventurero selecciona un número de estrellas en el control de calificación<br>Entonces el sistema pinta las estrellas dependiendo de lo que el usuario eligió<br>Y registra la calificación para esa actividad |
+| US15 | Calificación de publicación | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | EP02 | Aventurero | **Escenario 1: Acceso a detalles de la actividad**<br>Dado que el aventurero se encuentra en la sección de buscar<br>Cuando el aventurero selecciona una actividad específica<br>Entonces el sistema le muestra los detalles de esa actividad<br><br>**Escenario 2: Registrar calificación**<br>Dado que el aventurero está viendo la página de detalles de una actividad<br>Y hace clic en la opción de "Escribir Reseña"<br>Cuando el aventurero selecciona un número de estrellas en el control de calificación<br>Entonces el sistema pinta las estrellas dependiendo de lo que el usuario eligió<br><br>**Escenario 3: Registro fallido de la calificación**<br>Dado que el aventurero está viendo la página de detalles de una actividad<br>Cuando el aventurero no selecciona ningún número de estrellas en el control de calificación<br>Entonces el sistema no le permite registrar su reseña hasta seleccionar la puntuación debida |
+| US16 | Publicar reseña/comentario | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | EP02 | Aventurero | **Escenario 1: Acceso a detalles de la actividad**<br>Dado que el aventurero se encuentra en la sección de buscar<br>Cuando el aventurero selecciona una actividad específica<br>Entonces el sistema le muestra los detalles de esa actividad<br><br>**Escenario 2: Publicar comentario exitoso**<br>Dado que el aventurero está en la página de detalles de una actividad en la que participó<br>Y hace clic en la opción de "Escribir Reseña"<br>Cuando el aventurero escribe un texto en el campo de reseña<br>Y hace clic en el botón 'Publicar'<br>Entonces el sistema guarda el comentario<br>Y lo muestra en la lista de comentarios visibles para otros usuarios<br><br>**Escenario 3: Publicar comentario fallido**<br>Dado que el aventurero está en la página de detalles<br>Y hace clic en la opción de "Escribir Reseña"<br>Cuando el aventurero no escribe ninguna reseña en el campo de texto<br>Entonces el sistema no le permite realizar la reseña |
+| US17 | Publicar reseña/comentario | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | EP02 | Aventurero | **Escenario 1: Acceso a detalles de la actividad**<br>Dado que el aventurero se encuentra en la sección de buscar<br>Cuando el aventurero selecciona una actividad específica<br>Entonces el sistema le muestra los detalles de esa actividad<br><br>**Escenario 2: Publicar comentario exitoso**<br>Dado que el aventurero está en la página de detalles de una actividad en la que participó<br>Cuando el aventurero escribe un texto en el campo de reseña<br>Y hace clic en el botón 'Publicar'<br>Entonces el sistema guarda el comentario<br>Y lo muestra en la lista de comentarios visibles para otros usuarios |
+| US18 | Navegar interfaz home | Como aventurero, quiero ver una pantalla principal (home) con un resumen de actividades para tener una vista general al ingresar a la plataforma. | EP02 | Aventurero | **Escenario 1: Vista del Home**<br>Dado que el aventurero ha iniciado sesión<br>Cuando accede a la página principal (home) de la plataforma<br>Entonces el sistema le presenta una pantalla que muestra una galería de emprendedores y publicaciones de actividades<br><br>**Escenario 2: Interacción con la galería**<br>Dado que el aventurero está viendo la pantalla de inicio<br>Cuando el aventurero desliza a la derecha la pantalla para explorar más contenido<br>Entonces el sistema carga más elementos en la galería de forma dinámica |
+| US20 | Navegar interfaz home | Como aventurero, quiero ver una pantalla principal (home) con opciones claras para navegar por la plataforma desde mi computadora. | EP02 | Aventurero | **Escenario 1: Vista del Home**<br>Dado que el aventurero ha iniciado sesión<br>Cuando accede a la página principal (home) de la plataforma<br>Entonces el sistema le presenta una pantalla con dos botones donde puede ver emprendedores y publicaciones<br><br>**Escenario 2: Navegación por aventuras**<br>Dado que el aventurero está en la página principal<br>Cuando el aventurero hace clic en el botón "Aventuras"<br>Entonces el sistema muestra una lista de publicaciones con sus imágenes, descripciones y precios correspondientes<br><br>**Escenario 3: Navegación por emprendedores**<br>Dado que el aventurero está en la página principal<br>Cuando el aventurero hace clic en el botón "Emprendedores"<br>Entonces el sistema muestra los perfiles de emprendedores con datos básicos como sus nombres |
+| US21 | Búsqueda por filtro | Como aventurero, quiero filtrar la lista de actividades por su nombre para encontrar rápidamente lo que busco. | EP02 | Aventurero | **Escenario 1: Navegación a la sección de búsqueda**<br>Dado que el aventurero se encuentra en la página de inicio<br>Cuando el aventurero hace clic a la sección de buscar en la barra de navegación de arriba<br>Entonces el sistema le redirige a la página de buscar<br><br>**Escenario 2: Aplicación de filtro**<br>Dado que el aventurero está en la página de buscar<br>Cuando el aventurero escribe en la barra de búsqueda una publicación con nombre existente<br>Y hace clic en buscar<br>Entonces el sistema actualiza la galería de actividades mostrando únicamente aquellas que cumplen con el nombre del filtro aplicado<br><br>**Escenario 3: Aplicación de filtro fallido**<br>Dado que el aventurero está en la página de buscar<br>Cuando el aventurero escribe en la barra de búsqueda una publicación con nombre inexistente<br>Y hace clic en buscar<br>Entonces el sistema muestra un texto de "No se encontraron actividades para …" |
+| US22 | Gestión de Favoritos | Como aventurero, quiero guardar actividades como favoritos para poder acceder a ellas rápidamente más tarde. | EP05 | Aventurero | **Escenario 1: No hay favoritos guardados**<br>Dado que el usuario ha iniciado sesión<br>Cuando accede a la sección "Mis Actividades Favoritas"<br>Y no ha guardado ninguna actividad como favorita<br>Entonces el sistema muestra el mensaje: "No tienes actividades favoritas"<br>Y un botón de "Explorar actividades" para redirigirlo al catálogo<br><br>**Escenario 2: Agregar una actividad a favoritos**<br>Dado que el usuario está viendo una publicación<br>Cuando hace clic en el ícono del corazón<br>Entonces el sistema guarda la actividad en su lista de favoritos<br><br>**Escenario 3: Ver lista de favoritos guardados**<br>Dado que el usuario tiene actividades marcadas como favoritas<br>Cuando accede a "Mis Actividades Favoritas"<br>Entonces el sistema muestra una miniatura de la actividad<br>Y Botón "Ver detalles" para acceder a la publicación completa<br><br>**Escenario 4: Eliminar de favoritos**<br>Dado que el usuario está en "Mis Actividades Favoritas"<br>Cuando hace clic en el ícono de la basura junto a una actividad<br>Entonces el sistema remueve la publicación de la lista<br>Y actualiza la vista de la sección |
+| US23 | Iniciar sesión | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | EP03 | Empresario | **Escenario 1: Inicio de sesión exitoso**<br>Dado que el aventurero registrado se encuentra en la página de inicio de sesión<br>Cuando el aventurero ingresa su usuario y contraseña correcta<br>Y pasa la verificación Captcha<br>Y hace clic en el botón "Iniciar sesión"<br>Entonces el sistema valida las credenciales<br>Y redirige al aventurero a su home personalizado<br><br>**Escenario 2: Inicio de sesión fallido por credenciales**<br>Dado que el empresario registrado se encuentra en la página de inicio de sesión<br>Cuando el empresario ingresa un usuario o contraseña incorrecta<br>Y pasa la verificación Captcha<br>Y hace clic en el botón "Iniciar sesión"<br>Entonces el sistema muestra un mensaje de error indicando "Credenciales inválidas"<br>Y permanece en la página de inicio de sesión<br><br>**Escenario 3: Inicio de sesión fallido por Captcha**<br>Dado que el empresario registrado se encuentra en la página de inicio de sesión<br>Cuando el empresario ingresa un usuario o contraseña incorrecta<br>Y no pasa la verificación Captcha<br>Y hace clic en el botón "Iniciar sesión"<br>Entonces el sistema muestra un mensaje de error indicando "Por favor, verifica que eres no un robot"<br>Y permanece en la página de inicio de sesión |
+| US24 | Iniciar sesión | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | EP03 | Empresario | **Escenario 1: Inicio de sesión exitoso**<br>Dado que el empresario registrado se encuentra en la página de inicio de sesión<br>Cuando el empresario ingresa su usuario, correo y contraseña correctos<br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema valida las credenciales<br>Y redirige al empresario a su sección de inicio<br><br>**Escenario 2: Inicio de sesión fallido**<br>Dado que el empresario registrado se encuentra en la página de inicio de sesión<br>Cuando el empresario ingresa un usuario, correo o contraseña incorrectos<br>Y hace clic en el botón 'Iniciar Sesión'<br>Entonces el sistema muestra un mensaje de error indicando "Error de inicio de sesión,Volver"<br>Y permanece en la página de inicio de sesión |
+| US25 | Creación de perfil | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | EP03 | Empresario | **Escenario 1: Registro exitoso**<br>Dado que el visitante se encuentra en la página de registro para empresarios<br>Cuando el visitante completa los campos obligatorios como usuario, correo y contraseña,<br>Y hace clic en el botón 'Registrar'<br>Entonces el sistema crea la nueva cuenta de empresario<br><br>**Escenario 2: Validación de datos del negocio**<br>Dado que el visitante está completando el formulario de registro para empresarios<br>Cuando el visitante ingresa información incompleta<br>Entonces el sistema le muestra un mensaje de "Error de registro, vuelve a intentar" |
+| US26 | Creación de cuenta | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | EP03 | Empresario | **Escenario 1: Registro exitoso**<br>Dado que el visitante se encuentra en la página de registro para aventureros<br>Cuando el visitante completa los campos obligatorios: usuario, correo y contraseña<br>Y acepta los términos y condiciones<br>Y pasa la verificación Captcha<br>Y hace clic en el botón 'Registrar'<br>Entonces el sistema crea la nueva cuenta de emprendedor<br>Y lo dirige a la sección de Iniciar Sesión<br><br>**Escenario 2: Validación de datos obligatorios**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin completar todos los campos obligatorios: usuario, correo y contraseña<br>Entonces el sistema resalta el campo incorrecto o incompleto<br>Y el sistema no registra la cuenta<br><br>**Escenario 3: Validación de Captcha**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin verificarse mediante el Captcha<br>Entonces el sistema le muestra un mensaje de "Por favor, verifique que no es un robot"<br>Y el sistema no registra la cuenta<br><br>**Escenario 4: Validación de la aceptación de los términos y condiciones**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin aceptar los términos y condiciones<br>Entonces el sistema le muestra un mensaje de "Debe aceptar los términos y políticas para continuar"<br>Y el sistema no registra la cuenta |
+| US26 | Creación de cuenta | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | EP03 | Empresario | **Escenario 1: Registro exitoso**<br>Dado que el visitante se encuentra en la página de registro para aventureros<br>Cuando el visitante completa los campos obligatorios: usuario, correo y contraseña<br>Y acepta los términos y condiciones<br>Y pasa la verificación Captcha<br>Y hace clic en el botón 'Registrar'<br>Entonces el sistema crea la nueva cuenta de emprendedor<br>Y lo dirige a la sección de Iniciar Sesión<br><br>**Escenario 2: Validación de datos obligatorios**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin completar todos los campos obligatorios: usuario, correo y contraseña<br>Entonces el sistema resalta el campo incorrecto o incompleto<br>Y el sistema no registra la cuenta<br><br>**Escenario 3: Validación de Captcha**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin verificarse mediante el Captcha<br>Entonces el sistema le muestra un mensaje de "Por favor, verifique que no es un robot"<br>Y el sistema no registra la cuenta<br><br>**Escenario 4: Validación de la aceptación de los términos y condiciones**<br>Dado que el visitante está en la página de registro para aventureros<br>Cuando el visitante intenta registrarse sin aceptar los términos y condiciones<br>Entonces el sistema le muestra un mensaje de "Debe aceptar los términos y políticas para continuar"<br>Y el sistema no registra la cuenta |
+| US27 | Publicar actividad | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | EP03 | Empresario | **Escenario 1: Publicación exitosa**<br>Dado que el empresario ha iniciado sesión<br>Y se encuentra en la sección de home<br>Cuando el empresario navega a la opción 'Agregar Actividad', completa todos los campos requeridos del formulario como: título de la actividad, imagen, descripción, duración, capacidad y precio<br>Y hace clic en 'Publicar'<br>Entonces el sistema guarda la nueva actividad<br>Y esta se vuelve visible en la plataforma para los aventureros<br><br>**Escenario 2: Validación de campos obligatorios**<br>Dado que el empresario está completando el formulario para publicar una actividad<br>Cuando el empresario intenta publicar sin completar todos los campos obligatorios como: título de la actividad, imagen, descripción, duración, capacidad y precio<br>Entonces el sistema no registra la publicación hasta que estén completos |
+| US28 | Publicar actividad | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | EP03 | Empresario | **Escenario 1: Publicación exitosa**<br>Dado que el empresario ha iniciado sesión<br>Y se encuentra en la sección de home<br>Cuando el empresario navega a la opción 'Agregar Actividad', completa todos los campos requeridos del formulario como: título de la actividad, imagen, descripción, cantidad de personas, precio y hora<br>Y hace clic en 'Publicar'<br>Entonces el sistema guarda la nueva actividad<br>Y esta se vuelve visible en la plataforma para los aventureros<br><br>**Escenario 2: Validación de campos obligatorios**<br>Dado que el empresario está completando el formulario para publicar una actividad<br>Cuando el empresario intenta publicar sin completar todos los campos obligatorios<br>Entonces el sistema no registra la publicación hasta que estén los campos completos |
+| US29 | Edición de actividad | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | EP03 | Empresario | **Escenario 1: Click en el botón editar**<br>Dado que el empresario ha iniciado sesión<br>Y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad<br>Y hace clic en 'Editar'<br>Entonces el sistema le permite editar el formulario de la publicación<br><br>**Escenario 2: Modificación de datos**<br>Dado que el empresario visualiza el formulario de edición<br>Cuando el empresario modifica uno o más campos<br>Y hace clic en 'Guardar'<br>Entonces el sistema guarda los cambios<br>Y la información actualizada de la actividad se refleja en la plataforma |
+| US30 | Edición de actividad | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | EP03 | Empresario | **Escenario 1: Edición exitosa**<br>Dado que el empresario ha iniciado sesión<br>Y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en "Editar"<br>Y modifica uno o más campos<br>Y hace clic en "Actualizar"<br>Entonces el sistema guarda los cambios<br>Y la información actualizada de la actividad se refleja en la plataforma<br><br>**Escenario 2: Edición fallida**<br>Dado que el empresario ha iniciado sesión<br>Y está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad, hace clic en "Editar"<br>Y borra campos requeridos<br>Y hace clic en "Actualizar"<br>Entonces el sistema guarda los cambios<br>Y la información actualizada de la actividad se refleja en la plataforma |
+| US31 | Borrar actividad | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | EP03 | Empresario | **Escenario 1: Borrado exitoso**<br>Dado que el empresario está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad<br>Y hace clic en el botón de "Eliminar"<br>Entonces el sistema elimina la actividad de la plataforma |
+| US32 | Borrar actividad | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | EP03 | Empresario | **Escenario 1: Borrado exitoso**<br>Dado que el empresario está viendo la lista de sus actividades publicadas<br>Cuando el empresario selecciona una actividad<br>Y hace clic en 'Borrar'<br>Y confirma la acción en el diálogo de confirmación<br>Entonces el sistema elimina la actividad de la plataforma<br>Y de la lista de actividades activas del empresario<br><br>**Escenario 2: Cancelación del borrado de una actividad**<br>Dado que el empresario está viendo la lista de sus actividades publicadas<br>Y ha seleccionado una actividad<br>Y le da clic en 'Borrar'<br>Cuando el sistema muestra el diálogo de confirmación<br>Y el empresario hace clic en 'Cancelar'<br>Entonces el sistema no elimina la actividad<br>Y la actividad permanece visible en la lista de actividades del empresario |
+| US33 | Visualización de estadísticas | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | EP06 | Empresario | **Escenario 1: Consulta de estadísticas generales**<br>Dado que el empresario navega a la sección de 'Estadísticas'<br>Cuando el empresario selecciona la opción de filtro "Mis publicaciones"<br>Entonces el sistema muestra las publicaciones del empresario<br><br>**Escenario 2: Consulta de estadísticas por comentarios**<br>Dado que el empresario está viendo la sección de 'Estadísticas'<br>Cuando el empresario selecciona la opción de "Más comentados"<br>Entonces el sistema filtra por publicaciones con más comentarios<br><br>**Escenario 3: Consulta de estadísticas por mejores puntuaciones**<br>Dado que el empresario está viendo la sección de 'Estadísticas'<br>Cuando el empresario selecciona la opción de "Mejores puntuaciones"<br>Entonces el sistema filtra por publicaciones con mejores puntuaciones |
+| US34 | Visualización de estadísticas | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | EP06 | Empresario | **Escenario 1: Consulta de estadísticas generales**<br>Dado que el empresario está en su panel de gestión<br>Cuando el empresario navega a la sección de 'Estadísticas'<br>Entonces el sistema muestra un filtro para sus actividades publicadas, en donde puede filtrarlas por: más comentadas y mejor puntuadas.<br><br>**Escenario 2: Consulta de estadísticas por más comentadas**<br>Dado que el empresario está en la sección de 'Estadísticas'<br>Cuando el empresario selecciona el filtro 'Más comentadas'<br>Entonces el sistema muestra una lista ordenada de sus actividades según la cantidad de comentarios recibidos<br><br>**Escenario 3: Consulta de estadísticas por mejor puntuadas**<br>Dado que el empresario está en la sección de 'Estadísticas'<br>Cuando el empresario selecciona el filtro 'Mejor puntuadas'<br>Entonces el sistema muestra una lista ordenada de sus actividades según la valoración de las publicaciones |
+| US35 | Personalizar cuenta de perfil | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | EP04 | Empresario | **Escenario 1: Edición exitosa**<br>Dado que el usuario registrado ha iniciado sesión<br>Y selecciona la opción de "Mi cuenta"<br>Cuando el usuario agrega uno o más campos como Nombre de la empresa, correo, cuidad, calle, país, número de contacto y código postal<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema guarda<br>Y muestra la información agregada<br><br>**Escenario 2: Edición fallida**<br>Dado que el usuario registrado ha iniciado sesión<br>Y selecciona la opción de "Mi cuenta"<br>Cuando el usuario intenta agregar información pero deja uno o más campos obligatorios vacíos (Nombre de la empresa, correo, cuidad, calle, país, número de contacto y código postal)<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema resalta los campos obligatorios incompletos<br>Y el botón 'Guardar' permanece desactivado hasta que todos los campos requeridos sean completados |
+| US36 | Gestión de Suscripción | Como empresario registrado, quiero gestionar mi suscripción para mantenerla activa. | EP04 | Empresario | **Escenario 1: Subir comprobante de pago exitosamente**<br>Dado que el usuario selecciona la opción de "Mi subscripción"<br>Cuando el usuario sube una imagen clara del comprobante de pago<br>Y hace clic en el botón "Enviar comprobante"<br>Entonces el sistema recibe el comprobante<br>Y muestra el estado "Verificado"<br><br>**Escenario 2: Actualizar comprobante de pago**<br>Dado que el usuario quiere actualizar/corregir su comprobante<br>Y su suscripción está activa<br>Cuando el usuario selecciona "Actualizar comprobante"<br>Y sube un nuevo comprobante de pago válido<br>Entonces el sistema reemplaza el comprobante anterior<br>Y muestra un texto: "Comprobante recibido correctamente" con la nueva fecha de verificación |
+| US37 | Personalizar cuenta de perfil | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | EP04 | Empresario | **Escenario 1: Personalización exitosa**<br>Dado que el usuario registrado ha iniciado sesión y ha navegado a la página de 'Perfil'<br>Y selecciona la opción de "Información de la empresa"<br>Cuando el usuario agrega uno o más campos como Nombre de la empresa, dirección, cuidad, país, número de contacto y código postal<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema guarda y muestra la información agregada.<br><br>**Escenario 2: Personalización fallida**<br>Dado que el usuario registrado ha iniciado sesión y ha navegado a la página de 'Perfil'<br>Y selecciona la opción de "Información de la empresa"<br>Cuando el usuario intenta agregar información pero deja uno o más campos obligatorios vacíos (como Nombre de la empresa, dirección o número de contacto)<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema no permite actualizar los cambios |
 ## 3.3. Product Backlog  
+# Product Backlog AventuraPe
+# Product Backlog - AventuraPe
 
-| **Nombre del User Story**       | **Descripción**                                                                                      | **Story Points** |
-|----------------------------------|--------------------------------------------------------------------------------------------------------|------------------|
-| Registro Emprendedor             | Como **emprendedor**, quiero registrarme en la app para poder publicar mis experiencias               | 3                |
-| Registro Aventurero             | Como **aventurero**, quiero registrarme en la app para poder explorar actividades                     | 3                |
-| Inicio de Sesión Emprendedor     | Como **emprendedor**, quiero iniciar sesión para acceder a mi cuenta                                  | 2                |
-| Inicio de Sesión Aventurero     | Como **aventurero**, quiero iniciar sesión para acceder a mi cuenta                                   | 2                |
-| Publicar Experiencia            | Como **emprendedor**, quiero publicar una experiencia con título, descripción, imagen y ubicación     | 5                |
-| Recomendaciones por Ubicación   | Como **aventurero**, quiero ver experiencias recomendadas según mi ubicación                          | 8                |
-| Búsqueda de Experiencias        | Como **aventurero**, quiero buscar experiencias por nombre o categoría                                | 5                |
-| Estadísticas para Emprendedor   | Como **emprendedor**, quiero ver estadísticas de mis experiencias (visualizaciones, favoritos, etc.)  | 8                |
-| Guardar Favoritos               | Como **aventurero**, quiero guardar experiencias como favoritas para revisarlas luego                 | 3                |
-| Editar/Eliminar Experiencia     | Como **emprendedor**, quiero editar y eliminar experiencias publicadas                                | 5                |
-| Ver Detalles de Experiencia     | Como **aventurero**, quiero ver detalles de una experiencia (descripción, ubicación, emprendedor)     | 3                |
-| Notificaciones para Emprendedor | Como **emprendedor**, quiero recibir notificaciones sobre interacciones con mis experiencias          | 5                |
-| Reseñas y Calificaciones        | Como **aventurero**, quiero dejar reseñas o calificaciones en experiencias                            | 5                |
-| Gestión Administrativa          | Como **administrador**, quiero gestionar usuarios y experiencias para moderar el contenido            | 8                |
+| ID | Nombre del User Story | Descripción | Story Points |
+|----|----------------------|-------------|--------------|
+| US01 | Interacción con hipervínculos | Como visitante, quiero interactuar con los enlaces de navegación para ir a las diferentes secciones de la plataforma web. | 3 |
+| US02 | Sección características | Como visitante, quiero ver una sección de servicios para entender qué ofrece AventuraPe. | 5 |
+| US03 | Sección Como Funciona | Como usuario nuevo quiero entender el proceso de funcionamiento de AventuraPe, para saber cómo registrarme y comenzar a usar la plataforma | 5 |
+| US04 | Sección Sobre Nosotros | Como visitante, quiero ver la sección "Sobre Nosotros" para conocer más sobre el propósito y valores de AventuraPe. | 3 |
+| US05 | Sección Testimonios | Como visitante, quiero leer testimonios de otros usuarios para confiar en los servicios de AventuraPe. | 5 |
+| US06 | Sección Planes | Como visitante, quiero ver la sección "Planes de Suscripción" claramente diferenciada, para entender las opciones disponibles y elegir la que mejor se adapte a mis necesidades. | 8 |
+| US07 | Iniciar sesión (Web - Aventurero) | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | 5 |
+| US08 | Iniciar sesión (Móvil - Aventurero) | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | 5 |
+| US09 | Creación de cuenta (Móvil - Aventurero) | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | 5 |
+| US10 | Creación de cuenta (Web - Aventurero) | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | 8 |
+| US11 | Configuración del perfil de aventurero | Como usuario aventurero registrado, quiero completar mi perfil personal para personalizar mi experiencia. | 5 |
+| US12 | Ver detalles de actividad (Web) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles como: Nombre de la actividad, cantidad de personas, duración y precio. | 5 |
+| US13 | Ver detalles de actividad (Móvil) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles en mi dispositivo móvil. | 5 |
+| US14 | Calificación de publicación (Móvil) | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | 3 |
+| US15 | Calificación de publicación (Web) | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | 5 |
+| US16 | Publicar reseña/comentario (Web) | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | 8 |
+| US17 | Publicar reseña/comentario (Móvil) | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | 3 |
+| US18 | Navegar interfaz home (Móvil) | Como aventurero, quiero ver una pantalla principal (home) con un resumen de actividades para tener una vista general al ingresar a la plataforma. | 5 |
+| US20 | Navegar interfaz home (Web) | Como aventurero, quiero ver una pantalla principal (home) con opciones claras para navegar por la plataforma desde mi computadora. | 5 |
+| US21 | Búsqueda por filtro | Como aventurero, quiero filtrar la lista de actividades por su nombre para encontrar rápidamente lo que busco. | 8 |
+| US22 | Gestión de Favoritos | Como aventurero, quiero guardar actividades como favoritos para poder acceder a ellas rápidamente más tarde. | 8 |
+| US23 | Iniciar sesión (Web - Empresario) | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | 5 |
+| US24 | Iniciar sesión (Móvil - Empresario) | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | 5 |
+| US25 | Creación de perfil (Móvil - Empresario) | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | 5 |
+| US26 | Creación de cuenta (Web - Empresario) | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | 8 |
+| US27 | Publicar actividad (Web) | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | 8 |
+| US28 | Publicar actividad (Móvil) | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | 8 |
+| US29 | Edición de actividad (Móvil) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | 5 |
+| US30 | Edición de actividad (Web) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | 5 |
+| US31 | Borrar actividad (Móvil) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | 3 |
+| US32 | Borrar actividad (Web) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | 5 |
+| US33 | Visualización de estadísticas (Móvil) | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | 8 |
+| US34 | Visualización de estadísticas (Web) | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | 8 |
+| US35 | Personalizar cuenta de perfil (Web) | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | 5 |
+| US36 | Gestión de Suscripción | Como empresario registrado, quiero gestionar mi suscripción para mantenerla activa. | 13 |
+| US37 | Personalizar cuenta de perfil (Móvil) | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | 5 |
 
 ## 3.4. Impact Mapping  
 
@@ -1826,16 +1856,16 @@ Actualmente, el único módulo desplegado en producción es la Landing Page, la 
 
 Para el primer sprint, nos enfocamos en desarrollar la landing page de AventuraPe para establecer presencia online y proporcionar información esencial a los visitantes. Las tareas se distribuyeron teniendo en cuenta las habilidades de cada miembro, priorizando el desarrollo y despliegue rápido con un diseño atractivo e interactivo.
 
-| User Story | Work-Item / Task |
-|-----------|------------------|
-| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US01 | Interacción con hipervínculos (Web) | TA001 | Diseñar estructura base | Crear estructura HTML/CSS base de la landing page | 3 | Jimena y Barbara | Done |
-| US01 | Interacción con hipervínculos (Web) | TA002 | Implementar navegación | Desarrollar anclas e íconos interactivos | 2 | Jair | Done |
-| US02 | Sección Servicios | TA003 | Diseñar sección servicios | Implementar cards y botones de acción | 4 | Jimena y Barbara | Done |
-| US04 | Sección Sobre Nosotros | TA004 | Codificar sección "Sobre Nosotros" | Implementar diseño responsive | 3 | Jair | Done |
-| US05 | Sección Testimonios | TA005 | Implementar testimonios | Crear carrusel dinámico | 5 | Jimena | Done |
-| US06 | Sección Contacto | TA006 | Programar sección contacto | Implementar formulario con validación | 4 | Jimena y Jair | Done |
-| US01 | Interacción con hipervínculos (Web) | TA007 | Configurar despliegue | Implementar GitHub Pages + GitHub Actions | 2 | Jimena y Barbara | Done |
+| **User Story ID** | **User Story Title**                | **Task ID** | **Task Title**                     | **Description**                                   | **Estimation (Hours)** | **Assigned To**  | **Status** |
+| ----------------- | ----------------------------------- | ----------- | ---------------------------------- | ------------------------------------------------- | ---------------------- | ---------------- | ---------- |
+| US01              | Interacción con hipervínculos (Web) | TA001       | Diseñar estructura base            | Crear estructura HTML/CSS base de la landing page | 3                      | Jimena y Barbara | Done       |
+| US01              | Interacción con hipervínculos (Web) | TA002       | Implementar navegación             | Desarrollar anclas e íconos interactivos          | 2                      | Jair             | Done       |
+| US02              | Sección Servicios                   | TA003       | Diseñar sección servicios          | Implementar cards y botones de acción             | 4                      | Jimena y Barbara | Done       |
+| US04              | Sección Sobre Nosotros              | TA004       | Codificar sección "Sobre Nosotros" | Implementar diseño responsive                     | 3                      | Jair             | Done       |
+| US05              | Sección Testimonios                 | TA005       | Implementar testimonios            | Crear carrusel dinámico                           | 5                      | Jimena           | Done       |
+| US06              | Sección Contacto                    | TA006       | Programar sección contacto         | Implementar formulario con validación             | 4                      | Jimena y Jair    | Done       |
+| US01              | Interacción con hipervínculos (Web) | TA007       | Configurar despliegue              | Implementar GitHub Pages + GitHub Actions         | 2                      | Jimena y Barbara | Done       |
+
 
 **Development Evidence for Sprint Review**
 
@@ -1867,15 +1897,15 @@ Para el primer sprint, nos enfocamos en desarrollar la landing page de AventuraP
 
 Para el segundo sprint, nos enfocamos en las funcionalidades principales para el usuario aventurero, incluyendo registro, inicio de sesión y visualización de actividades. Implementamos tanto los componentes de frontend como los endpoints de backend necesarios para estas funcionalidades.
 
-| User Story | Work-Item / Task |
-|-----------|------------------|
-| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US04 | Iniciar sesión (Web/Móvil) | TA008 | Crear formulario de login | Implementar formulario con validaciones | 4 | Estefano | Done |
-| US06 | Creación de cuenta (Web/Móvil) | TA009 | Backend: endpoint sign-up | Desarrollar endpoint POST con validaciones | 4 | Estefano | Done |
-| US11 | Visualizar mapa de actividades | TA010 | Implementar mapa interactivo | Integrar visualización de mapa con datos de muestra | 6 | Estefano | In Progress |
-| US12 | Ver detalles de actividad (Móvil) | TA011 | Implementar búsqueda | Desarrollar búsqueda de actividades en móvil | 4 | Barbara | Done |
-| US13 | Filtrar actividades | TA012 | Agregar filtros | Implementar filtro por nombre | 4 | Jair | In Progress |
-| US17 | Guardar actividades en favoritos | TA013 | Backend: guardar favoritos | Desarrollar endpoints para gestión de favoritos | 3 | Barbara | In Progress |
+| User Story ID | User Story Title                  | Task ID | Task Title                   | Description                                         | Estimation (Hours) | Assigned To | Status      |
+| ------------- | --------------------------------- | ------- | ---------------------------- | --------------------------------------------------- | ------------------ | ----------- | ----------- |
+| US04          | Iniciar sesión (Web/Móvil)        | TA008   | Crear formulario de login    | Implementar formulario con validaciones             | 4                  | Jimena    | Done        |
+| US06          | Creación de cuenta (Web/Móvil)    | TA009   | Backend: endpoint sign-up    | Desarrollar endpoint POST con validaciones          | 4                  | José    | Done        |
+| US11          | Visualizar mapa de actividades    | TA010   | Implementar mapa interactivo | Integrar visualización de mapa con datos de muestra | 6                  | Estefano    | In Progress |
+| US12          | Ver detalles de actividad (Móvil) | TA011   | Implementar búsqueda         | Desarrollar búsqueda de actividades en móvil        | 4                  | Barbara     | Done        |
+| US13          | Filtrar actividades               | TA012   | Agregar filtros              | Implementar filtro por nombre                       | 4                  | Jair        | In Progress |
+| US17          | Guardar actividades en favoritos  | TA013   | Backend: guardar favoritos   | Desarrollar endpoints para gestión de favoritos     | 3                  | Barbara     | In Progress |
+
 
 **Development Evidence for Sprint Review**
 
@@ -1902,27 +1932,55 @@ Para el segundo sprint, nos enfocamos en las funcionalidades principales para el
 | Sprint Velocity | 14 |
 | Sum of Story Points | 20 |
 
+
 **Sprint Backlog 3**
 
 En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales para el usuario empresario, permitiéndole gestionar sus actividades publicadas y acceder a estadísticas relevantes para su negocio.
 
-| User Story | Work-Item / Task |
-|-----------|------------------|
-| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US08 | Publicar actividad (Web/Móvil) | TA014 | Crear formulario de publicación | Implementar formulario para crear actividades | 5 | Barbara | Done |
-| US09 | Edición de actividad (Web/Móvil) | TA015 | Implementar flujo de edición | Desarrollar formulario y vista previa | 4 | Jimena | Done |
-| US10 | Borrar actividad (Móvil) | TA016 | Lógica para eliminar publicaciones | Implementar endpoint y UI para eliminar | 3 | Barbara | Done |
-| US19 | Ver estadísticas de actividades | TA017 | Dashboard estadístico | Crear vista de estadísticas y comentarios | 5 | José | Done |
-| US05 | Iniciar sesión (Web/Móvil) empresario | TA018 | Login empresario | Implementar validación de credenciales | 3 | Estefano | Done |
+| **User Story ID** | **User Story Title**                  | **Task ID** | **Task Title**                     | **Description**                               | **Estimation (Hours)** | **Assigned To** | **Status** |
+| ----------------- | ------------------------------------- | ----------- | ---------------------------------- | --------------------------------------------- | ---------------------- | --------------- | ---------- |
+| US08              | Publicar actividad (Web/Móvil)        | TA014       | Crear formulario de publicación    | Implementar formulario para crear actividades | 5                      | Barbara         | Done       |
+| US09              | Edición de actividad (Web/Móvil)      | TA015       | Implementar flujo de edición       | Desarrollar formulario y vista previa         | 4                      | Jimena          | Done       |
+| US10              | Borrar actividad (Móvil)              | TA016       | Lógica para eliminar publicaciones | Implementar endpoint y UI para eliminar       | 3                      | Barbara         | Done       |
+| US19              | Ver estadísticas de actividades       | TA017       | Dashboard estadístico              | Crear vista de estadísticas y comentarios     | 5                      | José            | Done       |
+| US05              | Iniciar sesión (Web/Móvil) empresario | TA018       | Login empresario                   | Implementar validación de credenciales        | 3                      | Estefano        | Done       |
+
 
 **Development Evidence for Sprint Review**
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|---------------|---------------------|---------------------|
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/create-activity | 7d9f25e | Activity creation | feat: implement activity creation form | 10/05/2025 |
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend | feature/manage-activities | 9e3f48b | CRUD activities | feat: implement endpoints for activity management | 12/05/2025 |
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/statistics | 2b8c57a | Statistics dashboard | feat: implement statistics view for entrepreneurs | 14/05/2025 |
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/edit-activities | 4c2d19f | Edit activities | feat: implement activity editing functionality | 16/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/create-activity | 7d9f25e | Activity creation | feat: implement activity creation form | 01/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend | feature/manage-activities | 9e3f48b | CRUD activities | feat: implement endpoints for activity management | 01/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/statistics | 2b8c57a | Statistics dashboard | feat: implement statistics view for entrepreneurs | 03/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/edit-activities | 4c2d19f | Edit activities | feat: implement activity editing functionality | 03/05/2025 |
+
+
+### Sprint 4 – Objetivo
+**Sprint Backlog 4**
+
+En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales para el usuario empresario, permitiéndole gestionar sus actividades publicadas y acceder a estadísticas relevantes para su negocio.
+
+| User Story ID 	| User Story Title 	| Task ID 	| Task Title 	| Description 	| Estimation (Hours) 	| Assigned To 	| Status 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| US04 	| Iniciar sesión (Web) 	| TA019 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
+|  	|  	| TA020 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
+|  	|  	| TA021 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
+| US04 	| Iniciar sesión (Movil) 	| TA022 	| Preparar ambiente en back para diferenciación 	| Implemntar diferencia entre movil y web 	| 2 	| Jair 	| Done 	|
+|  	|  	| TA023 	| Agregar verificacion de dos pasos 	| Implementar el servicio de correo front movil 	| 2 	| Jair 	| Done 	|
+| US06 	| Creación de cuenta (Web/Móvil) 	| TA019 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
+|  	|  	| TA020 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
+|  	|  	| TA021 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
+
+
+**Development Evidence for Sprint Review**
+| Repository 	| Branch 	| Commit ID 	| Commit Message 	| Commit Message Body 	| Committed on (Date) 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/aventurape-web-app 	| feature/IAM 	| 4bf1ff42282821f8ba54aa9a47a591b6cbfc9944 	| Google Captchasignin 	| feat: add google captcha in sing in 	| 05/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/aventurape-web-app 	| feature/IAM 	| dce2880f563275da6aed1253d765ce98000a4f68 	| Google Captcha signup 	| feat: add google captcha in registration 	| 05/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend 	| develop 	| 493e0dfa9747f0f4ee77e79b35a4a79f670bfb4e 	| Google Captcha backend 	| feat: add google rechaptcha 	| 05/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend 	| develop 	| 4740fee2c7052a073d67498d0635a0866c9ec7fd 	| Email in user 	| add: added email in user 	| 07/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app 	| develop/temp 	| ba43f13f3f1a42f107a4877148313c9d3e2eb9bf 	| EmailJS in signup 	| add : added email verification 	| 07/05/2025 	|
 
 **Enlace al tablero Trello del proyecto**
 
@@ -2158,11 +2216,181 @@ El análisis de nuestros repositorios muestra métricas positivas de colaboraci�
 
 # Capítulo VI: Product Verification & Validation
 
-## 6.1. Testing Suites & Validation  
-### 6.1.1. Core Entities Unit Tests  
-### 6.1.2. Core Integration Tests  
-### 6.1.3. Core Behavior-Driven Development  
+# 6.1. Testing Suites & Validation
+
+## 6.1.1. Core Entities Unit Tests
+
+Las pruebas unitarias implementadas se centran en validar el comportamiento correcto de los componentes individuales del sistema, enfocándose principalmente en las entidades centrales y los servicios que las gestionan.
+
+Para los componentes del dominio de usuario, se han desarrollado pruebas exhaustivas que garantizan la integridad de los datos y el comportamiento esperado en diferentes situaciones. El servicio UserService ha sido comprobado en escenarios como la creación de nuevos usuarios, la asignación correcta de roles y la autenticación.
+
+<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-1.png"   alt=""/><br>
+
+Para el servicio de perfiles, se han verificado tanto los perfiles de aventureros como de empresarios. Las pruebas comprueban la correcta asignación de valores y la validación de restricciones de negocio.
+
+<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-2.png"   alt=""/><br>
+
+
+El servicio de publicaciones también ha sido rigurosamente probado, especialmente en aspectos críticos como el cálculo de valoraciones, la modificación de datos y las restricciones de negocio asociadas.
+
+<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-3.png"   alt=""/><br>
+
+
+Estas pruebas unitarias han permitido identificar y corregir problemas en etapas tempranas del desarrollo, garantizando la solidez de los componentes fundamentales del sistema.
+
+## 6.1.2. Core Integration Tests
+
+Las pruebas de integración implementadas verifican la correcta interacción entre los diferentes componentes del sistema, con especial atención a la comunicación entre controladores, servicios y repositorios.
+
+El controlador de usuarios ha sido probado para verificar el correcto funcionamiento de los endpoints de registro e inicio de sesión, así como la gestión de errores y excepciones.
+
+<img src="./images/Testing-Suites-&-Validation/core-integration-tests-1.png"   alt=""/><br>
+
+Para el controlador de perfiles, se ha verificado tanto la creación como la consulta y actualización de perfiles, asegurando que los datos se transmitan correctamente entre las capas de la aplicación.
+
+<img src="./images/Testing-Suites-&-Validation/core-integration-tests-2.png"   alt=""/><br>
+
+El controlador de publicaciones ha sido sometido a pruebas que verifican el ciclo completo de gestión de publicaciones, desde su creación hasta su eliminación, pasando por actualizaciones y consultas.
+
+<img src="./images/Testing-Suites-&-Validation/core-integration-tests-3.png"   alt=""/><br>
+
+Estas pruebas de integración han sido fundamentales para garantizar que los diferentes componentes del sistema trabajen correctamente en conjunto, identificando problemas de interoperabilidad que no serían evidentes en las pruebas unitarias.
+
+### 6.1.3. Core Behavior-Driven Development
+
+Las pruebas BDD (Behavior-Driven Development) se centran en el comportamiento de la aplicación desde la perspectiva del usuario, utilizando un lenguaje natural para describir los escenarios de prueba.
+
+#### Escenarios probados:
+
+- **Gestión de publicaciones**: Creación, búsqueda y listado de publicaciones.
+  - Archivo: `publication.feature`
+  - Escenarios:
+    - Crear una nueva publicación de aventura
+    - Buscar una publicación por ID
+    - Listar todas las publicaciones
+
+```gherkin
+# language: es
+Característica: Gestión de publicaciones de aventuras
+
+  Escenario: Crear una nueva publicación de aventura
+    Dado un emprendedor con ID 1
+    Y una aventura con título "Aventura en los Andes", descripción "Una increíble aventura en las montañas", capacidad 5 personas y duración 3 horas
+    Y un costo de 500 soles
+    Y una imagen "https://example.com/image.jpg"
+    Cuando el emprendedor crea una nueva publicación
+    Entonces la publicación se guarda correctamente con ID 1
+    Y la publicación contiene la información correcta de la aventura
+    Y la publicación tiene el costo correcto
+    Y la publicación muestra la imagen correcta
+```
+
+- **Implementación**: Los pasos definidos en los archivos feature se implementan en clases Java que contienen la lógica de prueba.
+  - Archivo: `PublicationStepDefinitions.java`
+  - Funcionalidad: Implementa los pasos definidos en los escenarios BDD.
+
+<img src="./images/Testing-Suites-&-Validation/core-behavior-driven-development-1.png"   alt=""/><br>
+
+<img src="./images/Testing-Suites-&-Validation/core-behavior-driven-development-2.png"   alt=""/><br>
+
+Este enfoque BDD permite una mejor comunicación entre los desarrolladores, testers y stakeholders, ya que los escenarios de prueba están escritos en un lenguaje comprensible para todos.
+
 ### 6.1.4. Core System Tests  
+
+### Landing
+
+<img src="./images/user-stories-test/user-stories-test-1.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-1-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-2.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-2-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-3.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-3-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-4.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-4-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-5.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-5-selenium.png" alt=""/><br>
+<br>
+<img src="./images/user-stories-test/user-stories-test-6.png"   alt=""/><br>
+<img src="./images/user-stories-test/user-stories-test-6-selenium.png" alt=""/><br>
+
+### Web App
+
+<img src="./images/user-stories-test/web/user-stories-test-web-1.png"  alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-1.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-2.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-2.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-3.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-3.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-4.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-4.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-5.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-5.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-6.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-6.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-7.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-7.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-8.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-8.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-9.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-9.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-10.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-10.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-11.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-11.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-12.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-12.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-13.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-13.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-14.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-14.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-15.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-15.png" alt=""><br>
+
+<img src="./images/user-stories-test/web/user-stories-test-web-16.png"   alt=""/><br>
+<img src="./images/user-stories-test/web/user-stories-test-selenium-16.png" alt=""><br>
+
+
+## Mobile App
+
+### Agregar una reseña con calificación
+![user_storie](image-1.png)
+![test_resenia](image-7.png)
+
+
+### Agregar una actividad/evento
+![user_storie](image-3.png)
+![test_actividad](image-6.png)
+
+### Agregar favorito
+![user_storie](image-9.png)
+![test_favoritos_agregar](image-8.png)
+
+## Borrar post
+![user_storie](image-11.png)
+![test_borrar_post](image-10.png)
+
+## Borrar post de favoritos
+![user_storie](image-13.png)
+![tes_borrar_favoritos](image-12.png)
+
 
 ## 6.2. Static testing & Verification  
 ### 6.2.1. Static Code Analysis  
@@ -2190,12 +2418,79 @@ El análisis de nuestros repositorios muestra métricas positivas de colaboraci�
 
 ## 7.1. Continuous Integration  
 ### 7.1.1. Tools and Practices  
+Durante el desarrollo y las pruebas de software, es fundamental emplear herramientas y enfoques que aseguren la calidad del código y optimicen la productividad del equipo. Con este objetivo, adoptamos soluciones que permiten automatizar tareas, validar funcionalidades y asegurar el correcto funcionamiento de la aplicación en todas sus etapas. Estas herramientas abarcan desde la escritura del código hasta la ejecución de pruebas y la integración continua de componentes.
+
+Para garantizar que nuestras soluciones satisfagan tanto los requerimientos funcionales como los estándares técnicos, aplicamos metodologías como el **Desarrollo Guiado por Comportamiento (BDD)** y el **Desarrollo Guiado por Pruebas (TDD)**.
+
+* Principales herramientas utilizadas:
+
+| Herramienta  | Categoría                          | Descripción                                                                 | Función principal                                                                                                       |
+| ------------ | ---------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **JUnit**    | Framework de pruebas (TDD)         | Permite realizar pruebas unitarias sobre pequeños bloques de código Java.  | Ejecutar pruebas automatizadas que verifiquen el correcto funcionamiento de las funcionalidades desarrolladas.          |
+| **Mockito**  | Librería de simulación (TDD)       | Facilita la creación de objetos simulados para pruebas.                    | Reproducir el comportamiento de componentes externos, permitiendo pruebas más precisas y controladas.                   |
+| **Cucumber** | Herramienta de pruebas (BDD)       | Utiliza el lenguaje Gherkin para definir escenarios basados en comportamiento. | Redactar pruebas comprensibles para todos los actores del proyecto, alineando el desarrollo con las necesidades del negocio. |  
+
 ### 7.1.2. Build & Test Suite Pipeline Components  
 
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-1.png) 
+
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-2.png)
+
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-3.png)
+
 ## 7.2. Continuous Delivery  
+
+El propósito de la entrega continua es automatizar tanto la integración como las pruebas del código, manteniéndolo siempre en un estado listo para ser desplegado cuando se requiera.
 ### 7.2.1. Tools and Practices  
+
+
+#### Herramientas(Tools):  
+
+- **GitHub Actions / GitLab CLI**:  
+  Estas plataformas permiten automatizar todo el flujo de trabajo CI/CD. En el contexto de la entrega continua, se puede configurar una etapa donde el despliegue final no sea automático, sino que requiera intervención manual. De este modo, el software está preparado para producción, pero el despliegue queda pendiente de aprobación humana, lo que lo diferencia del enfoque de *Continuous Deployment*.
+
+- **Trello**:  
+  Herramienta utilizada para organizar y controlar el proceso de aprobación del despliegue. Es posible establecer un flujo donde, tras completar exitosamente el pipeline, un gerente de proyecto o administrador revise y apruebe el despliegue a producción.
+
+- **Docker**:  
+  Al igual que en *Continuous Deployment*, Docker se utiliza para empaquetar la aplicación dentro de contenedores. Esto garantiza que los entornos de desarrollo, pruebas y producción sean consistentes, facilitando así la validación en entornos previos como *staging*.
+
+#### Prácticas(Practices)  
+
+- **Ramas de Funcionalidades y Solicitudes de Fusión (Feature Branching y Merge Requests)**:  
+  Los nuevos desarrollos se realizan en ramas independientes. En la entrega continua, el código se fusiona a una rama estable tras pasar pruebas automatizadas, pero su despliegue en producción requiere una validación manual.
+
+- **Validación en Entorno de Staging**:  
+  Antes de desplegar en producción, los cambios son evaluados en un entorno de *staging*, que simula las condiciones de producción. Este paso permite realizar pruebas manuales adicionales o recoger comentarios de usuarios clave.
+
+- **Despliegue Semiautomático**:  
+  El pipeline automatiza la preparación del despliegue, pero el paso final lo ejecuta manualmente un miembro del equipo. Esta práctica permite mayor control sobre el momento exacto del lanzamiento.
+
+- **Aprobación Manual**:  
+  Como parte del flujo, puede requerirse que un responsable del proyecto revise los resultados de las pruebas y autorice el despliegue a producción, lo cual ayuda a evitar errores o versiones no deseadas.
+
+- **Rollback Manual**:  
+  Aunque se pueden implementar mecanismos automáticos para revertir despliegues con errores críticos, en entrega continua es común que el equipo de operaciones o desarrollo gestione manualmente estos retrocesos para garantizar un control más preciso.
+
 ### 7.2.2. Stages Deployment Pipeline Components  
 
+### Flujo de Entrega Continua (CD)
+
+- **Integración Continua (CI)**:  
+  Cada vez que se realiza un commit en una rama de desarrollo, el pipeline ejecuta automáticamente una serie de pruebas para verificar que la aplicación funciona correctamente. Esto asegura que el código se mantenga siempre en condiciones aptas para ser desplegado.
+
+- **Validación en Entorno Staging**:  
+  Antes del despliegue en producción, el código se prueba en un entorno intermedio que replica el comportamiento del entorno real. En esta etapa se pueden realizar pruebas adicionales como pruebas manuales, de carga o de seguridad para detectar posibles fallos antes de llegar a los usuarios.
+
+- **Despliegue con Intervención Manual**:  
+  Aunque todo esté listo para el despliegue, la publicación final requiere la aprobación de un miembro del equipo. Esta decisión manual ofrece un nivel extra de control y supervisión sobre el proceso.
+
+- **Monitoreo y Retroalimentación**:  
+  El pipeline incluye herramientas que permiten monitorear el desempeño de la aplicación con los nuevos cambios. Esto brinda información útil para evaluar el impacto del código antes de su liberación definitiva.
+
+- **Aprobación del Despliegue**:  
+  En esta fase, el pipeline se detiene y espera la aprobación por parte de un desarrollador, un administrador o el equipo de operaciones. Solo una vez que se concede esta autorización, se procede con el despliegue en producción.
+ 
 ## 7.3. Continuous deployment
 
 El objetivo de Continuous Deployment (CD) es que cada cambio validado en el código pase automáticamente desde el repositorio hasta el entorno de producción, sin intervención manual, garantizando rapidez, consistencia y alta disponibilidad.
@@ -2353,8 +2648,6 @@ jobs:
           slot-name: 'Production'
           package: '*.jar'
 ```
-
-
 ## 7.4. Continuous Monitoring  
 ### 7.4.1. Tools and Practices  
 ### 7.4.2. Monitoring Pipeline Components  
