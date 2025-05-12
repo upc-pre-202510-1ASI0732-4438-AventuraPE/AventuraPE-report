@@ -2368,6 +2368,30 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 <img src="./images/user-stories-test/web/user-stories-test-selenium-16.png" alt=""><br>
 
 
+## Mobile App
+
+### Agregar una reseña con calificación
+![user_storie](image-1.png)
+![test_resenia](image-7.png)
+
+
+### Agregar una actividad/evento
+![user_storie](image-3.png)
+![test_actividad](image-6.png)
+
+### Agregar favorito
+![user_storie](image-9.png)
+![test_favoritos_agregar](image-8.png)
+
+## Borrar post
+![user_storie](image-11.png)
+![test_borrar_post](image-10.png)
+
+## Borrar post de favoritos
+![user_storie](image-13.png)
+![tes_borrar_favoritos](image-12.png)
+
+
 ## 6.2. Static testing & Verification  
 ### 6.2.1. Static Code Analysis  
 #### 6.2.1.1. Coding standard & Code conventions  
