@@ -1856,16 +1856,16 @@ Actualmente, el único módulo desplegado en producción es la Landing Page, la 
 
 Para el primer sprint, nos enfocamos en desarrollar la landing page de AventuraPe para establecer presencia online y proporcionar información esencial a los visitantes. Las tareas se distribuyeron teniendo en cuenta las habilidades de cada miembro, priorizando el desarrollo y despliegue rápido con un diseño atractivo e interactivo.
 
-| User Story | Work-Item / Task |
-|-----------|------------------|
-| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US01 | Interacción con hipervínculos (Web) | TA001 | Diseñar estructura base | Crear estructura HTML/CSS base de la landing page | 3 | Jimena y Barbara | Done |
-| US01 | Interacción con hipervínculos (Web) | TA002 | Implementar navegación | Desarrollar anclas e íconos interactivos | 2 | Jair | Done |
-| US02 | Sección Servicios | TA003 | Diseñar sección servicios | Implementar cards y botones de acción | 4 | Jimena y Barbara | Done |
-| US04 | Sección Sobre Nosotros | TA004 | Codificar sección "Sobre Nosotros" | Implementar diseño responsive | 3 | Jair | Done |
-| US05 | Sección Testimonios | TA005 | Implementar testimonios | Crear carrusel dinámico | 5 | Jimena | Done |
-| US06 | Sección Contacto | TA006 | Programar sección contacto | Implementar formulario con validación | 4 | Jimena y Jair | Done |
-| US01 | Interacción con hipervínculos (Web) | TA007 | Configurar despliegue | Implementar GitHub Pages + GitHub Actions | 2 | Jimena y Barbara | Done |
+| **User Story ID** | **User Story Title**                | **Task ID** | **Task Title**                     | **Description**                                   | **Estimation (Hours)** | **Assigned To**  | **Status** |
+| ----------------- | ----------------------------------- | ----------- | ---------------------------------- | ------------------------------------------------- | ---------------------- | ---------------- | ---------- |
+| US01              | Interacción con hipervínculos (Web) | TA001       | Diseñar estructura base            | Crear estructura HTML/CSS base de la landing page | 3                      | Jimena y Barbara | Done       |
+| US01              | Interacción con hipervínculos (Web) | TA002       | Implementar navegación             | Desarrollar anclas e íconos interactivos          | 2                      | Jair             | Done       |
+| US02              | Sección Servicios                   | TA003       | Diseñar sección servicios          | Implementar cards y botones de acción             | 4                      | Jimena y Barbara | Done       |
+| US04              | Sección Sobre Nosotros              | TA004       | Codificar sección "Sobre Nosotros" | Implementar diseño responsive                     | 3                      | Jair             | Done       |
+| US05              | Sección Testimonios                 | TA005       | Implementar testimonios            | Crear carrusel dinámico                           | 5                      | Jimena           | Done       |
+| US06              | Sección Contacto                    | TA006       | Programar sección contacto         | Implementar formulario con validación             | 4                      | Jimena y Jair    | Done       |
+| US01              | Interacción con hipervínculos (Web) | TA007       | Configurar despliegue              | Implementar GitHub Pages + GitHub Actions         | 2                      | Jimena y Barbara | Done       |
+
 
 **Development Evidence for Sprint Review**
 
@@ -1897,15 +1897,15 @@ Para el primer sprint, nos enfocamos en desarrollar la landing page de AventuraP
 
 Para el segundo sprint, nos enfocamos en las funcionalidades principales para el usuario aventurero, incluyendo registro, inicio de sesión y visualización de actividades. Implementamos tanto los componentes de frontend como los endpoints de backend necesarios para estas funcionalidades.
 
-| User Story | Work-Item / Task |
-|-----------|------------------|
-| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US04 | Iniciar sesión (Web/Móvil) | TA008 | Crear formulario de login | Implementar formulario con validaciones | 4 | Estefano | Done |
-| US06 | Creación de cuenta (Web/Móvil) | TA009 | Backend: endpoint sign-up | Desarrollar endpoint POST con validaciones | 4 | Estefano | Done |
-| US11 | Visualizar mapa de actividades | TA010 | Implementar mapa interactivo | Integrar visualización de mapa con datos de muestra | 6 | Estefano | In Progress |
-| US12 | Ver detalles de actividad (Móvil) | TA011 | Implementar búsqueda | Desarrollar búsqueda de actividades en móvil | 4 | Barbara | Done |
-| US13 | Filtrar actividades | TA012 | Agregar filtros | Implementar filtro por nombre | 4 | Jair | In Progress |
-| US17 | Guardar actividades en favoritos | TA013 | Backend: guardar favoritos | Desarrollar endpoints para gestión de favoritos | 3 | Barbara | In Progress |
+| User Story ID | User Story Title                  | Task ID | Task Title                   | Description                                         | Estimation (Hours) | Assigned To | Status      |
+| ------------- | --------------------------------- | ------- | ---------------------------- | --------------------------------------------------- | ------------------ | ----------- | ----------- |
+| US04          | Iniciar sesión (Web/Móvil)        | TA008   | Crear formulario de login    | Implementar formulario con validaciones             | 4                  | Jimena    | Done        |
+| US06          | Creación de cuenta (Web/Móvil)    | TA009   | Backend: endpoint sign-up    | Desarrollar endpoint POST con validaciones          | 4                  | José    | Done        |
+| US11          | Visualizar mapa de actividades    | TA010   | Implementar mapa interactivo | Integrar visualización de mapa con datos de muestra | 6                  | Estefano    | In Progress |
+| US12          | Ver detalles de actividad (Móvil) | TA011   | Implementar búsqueda         | Desarrollar búsqueda de actividades en móvil        | 4                  | Barbara     | Done        |
+| US13          | Filtrar actividades               | TA012   | Agregar filtros              | Implementar filtro por nombre                       | 4                  | Jair        | In Progress |
+| US17          | Guardar actividades en favoritos  | TA013   | Backend: guardar favoritos   | Desarrollar endpoints para gestión de favoritos     | 3                  | Barbara     | In Progress |
+
 
 **Development Evidence for Sprint Review**
 
@@ -1932,27 +1932,55 @@ Para el segundo sprint, nos enfocamos en las funcionalidades principales para el
 | Sprint Velocity | 14 |
 | Sum of Story Points | 20 |
 
+
 **Sprint Backlog 3**
 
 En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales para el usuario empresario, permitiéndole gestionar sus actividades publicadas y acceder a estadísticas relevantes para su negocio.
 
-| User Story | Work-Item / Task |
-|-----------|------------------|
-| **ID** | **Title** | **ID** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US08 | Publicar actividad (Web/Móvil) | TA014 | Crear formulario de publicación | Implementar formulario para crear actividades | 5 | Barbara | Done |
-| US09 | Edición de actividad (Web/Móvil) | TA015 | Implementar flujo de edición | Desarrollar formulario y vista previa | 4 | Jimena | Done |
-| US10 | Borrar actividad (Móvil) | TA016 | Lógica para eliminar publicaciones | Implementar endpoint y UI para eliminar | 3 | Barbara | Done |
-| US19 | Ver estadísticas de actividades | TA017 | Dashboard estadístico | Crear vista de estadísticas y comentarios | 5 | José | Done |
-| US05 | Iniciar sesión (Web/Móvil) empresario | TA018 | Login empresario | Implementar validación de credenciales | 3 | Estefano | Done |
+| **User Story ID** | **User Story Title**                  | **Task ID** | **Task Title**                     | **Description**                               | **Estimation (Hours)** | **Assigned To** | **Status** |
+| ----------------- | ------------------------------------- | ----------- | ---------------------------------- | --------------------------------------------- | ---------------------- | --------------- | ---------- |
+| US08              | Publicar actividad (Web/Móvil)        | TA014       | Crear formulario de publicación    | Implementar formulario para crear actividades | 5                      | Barbara         | Done       |
+| US09              | Edición de actividad (Web/Móvil)      | TA015       | Implementar flujo de edición       | Desarrollar formulario y vista previa         | 4                      | Jimena          | Done       |
+| US10              | Borrar actividad (Móvil)              | TA016       | Lógica para eliminar publicaciones | Implementar endpoint y UI para eliminar       | 3                      | Barbara         | Done       |
+| US19              | Ver estadísticas de actividades       | TA017       | Dashboard estadístico              | Crear vista de estadísticas y comentarios     | 5                      | José            | Done       |
+| US05              | Iniciar sesión (Web/Móvil) empresario | TA018       | Login empresario                   | Implementar validación de credenciales        | 3                      | Estefano        | Done       |
+
 
 **Development Evidence for Sprint Review**
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|---------------|---------------------|---------------------|
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/create-activity | 7d9f25e | Activity creation | feat: implement activity creation form | 10/05/2025 |
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend | feature/manage-activities | 9e3f48b | CRUD activities | feat: implement endpoints for activity management | 12/05/2025 |
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/statistics | 2b8c57a | Statistics dashboard | feat: implement statistics view for entrepreneurs | 14/05/2025 |
-| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/edit-activities | 4c2d19f | Edit activities | feat: implement activity editing functionality | 16/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/create-activity | 7d9f25e | Activity creation | feat: implement activity creation form | 01/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend | feature/manage-activities | 9e3f48b | CRUD activities | feat: implement endpoints for activity management | 01/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/statistics | 2b8c57a | Statistics dashboard | feat: implement statistics view for entrepreneurs | 03/05/2025 |
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app | feature/edit-activities | 4c2d19f | Edit activities | feat: implement activity editing functionality | 03/05/2025 |
+
+
+### Sprint 4 – Objetivo
+**Sprint Backlog 4**
+
+En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales para el usuario empresario, permitiéndole gestionar sus actividades publicadas y acceder a estadísticas relevantes para su negocio.
+
+| User Story ID 	| User Story Title 	| Task ID 	| Task Title 	| Description 	| Estimation (Hours) 	| Assigned To 	| Status 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| US04 	| Iniciar sesión (Web) 	| TA019 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
+|  	|  	| TA020 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
+|  	|  	| TA021 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
+| US04 	| Iniciar sesión (Movil) 	| TA022 	| Preparar ambiente en back para diferenciación 	| Implemntar diferencia entre movil y web 	| 2 	| Jair 	| Done 	|
+|  	|  	| TA023 	| Agregar verificacion de dos pasos 	| Implementar el servicio de correo front movil 	| 2 	| Jair 	| Done 	|
+| US06 	| Creación de cuenta (Web/Móvil) 	| TA019 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
+|  	|  	| TA020 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
+|  	|  	| TA021 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
+
+
+**Development Evidence for Sprint Review**
+| Repository 	| Branch 	| Commit ID 	| Commit Message 	| Commit Message Body 	| Committed on (Date) 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/aventurape-web-app 	| feature/IAM 	| 4bf1ff42282821f8ba54aa9a47a591b6cbfc9944 	| Google Captchasignin 	| feat: add google captcha in sing in 	| 05/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/aventurape-web-app 	| feature/IAM 	| dce2880f563275da6aed1253d765ce98000a4f68 	| Google Captcha signup 	| feat: add google captcha in registration 	| 05/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend 	| develop 	| 493e0dfa9747f0f4ee77e79b35a4a79f670bfb4e 	| Google Captcha backend 	| feat: add google rechaptcha 	| 05/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend 	| develop 	| 4740fee2c7052a073d67498d0635a0866c9ec7fd 	| Email in user 	| add: added email in user 	| 07/05/2025 	|
+| https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app 	| develop/temp 	| ba43f13f3f1a42f107a4877148313c9d3e2eb9bf 	| EmailJS in signup 	| add : added email verification 	| 07/05/2025 	|
 
 **Enlace al tablero Trello del proyecto**
 
