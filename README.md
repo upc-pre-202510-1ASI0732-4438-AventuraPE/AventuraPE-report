@@ -2418,11 +2418,78 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 
 ## 7.1. Continuous Integration  
 ### 7.1.1. Tools and Practices  
+Durante el desarrollo y las pruebas de software, es fundamental emplear herramientas y enfoques que aseguren la calidad del código y optimicen la productividad del equipo. Con este objetivo, adoptamos soluciones que permiten automatizar tareas, validar funcionalidades y asegurar el correcto funcionamiento de la aplicación en todas sus etapas. Estas herramientas abarcan desde la escritura del código hasta la ejecución de pruebas y la integración continua de componentes.
+
+Para garantizar que nuestras soluciones satisfagan tanto los requerimientos funcionales como los estándares técnicos, aplicamos metodologías como el **Desarrollo Guiado por Comportamiento (BDD)** y el **Desarrollo Guiado por Pruebas (TDD)**.
+
+* Principales herramientas utilizadas:
+
+| Herramienta  | Categoría                          | Descripción                                                                 | Función principal                                                                                                       |
+| ------------ | ---------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **JUnit**    | Framework de pruebas (TDD)         | Permite realizar pruebas unitarias sobre pequeños bloques de código Java.  | Ejecutar pruebas automatizadas que verifiquen el correcto funcionamiento de las funcionalidades desarrolladas.          |
+| **Mockito**  | Librería de simulación (TDD)       | Facilita la creación de objetos simulados para pruebas.                    | Reproducir el comportamiento de componentes externos, permitiendo pruebas más precisas y controladas.                   |
+| **Cucumber** | Herramienta de pruebas (BDD)       | Utiliza el lenguaje Gherkin para definir escenarios basados en comportamiento. | Redactar pruebas comprensibles para todos los actores del proyecto, alineando el desarrollo con las necesidades del negocio. |  
+
 ### 7.1.2. Build & Test Suite Pipeline Components  
 
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-1.png) 
+
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-2.png)
+
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-3.png)
+
 ## 7.2. Continuous Delivery  
+
+El propósito de la entrega continua es automatizar tanto la integración como las pruebas del código, manteniéndolo siempre en un estado listo para ser desplegado cuando se requiera.
 ### 7.2.1. Tools and Practices  
+
+
+#### Herramientas(Tools):  
+
+- **GitHub Actions / GitLab CLI**:  
+  Estas plataformas permiten automatizar todo el flujo de trabajo CI/CD. En el contexto de la entrega continua, se puede configurar una etapa donde el despliegue final no sea automático, sino que requiera intervención manual. De este modo, el software está preparado para producción, pero el despliegue queda pendiente de aprobación humana, lo que lo diferencia del enfoque de *Continuous Deployment*.
+
+- **Trello**:  
+  Herramienta utilizada para organizar y controlar el proceso de aprobación del despliegue. Es posible establecer un flujo donde, tras completar exitosamente el pipeline, un gerente de proyecto o administrador revise y apruebe el despliegue a producción.
+
+- **Docker**:  
+  Al igual que en *Continuous Deployment*, Docker se utiliza para empaquetar la aplicación dentro de contenedores. Esto garantiza que los entornos de desarrollo, pruebas y producción sean consistentes, facilitando así la validación en entornos previos como *staging*.
+
+#### Prácticas(Practices)  
+
+- **Ramas de Funcionalidades y Solicitudes de Fusión (Feature Branching y Merge Requests)**:  
+  Los nuevos desarrollos se realizan en ramas independientes. En la entrega continua, el código se fusiona a una rama estable tras pasar pruebas automatizadas, pero su despliegue en producción requiere una validación manual.
+
+- **Validación en Entorno de Staging**:  
+  Antes de desplegar en producción, los cambios son evaluados en un entorno de *staging*, que simula las condiciones de producción. Este paso permite realizar pruebas manuales adicionales o recoger comentarios de usuarios clave.
+
+- **Despliegue Semiautomático**:  
+  El pipeline automatiza la preparación del despliegue, pero el paso final lo ejecuta manualmente un miembro del equipo. Esta práctica permite mayor control sobre el momento exacto del lanzamiento.
+
+- **Aprobación Manual**:  
+  Como parte del flujo, puede requerirse que un responsable del proyecto revise los resultados de las pruebas y autorice el despliegue a producción, lo cual ayuda a evitar errores o versiones no deseadas.
+
+- **Rollback Manual**:  
+  Aunque se pueden implementar mecanismos automáticos para revertir despliegues con errores críticos, en entrega continua es común que el equipo de operaciones o desarrollo gestione manualmente estos retrocesos para garantizar un control más preciso.
+
 ### 7.2.2. Stages Deployment Pipeline Components  
+
+### Flujo de Entrega Continua (CD)
+
+- **Integración Continua (CI)**:  
+  Cada vez que se realiza un commit en una rama de desarrollo, el pipeline ejecuta automáticamente una serie de pruebas para verificar que la aplicación funciona correctamente. Esto asegura que el código se mantenga siempre en condiciones aptas para ser desplegado.
+
+- **Validación en Entorno Staging**:  
+  Antes del despliegue en producción, el código se prueba en un entorno intermedio que replica el comportamiento del entorno real. En esta etapa se pueden realizar pruebas adicionales como pruebas manuales, de carga o de seguridad para detectar posibles fallos antes de llegar a los usuarios.
+
+- **Despliegue con Intervención Manual**:  
+  Aunque todo esté listo para el despliegue, la publicación final requiere la aprobación de un miembro del equipo. Esta decisión manual ofrece un nivel extra de control y supervisión sobre el proceso.
+
+- **Monitoreo y Retroalimentación**:  
+  El pipeline incluye herramientas que permiten monitorear el desempeño de la aplicación con los nuevos cambios. Esto brinda información útil para evaluar el impacto del código antes de su liberación definitiva.
+
+- **Aprobación del Despliegue**:  
+  En esta fase, el pipeline se detiene y espera la aprobación por parte de un desarrollador, un administrador o el equipo de operaciones. Solo una vez que se concede esta autorización, se procede con el despliegue en producción.
 
 ## 7.3. Continuous deployment  
 ### 7.3.1. Tools and Practices  
