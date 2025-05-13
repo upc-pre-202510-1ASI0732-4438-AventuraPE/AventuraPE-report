@@ -772,7 +772,27 @@ Utilizamos Swagger para documentar y probar los endpoints de la API de manera in
 
 
 
-## 5.3. Video About-the-Product  
+## 5.3. Video About-the-Product
+
+El video "About-the-Product" tiene como objetivo presentar tanto a los visitantes del Landing Page como a los usuarios de las Aplicaciones una visión general del modelo de negocio y las características principales de nuestros productos de software.
+
+El contenido del video incluye:
+- 	Una introducción al modelo de negocio de AventuraPe y una descripción general de los productos de software que ofrecemos.
+- 	Destacar las características clave de nuestra aplicación y cómo está puede beneficiar a los usuarios en sus procesos.
+-	Testimonio positivo de un usuario que participó en las entrevistas de validación, compartiendo su experiencia con nuestra solución y cómo les ha ayudado en sus tareas diarias.
+-	Demostración visual de la interfaz de usuario de nuestras aplicaciones, mostrando cómo realizar tareas específicas relacionadas con los procesos soportados por nuestra solución.
+
+**Datos del video:**
+
+Screenshot del Video:
+
+<img src="images/evidence/Evidence_about_the_product.png"></img><br>
+
+URL del video:
+- [https://youtu.be/vPBYqqwgSQU](https://youtu.be/vPBYqqwgSQU])
+- [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EWbKzy1OM5FMmeJL7xLYVnIB74ctG0M4jAa_JwGxUaiYow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2HEuIX](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EWbKzy1OM5FMmeJL7xLYVnIB74ctG0M4jAa_JwGxUaiYow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2HEuIX)
+
+Duración del Video: 5:50
 
 # Part II: Verification, Validation & Pipeline  
 
