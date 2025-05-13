@@ -239,13 +239,12 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software.| **Cama Salvatierra, Jimena Tamara**<br>*TB1*: Reconoció su responsabilidad ética y profesional al diseñar experiencias de usuario tanto móviles como web, asegurando una interfaz accesible, intuitiva y centrada en el usuario final. Su compromiso se evidenció en el desarrollo funcional de la página web y la aplicación móvil, respetando buenas prácticas de diseño y programación.<br>**Castillo Castillo, Jair Alexander**<br>*TB1*:Demostró responsabilidad ética y profesional al implementar la arquitectura del backend y al liderar el despliegue de la solución, priorizando la seguridad, la eficiencia y la escalabilidad. Además, su trabajo en el desarrollo de la web y app móvil se llevó a cabo respetando estándares técnicos y buenas prácticas del software. <br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*:Asumió su responsabilidad profesional en la redacción de la introducción, descripción de la startup y el desarrollo web, garantizando que la documentación reflejara claramente la visión, objetivos y valores éticos del proyecto. Su trabajo permitió establecer una base sólida para las decisiones de ingeniería tomadas posteriormente. <br>**Jaque Peña, Estefano Oscar**<br>*TB1*:Actuó con responsabilidad ética al analizar a los competidores y realizar el needfinding, asegurando que la solución respondiera a necesidades reales de los usuarios. En el desarrollo web, se mantuvo alineado con buenas prácticas técnicas y con una visión orientada al usuario.  <br> **Quezada Portalatino, Barbara Susana**<br>*TB1*:Evidenció responsabilidad ética y profesional en la definición de user stories y el product backlog, priorizando funcionalidades con base en valor para el usuario y viabilidad técnica. Además, su rol en el diseño UX/UI y en el desarrollo de la app móvil se alineó con principios de diseño centrado en el usuario.| TB1:<br> Como equipo, hemos demostrado un compromiso constante con la responsabilidad ética y profesional a lo largo del desarrollo del proyecto. Cada integrante asumió con seriedad su rol, aplicando buenas prácticas de diseño, desarrollo e investigación en todo momento. Desde la creación de interfaces accesibles hasta la implementación del backend y el despliegue de la solución, nos guiamos por principios de calidad, integridad técnica y respeto hacia los usuarios finales. Esta responsabilidad compartida permitió construir una propuesta coherente, funcional y con propósito, alineada con los estándares de la ingeniería de software..|
+|4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software.| **Cama Salvatierra, Jimena Tamara**<br>*TB1*: Reconoció su responsabilidad ética y profesional al diseñar experiencias de usuario tanto móviles como web, asegurando una interfaz accesible, intuitiva y centrada en el usuario final. Su compromiso se evidenció en el desarrollo funcional de la página web y la aplicación móvil, respetando buenas prácticas de diseño y programación.<br>*TP*: Demostró profesionalismo al gestionar los Sprint Backlogs y coordinar la implementación de la Landing Page, velando por la coherencia visual y la experiencia del usuario final, priorizando siempre sus necesidades y expectativas.<br>**Castillo Castillo, Jair Alexander**<br>*TB1*: Demostró responsabilidad ética y profesional al implementar la arquitectura del backend y al liderar el despliegue de la solución, priorizando la seguridad, la eficiencia y la escalabilidad. Además, su trabajo en el desarrollo de la web y app móvil se llevó a cabo respetando estándares técnicos y buenas prácticas del software.<br>*TP*: Asumió con ética profesional el desarrollo del To-Be Scenario Mapping, Impact Mapping y las diferentes pruebas de software (unitarias, integración, BDD y sistema), garantizando que el producto final cumpliera con los estándares de calidad y seguridad necesarios para los usuarios.<br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*: Asumió su responsabilidad profesional en la redacción de la introducción, descripción de la startup y el desarrollo web, garantizando que la documentación reflejara claramente la visión, objetivos y valores éticos del proyecto. Su trabajo permitió establecer una base sólida para las decisiones de ingeniería tomadas posteriormente.<br>*TP*: Demostró alto nivel de responsabilidad ética al configurar entornos de desarrollo y despliegue seguros, implementando prácticas de gestión de código y guías de estilo que aseguraron la mantenibilidad y seguridad del software, además de configurar correctamente el sistema de despliegue continuo.<br>**Jaque Peña, Estefano Oscar**<br>*TB1*: Actuó con responsabilidad ética al analizar a los competidores y realizar el needfinding, asegurando que la solución respondiera a necesidades reales de los usuarios. En el desarrollo web, se mantuvo alineado con buenas prácticas técnicas y con una visión orientada al usuario.<br>*TP*: Tomó responsabilidad profesional en la implementación de prácticas de integración continua y entrega continua, garantizando flujos de trabajo seguros y confiables que protegieran tanto los datos como la experiencia de los usuarios finales.<br>**Quezada Portalatino, Barbara Susana**<br>*TB1*: Evidenció responsabilidad ética y profesional en la definición de user stories y el product backlog, priorizando funcionalidades con base en valor para el usuario y viabilidad técnica. Además, su rol en el diseño UX/UI y en el desarrollo de la app móvil se alineó con principios de diseño centrado en el usuario.<br>*TP*: Mantuvo su compromiso ético al refinar y desarrollar las User Stories y el Product Backlog, asegurando que las funcionalidades implementadas respondieran a necesidades reales y satisficieran los requerimientos de los usuarios finales de manera responsable y transparente.| TB1 & TP:<br> El equipo ha mantenido un compromiso constante con la responsabilidad ética y profesional a lo largo del desarrollo completo del proyecto. Desde la concepción inicial hasta la fase de implementación y pruebas, cada miembro ha aplicado buenas prácticas en sus respectivas áreas de responsabilidad. La toma de decisiones ha sido guiada por principios éticos como la accesibilidad, seguridad, transparencia y respeto por las necesidades del usuario final. Las implementaciones técnicas han seguido estándares profesionales rigurosos, garantizando un producto final que no solo es funcional sino también confiable y seguro. Este enfoque integral y responsable ha permitido entregar una solución que equilibra aspectos técnicos con consideraciones éticas y profesionales.|
 
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
-|4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales| **Cama Salvatierra, Jimena Tamara**<br>*TB1*: Emitió juicios informados al considerar cómo el diseño UX/UI de la plataforma impactaría a nivel social, promoviendo una interacción amigable y accesible. Su enfoque de diseño tuvo en cuenta la diversidad de usuarios, contribuyendo a una solución inclusiva en un contexto digital cada vez más relevante globalmente.<br>**Castillo Castillo, Jair Alexander**<br>*TB1*: Emitió juicios informados al utilizar impact mapping para evaluar escenarios futuros, considerando cómo las decisiones técnicas afectarían al entorno social y económico del proyecto. Su enfoque integral permitió al equipo alinear los objetivos técnicos con el impacto real en la comunidad objetivo.<br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*: Emitió juicios informados al plasmar el enfoque Lean UX dentro del documento, mostrando cómo las decisiones centradas en el usuario impactan positivamente en el ámbito social y económico. Su contribución ayudó a guiar el desarrollo con una mirada estratégica y empática.<br>**Jaque Peña, Estefano Oscar**<br>*TB1*: Emitió juicios informados al identificar oportunidades de diferenciación basadas en el análisis del mercado y las necesidades detectadas, lo cual permitió diseñar una solución con impacto social positivo. Su enfoque estratégico buscó maximizar la utilidad y sostenibilidad del producto. <br>**Quezada Portalatino, Barbara Susana**<br>*TB1*: Emitió juicios informados al estructurar las funcionalidades considerando el contexto social del proyecto y su accesibilidad, contribuyendo a una solución inclusiva y orientada a mejorar la experiencia del usuario. Su visión de diseño equilibró impacto social y eficiencia técnica.| TB1:<br> Durante el desarrollo del proyecto, tomamos decisiones basadas en un análisis consciente del entorno y del impacto que nuestra solución podría generar. Consideramos cómo nuestras decisiones de diseño y desarrollo podían influir en los usuarios a nivel social y económico, priorizando la accesibilidad, inclusión y usabilidad de la plataforma. Herramientas como el impact mapping y el enfoque Lean UX nos ayudaron a alinear la tecnología con las necesidades reales del contexto. Esto nos permitió emitir juicios informados que equilibran la viabilidad técnica con la responsabilidad social, promoviendo una solución sostenible y con impacto positivo.|
-
+|4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales| **Cama Salvatierra, Jimena Tamara**<br>*TB1*: Emitió juicios informados al considerar cómo el diseño UX/UI de la plataforma impactaría a nivel social, promoviendo una interacción amigable y accesible. Su enfoque de diseño tuvo en cuenta la diversidad de usuarios, contribuyendo a una solución inclusiva en un contexto digital cada vez más relevante globalmente.<br>*TP*: Realizó evaluaciones fundamentadas sobre el impacto de los Sprint Backlogs y la Landing Page implementada, considerando cómo estas decisiones afectaban la percepción inicial de la plataforma y su capacidad para atraer usuarios de diversos contextos socioeconómicos.<br>**Castillo Castillo, Jair Alexander**<br>*TB1*: Emitió juicios informados al utilizar impact mapping para evaluar escenarios futuros, considerando cómo las decisiones técnicas afectarían al entorno social y económico del proyecto. Su enfoque integral permitió al equipo alinear los objetivos técnicos con el impacto real en la comunidad objetivo.<br>*TP*: Profundizó sus juicios informados al desarrollar el escenario To-Be y el Impact Mapping definitivos, alineando las capacidades técnicas con las necesidades sociales y económicas de los usuarios. Sus decisiones sobre estrategias de testing aseguraron que el producto funcionara correctamente en diversos entornos y contextos.<br>**Gutierrez Garcia, Jose Eduardo**<br>*TB1*: Emitió juicios informados al plasmar el enfoque Lean UX dentro del documento, mostrando cómo las decisiones centradas en el usuario impactan positivamente en el ámbito social y económico. Su contribución ayudó a guiar el desarrollo con una mirada estratégica y empática.<br>*TP*: Formuló valoraciones cuidadosas sobre la configuración de entornos de desarrollo y despliegue, considerando factores como accesibilidad global, eficiencia económica y sostenibilidad ambiental de las soluciones implementadas. Su trabajo en continuous deployment reflejó un análisis sobre el impacto social de las actualizaciones frecuentes en la experiencia del usuario.<br>**Jaque Peña, Estefano Oscar**<br>*TB1*: Emitió juicios informados al identificar oportunidades de diferenciación basadas en el análisis del mercado y las necesidades detectadas, lo cual permitió diseñar una solución con impacto social positivo. Su enfoque estratégico buscó maximizar la utilidad y sostenibilidad del producto.<br>*TP*: Realizó evaluaciones críticas sobre las herramientas y prácticas de integración y entrega continua, valorando su impacto económico en términos de eficiencia operativa y su impacto social al facilitar actualizaciones rápidas que responden a las necesidades cambiantes de los usuarios.<br>**Quezada Portalatino, Barbara Susana**<br>*TB1*: Emitió juicios informados al estructurar las funcionalidades considerando el contexto social del proyecto y su accesibilidad, contribuyendo a una solución inclusiva y orientada a mejorar la experiencia del usuario. Su visión de diseño equilibró impacto social y eficiencia técnica.<br>*TP*: Desarrolló juicios críticos en la elaboración final de User Stories y Product Backlog, evaluando cuidadosamente cómo cada característica podría impactar en diferentes segmentos sociales de usuarios y en sus distintas realidades económicas, priorizando funcionalidades con mayor valor e impacto positivo.| TB1 & TP:<br> A lo largo del desarrollo del proyecto, el equipo ha demostrado una notable capacidad para emitir juicios informados sobre el impacto de las soluciones implementadas en contextos más amplios. Las decisiones técnicas no solo han considerado aspectos puramente funcionales, sino también su repercusión social, económica y ambiental. Se ha tenido especial cuidado en diseñar una experiencia inclusiva y accesible, valorando la diversidad de usuarios y sus diferentes contextos. Las prácticas de integración continua, testing y despliegue han sido seleccionadas considerando su eficiencia económica y su impacto en la sostenibilidad del proyecto. Este enfoque integral ha permitido crear una solución técnicamente sólida que también tiene un impacto positivo en la sociedad, demostrando que el equipo comprende plenamente la responsabilidad de la ingeniería de software más allá de los aspectos puramente técnicos.|
 
 # Capítulo I: Introducción
 
@@ -2492,15 +2491,236 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 
 ## 7.1. Continuous Integration  
 ### 7.1.1. Tools and Practices  
+Durante el desarrollo y las pruebas de software, es fundamental emplear herramientas y enfoques que aseguren la calidad del código y optimicen la productividad del equipo. Con este objetivo, adoptamos soluciones que permiten automatizar tareas, validar funcionalidades y asegurar el correcto funcionamiento de la aplicación en todas sus etapas. Estas herramientas abarcan desde la escritura del código hasta la ejecución de pruebas y la integración continua de componentes.
+
+Para garantizar que nuestras soluciones satisfagan tanto los requerimientos funcionales como los estándares técnicos, aplicamos metodologías como el **Desarrollo Guiado por Comportamiento (BDD)** y el **Desarrollo Guiado por Pruebas (TDD)**.
+
+* Principales herramientas utilizadas:
+
+| Herramienta  | Categoría                          | Descripción                                                                 | Función principal                                                                                                       |
+| ------------ | ---------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **JUnit**    | Framework de pruebas (TDD)         | Permite realizar pruebas unitarias sobre pequeños bloques de código Java.  | Ejecutar pruebas automatizadas que verifiquen el correcto funcionamiento de las funcionalidades desarrolladas.          |
+| **Mockito**  | Librería de simulación (TDD)       | Facilita la creación de objetos simulados para pruebas.                    | Reproducir el comportamiento de componentes externos, permitiendo pruebas más precisas y controladas.                   |
+| **Cucumber** | Herramienta de pruebas (BDD)       | Utiliza el lenguaje Gherkin para definir escenarios basados en comportamiento. | Redactar pruebas comprensibles para todos los actores del proyecto, alineando el desarrollo con las necesidades del negocio. |  
+
 ### 7.1.2. Build & Test Suite Pipeline Components  
 
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-1.png) 
+
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-2.png)
+
+![alt text](images/Testing-Suites-&-Validation/core-integration-tests-3.png)
+
 ## 7.2. Continuous Delivery  
+
+El propósito de la entrega continua es automatizar tanto la integración como las pruebas del código, manteniéndolo siempre en un estado listo para ser desplegado cuando se requiera.
 ### 7.2.1. Tools and Practices  
+
+
+#### Herramientas(Tools):  
+
+- **GitHub Actions / GitLab CLI**:  
+  Estas plataformas permiten automatizar todo el flujo de trabajo CI/CD. En el contexto de la entrega continua, se puede configurar una etapa donde el despliegue final no sea automático, sino que requiera intervención manual. De este modo, el software está preparado para producción, pero el despliegue queda pendiente de aprobación humana, lo que lo diferencia del enfoque de *Continuous Deployment*.
+
+- **Trello**:  
+  Herramienta utilizada para organizar y controlar el proceso de aprobación del despliegue. Es posible establecer un flujo donde, tras completar exitosamente el pipeline, un gerente de proyecto o administrador revise y apruebe el despliegue a producción.
+
+- **Docker**:  
+  Al igual que en *Continuous Deployment*, Docker se utiliza para empaquetar la aplicación dentro de contenedores. Esto garantiza que los entornos de desarrollo, pruebas y producción sean consistentes, facilitando así la validación en entornos previos como *staging*.
+
+#### Prácticas(Practices)  
+
+- **Ramas de Funcionalidades y Solicitudes de Fusión (Feature Branching y Merge Requests)**:  
+  Los nuevos desarrollos se realizan en ramas independientes. En la entrega continua, el código se fusiona a una rama estable tras pasar pruebas automatizadas, pero su despliegue en producción requiere una validación manual.
+
+- **Validación en Entorno de Staging**:  
+  Antes de desplegar en producción, los cambios son evaluados en un entorno de *staging*, que simula las condiciones de producción. Este paso permite realizar pruebas manuales adicionales o recoger comentarios de usuarios clave.
+
+- **Despliegue Semiautomático**:  
+  El pipeline automatiza la preparación del despliegue, pero el paso final lo ejecuta manualmente un miembro del equipo. Esta práctica permite mayor control sobre el momento exacto del lanzamiento.
+
+- **Aprobación Manual**:  
+  Como parte del flujo, puede requerirse que un responsable del proyecto revise los resultados de las pruebas y autorice el despliegue a producción, lo cual ayuda a evitar errores o versiones no deseadas.
+
+- **Rollback Manual**:  
+  Aunque se pueden implementar mecanismos automáticos para revertir despliegues con errores críticos, en entrega continua es común que el equipo de operaciones o desarrollo gestione manualmente estos retrocesos para garantizar un control más preciso.
+
 ### 7.2.2. Stages Deployment Pipeline Components  
 
-## 7.3. Continuous deployment  
-### 7.3.1. Tools and Practices  
-### 7.3.2. Production Deployment Pipeline Components  
+### Flujo de Entrega Continua (CD)
+
+- **Integración Continua (CI)**:  
+  Cada vez que se realiza un commit en una rama de desarrollo, el pipeline ejecuta automáticamente una serie de pruebas para verificar que la aplicación funciona correctamente. Esto asegura que el código se mantenga siempre en condiciones aptas para ser desplegado.
+
+- **Validación en Entorno Staging**:  
+  Antes del despliegue en producción, el código se prueba en un entorno intermedio que replica el comportamiento del entorno real. En esta etapa se pueden realizar pruebas adicionales como pruebas manuales, de carga o de seguridad para detectar posibles fallos antes de llegar a los usuarios.
+
+- **Despliegue con Intervención Manual**:  
+  Aunque todo esté listo para el despliegue, la publicación final requiere la aprobación de un miembro del equipo. Esta decisión manual ofrece un nivel extra de control y supervisión sobre el proceso.
+
+- **Monitoreo y Retroalimentación**:  
+  El pipeline incluye herramientas que permiten monitorear el desempeño de la aplicación con los nuevos cambios. Esto brinda información útil para evaluar el impacto del código antes de su liberación definitiva.
+
+- **Aprobación del Despliegue**:  
+  En esta fase, el pipeline se detiene y espera la aprobación por parte de un desarrollador, un administrador o el equipo de operaciones. Solo una vez que se concede esta autorización, se procede con el despliegue en producción.
+ 
+## 7.3. Continuous deployment
+
+El objetivo de Continuous Deployment (CD) es que cada cambio validado en el código pase automáticamente desde el repositorio hasta el entorno de producción, sin intervención manual, garantizando rapidez, consistencia y alta disponibilidad.
+
+### 7.3.1. Tools and Practices
+
+Para asegurar un flujo de CD fiable y ágil en AventuraPe, utilizamos:
+
+#### Tools
+
+- **GitHub & GitHub Actions**  
+  - Orquesta los pipelines de despliegue al detectar `push` o `merge` en ramas específicas.  
+  - Gestiona secretos y variables de entorno para acceder a Firebase y Azure.
+
+- **Firebase CLI**  
+  - Ejecuta el build y publica la aplicación Vue.js en Firebase Hosting.  
+  - Asegura SSL automático y distribución vía CDN tras cada `push` a `feat/deploy`.
+
+- **Azure CLI**  
+  - Compila y despliega el JAR de Spring Boot en Azure App Services.  
+  - Actualiza configuración y variables de entorno según los secretos definidos en GitHub.
+
+- **GitHub Pages**  
+  - Publica la landing page (HTML/CSS/JS) desde la carpeta `docs/` tras cada `push` a `main`.  
+  - Proporciona hosting estático con versiones históricas y rollback sencillo.
+
+#### Practices
+
+  **Push-based deployment**  
+  Cada `push` a la rama adecuada (`main` o `feat/deploy`) dispara el despliegue automático sin pasos manuales.
+
+- **Branch protection**  
+  `main` y `feat/deploy` están protegidas: se requiere PR aprobado y compilación/pasos de build exitosos antes de merge.
+
+- **Secret management**  
+  Las credenciales de Firebase y Azure, así como cadenas de conexión, se almacenan en GitHub Secrets y en el portal de Azure.
+
+- **Atomic releases**  
+  Se despliegan builds completos y autocontenidos, minimizando errores por estado parcial.
+
+- **Quick rollback**  
+  Ante fallo, se puede redeplegar la última versión estable reutilizando tags o artefactos previos.
+
+### 7.3.2. Production Deployment Pipeline Components 
+A continuación, los tres pipelines que componen el CD de producción:
+
+#### 1. Landing Page
+
+1. **Trigger**  
+   - Push a la rama `main`  
+
+2. **Build**  
+   - No aplica (contenido estático ya preparado en `docs/`)  
+
+3. **Deploy**  
+   ```yaml
+   # GitHub Actions
+   - name: Deploy Landing Page
+     uses: peaceiris/actions-gh-pages@v3
+     with:
+       github_token: ${{ secrets.GITHUB_TOKEN }}
+       publish_dir: ./docs
+
+#### 2. Frontend Web (Vue.js)
+
+1. **Trigger**  
+  Push a la rama `feat/deploy`
+
+2. **Build**  
+  ```bash
+  npm ci
+  npm run build
+  ```
+
+3. **Deploy** 
+ ```bash
+  firebase deploy --only hosting --project aventurape
+```
+
+#### 3. Backend RESTful (Spring Boot)
+
+1. **Trigger**  
+  Push a la rama `feat/deploy`
+
+2. **Build**  
+  ```bash
+      mvn clean package -DskipTests
+  ```
+
+3. **Deploy** 
+ ```yaml
+  # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy JAR app to Azure Web App - AventuraPe
+
+on:
+  push:
+    branches:
+      - feat/deploy
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read #This is required for actions/checkout
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java version
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'microsoft'
+
+      - name: Build with Maven
+        run: mvn clean install -DskipTests
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-app
+          path: '${{ github.workspace }}/target/*.jar'
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    permissions:
+      id-token: write #This is required for requesting the JWT
+      contents: read #This is required for actions/checkout
+  
+    steps:
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v4
+        with:
+          name: java-app
+      
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C2826588656E4ADC96BD4A654A512FAA }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D9723E8B6B4E4568B92C9B29910644E7 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_13D26B63434A459B88C02D3352CF2D9B }}
+
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'AventuraPe'
+          slot-name: 'Production'
+          package: '*.jar'
+```
 
 ## 7.4. Continuous Monitoring  
 ### 7.4.1. Tools and Practices  
@@ -2555,7 +2775,7 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 
 AventuraPe es una aplicación móvil y web diseñada para conectar a los usuarios con micro aventuras locales sin necesidad de planificación extensa. En este video, mostramos cómo nuestra plataforma utiliza filtros y una interfaz intuitiva para ofrecer experiencias cercanas, auténticas y accesibles, fomentando además el crecimiento de negocios locales.
 
-<img src="images/video_about_the_product/video_about.png">
+![video_about_the_product](image-14.png)
 
 
 **ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)
