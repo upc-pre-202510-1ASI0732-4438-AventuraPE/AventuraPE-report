@@ -1606,205 +1606,161 @@ Representa la relación entre un informe estadístico y los posts incluidos en �
 ## 5.1. Software Configuration Management  
 ### 5.1.1. Software Development Environment Configuration  
 
-Antes de iniciar el desarrollo de AventuraPe, establecimos una configuración clara de los **entornos de desarrollo para cada componente del sistema**, asegurando la compatibilidad y eficiencia del flujo de trabajo del equipo.
+En esta sección se describen las herramientas y plataformas clave que utilizamos para orquestar, automatizar y ejecutar el despliegue de los distintos componentes de AventuraPe.
 
-### Requisitos y Stack Tecnológico Seleccionado
+- **Git**  
+  **Descripción:** Sistema de control de versiones distribuido que registra cada cambio en el código fuente.  
+  **Uso:** Gestiona las versiones de nuestro código, permite crear ramas (`main`, `feat/deploy`, `develop`, etc.) y coordinar el flujo de trabajo entre desarrolladores.
 
-Basados en las necesidades de nuestra aplicación, seleccionamos el siguiente stack tecnológico:
+- **GitHub**  
+  **Descripción:** Plataforma de hosting de repositorios Git con funcionalidades de colaboración.  
+  **Uso:** Aloja el código de backend, frontend y landing; gestiona issues, pull requests y sirve como origen para los despliegues.
 
-- **Frontend Web**: Node.js con TypeScript para una experiencia de usuario fluida e interactiva
-- **Frontend Móvil**: Kotlin con Jetpack Compose para una aplicación Android moderna
-- **Backend**: Java con Spring Boot para una arquitectura escalable y robusta
-- **Base de datos**: PostgreSQL para almacenamiento relacional de datos
-- **Documentación API**: Swagger para endpoints RESTful
+- **GitHub Actions**  
+  **Descripción:** Servicio de CI/CD nativo de GitHub que automatiza flujos de trabajo definidos mediante archivos YML.  
+  **Uso:** Orquesta los build, test y deploy cada vez que se realiza un `push` o `pull request` en ramas designadas (`main` para landing, `feat/deploy` para back/front).
 
-### Entornos de Desarrollo Configurados
+- **Firebase Hosting**  
+  **Descripción:** Servicio de Google Firebase para servir contenido estático a través de una CDN global.  
+  **Uso:** Hospeda la aplicación web desarrollada con Vue.js. Cada `push` a `feat/deploy` dispara el CLI de Firebase que realiza el build y publica los assets en producción con SSL automático.
 
-#### Frontend Web
-- **IDE**: WebStorm 2023.1
-- **Propósito**: Desarrollo de la interfaz web y gestión de dependencias JS
-- **Ruta de descarga**: https://www.jetbrains.com/webstorm/
-- **Tecnologías principales**: Node.js, TypeScript, React
+- **Azure App Services**  
+  **Descripción:** Plataforma PaaS de Microsoft Azure para ejecutar aplicaciones web y APIs en contenedores o directamente sobre el runtime.  
+  **Uso:** Despliega el backend Spring Boot con Java 21 y PostgreSQL; Ya que `feat/deploy` compila, prueba y actualiza el servicio bajo HTTPS con escalado automático.
 
-#### Frontend Móvil
-- **IDE**: Android Studio Hedgehog (2023.1.1)
-- **Propósito**: Desarrollo de la aplicación Android nativa
-- **Ruta de descarga**: https://developer.android.com/studio
-- **Tecnologías principales**: Kotlin, Jetpack Compose, Material Design 3
+- **GitHub Pages**  
+  **Descripción:** Servicio de hosting estático integrado en GitHub, ideal para landing pages.  
+  **Uso:** Publica automáticamente los archivos de la carpeta `docs/` tras cada `push` a `main`, sirviendo la página de introducción y captación de usuarios.
 
-#### Landing Page
-- **IDE**: Visual Studio Code 1.77
-- **Propósito**: Desarrollo de landing page estática con HTML, CSS y JavaScript
-- **Ruta de descarga**: https://code.visualstudio.com/
-- **Despliegue**: GitHub Pages (automáticamente mediante GitHub Actions)
+- **Azure CLI**  
+  **Descripción:** Interfaz de línea de comandos para gestionar recursos de Azure de forma programática.  
+  **Uso:** Se integra con GitHub Actions para automatizar configuraciones del App Service, gestión de variables de entorno y despliegues sin intervención manual.
 
-#### Backend
-- **IDE**: IntelliJ IDEA 2023.1 (Ultimate Edition)
-- **Propósito**: Desarrollo de servicios RESTful y lógica de negocio
-- **Ruta de descarga**: https://www.jetbrains.com/idea/
-- **Tecnologías principales**: Spring Boot 3.2, Java 17, JPA/Hibernate
-
-#### Control de Versiones
-- **Herramienta**: Git 2.40.0
-- **Repositorio**: https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE
-- **Estrategia de ramificación**: GitFlow (main, develop, feature/*)
-
-### Herramientas de Diseño y Pruebas
-
-- **Diseño UI/UX**: 
-  - **Herramienta**: Figma
-  - **Propósito**: Mockups, wireframes y prototipos
-  - **URL**: https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=0-1&t=2PMCISPv6qm1ZGJR-1 
-
-- **Pruebas de API**:
-  - **Herramienta**: Swagger UI integrado
-  - **Propósito**: Documentación y prueba de endpoints RESTful
-  - **URL local**: http://localhost:8090/swagger-ui/index.html
-
-### Estado Actual de Despliegue
-
-Actualmente, nuestros entornos funcionan de la siguiente manera:
-
-- **Landing Page**: Desplegada en producción mediante GitHub Pages
-- **Aplicación Web**: Ejecución local con servidor de desarrollo (npm run dev)
-- **Aplicación Móvil**: Ejecución en emulador Android o dispositivos físicos vía USB
-- **Backend**: Ejecutándose localmente en http://localhost:8090
-- **Base de datos**: PostgreSQL local en puerto predeterminado
-
-Esta configuración nos permite desarrollar de manera eficiente mientras mantenemos un control preciso sobre cada componente del sistema, facilitando la colaboración entre los miembros del equipo y una integración fluida de los diferentes módulos.
+Con esta suite de herramientas desplegadas y coordinadas, AventuraPe mantiene un flujo de entrega continua robusto, minimiza el tiempo de inactividad y asegura que cada nueva versión llegue rápida y de forma fiable a todos los usuarios.
 
 ### 5.1.2. Source Code Management 
 
-En esta sección, nuestro equipo establece los medios y el esquema de organización que aplicará para el seguimiento de modificaciones, utilizando GitHub como plataforma y sistema de control de versiones.
+**Gestión del Código Fuente:**
 
-### Repositorios
-
-Configuramos diversos repositorios remotos en GitHub para almacenar el código fuente y facilitar la colaboración entre los miembros del equipo. Los URLs de los repositorios son los siguientes:
-
-- **Landing Page:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-landing 
-- **Frontend App Web:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/aventurape-web-app 
-- **Frontend App Mobile:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventuraPE-mobile-app 
-- **Backend:** https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/AventurePe-Backend 
-
-### Estructura del Repositorio
-
-Organizamos cada repositorio en ramas específicas para diferentes entornos de desarrollo. Las ramas principales y su propósito son:
-
-- **Main branch (rama principal):** Contiene la versión estable de producción.
-- **Develop branch:** Contiene el código en desarrollo, que eventualmente será fusionado en la rama principal.
-
-Implementamos GitFlow siguiendo el modelo descrito por Vincent Driessen, lo que nos permite mantener un flujo de trabajo ordenado y eficiente:
-
-- **Feature branches:** Se crean a partir de develop para implementar nuevas funcionalidades. Nomenclatura: `feature/<nombre-funcionalidad>`
-- **Hotfix branches:** Para correcciones urgentes sobre la rama principal. Nomenclatura: `hotfix/<descripción-error>`
-- **Release branches:** Para preparar lanzamientos específicos. Nomenclatura: `release/v<versión>`
-
-### Convenciones de Nomenclatura
-
-Aplicamos semantic versioning para nombrar nuestras releases siguiendo el esquema vMAJOR.MINOR.PATCH (por ejemplo, v1.0.0):
-
-- **MAJOR:** Cambios incompatibles con versiones anteriores
-- **MINOR:** Nuevas funcionalidades compatibles con versiones anteriores
-- **PATCH:** Correcciones de errores compatibles con versiones anteriores
-
-### Mensajes de Commits
-
-Utilizamos Conventional Commits para estandarizar los mensajes en nuestros commits, lo que facilita la generación automática de changelogs y mejora la legibilidad del historial del proyecto. Algunos ejemplos de mensajes de commits son:
-
-- `feat: implementar autenticación de usuario aventurero`
-- `fix: corregir validación en formulario de registro`
-- `docs: actualizar documentación de API de publicaciones`
-- `style: aplicar formato consistente al código de componentes`
-- `refactor: optimizar módulo de filtrado de actividades`
-- `test: añadir pruebas unitarias para servicio de calificaciones`
+En esta sección, se detalla cómo gestionamos y supervisamos el desarrollo del código para el proyecto de AventuraPe. Utilizamos GitHub como nuestra plataforma principal para la gestión del código fuente, complementada por Git como sistema de control de versiones. Además, seguimos el flujo de trabajo GitFlow para estructurar el desarrollo de manera eficiente.
 
 
-### Backup y Recuperación
+**Ramas Principales:**
+- **main:** Esta rama, a menudo llamada "master", contiene la versión más estable y final del proyecto, lista para ser desplegada en producción. Los cambios integrados en esta rama han pasado todas las pruebas y revisiones necesarias, y se consideran completamente preparados para su lanzamiento.
 
-Implementamos las siguientes estrategias para proteger nuestro código:
-- Backups automáticos semanales de todos los repositorios
-- Uso de GitHub Actions para exportar y almacenar versiones críticas en almacenamiento externo
-- Política de no eliminación de ramas principales sin aprobación del equipo completo
+- **develop:** La rama develop es el punto central de integración para las nuevas funcionalidades y mejoras en desarrollo. Las características y correcciones se fusionan en esta rama, donde se realizan pruebas adicionales antes de su eventual integración en la rama main.
 
-### Monitoreo y Control
+**Ramas Auxiliares:**
 
-Utilizamos las siguientes herramientas para mantener la calidad del código y seguimiento de cambios:
-- GitHub Issues para tracking de tareas y bugs
-- Pull Requests obligatorios con al menos una aprobación antes de fusionar código
-- GitHub Actions para verificación automática de estilo de código y tests
+- **releases:** Las ramas de tipo releases se crean para preparar nuevas versiones del proyecto. En estas ramas se llevan a cabo las pruebas finales y se corrigen errores menores antes del lanzamiento oficial. Una vez que una versión ha sido validada, los cambios se integran en la rama develop para futuros desarrollos y luego se fusionan en la rama main para su despliegue.
 
-Esta estructura de gestión de código nos permite mantener un desarrollo ordenado, colaborativo y con capacidad de respuesta rápida ante necesidades del proyecto.
+**Uso de GitFlow:**
+
+- **Feature Branches:** Se utilizan ramas de características para desarrollar nuevas funcionalidades. Estas ramas se crean a partir de la rama develop y, una vez que se completa el desarrollo y se aprueban las revisiones, se fusionan nuevamente en la rama develop.
+
+- **Bugfix Branches:** Para solucionar errores que necesitan ser corregidos antes de la siguiente versión, se utilizan ramas de corrección de errores. Estas ramas se crean a partir de la rama develop o, en casos críticos, desde la rama main.
+
+- **Hotfix Branches:** Se emplean para abordar errores críticos que requieren una solución urgente en producción. Estas ramas se crean a partir de la rama main, y una vez que el problema se resuelve, los cambios se fusionan tanto en la rama main como en la rama develop.
+
+Este enfoque estructurado con GitFlow nos permite gestionar el desarrollo del código de manera eficiente, facilitando la integración de nuevas características, la corrección de errores y la preparación de versiones estables para producción.
+
+**Commits Conventions:**
+
+En AventuraPe, los commits se nombran de acuerdo con el avance y el contenido específico del trabajo realizado. No seguimos una convención rígida para los nombres de los commits; en su lugar, los desarrolladores utilizan descripciones claras y concisas para reflejar las modificaciones implementadas. Esto nos permite una mayor flexibilidad a la hora de registrar el progreso, asegurando que cada commit tenga un nombre que represente con precisión el trabajo efectuado.
 
 ### 5.1.3. Source Code Style Guide & Conventions  
+Para mantener un código limpio, legible y fácil de mantener en equipo, se definieron guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack.
 
-Para mantener un código limpio, legible y fácil de mantener en equipo, hemos definido guías de estilo específicas por tecnología, complementadas con linters automáticos y convenciones de nomenclatura. Estas prácticas se alinean con los principios de *Clean Code* y las recomendaciones de la comunidad técnica para cada stack tecnológico utilizado en AventuraPe.
+#### **Frontend Web (Webstorm.js con TypeScript)**
+- Las reglas aplicadas incluyeron:
+  - **CamelCase** para variables y funciones (`handleClick`, `userList`).
+  - **PascalCase** para nombres de componentes (`UserCard`, `ActivityCard`).
+  - Uso estricto de `const` y `let` (evitando `var`).
+  - Separación lógica de hooks y lógica de presentación en archivos distintos (`useActivityFetch.ts` vs `ActivityCard.tsx`).
 
-### **Frontend Web (Node.js con TypeScript)**
-- **Nomenclatura y estructura:**
-  - **CamelCase** para variables y funciones (`handleClick`, `userList`)
-  - **PascalCase** para nombres de componentes (`UserCard`, `ActivityCard`)
-  - Separación lógica de hooks y lógica de presentación en archivos distintos
-  - Nombres descriptivos y significativos para variables y funciones
+#### **Backend (Spring Boot + Java)**
+- Se adoptó la guía oficial de estilo de Java + convención de Spring:
+  - Clases en **PascalCase** (`UserService`, `PublicationController`).
+  - Variables y métodos en **camelCase** (`getPublications()`, `userId`).
+  - Separación en paquetes según capa: `controller`, `service`, `repository`, `model`.
+  - Uso de anotaciones estándar (`@RestController`, `@Autowired`, `@GetMapping`).
+  - Código documentado con comentarios Javadoc (`/** */`) en servicios y endpoints principales.
 
-### **Frontend Móvil (Kotlin con Jetpack Compose)**
-- **Convenciones de Kotlin:**
-  - Nombres claros, concisos y expresivos
-  - Nombres de vistas en XML en snake_case (`btn_register`, `txt_user_email`)
-  - Clases y funciones en PascalCase y camelCase respectivamente
+#### **Android Mobile (Kotlin)**
+- Se usó la convención oficial de Kotlin:
+  - Nombres claros, concisos y expresivos.
+  - Propiedades inmutables por defecto (`val`) y mutables solo cuando es estrictamente necesario (`var`).
+  - Nombres de vistas en XML en snake_case (`btn_register`, `txt_user_email`).
+  - En el código Kotlin, nombres de clases y funciones en PascalCase y camelCase respectivamente.
+  - Arquitectura basada en **MVVM**, separando `ViewModel`, `Repository` y `UI`.
 
-- **Arquitectura y estructura:**
-  - Arquitectura MVVM (Model-View-ViewModel)
-  - Separación clara entre `ViewModel`, `Repository` y componentes UI
-  - Composables aislados y reusables
+#### **General**
+- Todos los equipos usaron **pre-commit hooks** con `Husky` (para frontend) y scripts personalizados en backend para evitar commits con errores de formato o linters.
+- Se definieron **convenciones de nomenclatura de commits** usando el formato:
+  - `feat:` para nuevas funcionalidades.
+  - `fix:` para corrección de errores.
+  - `docs:` para documentación.
+  - `refactor:` para mejoras internas sin cambios funcionales.
+  - `style:` para cambios de formato sin alterar la lógica.
+Estas convenciones fueron aplicadas de forma continua mediante integración con GitHub Actions y revisión manual por parte del líder técnico antes de cada merge a `develop`.
 
-### **Backend (Java con Spring Boot)**
-- **Convenciones de Java y Spring:**
-  - Clases en **PascalCase** (`UserService`, `PublicationController`)
-  - Variables y métodos en **camelCase** (`getPublications()`, `userId`)
-  - Constantes en UPPERCASE_SNAKE_CASE (`MAX_RETRY_COUNT`)
-  - Separación en capas: `controller`, `service`, `repository`, `model`, `exception`
+### 5.1.4. Software Deployment Configuration
 
-- **Documentación:**
-  - Comentarios Javadoc (`/** */`) en todos los servicios y endpoints
-  - Anotaciones claras para mapeos REST (`@GetMapping`, `@PostMapping`)
-  - Respuestas HTTP documentadas con códigos apropiados
+A continuación se detalla la configuración de el deployment de los tres componentes de AventuraPe, cada uno con su propio flujo de integración y entrega continua para asegurar despliegues automáticos, controlados y siempre actualizados.
 
-- **Gestión de excepciones:**
-  - Centralización de manejo de excepciones
-  - Mensajes de error descriptivos y apropiados para el cliente
+#### 1. Landing Page
 
-### **Landing Page (HTML/CSS/JavaScript)**
-- **HTML:**
-  - Uso de etiquetas semánticas (`<header>`, `<nav>`, `<main>`, `<footer>`)
-  - Indentación consistente para mejorar legibilidad
-  - Atributos alt descriptivos para imágenes
-  
-- **CSS:**
-  - Preferencia por clases sobre IDs para estilos reutilizables
-  - Uso de variables CSS para colores, fuentes y dimensiones clave
-  - Medidas relativas (`em`, `rem`, `%`) para mejorar responsividad
+La página de entrada al producto, centrada en captar la atención de potenciales usuarios y presentar nuestra propuesta de valor:
 
-- **JavaScript:**
-  - Funciones con propósito único y bien definido
-  - Evitar código global utilizando módulos ES6
+- **Tecnologías**  
+  - HTML5 semántico  
+  - CSS3 con animaciones ligeras  
+  - JavaScript vanilla para interactividad básica  
 
-### **General**
-- **Control de versiones:**
-  - Commits pequeños y enfocados en una sola tarea
-  - Mensajes de commit descriptivos siguiendo Conventional Commits
-  - Pull requests documentados con descripción clara de los cambios
+- **Despliegue**  
+  - **Plataforma:** GitHub Pages  
+  - **Branch:** `main`  
+  - **Flujo:** mediante GitHub Actions, tras cada `push` a `main`, los archivos de la carpeta `docs/` se publican en el dominio configurado.  
+  - **Beneficios:** publicación inmediata, versión de revisión histórica disponible, y control de versiones integrado con Git.  
 
-Estas convenciones son aplicadas de forma continua mediante revisión manual por parte del equipo **antes de cada merge a la rama `develop`**, asegurando la calidad y consistencia del código en todo el proyecto AventuraPe.
-
-### 5.1.4. Software Deployment Configuration  
-Actualmente, el único módulo desplegado en producción es la Landing Page, la cual se publica automáticamente mediante GitHub Actions a través de GitHub Pages. Este despliegue ocurre tras cada push a la rama main, garantizando acceso inmediato a la última versión.
- - El backend RESTful y la aplicación frontend web aún no han sido desplegados en un entorno público. Ambos se ejecutan de forma local para pruebas y desarrollo:
- - Backend: Spring Boot 3.2 corriendo en localhost (http://localhost:8090) con base de datos PostgreSQL.
- - Frontend Web: ejecutado localmente vía servidor de desarrollo (npm run dev).
-
-## 5.2. Product Implementation & Deployment  
+Esta configuración asegura que la landing esté siempre al día, sirviendo como escaparate público y primer punto de contacto para nuevos usuarios e inversores.
 
 
+#### 2. Frontend Web  
+La Aplicacion web desarrollada en Vue.js que ofrece la experiencia de usuario rica e interactiva:
+
+- **Tecnologías**  
+  - Vue.js 3  
+
+- **Despliegue**  
+  - **Plataforma:** Firebase Hosting  
+  - **Branch:** `feat/deploy`  
+  - **Flujo:** un `push` a la rama `feat/deploy` ejecuta un script de build y luego publica automáticamente los archivos estáticos en Firebase  para entregas ultrarrápidas.  
+  - **Beneficios:** SSL automático, previews de despliegue y rollback sencillo en caso de rollback.  
+
+Con esto cualquier mejora o corrección en la interfaz llega casi instantáneamente a los usuarios finales, sin interrupciones.
+
+
+#### 3. Backend RESTful  
+Un servicio construido con Spring Boot que gestiona toda la lógica de negocio y persistencia de datos:
+
+- **Tecnologías**  
+  - Spring Boot 3.2
+  - Java 21  
+  - PostgreSQL
+
+- **Despliegue**  
+  - **Plataforma:** Azure App Services  
+  - **Branch:** `feat/deploy`  
+  - **Flujo:** cada vez que se hace un `push` a `feat/deploy`, un pipeline en Azure se dispara automáticamente, compila y actualiza el entorno productivo.  
+  - **Beneficios:** escalado automático, monitorización nativa, configuración de variables de entorno (como cadenas de conexión y claves secretas) directamente en el portal de Azure.  
+
+Este esquema garantiza que el backend esté siempre disponible bajo HTTPS, con tolerancia a fallos y capacidad de crecer según la demanda.
+
+Con estos tres componentes automatizados, AventuraPe dispone de un entorno de producción sólido y escalable, listo para crecer con cada nueva funcionalidad y mantener la continuidad del servicio sin fricciones.
+
+
+## 5.2. Product Implementation & Deployment
 ### 5.2.1 Sprint Backlogs
 
 **Sprint Planning 1**
@@ -1989,7 +1945,75 @@ En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales
 
 <img src="images/evidenceWEB/emprendedor-agregar.png" alt="Formulario de creación de actividad"/>
 
-### 5.2.4. Implemented Native-Mobile Application Evidence  
+### 5.2.4. Acuerdo de Servicio - SaaS  
+
+Este Acuerdo de Servicio regula el uso de la plataforma AventuraPe, un servicio proporcionado bajo el modelo Software como Servicio (SaaS). Al acceder o utilizar la plataforma, el usuario acepta las condiciones establecidas en el presente documento.
+
+1. **Derechos de uso**
+
+El usuario recibe una licencia limitada, no exclusiva, intransferible y revocable para acceder y utilizar la plataforma AventuraPe, exclusivamente conforme a los fines previstos por el servicio.
+
+2. **Obligaciones del usuario**
+El usuario se compromete a:
+
+- Utilizar el servicio conforme a la legislación vigente y a las normas de convivencia establecidas por AventuraPe.
+- No publicar contenido que sea ofensivo, discriminatorio, difamatorio o que infrinja derechos de terceros.
+- No manipular, alterar ni realizar ingeniería inversa sobre la plataforma.
+- Proporcionar información veraz y actualizada en su perfil y en las actividades que publique.
+- Mantener la confidencialidad de sus credenciales de acceso.
+
+3. **Moderación y eliminación de contenido**
+
+AventuraPe se reserva el derecho de:
+- Eliminar actividades que infrinjan los términos del servicio, como la publicación de información falsa, ilegal o contraria a las normas de la comunidad.
+- Eliminar comentarios que contengan lenguaje inapropiado, ofensivo, discriminatorio o que violen las políticas de uso establecidas.
+- Moderar el contenido y las valoraciones para mantener la calidad y seguridad del servicio.
+
+4. **Disponibilidad y mantenimiento**
+AventuraPe hará esfuerzos razonables para garantizar la disponibilidad continua del servicio, sin embargo, no se garantiza disponibilidad ininterrumpida. La plataforma puede estar sujeta a mantenimientos periódicos programados o no programados.
+
+5. **Propiedad intelectual y contenido generado por usuarios**
+
+- El usuario conserva los derechos sobre el contenido original que publique en la plataforma.
+- Al publicar contenido en AventuraPe, el usuario otorga una licencia mundial, no exclusiva, gratuita, sublicenciable y transferible para usar, reproducir, distribuir y mostrar dicho contenido en relación con el servicio.
+- AventuraPe respeta los derechos de propiedad intelectual y espera que los usuarios hagan lo mismo.
+
+6. **Protección de datos personales**
+- AventuraPe recopila y procesa datos personales de acuerdo con su Política de Privacidad.
+- Los datos personales proporcionados se utilizan para la gestión de perfiles, la personalización de experiencias, la comunicación con usuarios y la mejora del servicio.
+- La plataforma implementa medidas técnicas y organizativas adecuadas para proteger los datos personales.
+
+7. **Sistema de calificaciones y reseñas**
+- Las calificaciones y reseñas deben basarse en experiencias reales y ser honestas.
+- AventuraPe se reserva el derecho de eliminar reseñas falsas, maliciosas o que no cumplan con las directrices de la comunidad.
+- Las calificaciones promedio se calculan mediante algoritmos que pueden incluir factores de ponderación para garantizar la representatividad.
+
+8. **Responsabilidad**
+- AventuraPe no se responsabiliza por el contenido generado por los usuarios.
+- La plataforma actúa como intermediario y no garantiza la calidad, seguridad o legalidad de las actividades publicadas.
+- Los usuarios son responsables de la veracidad de la información proporcionada y de las consecuencias de su uso de la plataforma.
+
+9. **Modificaciones del servicio**
+AventuraPe puede modificar, suspender o discontinuar cualquier aspecto del servicio en cualquier momento, incluyendo la disponibilidad de funciones, bases de datos o contenido.
+
+10. **Comunicaciones**
+AventuraPe podrá enviar comunicaciones relacionadas con el servicio, incluyendo notificaciones sobre cambios en los términos, nuevas funcionalidades o alertas de seguridad.
+
+11. **Resolución de conflictos**
+Cualquier controversia derivada del uso del servicio se resolverá mediante negociación de buena fe. En caso de no alcanzar un acuerdo, las partes se someterán a la jurisdicción competente.
+
+12. **Cumplimiento normativo**
+Este acuerdo cumple con los marcos normativos aplicables en materia de protección de datos personales, derechos digitales y servicios digitales. El uso del servicio implica el consentimiento del usuario a las prácticas descritas.
+
+13. **Disposiciones finales**
+-	Si alguna disposición de este Acuerdo fuese declarada inválida, las demás disposiciones mantendrán su vigencia.
+-	Este Acuerdo constituye el entendimiento completo entre las partes respecto al uso del servicio.
+-	AventuraPe puede modificar este Acuerdo en cualquier momento, publicando una versión actualizada en la plataforma e informando a los usuarios.
+
+Este Acuerdo de Servicio regula el uso de la plataforma AventuraPe, un servicio proporcionado bajo el modelo Software como Servicio (SaaS). Al acceder o utilizar la plataforma, el usuario acepta las condiciones establecidas en el presente documento.
+
+
+### 5.2.5. Implemented Native-Mobile Application Evidence  
 
 ### Login Management
 <img src="images/evidence/Evidence_login_management.jpg"></img><br>
@@ -2023,7 +2047,7 @@ En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales
 <img src="images/evidence/Evidence_detail_publication_2.jpg"></img><br>
 
 
-### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence  
+### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence  
 
 Hemos añadido correctamente nuestros servicios web bajo una arquitectura RESTful, implementando correcciones en todos los endpoints existentes. Además, hemos añadido un nuevo endpoint llamado favorite-publications, que permite a los usuarios gestionar sus publicaciones favoritas de manera más eficiente.
 La nueva funcionalidad de favorite-publications permite a los usuarios obtener, añadir y eliminar publicaciones de su lista de favoritos, mejorando la interacción con el contenido que más les interesa. La documentación de todos los endpoints está disponible a través de Swagger, lo que facilita la interacción con la API.
@@ -2049,7 +2073,7 @@ PUT | /publication/{publicationId}/update-publication | Actualización de una pu
 DELETE | /publication/{publicationId}/delete-publication | Eliminar una publicación específica |
 
 
-### 5.2.6. RESTful API documentation  
+### 5.2.7. RESTful API documentation  
 Utilizamos Swagger para documentar y probar los endpoints de la API de manera interactiva, lo que facilita a los desarrolladores la integración y verificación de los servicios RESTful.
 
 ### Api Documentation
@@ -2098,8 +2122,7 @@ Utilizamos Swagger para documentar y probar los endpoints de la API de manera in
 
 <img src="images/evidence/Evidence_role_management.jpg"></img><br>
 
-### 5.2.7. Team Collaboration Insights  
-
+### 5.2.8. Team Collaboration Insights  
 La colaboración efectiva ha sido un pilar fundamental en el desarrollo de AventuraPe. Durante nuestros tres sprints, implementamos un enfoque de trabajo que maximizó nuestras fortalezas individuales mientras asegurábamos la integración coherente de todos los componentes del sistema.
 
 ### Metodología y Herramientas
@@ -2152,7 +2175,27 @@ El análisis de nuestros repositorios muestra métricas positivas de colaboraci�
 3. **Flexibilidad en la asignación**: Permitir que los miembros contribuyeran fuera de sus áreas principales cuando fue necesario aceleró el desarrollo en momentos críticos.
 
 
-## 5.3. Video About-the-Product  
+## 5.3. Video About-the-Product
+
+El video "About-the-Product" tiene como objetivo presentar tanto a los visitantes del Landing Page como a los usuarios de las Aplicaciones una visión general del modelo de negocio y las características principales de nuestros productos de software.
+
+El contenido del video incluye:
+- 	Una introducción al modelo de negocio de AventuraPe y una descripción general de los productos de software que ofrecemos.
+- 	Destacar las características clave de nuestra aplicación y cómo está puede beneficiar a los usuarios en sus procesos.
+-	Testimonio positivo de un usuario que participó en las entrevistas de validación, compartiendo su experiencia con nuestra solución y cómo les ha ayudado en sus tareas diarias.
+-	Demostración visual de la interfaz de usuario de nuestras aplicaciones, mostrando cómo realizar tareas específicas relacionadas con los procesos soportados por nuestra solución.
+
+**Datos del video:**
+
+Screenshot del Video:
+
+<img src="images/evidence/Evidence_about_the_product.png"></img><br>
+
+URL del video:
+- [https://youtu.be/vPBYqqwgSQU](https://youtu.be/vPBYqqwgSQU])
+- [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EWbKzy1OM5FMmeJL7xLYVnIB74ctG0M4jAa_JwGxUaiYow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2HEuIX](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EWbKzy1OM5FMmeJL7xLYVnIB74ctG0M4jAa_JwGxUaiYow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2HEuIX)
+
+Duración del Video: 5:50
 
 # Part II: Verification, Validation & Pipeline  
 
