@@ -780,48 +780,64 @@ El ubiquitous language es un vocabulario común compartido por todos los miembro
 | US35 | Personalizar cuenta de perfil | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | EP04 | Empresario | **Escenario 1: Edición exitosa**<br>Dado que el usuario registrado ha iniciado sesión<br>Y selecciona la opción de "Mi cuenta"<br>Cuando el usuario agrega uno o más campos como Nombre de la empresa, correo, cuidad, calle, país, número de contacto y código postal<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema guarda<br>Y muestra la información agregada<br><br>**Escenario 2: Edición fallida**<br>Dado que el usuario registrado ha iniciado sesión<br>Y selecciona la opción de "Mi cuenta"<br>Cuando el usuario intenta agregar información pero deja uno o más campos obligatorios vacíos (Nombre de la empresa, correo, cuidad, calle, país, número de contacto y código postal)<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema resalta los campos obligatorios incompletos<br>Y el botón 'Guardar' permanece desactivado hasta que todos los campos requeridos sean completados |
 | US36 | Gestión de Suscripción | Como empresario registrado, quiero gestionar mi suscripción para mantenerla activa. | EP04 | Empresario | **Escenario 1: Subir comprobante de pago exitosamente**<br>Dado que el usuario selecciona la opción de "Mi subscripción"<br>Cuando el usuario sube una imagen clara del comprobante de pago<br>Y hace clic en el botón "Enviar comprobante"<br>Entonces el sistema recibe el comprobante<br>Y muestra el estado "Verificado"<br><br>**Escenario 2: Actualizar comprobante de pago**<br>Dado que el usuario quiere actualizar/corregir su comprobante<br>Y su suscripción está activa<br>Cuando el usuario selecciona "Actualizar comprobante"<br>Y sube un nuevo comprobante de pago válido<br>Entonces el sistema reemplaza el comprobante anterior<br>Y muestra un texto: "Comprobante recibido correctamente" con la nueva fecha de verificación |
 | US37 | Personalizar cuenta de perfil | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | EP04 | Empresario | **Escenario 1: Personalización exitosa**<br>Dado que el usuario registrado ha iniciado sesión y ha navegado a la página de 'Perfil'<br>Y selecciona la opción de "Información de la empresa"<br>Cuando el usuario agrega uno o más campos como Nombre de la empresa, dirección, cuidad, país, número de contacto y código postal<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema guarda y muestra la información agregada.<br><br>**Escenario 2: Personalización fallida**<br>Dado que el usuario registrado ha iniciado sesión y ha navegado a la página de 'Perfil'<br>Y selecciona la opción de "Información de la empresa"<br>Cuando el usuario intenta agregar información pero deja uno o más campos obligatorios vacíos (como Nombre de la empresa, dirección o número de contacto)<br>Y hace clic en el botón 'Guardar'<br>Entonces el sistema no permite actualizar los cambios |
-## 3.3. Product Backlog  
-# Product Backlog AventuraPe
-# Product Backlog - AventuraPe
+| US38 	| Opciones de Navegacion en la Intranet 	| El administrador necesita ver un navbar con opciones “Inicio”, “Buscar Actividades” y “Cerrar Sesión”.  	| EP07 	| Administrador 	| Escenario 1: Visualización del menú de navegación en todas las páginas<br>Dado que el administrador ha iniciado sesión en la intranet.<br>Cuando carga cualquier página de la intranet.<br>Entonces el sistema muestra un navbar fijo con los enlaces “Inicio”, “Buscar Actividades” y “Cerrar Sesión”.<br><br>Escenario 2: Redirección mediante el menú de navegación<br>Dado que el administrador visualiza el navbar en la intranet.<br>Cuando hace clic en alguna de las opciones “Inicio”, “Buscar Actividades” o “Cerrar Sesión”.<br>Entonces el sistema lo redirige correctamente a la sección correspondiente. 	| Intranet 	|
+| US39 	| Listar Actividades 	| El administrador necesita ver la lista de todas las actividades registradas en el sistema. 	| EP07 	| Administrador 	| Escenario 1: Visualización de la lista completa de actividades<br>Dado que el administrador está en la sección “Inicio”.<br>Cuando la página termina de cargar.<br>Entonces el sistema muestra una lista de todas las actividades con nombre, capacidad, imagen, precio y descripción.<br><br>Escenario 2: Lista vacía de actividades<br>Dado que el administrador está en la sección “Inicio”.<br>Cuando no existen actividades registradas.<br>Entonces el sistema muestra un mensaje indicando “No hay actividades registradas”. 	| Intranet 	|
+| US40 	| Eliminar Actividad 	| El administrador necesita poder eliminar una actividad del sistema. 	| EP07 	| Administrador 	| Escenario 1: Eliminación exitosa de una actividad<br>Dado que el administrador ve la lista de actividades en “Inicio”.<br>Cuando hace clic en “Eliminar” junto a una actividad y confirma la acción.<br>Entonces el sistema borra la actividad, actualiza la lista y envía un correo al empresario dueño notificando la eliminación.<br><br>Escenario 2: Cancelación de eliminación de una actividad<br>Dado que el administrador ve la lista de actividades en “Inicio”.<br>Cuando hace clic en “Eliminar” junto a una actividad pero cancela la acción.<br>Entonces el sistema no elimina la actividad y mantiene la lista sin cambios. 	| Intranet 	|
+| US41 	| Ver Detalle de Actividad 	| El administrador necesita poder ver el detalle completo de una actividad. 	| EP07 	| Administrador 	| Escenario 1: Visualización del detalle de una actividad<br>Dado que el administrador está en la lista de actividades.<br>Cuando hace clic en el nombre o imagen de una actividad.<br>Entonces el sistema muestra el detalle con imagen ampliada, información importante y sección de comentarios.<br><br>Escenario 2: Actividad sin comentarios<br>Dado que el administrador está en el detalle de una actividad.<br>Cuando la actividad no tiene comentarios registrados.<br>Entonces el sistema muestra la sección de comentarios con el mensaje “Aún no hay comentarios”. 	| Intranet 	|
+| US42 	| Eliminar Comentario 	| El administrador necesita poder eliminar comentarios inapropiados de una actividad. 	| EP07 	| Administrador 	| Escenario 1: Eliminación de comentario inapropiado<br>Dado que el administrador está viendo la sección de comentarios en el detalle de una actividad.<br>Cuando hace clic en “Eliminar” junto a un comentario y confirma.<br>Entonces el sistema borra el comentario y envía un correo al usuario notificando la eliminación por infracción de normas.<br><br>Escenario 2: Cancelación de eliminación de un comentario<br>Dado que el administrador está viendo la sección de comentarios en el detalle de una actividad.<br>Cuando hace clic en “Eliminar” junto a un comentario pero decide cancelar la acción.<br>Entonces el sistema no borra el comentario y permanece visible. 	| Intranet 	|
+| US43 	| Buscar Actividades por Nombre 	| El administrador necesita buscar actividades por su nombre en la intranet. 	| EP07 	| Administrador 	| Escenario 1: Búsqueda por nombre de actividad<br>Dado que el administrador está en la sección “Buscar Actividades”.<br>Cuando ingresa texto en el campo de búsqueda y pulsa “Buscar”.<br>Entonces el sistema filtra y muestra sólo las actividades cuyo nombre coincida.<br><br>Escenario 2: Búsqueda sin resultados<br>Dado que el administrador está en la sección “Buscar Actividades”.<br>Cuando ingresa un texto que no coincide con ninguna actividad y pulsa “Buscar”.<br>Entonces el sistema muestra un mensaje indicando “No se encontraron actividades con ese nombre”. 	| Intranet 	|
+| US44 	| Alternar Vista de Resultados 	| El administrador necesita alternar entre Vista de Lista y Vista de Cuadricula en la sección “Buscar Actividades”.  	| EP07 	| Administrador 	| Escenario 1: Vista en modo lista<br>Dado que el administrador ve resultados en “Buscar Actividades”.<br>Cuando selecciona “Vista de lista”<br>Entonces el sistema muestra los resultados en una columna.<br><br>Escenario 2: Vista en modo cuadricula<br>Dado que el administrador ve resultados en “Buscar Actividades”.<br>Cuando selecciona “Vista de cuadricula”<br>Entonces los resultados se ven en una grilla de 4 por fila. 	| Intranet 	|
+| US45 	| Cerrar Sesión 	| El administrador necesita cerrar su sesión para salir de la intranet de forma segura. 	| EP07 	| Administrador 	| Escenario 1: Cierre exitoso de sesión<br>Dado que el administrador está en cualquier sección de la intranet.<br>Cuando hace clic en “Cerrar Sesión”.<br>Entonces el sistema cierra la sesión y redirige al usuario a la página de login.<br><br>Escenario 2: Intento de acceder tras cerrar sesión<br>Dado que el administrador ha cerrado sesión previamente.<br>Cuando intenta acceder directamente a una URL interna de la intranet.<br>Entonces el sistema redirige automáticamente a la página de login y muestra un mensaje indicando que debe iniciar sesión. 	| Intranet 	|
 
-| ID | Nombre del User Story | Descripción | Story Points |
-|----|----------------------|-------------|--------------|
-| US01 | Interacción con hipervínculos | Como visitante, quiero interactuar con los enlaces de navegación para ir a las diferentes secciones de la plataforma web. | 3 |
-| US02 | Sección características | Como visitante, quiero ver una sección de servicios para entender qué ofrece AventuraPe. | 5 |
-| US03 | Sección Como Funciona | Como usuario nuevo quiero entender el proceso de funcionamiento de AventuraPe, para saber cómo registrarme y comenzar a usar la plataforma | 5 |
-| US04 | Sección Sobre Nosotros | Como visitante, quiero ver la sección "Sobre Nosotros" para conocer más sobre el propósito y valores de AventuraPe. | 3 |
-| US05 | Sección Testimonios | Como visitante, quiero leer testimonios de otros usuarios para confiar en los servicios de AventuraPe. | 5 |
-| US06 | Sección Planes | Como visitante, quiero ver la sección "Planes de Suscripción" claramente diferenciada, para entender las opciones disponibles y elegir la que mejor se adapte a mis necesidades. | 8 |
-| US07 | Iniciar sesión (Web - Aventurero) | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | 5 |
-| US08 | Iniciar sesión (Móvil - Aventurero) | Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. | 5 |
-| US09 | Creación de cuenta (Móvil - Aventurero) | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | 5 |
-| US10 | Creación de cuenta (Web - Aventurero) | Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. | 8 |
-| US11 | Configuración del perfil de aventurero | Como usuario aventurero registrado, quiero completar mi perfil personal para personalizar mi experiencia. | 5 |
-| US12 | Ver detalles de actividad (Web) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles como: Nombre de la actividad, cantidad de personas, duración y precio. | 5 |
-| US13 | Ver detalles de actividad (Móvil) | Como aventurero, quiero seleccionar una publicación para ver todos sus detalles en mi dispositivo móvil. | 5 |
-| US14 | Calificación de publicación (Móvil) | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | 3 |
-| US15 | Calificación de publicación (Web) | Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. | 5 |
-| US16 | Publicar reseña/comentario (Web) | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | 8 |
-| US17 | Publicar reseña/comentario (Móvil) | Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. | 3 |
-| US18 | Navegar interfaz home (Móvil) | Como aventurero, quiero ver una pantalla principal (home) con un resumen de actividades para tener una vista general al ingresar a la plataforma. | 5 |
-| US20 | Navegar interfaz home (Web) | Como aventurero, quiero ver una pantalla principal (home) con opciones claras para navegar por la plataforma desde mi computadora. | 5 |
-| US21 | Búsqueda por filtro | Como aventurero, quiero filtrar la lista de actividades por su nombre para encontrar rápidamente lo que busco. | 8 |
-| US22 | Gestión de Favoritos | Como aventurero, quiero guardar actividades como favoritos para poder acceder a ellas rápidamente más tarde. | 8 |
-| US23 | Iniciar sesión (Web - Empresario) | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | 5 |
-| US24 | Iniciar sesión (Móvil - Empresario) | Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. | 5 |
-| US25 | Creación de perfil (Móvil - Empresario) | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | 5 |
-| US26 | Creación de cuenta (Web - Empresario) | Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. | 8 |
-| US27 | Publicar actividad (Web) | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | 8 |
-| US28 | Publicar actividad (Móvil) | Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. | 8 |
-| US29 | Edición de actividad (Móvil) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | 5 |
-| US30 | Edición de actividad (Web) | Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. | 5 |
-| US31 | Borrar actividad (Móvil) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | 3 |
-| US32 | Borrar actividad (Web) | Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. | 5 |
-| US33 | Visualización de estadísticas (Móvil) | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | 8 |
-| US34 | Visualización de estadísticas (Web) | Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. | 8 |
-| US35 | Personalizar cuenta de perfil (Web) | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | 5 |
-| US36 | Gestión de Suscripción | Como empresario registrado, quiero gestionar mi suscripción para mantenerla activa. | 13 |
-| US37 | Personalizar cuenta de perfil (Móvil) | Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. | 5 |
+## 3.3. Product Backlog
+
+| ID 	| Nombre del User Story 	| Descripción 	| Story Points 	|
+|:---:	|:---:	|:---:	|:---:	|
+| US06 	| Sección Planes 	| Como visitante, quiero ver la sección "Planes de Suscripción" claramente diferenciada, para entender las opciones disponibles y elegir la que mejor se adapte a mis necesidades. 	| 8 	|
+| US12 	| Ver detalles de actividad 	| Como aventurero, quiero seleccionar una publicación para ver todos sus detalles como: Nombre de la actividad, cantidad de personas, duración y precio. 	| 8 	|
+| US13 	| Ver detalles de actividad 	| Como aventurero, quiero seleccionar una publicación para ver todos sus detalles en mi dispositivo móvil. 	| 8 	|
+| US16 	| Publicar reseña/comentario 	| Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. 	| 8 	|
+| US17 	| Publicar reseña/comentario 	| Como aventurero, quiero escribir y publicar una reseña/comentario sobre una actividad en la que participé para compartir mi experiencia detallada. 	| 8 	|
+| US21 	| Búsqueda por filtro 	| Como aventurero, quiero filtrar la lista de actividades por su nombre para encontrar rápidamente lo que busco. 	| 8 	|
+| US22 	| Gestión de Favoritos 	| Como aventurero , quiero guardar actividades como favoritos para poder acceder a ellas rápidamente más tarde. 	| 8 	|
+| US27 	| Publicar actividad 	| Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. 	| 8 	|
+| US28 	| Publicar actividad 	| Como empresario, quiero publicar los detalles de una nueva actividad o experiencia que ofrezco para atraer clientes aventureros. 	| 8 	|
+| US36 	| Gestión de Suscripción 	| Como empresario registrado, quiero gestionar mi suscripción para mantenerla activa. 	| 8 	|
+| US41 	| Ver Detalle de Actividad 	| El administrador necesita poder ver el detalle completo de una actividad. 	| 8 	|
+| US42 	| Eliminar Comentario 	| El administrador necesita poder eliminar comentarios inapropiados de una actividad. 	| 8 	|
+| US02 	| Sección características 	| Como visitante, quiero ver una sección de servicios para entender qué ofrece AventuraPe. 	| 5 	|
+| US03 	| Sección Como Funciona 	| Como usuario nuevo quiero entender el proceso de funcionamiento de AventuraPe, para saber cómo registrarme y comenzar a usar la plataforma 	| 5 	|
+| US05 	| Sección Testimonios 	| Como visitante, quiero leer testimonios de otros usuarios para confiar en los servicios de AventuraPe. 	| 5 	|
+| US07 	| Iniciar sesión 	| Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. 	| 5 	|
+| US08 	| Iniciar sesión 	| Como usuario aventurero registrado, quiero iniciar sesión con mis credenciales para acceder a mi cuenta y funcionalidades personalizadas. 	| 5 	|
+| US09 	| Creación de cuenta 	| Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. 	| 5 	|
+| US10 	| Creación de cuenta 	| Como nuevo usuario aventurero, quiero crear una cuenta para usar las funciones personalizadas de la plataforma. 	| 5 	|
+| US11 	| Configuración del perfil de aventurero 	| Como usuario aventurero registrado, quiero completar mi perfil personal para personalizar mi experiencia. 	| 5 	|
+| US14 	| Calificación de publicación 	| Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. 	| 5 	|
+| US15 	| Calificación de publicación 	| Como aventurero, quiero asignar una calificación a una actividad en la que participé para compartir mi valoración general. 	| 5 	|
+| US18 	| Navegar interfaz home 	| Como aventurero, quiero ver una pantalla principal (home) con un resumen de actividades para tener una vista general al ingresar a la plataforma. 	| 5 	|
+| US20 	| Navegar interfaz home 	| Como aventurero, quiero ver una pantalla principal (home) con opciones claras para navegar por la plataforma desde mi computadora. 	| 5 	|
+| US23 	| Iniciar sesión 	| Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. 	| 5 	|
+| US24 	| Iniciar sesión 	| Como usuario empresario registrado, quiero iniciar sesión con mis credenciales para acceder al panel de gestión de mi negocio. 	| 5 	|
+| US25 	| Creación de perfi 	| Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. 	| 5 	|
+| US26 	| Creación de cuenta 	| Como nuevo usuario empresario, quiero crear una cuenta de negocio para publicar actividades y gestionar mi presencia en la plataforma. 	| 5 	|
+| US29 	| Edición de actividad 	| Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. 	| 5 	|
+| US30 	| Edición de actividad 	| Como empresario, quiero editar los detalles de una actividad ya publicada para corregir información o actualizarla. 	| 5 	|
+| US31 	| Borrar actividad 	| Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. 	| 5 	|
+| US32 	| Borrar actividad 	| Como empresario, quiero borrar una actividad publicada que ya no está disponible o fue un error para mantener mi oferta actualizada. 	| 5 	|
+| US33 	| Visualización de estadísticas 	| Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. 	| 5 	|
+| US34 	| Visualización de estadísticas 	| Como empresario, quiero ver estadísticas sobre mis publicaciones para entender su rendimiento y popularidad. 	| 5 	|
+| US35 	| Personalizar cuenta de perfil 	| Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. 	| 5 	|
+| US37 	| Personalizar cuenta de perfil 	| Como empresario registrado, quiero editar la información de mi perfil para mantenerla actualizada. 	| 5 	|
+| US39 	| Listar Actividades 	| El administrador necesita ver la lista de todas las actividades registradas en el sistema. 	| 5 	|
+| US40 	| El administrador necesita poder eliminar una actividad del sistema. 	| El administrador necesita poder eliminar una actividad del sistema. 	| 5 	|
+| US01 	| Interacción con hipervínculos 	| Como visitante, quiero interactuar con los enlaces de navegación para ir a las diferentes secciones de la plataforma web. 	| 3 	|
+| US04 	| Sección Sobre Nosotros 	| Como visitante, quiero ver la sección "Sobre Nosotros" para conocer más sobre el propósito y valores de AventuraPe. 	| 3 	|
+| US38 	| Opciones de Navegacion en la Intranet 	| El administrador necesita ver un navbar con opciones “Inicio”, “Buscar Actividades” y “Cerrar Sesión”. 	| 3 	|
+| US43 	| Buscar Actividades por Nombre 	| El administrador necesita buscar actividades por su nombre en la intranet. 	| 3 	|
+| US44 	| Alternar Vista de Resultados 	| El administrador necesita alternar entre Vista de Lista y Vista de Cuadricula en la sección “Buscar Actividades”. 	| 3 	|
+| US45 	| Cerrar Sesión 	| El administrador necesita cerrar su sesión para salir de la intranet de forma segura. 	| 3 	|
+
 
 ## 3.4. Impact Mapping  
 
@@ -1963,17 +1979,32 @@ En el tercer sprint, nos centramos en desarrollar las funcionalidades esenciales
 
 | User Story ID 	| User Story Title 	| Task ID 	| Task Title 	| Description 	| Estimation (Hours) 	| Assigned To 	| Status 	|
 |:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
-| US04 	| Iniciar sesión (Web) 	| TA019 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
-|  	|  	| TA020 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
-|  	|  	| TA021 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
-| US04 	| Iniciar sesión (Movil) 	| TA022 	| Preparar ambiente en back para diferenciación 	| Implemntar diferencia entre movil y web 	| 2 	| Jair 	| Done 	|
-|  	|  	| TA023 	| Agregar verificacion de dos pasos 	| Implementar el servicio de correo front movil 	| 2 	| Jair 	| Done 	|
-| US06 	| Creación de cuenta (Web/Móvil) 	| TA019 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
-|  	|  	| TA020 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
-|  	|  	| TA021 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
+| US22 	| Gestión de Favoritos 	| TA1 	| Agregar favoritos 	| Implementar agregar a favoritos 	| 1 	| Barbara 	| Done 	|
+|  	|  	| TA2 	| Ver favoritos 	| Implementar la vista de favoritos 	| 1 	| Barbara 	| Done 	|
+|  	|  	| TA3 	| Eliminar favoritos 	| Implementar la función de eliminar de favoritos 	| 1 	| Barbara 	| Done 	|
+| US04 	| Iniciar sesión (Web) 	| TA1 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
+|  	|  	| TA2 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
+|  	|  	| TA3 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
+| US04 	| Iniciar sesión (Movil) 	| TA1 	| Preparar ambiente en back para diferenciación 	| Implemntar diferencia entre movil y web 	| 2 	| Jair 	| Done 	|
+|  	|  	| TA2 	| Agregar verificacion de dos pasos 	| Implementar el servicio de correo front movil 	| 2 	| Jair 	| Done 	|
+| US06 	| Creación de cuenta (Web/Móvil) 	| TA1 	| Agregar servicio externo de captcha 	| Configuración de Google captcha 	| 2 	| Jimena 	| Done 	|
+|  	|  	| TA2 	| Implementar servicio externo en back 	| Agregar key en propiedades 	| 1 	| Jimena 	| Done 	|
+|  	|  	| TA3 	| Implementar servicio externo en front 	| Agregar clave en sign in component 	| 2 	| Jimena 	| Done 	|
+| US38 	| Opciones de Navegacion en la Intranet 	| TA1 	| Implementar navigation bar 	| Implementacion de rutas para administrador 	| 2 	| Jose 	| Done 	|
+| US39 	| Listar Actividades 	| TA1 	| Mostrar actividades 	| Implmentar endpoint get de todas las actividades publicadas 	| 1 	| Estefano 	| Done 	|
+| US40 	| Eliminar Actividad 	| TA1 	| Borrar publicación 	| Implementación del endpoint de eliminar publicacion 	| 1 	| Jose 	| Done 	|
+|  	|  	| TA2 	| Agregar EmailJS 	| Implementación de envío de correo al propietario de la publicación al eliminar una publicación 	| 2 	| Jimena 	| Done 	|
+| US41 	| Ver Detalle de Actividad 	| TA1 	| Ver mas información 	| Implementar la vista de detalles de la actividad, para ver los comentarios 	| 1 	| Estefano 	| Done 	|
+| US42 	| Eliminar Comentario 	| TA1 	| Eliminar comentario 	| Implementar endpoint para borrar comentarios 	| 1 	| Jose 	| Done 	|
+|  	|  	| TA2 	| Agregar EmailJS 	| Implmentación de envío de correo al propietario del comentario al eliminar una comnetario 	| 2 	| Jimena 	| Done 	|
+| US43 	| Buscar Actividades por Nombre 	| TA1 	| Buscar actividad 	| Creacion de funcion para buscar actividades 	| 1 	| Jose 	| Done 	|
+| US44 	| Alternar Vista de Resultados 	| TA1 	| Cambiar de vista 	| Creacion de componente para cambiar de vista 	| 1 	| Estefano 	| Done 	|
+| US45 	| Cerrar Sesión 	| TA1 	| Cerrar sesion intranet 	| Implmentación de sign out de la intranet 	| 1 	| Jose 	| Done 	|
 
+<br>
 
 **Development Evidence for Sprint Review**
+
 | Repository 	| Branch 	| Commit ID 	| Commit Message 	| Commit Message Body 	| Committed on (Date) 	|
 |:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
 | https://github.com/upc-pre-202510-1ASI0732-4438-AventuraPE/aventurape-web-app 	| feature/IAM 	| 4bf1ff42282821f8ba54aa9a47a591b6cbfc9944 	| Google Captchasignin 	| feat: add google captcha in sing in 	| 05/05/2025 	|
