@@ -2648,6 +2648,7 @@ jobs:
           slot-name: 'Production'
           package: '*.jar'
 ```
+
 ## 7.4. Continuous Monitoring  
 ### 7.4.1. Tools and Practices  
 ### 7.4.2. Monitoring Pipeline Components  
@@ -2701,7 +2702,7 @@ jobs:
 
 AventuraPe es una aplicación móvil y web diseñada para conectar a los usuarios con micro aventuras locales sin necesidad de planificación extensa. En este video, mostramos cómo nuestra plataforma utiliza filtros y una interfaz intuitiva para ofrecer experiencias cercanas, auténticas y accesibles, fomentando además el crecimiento de negocios locales.
 
-<img src="images/video_about_the_product/video_about.png">
+![video_about_the_product](image-14.png)
 
 
 **ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)
