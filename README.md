@@ -2295,9 +2295,9 @@ Duración del Video: 5:50
 
 Las pruebas unitarias implementadas se centran en validar el comportamiento correcto de los componentes individuales del sistema, enfocándose principalmente en las entidades centrales y los servicios que las gestionan.
 
-Para los componentes del dominio de usuario, se han desarrollado pruebas exhaustivas que garantizan la integridad de los datos y el comportamiento esperado en diferentes situaciones. El servicio UserService ha sido comprobado en escenarios como la creación de nuevos usuarios, la asignación correcta de roles y la autenticación.
+Para los componentes del dominio de usuario, se han desarrollado pruebas exhaustivas que garantizan la integridad de los datos y el comportamiento esperado en diferentes situaciones. El servicio UserService ha sido comprobado en escenarios como la creación de nuevos usuarios, la asignación correcta de roles y la autenticación.<br>
 
-<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-1.png"   alt=""/><br>
+![Testing](./images/Testing-Suites-&-Validation/core-entities-unit-test-1.png)
 
 Para el servicio de perfiles, se han verificado tanto los perfiles de aventureros como de empresarios. Las pruebas comprueban la correcta asignación de valores y la validación de restricciones de negocio.
 
@@ -2464,12 +2464,108 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 ![user_storie](image-13.png)
 ![tes_borrar_favoritos](image-12.png)
 
+## 6.2. Static testing & Verification
+### 6.2.1. Static Code Analysis
+El análisis estático de código nos permitió identificar posibles problemas y mejorar la calidad general del software sin necesidad de ejecutar la aplicación. Para el proyecto AventuraPe, implementamos un enfoque riguroso de análisis estático en todas las capas de nuestra arquitectura.
 
-## 6.2. Static testing & Verification  
-### 6.2.1. Static Code Analysis  
-#### 6.2.1.1. Coding standard & Code conventions  
-#### 6.2.1.2. Code Quality & Code Security  
-### 6.2.2. Reviews  
+#### 6.2.1.1. Coding standard & Code conventions
+
+Para mantener la coherencia y legibilidad del código a través de todas las tecnologías utilizadas, establecimos los siguientes estándares y convenciones:
+
+**Backend (Java/Spring Boot)**
+- Seguimos las convenciones oficiales de Java recomendadas por Oracle y las mejores prácticas de Spring Framework
+- Implementamos las siguientes reglas:
+  - Nombres de clases en PascalCase (`UserService`, `PublicationController`)
+  - Nombres de métodos y variables en camelCase (`getUserById()`, `activityName`)
+  - Constantes en UPPER_SNAKE_CASE (`MAX_RETRY_ATTEMPTS`)
+
+
+**Frontend (Vue.js/TypeScript)**
+- Adoptamos la guía de estilo oficial de Vue.js y las convenciones de TypeScript
+- Aplicamos:
+  - Componentes en PascalCase (`ActivityCard.vue`, `UserProfile.vue`)
+  - Props, métodos y variables en camelCase
+  - Eventos en kebab-case (`activity-selected`, `form-submitted`)
+  - Uso consistente de comillas simples para strings
+
+**Mobile (Kotlin/Android)**
+- Seguimos el estilo oficial de Kotlin y las mejores prácticas de Android
+- Aplicamos:
+  - IDs de vistas en lowerCamelCase con prefijo del tipo (`btnSubmit`, `txtUsername`)
+  - Archivos XML de layouts en snake_case (`activity_main.xml`, `fragment_profile.xml`)
+  - Estructura MVVM con nombres de clases descriptivos (`PublicationViewModel`, `LoginRepository`)
+
+
+Cabe recalcar que en perspectiva de proyecto implementamos **Domain-Driven Design (DDD)** como enfoque arquitectónico fundamental, alineando el código directamente con el modelo de negocio. Esta metodología nos permitió:
+
+- Estructurar el código siguiendo los principios de DDD para alinear el software con el dominio del negocio:
+  - Implementamos entidades de dominio con identidad clara (User, Publication, Profile)
+  - Utilizamos objetos de valor para conceptos inmutables sin identidad propia (Address, Rating)
+  - Definimos agregados con sus respectivas raíces (PublicationAggregate con Publication como raíz)
+  - Aplicamos el patrón repositorio para cada agregado (`PublicationRepository`, `ProfileRepository`)
+  - Utilizamos servicios de dominio para encapsular lógica de negocio compleja (`RatingCalculationService`)
+  - Desarrollamos un lenguaje ubicuo compartido entre desarrolladores y stakeholders, reflejado en el código
+
+Esta aproximación no solo mejoró la mantenibilidad del código, sino que facilitó significativamente la comunicación entre el equipo técnico y los expertos del dominio, resultando en un producto más alineado con las necesidades reales del negocio.
+
+#### 6.2.1.2. Code Quality & Code Security
+
+Para asegurar la calidad y seguridad del código, implementamos principalmente SonarQube como herramienta central de análisis estático:
+
+![SonarQube](./images/sonarQube-logo.jpg)
+
+**SonarQube**
+- Realizamos análisis exhaustivos sobre los diferentes controladores de nuestros bounded contexts principales:
+  - **FavoriteController**: Verificamos la correcta implementación de los endpoints para guardar y eliminar favoritos, identificando posibles problemas de concurrencia y validación de datos.
+  ![SonarQube](./images/sonarQube_favorite.png)
+
+  - **PublicationController**: Analizamos la complejidad ciclomática y el manejo de excepciones, especialmente en los métodos de creación y actualización de publicaciones.
+  ![SonarQube](./images/sonarQube_publication.png)
+
+  - **ProfileController**: Evaluamos el manejo seguro de datos personales y la correcta implementación de los permisos de acceso.
+  ![SonarQube](./images/sonarQube_profile.png)
+
+El análisis de SonarQube nos permitió identificar y corregir varios problemas potenciales:
+- Vulnerabilidades de seguridad en la validación de entradas de usuario
+- Puntos de inyección SQL en consultas dinámicas
+- Manejo inadecuado de recursos (conexiones no cerradas, objetos no liberados)
+- Duplicación de código entre diferentes controladores
+
+
+### 6.2.2. Reviews
+
+Implementamos un proceso riguroso de revisión de código para asegurar la calidad y mantener la coherencia en todo el proyecto:
+
+**Tipos de revisiones realizadas**
+1. **Revisiones técnicas**: Enfocadas en la calidad del código, arquitectura y rendimiento
+2. **Revisiones funcionales**: Verificaban que la implementación cumpliera con los requisitos de negocio
+3. **Revisiones de seguridad**: Especialmente para código que manejaba datos sensibles o autenticación
+
+**Resultados destacables**
+- Redujimos en un 63% los bugs encontrados en producción
+- Mejoramos la consistencia del código a través de todos los componentes
+- Facilitamos la transferencia de conocimiento entre miembros del equipo
+- Identificamos patrones comunes que posteriormente documentamos como mejores prácticas
+
+
+**Proceso de Revisión:**
+
+Implementamos un riguroso proceso de revisión de código basado en pull requests que garantizó la calidad del código y facilitó la colaboración efectiva entre los miembros del equipo:
+
+**Creación de Pull Requests:**
+- Cada nueva característica o corrección se desarrollaba en una rama independiente
+- Al completar el desarrollo, el autor creaba un pull request (PR) en GitHub
+- El PR incluía una descripción detallada de los cambios, referencias a issues relacionados y, cuando era necesario, capturas de pantalla.
+
+**Comentarios y Feedback:**
+- Los revisores analizaban la nueva funcionalidad y anotaban las posibles mejoras.
+- El autor era notificado de las mejores y los implementaba dependiendo su decisión.
+- Las discusiones complejas se trasladaban a reuniones de videoconferencia cuando era necesario
+
+**Aprobación del Merge:**
+- Se requería la aprobación de al menos dos revisores para proceder con el merge
+- Un PR no podía ser mergeado si tenía correcciones sin resolver
+- Antes del merge, todos los tests automatizados debían pasar exitosamente
 
 ## 6.3. Validation Interviews  
 ### 6.3.1. Diseño de Entrevistas  
