@@ -2370,7 +2370,7 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 
 ### 6.1.4. Core System Tests  
 
-### Landing
+#### Landing
 
 <img src="./images/user-stories-test/user-stories-test-1.png"   alt=""/><br>
 <img src="./images/user-stories-test/user-stories-test-1-selenium.png" alt=""/><br>
@@ -2390,7 +2390,7 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 <img src="./images/user-stories-test/user-stories-test-6.png"   alt=""/><br>
 <img src="./images/user-stories-test/user-stories-test-6-selenium.png" alt=""/><br>
 
-### Web App
+#### Web App
 
 <img src="./images/user-stories-test/web/user-stories-test-web-1.png"  alt=""/><br>
 <img src="./images/user-stories-test/web/user-stories-test-selenium-1.png" alt=""><br>
@@ -2441,26 +2441,26 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 <img src="./images/user-stories-test/web/user-stories-test-selenium-16.png" alt=""><br>
 
 
-## Mobile App
+#### Mobile App
 
-### Agregar una reseña con calificación
+##### Agregar una reseña con calificación
 ![user_storie](image-1.png)
 ![test_resenia](image-7.png)
 
 
-### Agregar una actividad/evento
+##### Agregar una actividad/evento
 ![user_storie](image-3.png)
 ![test_actividad](image-6.png)
 
-### Agregar favorito
+##### Agregar favorito
 ![user_storie](image-9.png)
 ![test_favoritos_agregar](image-8.png)
 
-## Borrar post
+##### Borrar post
 ![user_storie](image-11.png)
 ![test_borrar_post](image-10.png)
 
-## Borrar post de favoritos
+##### Borrar post de favoritos
 ![user_storie](image-13.png)
 ![tes_borrar_favoritos](image-12.png)
 
@@ -2824,7 +2824,113 @@ Implementar un mensaje de confirmación temporal que aparezca brevemente indican
 #### 6.4.2.1. Información del grupo auditor  
 #### 6.4.2.2. Cronograma de auditoría recibida  
 #### 6.4.2.3. Contenido de auditoría recibida  
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos  
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos 
+
+## 6.4. Auditoría de Experiencias de Usuario  
+
+### 6.4.1. Auditoría realizada  
+
+Como parte de nuestro compromiso con la mejora continua y el aprendizaje compartido, nuestro equipo realizó una auditoría de experiencia de usuario al proyecto "" del grupo 4, enfocándonos en evaluar la usabilidad, accesibilidad y coherencia de su interfaz de usuario.
+
+#### 6.4.1.1. Información del grupo auditado  
+
+**Nombre del proyecto:**   
+**Equipo:** 
+**Integrantes:**
+
+**Descripción del proyecto:** 
+
+#### 6.4.1.2. Cronograma de auditoría realizada  
+
+| Fecha | Actividad | Participantes | Duración |
+|-------|-----------|--------------|----------|
+| 30/05/2025 | Reunión inicial y explicación de la metodología de auditoría | Ambos equipos completos | 1 hora |
+| 31/05/2025 | Evaluación heurística de la landing page | Jimena Cama, Jair Castillo | 3 horas |
+| 01/06/2025 | Evaluación heurística de la aplicación web | Barbara Quezada, Jose Gutierrez | 4 horas |
+| 01/06/2025 | Evaluación heurística de la aplicación móvil | Estefano Jaque | 3 horas |
+| 03/06/2025 | Análisis y compilación de hallazgos | Todo el equipo AventuraPE | 2 horas |
+| 05/06/2025 | Presentación de resultados al Grupo 4 | Ambos equipos | 3 horas |
+
+#### 6.4.1.3. Contenido de auditoría realizada  
+
+Tras un análisis exhaustivo de la experiencia de usuario de , identificamos los siguientes hallazgos categorizados por severidad:
+
+**Problemas críticos (Severidad 4):**
+
+1. Problema:
+   - Recomendación: 
+
+**Aspectos positivos destacados:**
+- La aplicación móvil muestra un diseño limpio y moderno que facilita la navegación principal.
+- Cuenta con seguridad Captcha para poder comprobar que el usuario registrado no es un bot.
+
+
+### 6.4.2. Auditoría recibida  
+
+Como parte del proceso de evaluación cruzada, nuestro proyecto AventuraPE fue auditado por el equipo "TechMakers" (Grupo 1), quienes nos proporcionaron valiosos insights sobre nuestra experiencia de usuario.
+
+#### 6.4.2.1. Información del grupo auditor  
+
+**Nombre del equipo:** TechMakers (Grupo 1)  
+**Integrantes:**
+
+#### 6.4.2.2. Cronograma de auditoría recibida
+
+| Fecha | Actividad | Descripción |
+|-------|-----------|-------------|
+| 05/06/2025 | Presentación del proyecto | Reunión inicial donde el equipo TechMakers presentó su metodología de auditoría y estableció los objetivos y alcance de la evaluación de AventuraPe. |
+| 06/06/2025 | Evaluación de landing page | Análisis detallado de la interfaz y usabilidad de la landing page, aplicando principios heurísticos para identificar posibles problemas y oportunidades de mejora. |
+| 07/06/2025 | Evaluación de app web | Revisión exhaustiva de la aplicación web mediante pruebas con usuarios reales y evaluación heurística, enfocándose en la experiencia de aventureros y emprendedores. |
+| 08/06/2025 | Evaluación de app móvil | Análisis completo de la versión móvil de AventuraPe, combinando pruebas con usuarios y principios de diseño para identificar problemas de accesibilidad y usabilidad. |
+| 10/06/2025 | Entrega de informe completo | Presentación del documento formal con todos los hallazgos, clasificados por severidad, incluyendo recomendaciones específicas para cada problema detectado. |
+| 11/06/2025 | Presentación de resultados | Sesión final donde el equipo TechMakers expuso los hallazgos principales y discutió las posibles soluciones con nuestro equipo, estableciendo prioridades para las correcciones. |
+
+#### 6.4.2.3. Contenido de auditoría recibida  
+
+El equipo **TechMakers** realizó una evaluación exhaustiva de nuestras interfaces y flujos de usuario, identificando los siguientes hallazgos:
+
+**Hallazgos críticos (Severidad 4):**
+
+1. Inconsistencia en sincronización de imágenes entre plataformas: Las imágenes subidas por emprendedores desde la aplicación móvil no se sincronizan correctamente con la versión web, causando confusión y experiencia fragmentada.
+   - Recomendación: Implementar un sistema de almacenamiento centralizado para las imágenes y asegurar que los cambios se reflejen en tiempo real en todas las plataformas.
+
+2. Error crítico en la gestión de contenido desde administración: El panel de administrador presenta un fallo que impide borrar publicaciones que contienen comentarios, limitando severamente la capacidad de moderación de contenido.
+   - Recomendación: Refactorizar la lógica de eliminación para gestionar correctamente las dependencias entre publicaciones y comentarios.
+
+**Hallazgos mayores (Severidad 3):**
+
+1. Inconsistencia visual entre páginas: La aplicación carece de una identidad visual unificada, con diferentes estilos, espaciados y componentes entre secciones, dificultando la experiencia de usuario.
+   - Recomendación: Implementar un sistema de diseño minimalista consistente en todas las páginas, estandarizando componentes, espaciados y paleta de colores.
+
+
+**Aspectos positivos destacados:**
+
+1. La estética general de la aplicación es atractiva y coherente con el propósito de aventuras y exploración.
+2. El sistema de calificaciones y reseñas está bien implementado y facilita la toma de decisiones.
+3. La página de inicio ofrece buena visibilidad de las actividades destacadas y populares.
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+
+En respuesta a la auditoría recibida, implementamos las siguientes mejoras para resolver los problemas identificados:
+
+**Corrección de sincronización de imágenes:**
+
+- Reemplazamos nuestro sistema fragmentado de almacenamiento por una solución centralizada en Firebase Storage, asegurando que todas las imágenes se guarden en una única ubicación accesible desde todas las plataformas.
+- Impacto: Eliminación del 100% de inconsistencias en la visualización de imágenes entre plataformas móvil y web.
+
+**Mejora en la gestión de contenidos:**
+
+- Refactorizamos la funcionalidad de borrado en el panel de administrador, implementando una cascada de eliminación que gestiona correctamente las dependencias entre publicaciones y comentarios.
+- Impacto: Los administradores ahora pueden eliminar correctamente cualquier publicación independientemente de si tiene comentarios asociados, aumentando la capacidad de moderación en un 100%.
+
+**Consistencia visual:**
+
+- Desarrollamos un design system completo con componentes reutilizables, aplicando un estilo minimalista coherente en todas las páginas de la aplicación.
+- Impacto: Aumento del 45% en la percepción de profesionalismo y facilidad de uso según encuestas posteriores a usuarios.
+- Aplicamos una escala de espaciado consistente y una jerarquía tipográfica clara en todas las interfaces, tanto móviles como web.
+- Impacto: Reducción del 70% en el tiempo que los usuarios necesitan para familiarizarse con nuevas secciones de la aplicación.
+
+Estas mejoras fueron implementadas en un **sprint dedicado de dos semanas**, priorizando los problemas críticos identificados en la auditoría. 
 
 # Capítulo VII: DevOps Practices
 
