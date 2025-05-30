@@ -2289,9 +2289,9 @@ Duración del Video: 5:50
 
 # Capítulo VI: Product Verification & Validation
 
-# 6.1. Testing Suites & Validation
+## 6.1. Testing Suites & Validation
 
-## 6.1.1. Core Entities Unit Tests
+### 6.1.1. Core Entities Unit Tests
 
 Las pruebas unitarias implementadas se centran en validar el comportamiento correcto de los componentes individuales del sistema, enfocándose principalmente en las entidades centrales y los servicios que las gestionan.
 
@@ -2311,7 +2311,7 @@ El servicio de publicaciones también ha sido rigurosamente probado, especialmen
 
 Estas pruebas unitarias han permitido identificar y corregir problemas en etapas tempranas del desarrollo, garantizando la solidez de los componentes fundamentales del sistema.
 
-## 6.1.2. Core Integration Tests
+### 6.1.2. Core Integration Tests
 
 Las pruebas de integración implementadas verifican la correcta interacción entre los diferentes componentes del sistema, con especial atención a la comunicación entre controladores, servicios y repositorios.
 
@@ -2479,7 +2479,6 @@ Para mantener la coherencia y legibilidad del código a través de todas las tec
   - Nombres de métodos y variables en camelCase (`getUserById()`, `activityName`)
   - Constantes en UPPER_SNAKE_CASE (`MAX_RETRY_ATTEMPTS`)
 
-
 **Frontend (Vue.js/TypeScript)**
 - Adoptamos la guía de estilo oficial de Vue.js y las convenciones de TypeScript
 - Aplicamos:
@@ -2495,7 +2494,6 @@ Para mantener la coherencia y legibilidad del código a través de todas las tec
   - Archivos XML de layouts en snake_case (`activity_main.xml`, `fragment_profile.xml`)
   - Estructura MVVM con nombres de clases descriptivos (`PublicationViewModel`, `LoginRepository`)
 
-
 Cabe recalcar que en perspectiva de proyecto implementamos **Domain-Driven Design (DDD)** como enfoque arquitectónico fundamental, alineando el código directamente con el modelo de negocio. Esta metodología nos permitió:
 
 - Estructurar el código siguiendo los principios de DDD para alinear el software con el dominio del negocio:
@@ -2506,23 +2504,23 @@ Cabe recalcar que en perspectiva de proyecto implementamos **Domain-Driven Desig
   - Utilizamos servicios de dominio para encapsular lógica de negocio compleja (`RatingCalculationService`)
   - Desarrollamos un lenguaje ubicuo compartido entre desarrolladores y stakeholders, reflejado en el código
 
-Esta aproximación no solo mejoró la mantenibilidad del código, sino que facilitó significativamente la comunicación entre el equipo técnico y los expertos del dominio, resultando en un producto más alineado con las necesidades reales del negocio.
-
 #### 6.2.1.2. Code Quality & Code Security
 
 Para asegurar la calidad y seguridad del código, implementamos principalmente SonarQube como herramienta central de análisis estático:
 
 ![SonarQube](./images/sonarQube-logo.jpg)
 
-**SonarQube**
-- Realizamos análisis exhaustivos sobre los diferentes controladores de nuestros bounded contexts principales:
-  - **FavoriteController**: Verificamos la correcta implementación de los endpoints para guardar y eliminar favoritos, identificando posibles problemas de concurrencia y validación de datos.
+**SonarQube:** Realizamos análisis exhaustivos sobre los diferentes controladores de nuestros bounded contexts principales:
+  - FavoriteController: Verificamos la correcta implementación de los endpoints para guardar y eliminar favoritos, identificando posibles problemas de concurrencia y validación de datos.
+
   ![SonarQube](./images/sonarQube_favorite.png)
 
-  - **PublicationController**: Analizamos la complejidad ciclomática y el manejo de excepciones, especialmente en los métodos de creación y actualización de publicaciones.
+  - PublicationController: Analizamos la complejidad ciclomática y el manejo de excepciones, especialmente en los métodos de creación y actualización de publicaciones.
+
   ![SonarQube](./images/sonarQube_publication.png)
 
-  - **ProfileController**: Evaluamos el manejo seguro de datos personales y la correcta implementación de los permisos de acceso.
+  - ProfileController: Evaluamos el manejo seguro de datos personales y la correcta implementación de los permisos de acceso.
+
   ![SonarQube](./images/sonarQube_profile.png)
 
 El análisis de SonarQube nos permitió identificar y corregir varios problemas potenciales:
@@ -2531,22 +2529,14 @@ El análisis de SonarQube nos permitió identificar y corregir varios problemas 
 - Manejo inadecuado de recursos (conexiones no cerradas, objetos no liberados)
 - Duplicación de código entre diferentes controladores
 
-
 ### 6.2.2. Reviews
 
 Implementamos un proceso riguroso de revisión de código para asegurar la calidad y mantener la coherencia en todo el proyecto:
 
 **Tipos de revisiones realizadas**
-1. **Revisiones técnicas**: Enfocadas en la calidad del código, arquitectura y rendimiento
-2. **Revisiones funcionales**: Verificaban que la implementación cumpliera con los requisitos de negocio
-3. **Revisiones de seguridad**: Especialmente para código que manejaba datos sensibles o autenticación
-
-**Resultados destacables**
-- Redujimos en un 63% los bugs encontrados en producción
-- Mejoramos la consistencia del código a través de todos los componentes
-- Facilitamos la transferencia de conocimiento entre miembros del equipo
-- Identificamos patrones comunes que posteriormente documentamos como mejores prácticas
-
+1. Revisiones técnicas: Enfocadas en la calidad del código, arquitectura y rendimiento
+2. Revisiones funcionales: Verificaban que la implementación cumpliera con los requisitos de negocio
+3. Revisiones de seguridad: Especialmente para código que manejaba datos sensibles o autenticación
 
 **Proceso de Revisión:**
 
@@ -2567,10 +2557,263 @@ Implementamos un riguroso proceso de revisión de código basado en pull request
 - Un PR no podía ser mergeado si tenía correcciones sin resolver
 - Antes del merge, todos los tests automatizados debían pasar exitosamente
 
-## 6.3. Validation Interviews  
-### 6.3.1. Diseño de Entrevistas  
-### 6.3.2. Registro de Entrevistas  
-### 6.3.3. Evaluaciones según heurísticas  
+**Resultados destacables**
+- Redujimos en un 63% los bugs encontrados en producción
+- Mejoramos la consistencia del código a través de todos los componentes
+- Facilitamos la transferencia de conocimiento entre miembros del equipo
+- Identificamos patrones comunes que posteriormente documentamos como mejores prácticas
+
+## 6.3. Validation Interviews
+
+En esta sección, presentamos el proceso de validación realizado con usuarios representativos de nuestros segmentos objetivo, aventureros y emprendedores. A través de entrevistas estructuradas, recopilamos feedback sobre la usabilidad, diseño y funcionalidad de nuestra **landing page y aplicaciones (web y móvil)** de AventuraPe.
+
+### 6.3.1. Diseño de Entrevistas
+
+Para validar nuestro producto con usuarios reales, diseñamos un conjunto de preguntas específicas para cada segmento de usuarios, siguiendo sus respectivos flujos de interacción con la plataforma. Este enfoque nos permitió evaluar la usabilidad desde la perspectiva particular de cada tipo de usuario.
+
+#### Preguntas para el segmento Aventurero:
+
+1. Sobre el proceso inicial: Cuéntanos tu experiencia al registrarte e iniciar sesión en la aplicación. ¿Qué aspectos te resultaron más intuitivos o confusos?
+
+2. Exploración y búsqueda: Describe cómo fue tu experiencia buscando actividades que te interesaran. ¿Cómo te resultó el proceso de filtrado y qué tan relevantes fueron los resultados que obtuviste?
+
+3. Interacción con actividades: Háblanos sobre tu experiencia al ver los detalles de una actividad y la facilidad para navegar entre las diferentes secciones. ¿Cómo evalúas la cantidad y calidad de la información presentada?
+
+4. Funcionalidades sociales: Explícanos cómo fue tu experiencia al guardar actividades en favoritos y al publicar reseñas. ¿Qué tan clara fue la respuesta del sistema al realizar estas acciones?
+
+#### Preguntas para el segmento Emprendedor:
+
+1. Proceso de registro y validación: Describe tu experiencia durante el proceso de registro como emprendedor y la configuración inicial de tu perfil de negocio. ¿Qué partes del proceso te parecieron más valiosas o complicadas?
+
+2. Creación y gestión de contenido: Cuéntanos cómo fue tu experiencia al crear, editar y gestionar tus actividades publicadas. ¿Qué aspectos de la interfaz facilitaron o dificultaron este proceso?
+
+3. Visualización de datos: ¿Cómo evalúas la sección de estadísticas y la información que proporciona sobre tus publicaciones? ¿Qué tan útil consideras esta información para tu negocio?
+
+4. Experiencia general: Desde tu perspectiva como emprendedor, ¿qué funcionalidades consideras más valiosas de la plataforma y qué mejoras sugerirías para optimizar tu experiencia?
+
+#### User Flows evaluados durante la entrevista:
+
+**Para Aventureros:**
+- Registro e inicio de sesión
+- Exploración y búsqueda de actividades
+- Filtrado de actividades por categoría/ubicación
+- Visualización de detalles de una actividad
+- Guardado de actividades en favoritos
+- Publicación de reseñas y calificaciones
+
+**Para Emprendedores:**
+- Registro e inicio de sesión
+- Creación de perfil de negocio
+- Publicación de una nueva actividad
+- Edición o eliminación de actividades existentes
+- Visualización de estadísticas
+- Gestión de suscripción
+
+### 6.3.2. Registro de Entrevistas
+
+#### Segmento: Aventureros
+
+**Entrevista 01**
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
+
+Duración: 
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+**Entrevista 02**
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
+
+Duración: 
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+**Entrevista 03**
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
+
+Duración: 
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+#### Segmento: Emprendedores
+
+**Entrevista 01**
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
+
+Duración: 
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+**Entrevista 02**
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
+
+Duración: 
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+**Entrevista 03**
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
+
+Duración: 
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+### 6.3.3. Evaluaciones según heurísticas
+
+#### UX Heuristics & Principles Evaluation
+Usability – Inclusive Design – Information Architecture
+
+#### SITE o APP A EVALUAR:
+AventuraPe (Aplicación Web y Móvil)
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Registro e inicio de sesión de usuarios (aventureros y emprendedores)
+2. Exploración y búsqueda de actividades
+3. Filtrado de actividades por categoría/ubicación
+4. Visualización de detalles de una actividad
+5. Guardado de actividades en favoritos
+6. Publicación de reseñas y calificaciones
+7. Creación de perfil de negocio
+8. Publicación de una nueva actividad
+9. Edición o eliminación de actividades existentes
+10. Visualización de estadísticas
+11. Funcionalidades de administrador de plataforma
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Procesamiento de pagos
+2. Chat directo entre aventureros y emprendedores
+3. Integración con redes sociales
+
+#### ESCALA DE SEVERIDAD:
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+<!--ejemplo
+| 1 | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco
+frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+-->
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | |
+| 2 | |
+| 3 | |
+| 4 | |
+
+#### TABLA RESUMEN:
+<!--ejemplo
+| 1 | No hay un control que permita regresar a la tienda
+durante el trámite de compra  | 3 | Usability: Libertad y control del
+usuario |
+-->
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|----------|---------------------|----------------------------------|
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+
+#### DESCRIPCIÓN DE PROBLEMAS:
+<!--ejemplo de como hacer la descripcion de problema
+##### PROBLEMA #1: Falta de retroalimentación visible al guardar elementos en favoritos
+**Severidad:** 2  
+**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+
+**Problema:**  
+Cuando un usuario guarda una actividad en favoritos, la aplicación no proporciona una confirmación clara de que la acción se ha realizado correctamente. El ícono de corazón cambia de color, pero varios usuarios reportaron incertidumbre sobre si la acción se había completado correctamente, especialmente con conexiones lentas.
+
+![Problema favoritos](./images/validacion/problema_favoritos.png)
+
+**Recomendación:**  
+Implementar un mensaje de confirmación temporal que aparezca brevemente indicando "Añadido a favoritos" o "Eliminado de favoritos" según corresponda. Este mensaje debe ser visible pero no intrusivo, y desaparecer automáticamente después de unos segundos. Además, se podría añadir una pequeña animación al icono de corazón para reforzar visualmente la acción realizada.
+-->
+
+##### PROBLEMA #1: 
+- Severidad: 
+- Heurística violada:
+- Problema:
+
+![Problema](./images/)
+
+- Recomendación:
+
+##### PROBLEMA #2: 
+- Severidad: 
+- Heurística violada:
+- Problema:
+
+![Problema](./images/)
+
+- Recomendación:
+
+##### PROBLEMA #3: 
+- Severidad: 
+- Heurística violada:
+- Problema:
+
+![Problema](./images/)
+
+- Recomendación:
+
+##### PROBLEMA #4: 
+- Severidad: 
+- Heurística violada:
+- Problema:
+
+![Problema](./images/)
+
+- Recomendación:
 
 ## 6.4. Auditoría de Experiencias de Usuario  
 ### 6.4.1. Auditoría realizada  
