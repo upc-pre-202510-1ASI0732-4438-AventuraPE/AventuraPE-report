@@ -2760,9 +2760,31 @@ Para asegurarnos de que nuestros servicios estén siempre disponibles, utilizamo
 ![Uptime Kuma](images/chapter-7/tools-and-practices/uptime-kuma.png)
 
 
-### 7.4.2. Monitoring Pipeline Components  
-### 7.4.3. Alerting Pipeline Components  
-### 7.4.4. Notification Pipeline Components  
+### 7.4.2. Monitoring Pipeline Components
+
+En ecosistemas de aplicaciones basados en Spring Boot y Vue.js, se implementa una estrategia integral de monitoreo que permite mantener visibilidad completa sobre el estado y rendimiento de los sistemas en tiempo real.
+
+Para aplicaciones con Spring Boot, se utiliza Micrometer junto con Prometheus como sistema de métricas. Micrometer actúa como una fachada de métricas que se integra nativamente con Spring Boot Actuator, permitiendo recopilar métricas detalladas sobre JVM, pools de conexiones, rendimiento de endpoints HTTP y métricas de negocio personalizadas. Prometheus, por su parte, almacena estas métricas de forma eficiente y proporciona un potente lenguaje de consulta (PromQL) para análisis avanzados.
+
+![grafana](images/chapter-7/tools-and-practices/grafana.png)
+
+Se complementa Prometheus con Grafana, que ofrece dashboards interactivos y altamente personalizables. Se crean paneles específicos para monitorear el rendimiento de nuestras APIs REST, uso de memoria, throughput de transacciones y métricas de la base de datos. La integración entre Grafana y Prometheus permite crear alertas visuales y realizar análisis históricos de tendencias.
+
+![prometheus](images/chapter-7/tools-and-practices/prometheus.png)
+
+Para aplicaciones con Vue.js, se utiliza Sentry, este proporciona monitoreo de errores en tiempo real, seguimiento de rendimiento y análisis de user sessions. Esta herramienta captura excepciones JavaScript, errores de red y problemas de rendimiento, enviando información detallada sobre el contexto y stack trace de cada incidencia.
+
+![sentry](images/chapter-7/tools-and-practices/sentry.png)
+
+
+### 7.4.3. Alerting Pipeline Components
+
+
+
+### 7.4.4. Notification Pipeline Components
+
+
+
 
 # Part III: Experiment-Driven Lifecycle  
 
