@@ -2723,7 +2723,43 @@ jobs:
 ```
 
 ## 7.4. Continuous Monitoring  
-### 7.4.1. Tools and Practices  
+### 7.4.1. Tools and Practices
+
+- Pruebas de carga y rendimiento
+
+Cuando necesitamos evaluar cómo responde una aplicación bajo condiciones de alta demanda, usamos JMeter (Apache). Esta herramienta nos permite simular múltiples usuarios enviando solicitudes simultáneas a nuestros servicios, lo que resulta ideal para pruebas de estrés, carga y rendimiento, tanto en aplicaciones web como en APIs REST y SOAP. De esta forma, identificamos cuellos de botella y optimizamos el desempeño antes de una implementación en producción.
+
+![apache](images/chapter-7/tools-and-practices/Apache_JMeter.png)
+
+- Monitoreo de experiencia del usuario (UX Monitoring)
+
+Para entender cómo interactúan los usuarios con nuestra plataforma y mejorar su experiencia, integramos herramientas como Matomo, una alternativa open source a Google Analytics. Con ella, realizamos un seguimiento detallado de visitas y eventos, manteniendo siempre el control total sobre los datos recopilados, lo cual refuerza nuestro compromiso con la privacidad.
+Complementamos esta información con Datadog, que nos brinda una visión completa del rendimiento de nuestras aplicaciones. A través del monitoreo de métricas, logs y rendimiento tanto del frontend como del backend, detectamos problemas en tiempo real y reaccionamos con agilidad ante cualquier incidencia.
+
+![matomo](images/chapter-7/tools-and-practices/matomo.png)
+
+![datadog](images/chapter-7/tools-and-practices/datadog.png)
+
+
+- Supervisión de APIs
+
+En cuanto a la supervisión de nuestras APIs, recurrimos a Hoppscotch, una herramienta ligera y de código abierto que utilizamos directamente desde el navegador. Gracias a su interfaz intuitiva, realizamos pruebas rápidas y colaborativas que nos ayudan a validar el comportamiento de los endpoints y a garantizar la fiabilidad de nuestras integraciones.
+
+![hoppscotch](images/chapter-7/tools-and-practices/hoppscotch.png)
+
+- Auditoría de calidad web (accesibilidad, SEO, rendimiento)
+
+Para asegurar que nuestras páginas web cumplan con los estándares de calidad, realizamos auditorías automáticas con Google Lighthouse. Esta herramienta analiza nuestras aplicaciones en términos de rendimiento, accesibilidad, optimización para motores de búsqueda (SEO) y buenas prácticas generales de desarrollo. Con sus reportes detallados, priorizamos mejoras técnicas y elevamos la calidad general de nuestras soluciones digitales.
+
+![Lighthouse](images/chapter-7/tools-and-practices/lighthouse.jpeg)
+
+- Monitoreo de disponibilidad y uptime
+
+Para asegurarnos de que nuestros servicios estén siempre disponibles, utilizamos Uptime Kuma, una solución de monitoreo autoalojada y de código abierto. Esta herramienta nos permite vigilar de forma continua la disponibilidad de APIs, sitios web y otros servicios críticos, generando alertas cuando detecta interrupciones y facilitando la trazabilidad de incidentes.
+
+![Uptime Kuma](images/chapter-7/tools-and-practices/uptime-kuma.png)
+
+
 ### 7.4.2. Monitoring Pipeline Components  
 ### 7.4.3. Alerting Pipeline Components  
 ### 7.4.4. Notification Pipeline Components  
