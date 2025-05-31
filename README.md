@@ -2871,6 +2871,19 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| 6 - Requiere configuración de service worker y backend notifications 	| 3 - Riesgo medio por permisos de usuario y posible spam 	| 7 - Potencial mejora en retención y reactivación de usuarios 	| 7 - Interés alto por estrategias de engagement 	| 23 	|
 
 
+### 8.1.4. Question Backlog
+
+| Prioridad 	| Pregunta 	|
+|:---:	|:---:	|
+| 8 	| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	|
+| 8 	| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	|
+| 5 	| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	|
+| 3 	| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	|
+| 2 	| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	|
+| 1 	| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	|
+
+
+
 ## 8.2. Experiment Design  
 ### 8.2.1. Hypotheses  
 ### 8.2.2. Measures  
