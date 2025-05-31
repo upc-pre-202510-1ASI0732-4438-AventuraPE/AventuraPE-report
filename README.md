@@ -2756,6 +2756,7 @@ Las funciones administrativas, específicamente la eliminación de comentarios, 
 La plataforma cuenta con un diseño completamente responsivo que se adapta adecuadamente a diferentes tamaños de pantalla y dispositivos. La interfaz de usuario mantiene su funcionalidad y usabilidad tanto en dispositivos desktop como tablet y móviles.
 
 - Aplicación móvil
+
 Se dispone de una aplicación móvil nativa de android que complementa la experiencia web, proporcionando acceso completo a las funcionalidades principales de la plataforma desde dispositivos móviles.<br>
 
 **Limitaciones**
@@ -2767,6 +2768,7 @@ Actualmente, la plataforma no cuenta con soporte para traducción a diferentes i
 - Modo oscuro
 
 La interfaz carece de modo oscuro como opción de visualización. Esta funcionalidad, cada vez más demandada por los usuarios modernos, no está disponible, lo que puede afectar la experiencia de uso en condiciones de poca luz o para usuarios que prefieren interfaces de bajo contraste.<br>
+
 
 **Oportunidades de mejora**
 
@@ -2791,11 +2793,72 @@ Optimización de la interfaz administrativa para operaciones frecuentes
 
 ### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
 
+**Assumptions**
+
+- Los tiempos de respuesta elevados se deben principalmente a consultas de base de datos no optimizadas
+- La latencia de red contribuye significativamente a los delays observados
+El backend Spring Boot puede soportar mayor concurrencia con optimizaciones menores
+- La aplicación Vue.js está realizando re-renders innecesarios después de operaciones CRUD
+- Los 3-4 segundos de delay en eliminaciones administrativas incluyen validaciones de seguridad adicionales
+- Los usuarios abandonan acciones si el feedback tarda más de 2 segundos
+La ausencia de modo oscuro afecta negativamente la retención de usuarios nocturnos
+- La falta de soporte multiidioma limita el crecimiento en mercados internacionales
+- Los usuarios móviles tienen expectativas de rendimiento similares a los de desktop
+- Las imágenes y assets no están siendo optimizados para carga rápida
 
 
-### 8.1.3. Experiment-Ready Questions  
-### 8.1.4. Question Backlog  
-### 8.1.5. Experiment Cards  
+**Knowlegde**
+
+- Métricas de usuario
+
+Para entender el comportamiento de los usuarios, es importante analizar la tasa exacta de abandono durante operaciones lentas, ya que permite identificar puntos críticos donde la experiencia se ve comprometida. Además, es necesario evaluar el impacto real de los delays en la satisfacción del usuario, lo cual puede incidir directamente en la retención. 
+
+Por otro lado, el porcentaje de usuarios que acceden desde dispositivos móviles frente a aquellos que utilizan desktop ofrece una visión clara para priorizar mejoras de usabilidad y diseño responsivo. Además de la necesidad de conocer la distribución geográfica de los usuarios potenciales, especialmente en regiones que requieren soporte multiidioma, con el fin de adaptar el sistema a sus necesidades lingüísticas y culturales.
+
+- Rendimiento técnico
+
+Es clave identificar cuellos de botella específicos en las consultas a la base de datos, ya que suelen representar una de las principales fuentes de lentitud en el sistema. Asimismo, la comparación entre el tiempo real de procesamiento en backend y la latencia de red permite obtener una imagen completa del rendimiento y de posibles puntos de optimización. 
+
+- Funcionalidades demandadas
+
+En cuanto a las funcionalidades, se debe conocer las preferencias reales de los usuarios respecto al uso del modo oscuro, ya que esta opción puede influir en la percepción de accesibilidad y personalización del sistema. También es esencial identificar los idiomas más demandados dentro de la base de usuarios.
+
+
+**Ideas**
+
+- Optimización de rendimiento
+
+  - Implementar caché Redis para consultas frecuentes de comentarios y actividades
+
+- Mejoras de UX/UI
+
+  - Feedback visual inmediato con estados de carga optimistas
+  - Modo oscuro implementado con CSS custom properties para switching rápido
+  - Tema system que respete preferencias del dispositivo del usuario
+
+- Funcionalidades nuevas
+
+  - Sistema i18n usando Vue I18n con lazy loading de traducciones
+  - Push notifications para comentarios y actividades importantes
+
+- Arquitectura y infraestructura
+
+  - Separación en microservicios para operaciones administrativas críticas
+  - Monitoring avanzado con métricas de business intelligence
+
+**Claims**
+
+- **Mejora de experiencia:** El modo oscuro puede mejorar significativamente la experiencia del usuario y la usabilidad, especialmente durante sesiones nocturnas o en ambientes con poca luz, lo que podría incrementar el tiempo de permanencia en la plataforma.
+
+- **Optimización de rendimiento:** La implementación de caché Redis y optimizaciones de consultas de base de datos puede reducir los tiempos de respuesta de comentarios y publicaciones en más del 50%, mejorando considerablemente la percepción de velocidad de la aplicación.
+
+- **Eficiencia administrativa:** La optimización de las operaciones administrativas, especialmente la eliminación de comentarios, puede reducir el tiempo de procesamiento de 3-4 segundos a menos de 1.5 segundos, incrementando significativamente la productividad del equipo de moderación.
+
+- **Expansión internacional:** La implementación de soporte multiidioma puede expandir la base de usuarios internacionales de manera considerable, al eliminar las barreras idiomáticas que actualmente limitan el alcance de la plataforma.
+
+- **Accesibilidad multiplataforma:** Se afirma que la sincronización mejorada entre la aplicación web y móvil, junto con notificaciones push, puede crear una experiencia unificada que incremente el engagement cross-platform de los usuarios.
+
+
 
 ## 8.2. Experiment Design  
 ### 8.2.1. Hypotheses  
