@@ -2793,7 +2793,11 @@ Se implementa Wazuh para detección de anomalías en logs y eventos de seguridad
 
 ### 7.4.4. Notification Pipeline Components
 
+El sistema de notificaciones está diseñado para ser flexible, escalable y capaz de llegar a los equipos correctos a través de múltiples canales según la naturaleza y severidad de cada incidencia.
 
+Se utiliza Gotify como servidor de notificaciones push autoalojado que centraliza el envío de mensajes a dispositivos móviles y aplicaciones web. Esta herramienta permite mantener control total sobre las notificaciones sin depender de servicios externos de terceros.Se configuran políticas de escalamiento que aumentan la urgencia y amplían el alcance de las notificaciones cuando las alertas no son reconocidas dentro de ventanas de tiempo predefinidas. Esto asegura que las incidencias críticas no pasen desapercibidas y reciban la atención necesaria de forma oportuna
+
+![gotify](images/chapter-7/tools-and-practices/gotify.png)
 
 
 
