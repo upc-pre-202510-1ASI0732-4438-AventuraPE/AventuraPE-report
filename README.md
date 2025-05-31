@@ -2733,8 +2733,66 @@ jobs:
 # Capítulo VIII: Experiment-Driven Development
 
 ## 8.1. Experiment Planning  
-### 8.1.1. As-Is Summary  
-### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims  
+### 8.1.1. As-Is Summary
+
+**Rendimiento de módulos**
+
+- Gestión de comentarios
+
+La funcionalidad de comentarios presenta tiempos de respuesta que impactan la experiencia del usuario. Al realizar un comentario, el sistema requiere aproximadamente 1.5 segundos para mostrar el contenido publicado. Esta latencia se observa consistentemente en todas las interacciones de comentarios y puede afectar la fluidez de la conversación entre usuarios.
+
+- Publicación de actividades
+
+El proceso de publicación de actividades muestra un tiempo de procesamiento de aproximadamente 2 segundos desde la confirmación hasta la visualización del contenido. Este delay, aunque no crítico, representa una oportunidad de mejora para optimizar la percepción de velocidad de la plataforma.
+
+- Operaciones administrativas
+
+Las funciones administrativas, específicamente la eliminación de comentarios, presentan los tiempos de respuesta más elevados del sistema. El proceso de borrado de comentarios requiere entre 3 y 4 segundos para completarse y reflejar los cambios en la interfaz. Esta latencia puede impactar significativamente la eficiencia de las tareas de moderación.<br>
+
+**Compatibilidad y accesibilidad**
+
+- Diseño responsivo
+
+La plataforma cuenta con un diseño completamente responsivo que se adapta adecuadamente a diferentes tamaños de pantalla y dispositivos. La interfaz de usuario mantiene su funcionalidad y usabilidad tanto en dispositivos desktop como tablet y móviles.
+
+- Aplicación móvil
+Se dispone de una aplicación móvil nativa de android que complementa la experiencia web, proporcionando acceso completo a las funcionalidades principales de la plataforma desde dispositivos móviles.<br>
+
+**Limitaciones**
+
+- Soporte multiidioma
+
+Actualmente, la plataforma no cuenta con soporte para traducción a diferentes idiomas. Esta limitación restringe el alcance de la aplicación a usuarios que manejen únicamente el idioma base del sistema, representando una barrera significativa para la expansión internacional o el servicio a comunidades multilingües.
+
+- Modo oscuro
+
+La interfaz carece de modo oscuro como opción de visualización. Esta funcionalidad, cada vez más demandada por los usuarios modernos, no está disponible, lo que puede afectar la experiencia de uso en condiciones de poca luz o para usuarios que prefieren interfaces de bajo contraste.<br>
+
+**Oportunidades de mejora**
+
+- Optimización de rendimiento
+
+Reducción de tiempos de respuesta en operaciones de comentarios
+Mejora de la velocidad de publicación de actividades
+Optimización crítica de las operaciones administrativas de eliminación
+
+- Expansión funcional
+
+Implementación de sistema de internacionalización (i18n)
+Desarrollo de modo oscuro/claro intercambiable
+Evaluación de cacheo y optimización de consultas de base de datos
+
+- Experiencia del usuario
+
+Implementación de indicadores de carga durante operaciones largas
+Feedback visual inmediato para acciones del usuario
+Optimización de la interfaz administrativa para operaciones frecuentes
+
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+
+
 ### 8.1.3. Experiment-Ready Questions  
 ### 8.1.4. Question Backlog  
 ### 8.1.5. Experiment Cards  
