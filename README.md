@@ -2859,6 +2859,17 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 - **Accesibilidad multiplataforma:** Se afirma que la sincronización mejorada entre la aplicación web y móvil, junto con notificaciones push, puede crear una experiencia unificada que incremente el engagement cross-platform de los usuarios.
 
 
+### 8.1.3. Experiment-Ready Questions
+
+| Question 	| Confidence 	| Risk 	| Impact 	| Interest 	| Total Score 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	| 8 - Tecnología madura y bien documentada, implementación directa con Spring Boot Data Redis 	| 3 - Riesgo medio por posible invalidación de caché y complejidad de configuración inicial 	| 9 - Mejora crítica en UX, directamente impacta satisfacción del usuario 	| 8 - Alto interés del equipo técnico, solución elegante a problema conocido 	| 28 	|
+| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	| 7 - Requiere análisis de queries existentes, pero técnicas conocidas de optimización 	| 2 - Bajo riesgo, cambios incrementales sin afectar funcionalidad 	| 8 - Impacto significativo en engagement de usuarios activos 	| 7 - Interés moderado-alto, mejora técnica importante 	| 24 	|
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| 6 - Funcionalidad popular, aunque requiere revisión completa de estilos CSS 	| 2 - Bajo riesgo, implementación técnica estándar 	| 6 - Mejora la experiencia del usuario, pero no es crítica 	| 9 - Muy alto interés de usuarios, especialmente aquellos que utilizan la aplicación en entornos oscuros 	| 22 	|
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| 8 - Problema identificado claramente, soluciones técnicas conocidas 	| 4 - Riesgo medio-alto por impacto en operaciones críticas de moderación 	| 9 - Impacto directo en eficiencia del equipo administrativo 	| 7 - Interés alto del equipo operativo por productividad 	| 28 	|
+| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| 4 - Implementación compleja, requiere reestructuración de contenido existente 	| 5 - Alto riesgo por impacto en toda la aplicación y mantenimiento futuro 	| 9 - Potencial expansión significativa del mercado objetivo 	| 7 - Interés alto por oportunidades de crecimiento internacional 	| 25 	|
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| 6 - Requiere configuración de service worker y backend notifications 	| 3 - Riesgo medio por permisos de usuario y posible spam 	| 7 - Potencial mejora en retención y reactivación de usuarios 	| 7 - Interés alto por estrategias de engagement 	| 23 	|
+
 
 ## 8.2. Experiment Design  
 ### 8.2.1. Hypotheses  
