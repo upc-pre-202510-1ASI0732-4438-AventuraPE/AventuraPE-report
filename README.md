@@ -2779,9 +2779,20 @@ Para aplicaciones con Vue.js, se utiliza Sentry, este proporciona monitoreo de e
 
 ### 7.4.3. Alerting Pipeline Components
 
+El sistema de alertas está diseñado para proporcionar notificaciones proactivas y contextuales que permitan responder rápidamente ante cualquier anomalía o degradación del servicio.
+
+Se implementa Alertmanager como componente central del sistema de alertas. Esta herramienta se integra directamente con Prometheus y permite definir reglas de alertas basadas en métricas, agrupar alertas relacionadas, aplicar políticas de silenciamiento y enrutar notificaciones según su severidad y contexto.
+Se configuran alertas específicas para aplicaciones Spring Boot que monitorean tiempo de respuesta de endpoints, tasas de error HTTP, conexiones de base de datos activas y métricas de garbage collection de la JVM. Estas alertas ayudan a identificar degradaciones de rendimiento o problemas de capacidad antes de que impacten significativamente a los usuarios.
+
+![alert_manager](images/chapter-7/tools-and-practices/prometheus_alert_manager.png)
+
+Se implementa Wazuh para detección de anomalías en logs y eventos de seguridad. Esta herramienta analiza patrones de comportamiento y alerta sobre actividades sospechosas, intentos de acceso no autorizado o cambios inesperados en los patrones de uso de las aplicaciones.
+
+![wazuh](images/chapter-7/tools-and-practices/wazuh.png)
 
 
 ### 7.4.4. Notification Pipeline Components
+
 
 
 
