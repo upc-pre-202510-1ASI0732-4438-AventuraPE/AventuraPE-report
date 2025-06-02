@@ -2894,12 +2894,94 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| Implementar sistema de notificaciones push web usando Service Workers, con segmentación por comportamiento de usuario 	| 35% de usuarios registrados se vuelven inactivos después de 2 semanas. Falta mecanismo para reactivar usuarios dormidos 	| Si implementamos notificaciones push segmentadas, entonces incrementaremos el re-engagement de usuarios inactivos en un 30%, porque les recordaremos contenido relevante y nuevas actividades 	|
 
 ## 8.2. Experiment Design  
-### 8.2.1. Hypotheses  
-### 8.2.2. Measures  
-### 8.2.3. Conditions  
-### 8.2.4. Scale Calculations and Decisions  
-### 8.2.5. Methods Selection  
+### 8.2.1. Hypotheses
+#### Card 1: Redis Cache for Comments
+
+|              | Hypothesis                                                                                                                    |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Question**      | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a menos de 800 ms?                       |
+| **Belief**        | Los comentarios representan el 60 % de las consultas a la base de datos y el tiempo actual de 1.5 s impacta UX.         |
+| **Hypothesis**    | Si implementamos un sistema de caché Redis para comentarios, entonces reduciremos el tiempo de respuesta a < 800 ms.      |
+| **Null Hypothesis** | La implementación de caché Redis no reducirá significativamente el tiempo de respuesta, manteniéndose ~ 1.5 s.         |
+
+#### Card 2: Optimización de Operaciones Administrativas
+
+|              | Hypothesis                                                                                                                          |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| **Question**      | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a menos de 1.5 s?            |
+| **Belief**        | Moderadores reportan frustración por la lentitud (3–4 s), impactando la productividad del equipo de moderación.               |
+| **Hypothesis**    | Si optimizamos consultas de eliminación (índices y soft delete), entonces reduciremos el tiempo a < 1.5 s.                       |
+| **Null Hypothesis** | Las optimizaciones no cambiarán significativamente el tiempo de eliminación, manteniéndose entre 3 y 4 s.                      |
+
+
+### 8.2.2. Measures
+
+#### Card 1: Redis Cache for Comments
+
+|         | Measure                                                                                         |
+|--------------|-----------------------------------------------------------------------------------------------|
+| **Question** | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a < 800 ms?   |
+| **Measure**  | Tiempo medio de respuesta de la API de comentarios (ms) medido en 100 solicitudes consecutivas. |
+
+#### Card 2: Optimización de Operaciones Administrativas
+
+|         | Measure                                                                                                      |
+|--------------|------------------------------------------------------------------------------------------------------------|
+| **Question** | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? |
+| **Measure**  | Tiempo medio de ejecución de la operación de eliminación de comentario (ms) medido en 50 operaciones sucesivas. |
+
+### 8.2.3. Conditions
+
+#### Card 1: Redis Cache for Comments
+
+| Question                  | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a < 800 ms?                                                                                                            |
+|------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Experimental Condition** | Caché Redis habilitado para la ruta de comentarios; medición de tiempos tras poblado inicial de caché.          |
+| **Control Condition**      | Caché Redis deshabilitado (comportamiento actual); medición de tiempos en entorno de producción simulado.    |
+
+#### Card 2: Optimización de Operaciones Administrativas
+
+| Question                  | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s?                                                                                                            |
+|------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Experimental Condition** | Consultas de eliminación optimizadas (índices y soft delete) desplegadas en entorno de pruebas.                 |
+| **Control Condition**      | Código actual sin optimizaciones, ejecutado en el mismo entorno de pruebas y con la misma carga de trabajo.  |
+
+### 8.2.4. Scale Calculations and Decisions
+
+Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis. Cada hipótesis se asocia con una **Scale Calculation**, una **Decision**, y se clasifica en un factor de éxito: Desfavorable, Aceptable, Ideal o Excelente.
+
+| Question                                                                                                  | Scale Calculation                                                                                                                                                                                                                                                                                                                                                       | Decision                                                                                                               | Desfavorable | Aceptable | Ideal | Excelente |
+|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------|-----------|-------|-----------|
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a menos de 800 ms?        | Creemos que al implementar caché Redis reduciremos el tiempo medio de respuesta de comentarios de 1.5 s a ≤ 800 ms.  <br>• Excelente: ≤ 600 ms  <br>• Ideal: ≤ 800 ms  <br>• Aceptable: 800–1 500 ms  <br>• Desfavorable: > 1 500 ms                                                                                                              | Activar Redis Cache en endpoints de comentarios para disminuir carga en BD.                                            |              |           |   X   |           |
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? | Creemos que al optimizar consultas (índices, soft delete) reduciremos el tiempo de eliminación de comentarios de 3–4 s a ≤ 1.5 s.  <br>• Excelente: ≤ 1.125 s  <br>• Ideal: ≤ 1.5 s  <br>• Aceptable: 1.5–3 s  <br>• Desfavorable: > 3 s                                                                                                     | Refactorizar queries y aplicar índices adecuados para operaciones administrativas.                                     |              |     X     |       |           |
+| ¿El soporte multiidioma incrementará los registros internacionales en un 40 % en 6 meses?                  | Creemos que al añadir i18n aumentaremos registros internacionales ≥ 40 % en 6 meses.  <br>• Excelente: ≥ 50 %  <br>• Ideal: ≥ 40 %  <br>• Aceptable: 20–40 %  <br>• Desfavorable: < 20 %                                                                                                                                                                              | Implementar soporte de español e inglés en toda la interfaz y contenido.                                              |              |     X     |       |           |
+| ¿Optimizar consultas de base de datos mejorará el tiempo de publicación de actividades de 2 s a < 1 s?     | Creemos que al refactorizar queries y añadir índices reduciremos el tiempo de publicación de 2 s a ≤ 1 s.  <br>• Excelente: ≤ 0.75 s  <br>• Ideal: ≤ 1 s  <br>• Aceptable: 1–2 s  <br>• Desfavorable: > 2 s                                                                                                                                                | Optimizar queries N+1 e índices en módulo de actividades antes de producción.                                          |              |           |   X   |           |
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios nocturnos en un 25 %?                         | Creemos que al implementar modo oscuro aumentaremos el tiempo de sesión de usuarios nocturnos (6PM–6AM) en ≥ 25 %.  <br>• Excelente: ≥ 30 %  <br>• Ideal: ≥ 25 %  <br>• Aceptable: 15–25 %  <br>• Desfavorable: < 15 %                                                                                                                                                   | Añadir switcher de tema claro/oscuro, respetando preferencias del sistema.                                             |              |           |   X   |           |
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos en un 30 %?                      | Creemos que al implementar notificaciones push segmentadas incrementaremos el re-engagement ≥ 30 %.  <br>• Excelente: ≥ 40 %  <br>• Ideal: ≥ 30 %  <br>• Aceptable: 20–30 %  <br>• Desfavorable: < 20 %                                                                                                                                                                 | Configurar y enviar notificaciones push web basadas en comportamiento de usuario.                                     |              |           |   X   |           |
+
+
+### 8.2.5. Methods Selection
+
+Para validar el rendimiento, la usabilidad y la escalabilidad de **AventuraPe**, hemos seleccionado un conjunto de herramientas que cubren pruebas funcionales, de carga, medición de métricas reales y análisis de experiencia de usuario:
+
+| Herramienta        | Precio                              | Capacidad de Análisis                                                                                   | Sencillez                                                   | Ventajas                                                                                                  |
+|--------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| **Google Analytics** | Plan gratuito con límites          | Seguimiento de sesiones, flujo de usuarios, tasa de rebote, conversiones de reserva                     | Interfaz intuitiva y dashboards preconfigurados             | Permite entender el comportamiento real de los aventureros y medir aceptación de nuevas funcionalidades   |
+| **Lighthouse**     | Gratuito, CLI y extensión de Chrome | Auditoría automática de rendimiento, accesibilidad, buenas prácticas y SEO en cada página de la SPA     | Reportes claros con puntuaciones de 0 a 100 y recomendaciones | Ofrece guías concretas para optimizar tiempo de carga, interactividad y experiencia en dispositivos móviles |
+| **WebPageTest**    | Gratuito                            | Análisis detallado de tiempos de carga (TTFB, First Paint, Speed Index) desde múltiples ubicaciones     | Panel web sencillo, requiere configurar URL y ubicación     | Simula condiciones de red reales y permite comparar medianas de rendimiento geográfico                     |
+| **Selenium**       | Gratuito, código abierto            | Pruebas funcionales automatizadas de flujo de usuario (login, búsqueda, reserva, “Sorpréndeme”)         | Requiere scripting (JavaScript/Python), scripts reutilizables | Verifica que el frontend responda correctamente a interacciones críticas sin intervención manual           |
+| **Apache JMeter**  | Gratuito, código abierto            | Pruebas de carga y estrés del backend (API de reservas, listado de aventuras, sistema de comentarios)   | Interfaz gráfica con plantillas de test, curva de aprendizaje | Evalúa la capacidad de Aventura.pe para soportar múltiples usuarios concurrentes y detectar cuellos de botella |
+
+Cada herramienta aborda un aspecto clave de la calidad de **AventuraPe**:
+- **Google Analytics** y **Lighthouse** cubren la percepción y experiencia de usuario real.
+- **WebPageTest** mide tiempos de carga en distintos entornos.
+- **Selenium** asegura que las rutas críticas de usuario funcionen tras cada despliegue.
+- **JMeter** verifica la escalabilidad y estabilidad del sistema bajo carga.
+
+Con esta selección, podemos tomar decisiones informadas para optimizar la plataforma antes y después de cada lanzamiento.  
+
 ### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection  
+
 ### 8.2.7. Web and Mobile Tracking Plan  
 
 ## 8.3. Experimentation  
