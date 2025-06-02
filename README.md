@@ -2980,7 +2980,53 @@ Cada herramienta aborda un aspecto clave de la calidad de **AventuraPe**:
 
 Con esta selección, podemos tomar decisiones informadas para optimizar la plataforma antes y después de cada lanzamiento.  
 
-### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection  
+### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
+### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
+
+Para asegurar que **AventuraPe** ofrezca una experiencia óptima a todos los usuarios, realizamos auditorías con **Lighthouse** en las tres vistas principales de la aplicación:  
+- **Panel de Administrador**  
+- **Interfaz de Aventurero**  
+- **Panel de Emprendedor**  
+
+Con estos informes definimos **objetivos**, **KPIs** y **métricas** clave, y comprobamos los resultados reales obtenidos tras el despliegue.
+
+#### Resultados de Lighthouse
+
+| Segmento      | Performance | Accessibility | Best Practices | SEO |
+|---------------|:-----------:|:-------------:|:--------------:|:---:|
+| Aventurero    |     94      |      94       |       96       |  83 |
+| Emprendedor   |     93      |      94       |       96       |  83 |
+| Administrador |     99      |      94       |       96       |  83 |
+
+#### Evidencia de auditoría Lighthouse
+
+![Lighthouse Aventurero](./images/chapter8/aventurerosinsight.png)
+![Lighthouse Emprendedor](./images/chapter8/emprendedorinsight.png)
+![Lighthouse Administrador](./images/chapter8/admininsight.png)
+
+---
+
+#### Objetivos y KPIs
+
+| Objetivo                                    | KPI (meta)                    | Resultado (Lighthouse)                    |
+|---------------------------------------------|-------------------------------|-------------------------------------------|
+| Cargar rápidamente la vista de Aventurero   | Performance ≥ 90              | 94                                        |
+| Garantizar accesibilidad en móviles         | Accessibility ≥ 95            | 94                                        |
+| Cumplir buenas prácticas de desarrollo      | Best Practices ≥ 90           | 96                                        |
+| Optimizar visibilidad de contenido          | SEO ≥ 80                      | 83                                        |
+|---------------------------------------------|-------------------------------|-------------------------------------------|
+| Cargar rápidamente la vista de Emprendedor  | Performance ≥ 90              | 93                                        |
+| Garantizar accesibilidad en escritorio      | Accessibility ≥ 90            | 94                                        |
+| Cumplir buenas prácticas de desarrollo      | Best Practices ≥ 90           | 96                                        |
+| Optimizar visibilidad de contenido          | SEO ≥ 80                      | 83                                        |
+|---------------------------------------------|-------------------------------|-------------------------------------------|
+| Cargar rápidamente el panel de Admin        | Performance ≥ 95              | 99                                        |
+| Asegurar interfaz accesible                 | Accessibility ≥ 95            | 94                                        |
+| Cumplir mejores prácticas críticas          | Best Practices ≥ 95           | 96                                        |
+| Mantener SEO básico                         | SEO ≥ 80                      | 83                                        |
+
+Estos resultados muestran que, tras el despliegue, **AventuraPe** cumple o supera la mayoría de los objetivos de rendimiento, accesibilidad y buenas prácticas, con espacio de mejora continua en SEO para todas las vistas.
+
 
 ### 8.2.7. Web and Mobile Tracking Plan  
 
