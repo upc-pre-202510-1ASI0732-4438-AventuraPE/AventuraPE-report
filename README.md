@@ -2914,8 +2914,31 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 #### 8.3.3.6. Team Collaboration Insights  
 
 ### 8.3.4. To-Be Validation Interviews  
-#### 8.3.4.1. Diseño de Entrevistas  
+#### 8.3.4.1. Diseño de Entrevistas
+
+#### Preguntas para el segmento Aventurero:
+
+1. Sobre el proceso inicial: Cuéntanos tu experiencia al registrarte e iniciar sesión en la aplicación. ¿Qué aspectos te resultaron más intuitivos o confusos?
+
+2. Exploración y búsqueda: Describe cómo fue tu experiencia buscando actividades que te interesaran. ¿Cómo te resultó el proceso de filtrado y qué tan relevantes fueron los resultados que obtuviste?
+
+3. Interacción con actividades: Háblanos sobre tu experiencia al ver los detalles de una actividad y la facilidad para navegar entre las diferentes secciones. ¿Cómo evalúas la cantidad y calidad de la información presentada?
+
+4. Funcionalidades sociales: Explícanos cómo fue tu experiencia al guardar actividades en favoritos y al publicar reseñas. ¿Qué tan clara fue la respuesta del sistema al realizar estas acciones?
+
+
+#### Preguntas para el segmento Emprendedor:
+
+1. Proceso de registro y validación: Describe tu experiencia durante el proceso de registro como emprendedor y la configuración inicial de tu perfil de negocio. ¿Qué partes del proceso te parecieron más valiosas o complicadas?
+
+2. Creación y gestión de contenido: Cuéntanos cómo fue tu experiencia al crear, editar y gestionar tus actividades publicadas. ¿Qué aspectos de la interfaz facilitaron o dificultaron este proceso?
+
+3. Visualización de datos: ¿Cómo evalúas la sección de estadísticas y la información que proporciona sobre tus publicaciones? ¿Qué tan útil consideras esta información para tu negocio?
+
+4. Experiencia general: Desde tu perspectiva como emprendedor, ¿qué funcionalidades consideras más valiosas de la plataforma y qué mejoras sugerirías para optimizar tu experiencia?
+
 #### 8.3.4.2. Registro de Entrevistas  
+
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
