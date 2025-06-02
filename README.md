@@ -2939,6 +2939,66 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 
 #### 8.3.4.2. Registro de Entrevistas  
 
+#### Sección aventureros
+
+1. 
+- **Entrevistado**: Salvador Diaz Aguirre
+- **Duración**: 7:15
+- **Resumen**: El entrevistado comentó sobre lafacilidad de la interacción con la página, también la buena armonía de colores. Por otr lado, menciono áreas de mejor, como la confusión por algunos textos en inglés, una dificultad con el botón de favoritos y likes.
+- **Link**: [https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing](https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing)
+
+![entrevista_salvador](image-15.png)
+
+2. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+3. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+4. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+5. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+
+#### Sección emprendedores
+
+1. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+2. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+3. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+4. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
