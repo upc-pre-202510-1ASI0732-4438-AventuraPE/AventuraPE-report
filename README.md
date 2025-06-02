@@ -2981,7 +2981,6 @@ Cada herramienta aborda un aspecto clave de la calidad de **AventuraPe**:
 Con esta selección, podemos tomar decisiones informadas para optimizar la plataforma antes y después de cada lanzamiento.  
 
 ### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
-### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
 
 Para asegurar que **AventuraPe** ofrezca una experiencia óptima a todos los usuarios, realizamos auditorías con **Lighthouse** en las tres vistas principales de la aplicación:  
 - **Panel de Administrador**  
