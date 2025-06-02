@@ -2502,7 +2502,9 @@ Para garantizar que nuestras soluciones satisfagan tanto los requerimientos func
 | **JUnit**    | Framework de pruebas (TDD)         | Permite realizar pruebas unitarias sobre pequeños bloques de código Java.  | Ejecutar pruebas automatizadas que verifiquen el correcto funcionamiento de las funcionalidades desarrolladas.          |
 | **Mockito**  | Librería de simulación (TDD)       | Facilita la creación de objetos simulados para pruebas.                    | Reproducir el comportamiento de componentes externos, permitiendo pruebas más precisas y controladas.                   |
 | **Cucumber** | Herramienta de pruebas (BDD)       | Utiliza el lenguaje Gherkin para definir escenarios basados en comportamiento. | Redactar pruebas comprensibles para todos los actores del proyecto, alineando el desarrollo con las necesidades del negocio. |  
+| **GitHub Actions**  | Plataforma de CI/CD                | Automatiza flujos de trabajo definidos en YAML dentro del repositorio.     | Dispara compilación, pruebas unitarias/integración y análisis estático en cada `push` o `pull request`.                 |
 
+Cada vez que un desarrollador hace `push` o abre un `pull request`, GitHub Actions ejecuta automáticamente nuestro pipeline de CI, validando compilación, pruebas y calidad de código antes de permitir cualquier merge a las ramas protegidas (`develop`, `main` y `feat/deploy`).
 ### 7.1.2. Build & Test Suite Pipeline Components  
 
 ![alt text](images/Testing-Suites-&-Validation/core-integration-tests-1.png) 
