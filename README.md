@@ -2944,10 +2944,11 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 1. 
 - **Entrevistado**: Salvador Diaz Aguirre
 - **Duración**: 7:15
-- **Resumen**: El entrevistado comentó sobre lafacilidad de la interacción con la página, también la buena armonía de colores. Por otr lado, menciono áreas de mejor, como la confusión por algunos textos en inglés, una dificultad con el botón de favoritos y likes.
+- **Resumen**: El entrevistado comentó sobre la facilidad de interacción con la página web, mencionó la armonía de colores que contribuye a una experiencia visual agradable y profesional. No obstante, identificó varias áreas de mejora que afectan la usabilidad general de la plataforma. Por un lado, expresó confusión por la presencia de textos en inglés que no están traducidos al español, lo cual genera barreras de comprensión para usuarios hispanohablantes. Asimismo, experimentó dificultades técnicas con la funcionalidad de favoritos y likes, reportando que estos botones no respondían correctamente o no guardaban las preferencias del usuario. Adicionalmente, sugirió mejorar la velocidad de carga de ciertas secciones, optimizar la navegación móvil para una mejor experiencia táctil, y implementar notificaciones más claras sobre las acciones realizadas.
+
 - **Link**: [https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing](https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing)
 
-![entrevista_salvador](image-15.png)
+![entrevista_salvador](images/interviews/entrevista_salvador.png)
 
 2. 
 - **Entrevistado**: 
@@ -2977,10 +2978,13 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 #### Sección emprendedores
 
 1. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**:
-- **Link**:
+- **Entrevistado**: Francesko Montesinos
+- **Duración**: 6:25
+- **Resumen**: El entrevistado comentó que experimentó dificultades durante el proceso de registro, específicamente con la configuración de contraseña, lo cual representa una barrera inicial. Sin embargo, una vez dentro de la plataforma, valoró positivamente la interfaz de gestión de contenido gracias a sus botones claros e indicaciones concisas que facilitaron la creación y edición de actividades. Además, considera muy útil la sección de estadísticas para comprender la percepción de sus clientes sobre las experiencias ofrecidas. Por otro lado, destaca como funcionalidad más valiosa la capacidad de publicar actividades, ya que le permite ganar visibilidad para su negocio local.
+
+- **Link**: [https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing](https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing)
+
+![entrevista francesko](images/interviews/entrevista_francesko.png)
 
 2. 
 - **Entrevistado**: 
