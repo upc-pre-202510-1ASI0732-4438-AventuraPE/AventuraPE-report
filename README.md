@@ -2894,7 +2894,13 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| Implementar sistema de notificaciones push web usando Service Workers, con segmentación por comportamiento de usuario 	| 35% de usuarios registrados se vuelven inactivos después de 2 semanas. Falta mecanismo para reactivar usuarios dormidos 	| Si implementamos notificaciones push segmentadas, entonces incrementaremos el re-engagement de usuarios inactivos en un 30%, porque les recordaremos contenido relevante y nuevas actividades 	|
 
 ## 8.2. Experiment Design  
+
+En esta sección, presentamos el diseño detallado de nuestros experimentos para validar las hipótesis clave de AventuraPE. Estos experimentos nos permitirán tomar decisiones basadas en datos sobre las características y funcionalidades de nuestra plataforma de turismo.
+
 ### 8.2.1. Hypotheses
+
+Las siguientes hipótesis han sido formuladas basándonos en nuestro Lean UX Canvas y en las necesidades identificadas en los segmentos objetivo. Cada una aborda aspectos fundamentales de nuestra propuesta de valor para los usuarios y negocios locales.
+
 #### Card 1: Redis Cache for Comments
 
 |              | Hypothesis                                                                                                                    |
@@ -2913,8 +2919,39 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | **Hypothesis**    | Si optimizamos consultas de eliminación (índices y soft delete), entonces reduciremos el tiempo a < 1.5 s.                       |
 | **Null Hypothesis** | Las optimizaciones no cambiarán significativamente el tiempo de eliminación, manteniéndose entre 3 y 4 s.                      |
 
+#### Card 3: Impacto de las Recomendaciones Personalizadas en la Satisfacción del Usuario
+
+| | Hypothesis |
+|---|---|
+| **Question** | ¿Aumentará la satisfacción del usuario al implementar un sistema de recomendaciones personalizadas de destinos turísticos? |
+| **Belief** | La personalización de recomendaciones basada en preferencias e intereses aumentará la satisfacción del usuario y reducirá el tiempo de planificación de viajes. |
+| **Hypothesis** | La implementación de recomendaciones personalizadas aumentará la satisfacción del usuario en un 25% y reducirá el tiempo de planificación en un 30% durante los primeros dos meses tras su lanzamiento. |
+| **Null Hypothesis** | Las recomendaciones personalizadas no tendrán un impacto significativo en la satisfacción del usuario ni en el tiempo de planificación de viajes. |
+
+#### Card 4: Efecto de Reseñas Verificadas en el Uso y Conversión de la Plataforma
+
+| | Hypothesis |
+|---|---|
+| **Question** | ¿Incrementará el uso de la plataforma al integrar reseñas y valoraciones de usuarios reales? |
+| **Belief** | Las opiniones auténticas de otros viajeros generarán mayor confianza y ayudarán a los usuarios a tomar mejores decisiones sobre destinos y servicios. |
+| **Hypothesis** | La integración de un sistema de reseñas verificadas incrementará el tiempo de permanencia en la plataforma en un 20% y las reservas completadas en un 15% en los tres meses posteriores a su implementación. |
+| **Null Hypothesis** | La integración de reseñas y valoraciones de usuarios no afectará significativamente el tiempo de permanencia en la plataforma ni las conversiones. |
+
+#### Card 5: Autenticidad Cultural como Estrategia para Impulsar Ventas Locales
+
+| | Hypothesis |
+|---|---|
+| **Question** | ¿Aumentarán las ventas de los negocios locales al destacar su autenticidad cultural y conexión con tradiciones peruanas? |
+| **Belief** | Resaltar la autenticidad cultural y el valor histórico de los negocios locales atraerá a turistas que buscan experiencias genuinas y únicas. |
+| **Hypothesis** | Los negocios locales que destaquen su autenticidad cultural en sus perfiles verán un aumento del 30% en reservas comparado con aquellos que no lo hagan, durante los primeros tres meses. |
+| **Null Hypothesi** | Destacar la autenticidad cultural no tendrá un impacto significativo en las reservas de los negocios locales. |
+
+
 
 ### 8.2.2. Measures
+
+Para cada hipótesis, establecemos medidas específicas que nos permitirán evaluar objetivamente los resultados de nuestros experimentos. Estas métricas han sido seleccionadas por su relevancia y capacidad para proporcionar información valiosa sobre el comportamiento y satisfacción del usuario.
+
 
 #### Card 1: Redis Cache for Comments
 
@@ -2930,7 +2967,33 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | **Question** | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? |
 | **Measure**  | Tiempo medio de ejecución de la operación de eliminación de comentario (ms) medido en 50 operaciones sucesivas. |
 
+#### **Card 3: Estrategia de Medición para Recomendaciones Personalizadas**
+
+| | **Measure** |
+|---|---|
+| **Question** | ¿Cómo mediremos el impacto de las recomendaciones personalizadas en la satisfacción del usuario? |
+| **Measure** | Utilizaremos encuestas de satisfacción (CSAT) antes y después de la implementación, análisis del tiempo promedio para completar un itinerario, tasa de adopción de recomendaciones sugeridas, y seguimiento de interacciones con recomendaciones mediante herramientas de analítica. |
+
+
+#### **Card 4: Estrategia de Medición para Reseñas y Valoraciones**
+
+| | **Measure** |
+|---|---|
+| **Question** | ¿Cómo evaluaremos el impacto de las reseñas y valoraciones en el uso de la plataforma? |
+| **Measure** | Mediremos el tiempo promedio de sesión, páginas visitadas por usuario, tasa de clics en reseñas, correlación entre visualización de reseñas y conversiones, y encuestas sobre el factor de influencia de las reseñas en la decisión de reserva. |
+
+
+#### **Card 5: Estrategia de Medición para Autenticidad Cultural en Negocios Locales**
+
+| | **Measure** |
+|---|---|
+| **Question** | ¿De qué manera cuantificaremos el impacto de destacar la autenticidad cultural en los negocios locales? |
+| **Measure** | Compararemos las tasas de conversión entre perfiles que destacan autenticidad vs. perfiles estándar, análisis A/B de CTR en listados, encuestas a usuarios sobre motivaciones de reserva, y entrevistas con propietarios de negocios sobre cambios en volumen de visitantes. |
+
+
 ### 8.2.3. Conditions
+
+Para cada experimento, establecemos condiciones experimentales y de control claras que nos permitirán comparar resultados y determinar la efectividad de las funcionalidades propuestas. Estas condiciones han sido diseñadas para minimizar variables confusas y obtener resultados válidos.
 
 #### Card 1: Redis Cache for Comments
 
@@ -2945,6 +3008,33 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 |------------------------|------------------------------------------------------------------------------------------------------------------|
 | **Experimental Condition** | Consultas de eliminación optimizadas (índices y soft delete) desplegadas en entorno de pruebas.                 |
 | **Control Condition**      | Código actual sin optimizaciones, ejecutado en el mismo entorno de pruebas y con la misma carga de trabajo.  |
+
+#### Card 3: Condiciones del Experimento para Recomendaciones Personalizadas
+
+| | Conditions |
+|---|---|
+| **Question** | ¿Cómo implementaremos el experimento para las recomendaciones personalizadas? |
+| **Condición Experimental** | Un grupo de usuarios recibirá recomendaciones altamente personalizadas basadas en sus preferencias, historial de navegación y datos demográficos, presentadas de forma prominente en la interfaz. |
+| **Condición de Control** | Un grupo de control recibirá recomendaciones genéricas basadas únicamente en popularidad general de los destinos, sin personalización específica para el usuario. |
+
+
+#### **Card 4: Condiciones del Experimento para Reseñas y Valoraciones**
+
+| | Conditions |
+|---|---|
+| **Question** | ¿Cómo evaluaremos el impacto de las reseñas y valoraciones de usuarios? |
+| **Condición Experimental** | Un segmento de usuarios verá perfiles de destinos y negocios con reseñas verificadas, fotos de usuarios reales y puntuaciones detalladas por categorías. |
+| **Condición de Control** | El grupo de control verá perfiles estándar sin reseñas destacadas, con información básica proporcionada por los negocios y destinos. |
+
+
+#### **Card 5: Condiciones del Experimento para Autenticidad Cultural en Negocios Locales**
+
+| | Conditions |
+|---|---|
+| **Question** | ¿Cómo mediremos el impacto de destacar la autenticidad cultural en negocios locales? |
+| **Condición Experimental** | Un conjunto de perfiles de negocios destacará explícitamente su autenticidad cultural, tradiciones peruanas y conexión con la comunidad local mediante etiquetas, narrativas y contenido visual específico. |
+| **Condición de Control** | Otro conjunto de perfiles de negocios similares presentará información estándar sin énfasis especial en autenticidad cultural o tradiciones locales. |
+
 
 ### 8.2.4. Scale Calculations and Decisions
 
