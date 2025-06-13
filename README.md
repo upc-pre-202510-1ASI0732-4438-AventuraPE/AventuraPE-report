@@ -2820,15 +2820,20 @@ Implementar un mensaje de confirmación temporal que aparezca brevemente indican
 
 ### 6.4.1. Auditoría realizada  
 
-Como parte de nuestro compromiso con la mejora continua y el aprendizaje compartido, nuestro equipo realizó una auditoría de experiencia de usuario al proyecto "" del grupo 4, enfocándonos en evaluar la usabilidad, accesibilidad y coherencia de su interfaz de usuario.
+Como parte de nuestro compromiso con la mejora continua y el aprendizaje compartido, nuestro equipo realizó una auditoría de experiencia de usuario al proyecto "HomeyPark", enfocándonos en evaluar la usabilidad, accesibilidad y coherencia de su interfaz de usuario.
 
 #### 6.4.1.1. Información del grupo auditado  
 
-**Nombre del proyecto:**   
-**Equipo:** 
+**Nombre del proyecto:** HomeyPark (producto de la startup Netvia)  
+**Equipo:** Netvia  
 **Integrantes:**
+- Sebastian Cachis Gonzales
+- Adriano Sebastian Cruz Palomino
+- Amner Levi Llamo Sanchez
+- Marcelo Fabian Garro Vega
+- Lucio Heli Yen Cerna
 
-**Descripción del proyecto:** 
+**Descripción del proyecto:** HomeyPark es una aplicación que permite a los conductores buscar, reservar y pagar estacionamientos de manera sencilla, y a los propietarios de garajes (anfitriones) ofrecer sus espacios disponibles para generar ingresos adicionales.
 
 #### 6.4.1.2. Cronograma de auditoría realizada  
 
@@ -2843,41 +2848,54 @@ Como parte de nuestro compromiso con la mejora continua y el aprendizaje compart
 
 #### 6.4.1.3. Contenido de auditoría realizada  
 
-Tras un análisis exhaustivo de la experiencia de usuario de , identificamos los siguientes hallazgos categorizados por severidad:
+Tras un análisis exhaustivo de la experiencia de usuario de HomeyPark, identificamos los siguientes hallazgos categorizados por severidad:
 
 **Problemas críticos (Severidad 4):**
 
-1. Problema:
-   - Recomendación: 
+1. **Problema:** Sistema de verificación de usuarios y cocheras insuficiente
+   - **Recomendación:** Implementar un proceso de verificación más robusto para usuarios y anfitriones, incluyendo verificación de identidad por documento y revisión de fotos de cocheras para aumentar la seguridad y confianza en la plataforma.
+
+2. **Problema:** Flujo de reserva complejo para anfitriones
+   - **Recomendación:** Rediseñar el flujo de gestión de disponibilidad para anfitriones, simplificando la interfaz y automatizando más procesos para reducir la carga cognitiva.
+
+3. **Problema:** Imprecisión en la disponibilidad en tiempo real
+   - **Recomendación:** Mejorar el sistema de actualización de disponibilidad con sincronización más frecuente y notificaciones instantáneas para evitar reservas duplicadas o frustraciones por espacios que aparecen como disponibles pero ya están ocupados.
 
 **Aspectos positivos destacados:**
 - La aplicación móvil muestra un diseño limpio y moderno que facilita la navegación principal.
-- Cuenta con seguridad Captcha para poder comprobar que el usuario registrado no es un bot.
-
+- El sistema de búsqueda por mapa ofrece una experiencia visual efectiva para localizar estacionamientos cercanos.
+- La implementación de Captcha en el registro de usuarios añade una capa de seguridad necesaria contra bots.
+- El proceso de pago está bien integrado y ofrece múltiples opciones al usuario.
+- La estructura de precios es transparente y fácilmente comprensible para ambos tipos de usuarios.
 
 ### 6.4.2. Auditoría recibida  
 
-Como parte del proceso de evaluación cruzada, nuestro proyecto AventuraPE fue auditado por el equipo "TechMakers" (Grupo 1), quienes nos proporcionaron valiosos insights sobre nuestra experiencia de usuario.
+Como parte del proceso de evaluación cruzada, nuestro proyecto AventuraPE fue auditado por el equipo "Netvia", quienes nos proporcionaron valiosos insights sobre nuestra experiencia de usuario.
 
-#### 6.4.2.1. Información del grupo auditor  
+#### 6.4.2.1. Información del grupo auditor
 
-**Nombre del equipo:** TechMakers (Grupo 1)  
+**Equipo:** Netvia  
 **Integrantes:**
+- Sebastian Cachis Gonzales
+- Adriano Sebastian Cruz Palomino
+- Amner Levi Llamo Sanchez
+- Marcelo Fabian Garro Vega
+- Lucio Heli Yen Cerna
 
 #### 6.4.2.2. Cronograma de auditoría recibida
 
 | Fecha | Actividad | Descripción |
 |-------|-----------|-------------|
-| 05/06/2025 | Presentación del proyecto | Reunión inicial donde el equipo TechMakers presentó su metodología de auditoría y estableció los objetivos y alcance de la evaluación de AventuraPe. |
+| 05/06/2025 | Presentación del proyecto | Reunión inicial donde el equipo Netvia presentó su metodología de auditoría y estableció los objetivos y alcance de la evaluación de AventuraPe. |
 | 06/06/2025 | Evaluación de landing page | Análisis detallado de la interfaz y usabilidad de la landing page, aplicando principios heurísticos para identificar posibles problemas y oportunidades de mejora. |
 | 07/06/2025 | Evaluación de app web | Revisión exhaustiva de la aplicación web mediante pruebas con usuarios reales y evaluación heurística, enfocándose en la experiencia de aventureros y emprendedores. |
 | 08/06/2025 | Evaluación de app móvil | Análisis completo de la versión móvil de AventuraPe, combinando pruebas con usuarios y principios de diseño para identificar problemas de accesibilidad y usabilidad. |
 | 10/06/2025 | Entrega de informe completo | Presentación del documento formal con todos los hallazgos, clasificados por severidad, incluyendo recomendaciones específicas para cada problema detectado. |
-| 11/06/2025 | Presentación de resultados | Sesión final donde el equipo TechMakers expuso los hallazgos principales y discutió las posibles soluciones con nuestro equipo, estableciendo prioridades para las correcciones. |
+| 11/06/2025 | Presentación de resultados | Sesión final donde el equipo Netvia expuso los hallazgos principales y discutió las posibles soluciones con nuestro equipo, estableciendo prioridades para las correcciones. |
 
 #### 6.4.2.3. Contenido de auditoría recibida  
 
-El equipo **TechMakers** realizó una evaluación exhaustiva de nuestras interfaces y flujos de usuario, identificando los siguientes hallazgos:
+El equipo **Netvia** realizó una evaluación exhaustiva de nuestras interfaces y flujos de usuario, identificando los siguientes hallazgos:
 
 **Hallazgos críticos (Severidad 4):**
 
