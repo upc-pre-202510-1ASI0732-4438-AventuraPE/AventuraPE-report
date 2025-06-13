@@ -2611,59 +2611,25 @@ Para validar nuestro producto con usuarios reales, diseñamos un conjunto de pre
 
 ### 6.3.2. Registro de Entrevistas
 
-#### Segmento: Aventureros
-
-**Entrevista 01**
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-
-Evidencia de la reunión:
-
-![Entrevista](./images/)
-
-Duración: 
-
-Enlace de entrevista: [Link de la entrevista]()
-
-Resumen de la entrevista:
-
-**Entrevista 02**
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-
-Evidencia de la reunión:
-
-![Entrevista](./images/)
-
-Duración: 
-
-Enlace de entrevista: [Link de la entrevista]()
-
-Resumen de la entrevista:
-
-**Entrevista 03**
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-
-Evidencia de la reunión:
-
-![Entrevista](./images/)
-
-Duración: 
-
-Enlace de entrevista: [Link de la entrevista]()
-
-Resumen de la entrevista:
-
 #### Segmento: Emprendedores
 
-**Entrevista 01**
+**Entrevista 01** (Barbara)
+- Nombres: Jenna
+- Apellidos: Portalatino
+- Edad: 20
+- Distrito: San Juan de Lurigancho
+
+Evidencia de la reunión:
+
+![Entrevista](./images/interviews/enrtrevista_jenna.jpg)
+
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:<br>
+Jenna, propietaria de la tienda de ropa "Todo Chic", mostró gran interés en AventuraPe durante la validación del producto. Destacó especialmente la facilidad para crear un perfil de negocio y la oportunidad de aumentar su visibilidad más allá de su distrito. Valoró positivamente las reseñas verificadas, mencionando que generan mayor confianza para potenciales clientes, y se entusiasmó con la posibilidad de destacar la autenticidad cultural de sus diseños inspirados en arte urbano local. Como sugerencia, propuso incluir la programación anticipada de publicaciones y acceso a estadísticas sobre el perfil demográfico de los visitantes a su página. Concluyó afirmando que definitivamente utilizaría la plataforma para su negocio, pues considera que la combinación de visibilidad, herramientas de destacado y confiabilidad la ayudarían a atraer más clientes, especialmente turistas y visitantes de otros distritos.
+
+**Entrevista 02** (Jose)
 - Nombres: 
 - Apellidos: 
 - Edad: 
@@ -2673,7 +2639,35 @@ Evidencia de la reunión:
 
 ![Entrevista](./images/)
 
-Duración: 
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+**Entrevista 03** (Jimena)
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
+
+Enlace de entrevista: [Link de la entrevista]()
+
+Resumen de la entrevista:
+
+#### Segmento: Aventureros
+
+**Entrevista 01** (Jimena)
+- Nombres: 
+- Apellidos: 
+- Edad: 
+- Distrito: 
+
+Evidencia de la reunión:
+
+![Entrevista](./images/)
 
 Enlace de entrevista: [Link de la entrevista]()
 
@@ -2689,8 +2683,6 @@ Evidencia de la reunión:
 
 ![Entrevista](./images/)
 
-Duración: 
-
 Enlace de entrevista: [Link de la entrevista]()
 
 Resumen de la entrevista:
@@ -2704,8 +2696,6 @@ Resumen de la entrevista:
 Evidencia de la reunión:
 
 ![Entrevista](./images/)
-
-Duración: 
 
 Enlace de entrevista: [Link de la entrevista]()
 
