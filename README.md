@@ -2300,14 +2300,11 @@ Para los componentes del dominio de usuario, se han desarrollado pruebas exhaust
 ![Testing](./images/Testing-Suites-&-Validation/core-entities-unit-test-1.png)
 
 Para el servicio de perfiles, se han verificado tanto los perfiles de aventureros como de empresarios. Las pruebas comprueban la correcta asignación de valores y la validación de restricciones de negocio.
-
-<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-2.png"   alt=""/><br>
-
+![Test Unit](./images/Testing-Suites-&-Validation/core-entities-unit-test-2.png)
 
 El servicio de publicaciones también ha sido rigurosamente probado, especialmente en aspectos críticos como el cálculo de valoraciones, la modificación de datos y las restricciones de negocio asociadas.
 
-<img src="./images/Testing-Suites-&-Validation/core-entities-unit-test-3.png"   alt=""/><br>
-
+![Test Unit](./images/Testing-Suites-&-Validation/core-entities-unit-test-3.png)
 
 Estas pruebas unitarias han permitido identificar y corregir problemas en etapas tempranas del desarrollo, garantizando la solidez de los componentes fundamentales del sistema.
 
@@ -2317,15 +2314,15 @@ Las pruebas de integración implementadas verifican la correcta interacción ent
 
 El controlador de usuarios ha sido probado para verificar el correcto funcionamiento de los endpoints de registro e inicio de sesión, así como la gestión de errores y excepciones.
 
-<img src="./images/Testing-Suites-&-Validation/core-integration-tests-1.png"   alt=""/><br>
+![Test Unit](./images/Testing-Suites-&-Validation/core-integration-tests-1.png)
 
 Para el controlador de perfiles, se ha verificado tanto la creación como la consulta y actualización de perfiles, asegurando que los datos se transmitan correctamente entre las capas de la aplicación.
 
-<img src="./images/Testing-Suites-&-Validation/core-integration-tests-2.png"   alt=""/><br>
+![Test Unit](./images/Testing-Suites-&-Validation/core-integration-tests-2.png)
 
 El controlador de publicaciones ha sido sometido a pruebas que verifican el ciclo completo de gestión de publicaciones, desde su creación hasta su eliminación, pasando por actualizaciones y consultas.
 
-<img src="./images/Testing-Suites-&-Validation/core-integration-tests-3.png"   alt=""/><br>
+![Test Unit](./images/Testing-Suites-&-Validation/core-integration-tests-3.png)
 
 Estas pruebas de integración han sido fundamentales para garantizar que los diferentes componentes del sistema trabajen correctamente en conjunto, identificando problemas de interoperabilidad que no serían evidentes en las pruebas unitarias.
 
@@ -2372,74 +2369,73 @@ Este enfoque BDD permite una mejor comunicación entre los desarrolladores, test
 
 #### Landing
 
-<img src="./images/user-stories-test/user-stories-test-1.png"   alt=""/><br>
-<img src="./images/user-stories-test/user-stories-test-1-selenium.png" alt=""/><br>
-<br>
-<img src="./images/user-stories-test/user-stories-test-2.png"   alt=""/><br>
-<img src="./images/user-stories-test/user-stories-test-2-selenium.png" alt=""/><br>
-<br>
-<img src="./images/user-stories-test/user-stories-test-3.png"   alt=""/><br>
-<img src="./images/user-stories-test/user-stories-test-3-selenium.png" alt=""/><br>
-<br>
-<img src="./images/user-stories-test/user-stories-test-4.png"   alt=""/><br>
-<img src="./images/user-stories-test/user-stories-test-4-selenium.png" alt=""/><br>
-<br>
-<img src="./images/user-stories-test/user-stories-test-5.png"   alt=""/><br>
-<img src="./images/user-stories-test/user-stories-test-5-selenium.png" alt=""/><br>
-<br>
-<img src="./images/user-stories-test/user-stories-test-6.png"   alt=""/><br>
-<img src="./images/user-stories-test/user-stories-test-6-selenium.png" alt=""/><br>
+![Test Landing](./images/user-stories-test/user-stories-test-1.png)
+![Test Landing](./images/user-stories-test/user-stories-test-1-selenium.png)
+
+![Test Landing](./images/user-stories-test/user-stories-test-2.png)
+![Test Landing](./images/user-stories-test/user-stories-test-2-selenium.png)
+
+![Test Landing](./images/user-stories-test/user-stories-test-3.png)
+![Test Landing](./images/user-stories-test/user-stories-test-3-selenium.png)
+
+![Test Landing](./images/user-stories-test/user-stories-test-4.png)
+![Test Landing](./images/user-stories-test/user-stories-test-4-selenium.png)
+
+![Test Landing](./images/user-stories-test/user-stories-test-5.png)
+![Test Landing](./images/user-stories-test/user-stories-test-5-selenium.png)
+
+![Test Landing](./images/user-stories-test/user-stories-test-6.png)
+![Test Landing](./images/user-stories-test/user-stories-test-6-selenium.png)
 
 #### Web App
 
-<img src="./images/user-stories-test/web/user-stories-test-web-1.png"  alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-1.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-1.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-1.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-2.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-2.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-2.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-2.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-3.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-3.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-3.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-3.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-4.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-4.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-4.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-4.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-5.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-5.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-5.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-5.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-6.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-6.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-6.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-6.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-7.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-7.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-7.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-7.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-8.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-8.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-8.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-8.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-9.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-9.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-9.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-9.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-10.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-10.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-10.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-10.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-11.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-11.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-11.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-11.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-12.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-12.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-12.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-12.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-13.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-13.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-13.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-13.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-14.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-14.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-14.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-14.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-15.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-15.png" alt=""><br>
+![Test Web](./images/user-stories-test/web/user-stories-test-web-15.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-15.png)
 
-<img src="./images/user-stories-test/web/user-stories-test-web-16.png"   alt=""/><br>
-<img src="./images/user-stories-test/web/user-stories-test-selenium-16.png" alt=""><br>
-
+![Test Web](./images/user-stories-test/web/user-stories-test-web-16.png)
+![Test Web](./images/user-stories-test/web/user-stories-test-selenium-16.png)
 
 #### Mobile App
 
@@ -2844,7 +2840,7 @@ Como parte de nuestro compromiso con la mejora continua y el aprendizaje compart
 | 01/06/2025 | Evaluación heurística de la aplicación web | Barbara Quezada, Jose Gutierrez | 4 horas |
 | 01/06/2025 | Evaluación heurística de la aplicación móvil | Estefano Jaque | 3 horas |
 | 03/06/2025 | Análisis y compilación de hallazgos | Todo el equipo AventuraPE | 2 horas |
-| 05/06/2025 | Presentación de resultados al Grupo 4 | Ambos equipos | 3 horas |
+| 05/06/2025 | Presentación de resultados al grupo Netvia | Ambos equipos | 3 horas |
 
 #### 6.4.1.3. Contenido de auditoría realizada  
 
