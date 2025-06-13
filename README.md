@@ -3158,53 +3158,51 @@ Después de la implementación inicial, se establecerá un proceso continuo de s
 **Iteración Basada en Datos**: Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de los usuarios, asegurando que AventuraPE evolucione para satisfacer mejor las necesidades tanto de los viajeros como de los negocios turísticos locales.
 
 Este enfoque asegurará que AventuraPE continúe evolucionando en función de los datos y permita tomar decisiones informadas para mejorar la experiencia de planificación de viajes, descubrimiento de destinos auténticos y la conexión entre viajeros y negocios locales en la plataforma.
-# 8.3. Experimentation
+##  8.3 Experimentation
+### 8.3.1. To-Be User Stories
 
-## 8.3.1. To-Be User Stories
+| User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|---------------|--------|-------------|--------------------------|---------------------------|
+| US-TB-01 | Optimización de carga de comentarios | Como usuario aventurero, quiero que la carga de comentarios sea más rápida (menos de 800ms), para poder revisar opiniones sobre actividades sin interrupciones en mi experiencia. | **Escenario 1: Carga rápida de comentarios**<br>Given que el usuario está viendo los detalles de una actividad<br>When el usuario navega a la sección de comentarios<br>Then el sistema carga los comentarios en menos de 800ms en el 95% de las solicitudes<br><br>**Escenario 2: Carga fluida con muchos comentarios**<br>Given que una actividad tiene más de 50 comentarios<br>When el usuario accede a la sección de comentarios<br>Then la interfaz se mantiene fluida y sin congelarse | E01 |
+| US-TB-02 | Optimización de eliminación de comentarios | Como administrador, quiero que el proceso de eliminación de comentarios inapropiados sea rápido (menos de 1.5s), para moderar eficientemente el contenido de la plataforma. | **Escenario 1: Eliminación rápida de comentarios**<br>Given que el administrador está revisando los comentarios <br>When el administrador selecciona eliminar un comentario<br>Then el sistema procesa la eliminación en menos de 1.5s<br><br>**Escenario 2: Confirmación inmediata**<br>Given que el administrador ha eliminado un comentario<br>When la operación se completa<br>Then el sistema muestra una confirmación visual inmediata<br><br>**Escenario 3: Registro de acciones de moderación**<br>Given que el administrador ha eliminado un comentario<br>When accede al historial de moderación<br>Then puede ver un registro detallado de sus acciones recientes | E01 |
+| US-TB-03 | Aceleración de publicación de actividades | Como emprendedor, quiero que la publicación de nuevas actividades sea más rápida (menos de 1s), para agilizar la gestión de mi oferta. | **Escenario 1: Publicación rápida**<br>Given que el emprendedor ha completado el formulario de actividad<br>When hace clic en el botón publicar<br>Then el sistema procesa y publica la actividad en menos de 1s en el 90% de los casos<br><br>**Escenario 2: Guardado automático**<br>Given que el emprendedor está creando una nueva actividad<br>When realiza cambios en el formulario<br>Then el sistema guarda automáticamente un borrador cada 30 segundos| E01 |
+| US-TB-04 | Recomendaciones personalizadas | Como usuario aventurero, quiero recibir recomendaciones personalizadas basadas en mis preferencias e historial, para descubrir actividades relevantes más fácilmente. | **Escenario 1: Recomendaciones basadas en historial**<br>Given que el usuario ha realizado búsquedas previas<br>When accede a la sección de recomendaciones<br>Then el sistema muestra actividades relacionadas con sus búsquedas anteriores<br><br>**Escenario 2: Recomendaciones basadas en valoraciones**<br>Given que el usuario ha calificado positivamente ciertas actividades<br>When accede a la sección de recomendaciones<br>Then el sistema muestra actividades similares a las mejor valoradas<br><br>**Escenario 3: Mejora continua del algoritmo**<br>Given que el usuario interactúa regularmente con la plataforma<br>When accede a recomendaciones a lo largo del tiempo<br>Then estas se vuelven progresivamente más relevantes | E02 |
+| US-TB-05 | Modo oscuro/claro | Como usuario aventurero, quiero poder alternar entre modo claro y oscuro, para adaptar la interfaz a mis condiciones de uso y preferencias visuales. | **Escenario 1: Cambio de modo instantáneo**<br>Given que el usuario está utilizando la aplicación<br>When activa el cambio de modo oscuro/claro en configuraciones<br>Then la interfaz cambia instantáneamente sin necesidad de recargar<br><br>**Escenario 2: Persistencia de preferencia**<br>Given que el usuario ha seleccionado el modo oscuro<br>When cierra sesión y vuelve a ingresar posteriormente<br>Then la aplicación mantiene el modo oscuro seleccionado<br><br>**Escenario 3: Configuración según sistema**<br>Given que el usuario tiene activado el modo oscuro en su dispositivo<br>When ingresa a la aplicación por primera vez<br>Then la aplicación adopta automáticamente el modo oscuro | E04 |
+| US-TB-06 | Soporte multiidioma | Como usuario internacional, quiero poder cambiar el idioma de la plataforma entre español e inglés, para utilizar AventuraPe en mi idioma preferido. | **Escenario 1: Cambio completo de idioma**<br>Given que el usuario está en la aplicación<br>When cambia el idioma en la configuración<br>Then el 100% del contenido de la interfaz se muestra en el idioma seleccionado<br><br>**Escenario 2: Persistencia de idioma**<br>Given que el usuario ha seleccionado inglés como idioma<br>When cierra sesión y vuelve a ingresar posteriormente<br>Then la aplicación mantiene el inglés como idioma configurado<br><br>**Escenario 3: Detección automática**<br>Given que el usuario tiene configurado inglés en su navegador<br>When accede a la aplicación por primera vez<br>Then la aplicación se muestra en inglés automáticamente | E04 |
+| US-TB-07 | Reseñas verificadas | Como usuario aventurero, quiero ver reseñas verificadas con etiquetas especiales, para confiar más en las opiniones de otros usuarios. | **Escenario 1: Visualización destacada**<br>Given que el usuario está viendo reseñas de una actividad<br>When visualiza una reseña verificada<br>Then esta aparece con una etiqueta o insignia visual distintiva<br><br>**Escenario 2: Criterio de verificación**<br>Given que el usuario ve una reseña verificada<br>When hace clic en la insignia de verificación<br>Then puede ver el criterio utilizado para la verificación<br><br>**Escenario 3: Filtrado de reseñas verificadas**<br>Given que el usuario está en la sección de reseñas<br>When activa el filtro "Solo verificadas"<br>Then se muestran únicamente las reseñas que han sido verificadas | E03 |
+| US-TB-08 | Destaque de autenticidad cultural | Como emprendedor, quiero destacar la autenticidad cultural de mi negocio en mi perfil, para atraer a turistas interesados en experiencias genuinas. | **Escenario 1: Campo de valor cultural**<br>Given que el emprendedor está editando su perfil<br>When accede a la sección de descripción del negocio<br>Then encuentra un campo específico para destacar su valor cultural/tradicional<br><br>**Escenario 2: Etiquetas culturales**<br>Given que el emprendedor está configurando su perfil<br>When navega a la sección de etiquetas<br>Then puede seleccionar etiquetas relacionadas con autenticidad cultural<br><br>**Escenario 3: Sección de historia local**<br>Given que el emprendedor está editando su perfil<br>When completa la información de su negocio<br>Then puede incluir una sección dedicada a la historia o tradiciones locales | E05 |
+| US-TB-09 | Notificaciones push de proximidad | Como usuario aventurero, quiero recibir notificaciones push sobre ofertas o actividades relevantes cerca de mi ubicación, para descubrir oportunidades espontáneas. | **Escenario 1: Control de frecuencia**<br>Given que el usuario está en configuración de notificaciones<br>When ajusta la frecuencia de notificaciones push<br>Then el sistema respeta esta preferencia para futuros envíos<br><br>**Escenario 2: Personalización por categorías**<br>Given que el usuario está en configuración de notificaciones<br>When selecciona categorías de interés para notificaciones<br>Then solo recibe alertas relacionadas con esas categorías<br><br>**Escenario 3: Configuración de radio geográfico**<br>Given que el usuario está configurando notificaciones<br>When ajusta el radio de distancia para notificaciones<br>Then solo recibe alertas de actividades dentro de ese radio desde su ubicación | E03 |
 
-Basándonos en los experimentos planificados y el análisis realizado, hemos definido las siguientes historias de usuario para mejorar la experiencia en AventuraPe:
+#### Épicas Relacionadas
 
-### Rendimiento y Optimización
+| Epic ID | Título | Descripción |
+|---------|--------|-------------|
+| E01 | Optimización de Rendimiento | Mejoras enfocadas en la velocidad y eficiencia de los procesos críticos de la plataforma |
+| E02 | Mejora de Experiencia de Usuario | Funcionalidades que mejoran la interacción y satisfacción general del usuario |
+| E03 | Funcionalidades Sociales | Características que promueven la interacción, confianza y compromiso entre usuarios |
+| E04 | Internacionalización y Accesibilidad | Adaptaciones que permiten que la plataforma sea utilizada por un público más amplio |
+| E05 | Gestión de Contenido | Herramientas para que los emprendedores mejoren la presentación de sus ofertas |
 
-| ID | User Story | Criterios de Aceptación |
-|----|------------|-------------------------|
-| US-TB-01 | Como **usuario aventurero**, quiero que la carga de comentarios sea más rápida (menos de 800ms), para poder revisar opiniones sobre actividades sin interrupciones en mi experiencia. | • El tiempo de carga de comentarios no excede los 800ms en el 95% de las solicitudes<br>• La experiencia de carga es fluida incluso con más de 50 comentarios<br>• Se implementa indicador visual durante la carga |
-| US-TB-02 | Como **administrador**, quiero que el proceso de eliminación de comentarios inapropiados sea rápido (menos de 1.5s), para moderar eficientemente el contenido de la plataforma. | • El tiempo de eliminación no excede 1.5s por comentario<br>• Se muestra confirmación inmediata de la acción<br>• Se registra historial de moderación para auditoría |
-| US-TB-03 | Como **emprendedor**, quiero que la publicación de nuevas actividades sea más rápida (menos de 1s), para agilizar la gestión de mi oferta. | • El tiempo de publicación es inferior a 1s en el 90% de los casos<br>• Se implementa guardado automático de borradores<br>• Se muestra indicador de progreso durante el proceso |
+### 8.3.2. To-Be Product Backlog
+Este backlog prioriza las mejoras de rendimiento en la parte superior (US-TB-01 a US-TB-03), seguidas por funcionalidades que amplían el alcance de la plataforma (soporte multiidioma) y mejoran significativamente la experiencia del usuario (recomendaciones personalizadas). Las características de confianza y engagement (reseñas verificadas, notificaciones) tienen prioridad media, mientras que las mejoras visuales y de presentación completan el backlog.
 
-### Experiencia de Usuario
+| # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
+|:-------:|---------------|--------|:------------------------:|
+| 1 | US-TB-01 | Optimización de carga de comentarios | 5 |
+| 2 | US-TB-02 | Optimización de eliminación de comentarios | 3 |
+| 3 | US-TB-03 | Aceleración de publicación de actividades | 5 |
+| 4 | US-TB-06 | Soporte multiidioma | 8 |
+| 5 | US-TB-04 | Recomendaciones personalizadas | 8 |
+| 6 | US-TB-07 | Reseñas verificadas | 5 |
+| 7 | US-TB-09 | Notificaciones push de proximidad | 8 |
+| 8 | US-TB-08 | Destaque de autenticidad cultural | 3 |
+| 9 | US-TB-05 | Modo oscuro/claro | 5 |
 
-| ID | User Story | Criterios de Aceptación |
-|----|------------|-------------------------|
-| US-TB-04 | Como **usuario aventurero**, quiero recibir recomendaciones personalizadas basadas en mis preferencias e historial, para descubrir actividades relevantes más fácilmente. | • Las recomendaciones se basan en historial de búsquedas y favoritos<br>• Se muestran actividades similares a las mejor valoradas por el usuario<br>• El algoritmo mejora con el uso continuo de la plataforma |
-| US-TB-05 | Como **usuario aventurero**, quiero poder alternar entre modo claro y oscuro, para adaptar la interfaz a mis condiciones de uso y preferencias visuales. | • El cambio entre modos es instantáneo<br>• La preferencia se guarda para futuras sesiones<br>• Respeta la configuración del sistema operativo por defecto |
-| US-TB-06 | Como **usuario internacional**, quiero poder cambiar el idioma de la plataforma entre español e inglés, para utilizar AventuraPe en mi idioma preferido. | • La traducción cubre 100% de la interfaz y mensajes<br>• El cambio de idioma persiste entre sesiones<br>• Se detecta automáticamente el idioma del navegador |
 
-### Funcionalidades Sociales y de Compromiso
-
-| ID | User Story | Criterios de Aceptación |
-|----|------------|-------------------------|
-| US-TB-07 | Como **usuario aventurero**, quiero ver reseñas verificadas con etiquetas especiales, para confiar más en las opiniones de otros usuarios. | • Las reseñas verificadas se destacan visualmente<br>• Se muestra el criterio de verificación<br>• Se puede filtrar para ver solo reseñas verificadas |
-| US-TB-08 | Como **emprendedor**, quiero destacar la autenticidad cultural de mi negocio en mi perfil, para atraer a turistas interesados en experiencias genuinas. | • Campo específico para destacar valor cultural/tradicional<br>• Posibilidad de añadir etiquetas culturales<br>• Opción para incluir historia o tradiciones locales |
-| US-TB-09 | Como **usuario aventurero**, quiero recibir notificaciones push sobre ofertas o actividades relevantes cerca de mi ubicación, para descubrir oportunidades espontáneas. | • Control de frecuencia de notificaciones<br>• Personalización por categorías de interés<br>• Configuración de radio geográfico |
-
-## 8.3.2. To-Be Product Backlog
-
-El siguiente backlog prioriza las historias de usuario basándose en el impacto esperado según los experimentos diseñados y el análisis de puntuaciones de preguntas:
-
-| Prioridad | ID | User Story | Story Points | Justificación |
-|:---------:|----|-----------|--------------:|---------------|
-| 1 | US-TB-01 | Como **usuario aventurero**, quiero que la carga de comentarios sea más rápida (menos de 800ms), para poder revisar opiniones sobre actividades sin interrupciones en mi experiencia. | 8 | Alta puntuación (28) en la evaluación de preguntas experimentales. Impacto directo en la experiencia de usuario y en la percepción de rendimiento de la plataforma. |
-| 2 | US-TB-02 | Como **administrador**, quiero que el proceso de eliminación de comentarios inapropiados sea rápido (menos de 1.5s), para moderar eficientemente el contenido de la plataforma. | 8 | Alta puntuación (28) en evaluación experimental. Mejora crítica para la eficiencia operativa y la integridad del contenido. |
-| 3 | US-TB-04 | Como **usuario aventurero**, quiero recibir recomendaciones personalizadas basadas en mis preferencias e historial, para descubrir actividades relevantes más fácilmente. | 13 | Impacto significativo en engagement y retención. Apoya directamente el objetivo de aumentar la satisfacción del usuario en un 25%. |
-| 4 | US-TB-06 | Como **usuario internacional**, quiero poder cambiar el idioma de la plataforma entre español e inglés, para utilizar AventuraPe en mi idioma preferido. | 13 | Puntuación alta (25) en evaluación. Crucial para la expansión internacional y eliminación de barreras de entrada. |
-| 5 | US-TB-03 | Como **emprendedor**, quiero que la publicación de nuevas actividades sea más rápida (menos de 1s), para agilizar la gestión de mi oferta. | 5 | Puntuación media-alta (24) en evaluación. Mejora importante para la experiencia del emprendedor. |
-| 6 | US-TB-09 | Como **usuario aventurero**, quiero recibir notificaciones push sobre ofertas o actividades relevantes cerca de mi ubicación, para descubrir oportunidades espontáneas. | 8 | Puntuación media-alta (23) en evaluación. Potencial significativo para re-engagement. |
-| 7 | US-TB-07 | Como **usuario aventurero**, quiero ver reseñas verificadas con etiquetas especiales, para confiar más en las opiniones de otros usuarios. | 8 | Alineado con los experimentos sobre el impacto de reseñas verificadas en el uso de la plataforma. |
-| 8 | US-TB-05 | Como **usuario aventurero**, quiero poder alternar entre modo claro y oscuro, para adaptar la interfaz a mis condiciones de uso y preferencias visuales. | 5 | Puntuación media (22) en evaluación. Mejora la experiencia en condiciones de baja luminosidad. |
-| 9 | US-TB-08 | Como **emprendedor**, quiero destacar la autenticidad cultural de mi negocio en mi perfil, para atraer a turistas interesados en experiencias genuinas. | 5 | Soporta el experimento sobre autenticidad cultural como estrategia para impulsar ventas locales. |
-
-Esta priorización refleja tanto el valor potencial para el negocio como la complejidad técnica estimada, asegurando un enfoque balanceado que optimice tanto el rendimiento de la plataforma como la experiencia del usuario, mientras se expande su alcance geográfico.
+Los story points reflejan la complejidad relativa de cada característica:
+- 8 puntos: Funcionalidades complejas que requieren cambios significativos en el backend y frontend
+- 5 puntos: Características de complejidad media con impacto moderado en los sistemas existentes
+- 3 puntos: Mejoras más sencillas que requieren cambios localizados
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
