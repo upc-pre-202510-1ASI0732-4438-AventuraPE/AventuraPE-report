@@ -3251,10 +3251,15 @@ Los story points reflejan la complejidad relativa de cada característica:
 ![entrevista_salvador](images/interviews/entrevista_salvador.png)
 
 2. 
-- **Entrevistado**: 
-- **Duración**: 
+- **Entrevistado**: Diego Salinas
+- **Duración**: 3:03
 - **Resumen**:
-- **Link**:
+Diego Salinas compartió sus impresiones sobre la plataforma web, destacando inicialmente la facilidad de interacción y la armonía de colores, que, según él, contribuyen a una experiencia visual agradable y profesional.
+Sin embargo, Salinas identificó varias áreas clave de mejora que impactan la usabilidad general. Señaló su confusión por la presencia de textos en inglés sin traducir, lo cual crea una barrera para los usuarios hispanohablantes. Además, reportó dificultades técnicas con las funcionalidades de favoritos y "me gusta", indicando que estos botones no respondían correctamente o no guardaban las preferencias del usuario.
+Finalmente, Salinas sugirió optimizar la velocidad de carga en ciertas secciones, mejorar la navegación móvil para una experiencia táctil más fluida y la implementación de notificaciones más claras sobre las acciones realizadas.
+
+- **Link**:[https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing](https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing)
+  ![evidencia-entrevista-diego](images/interviews/evidencia-entrevista-diego.png)
 
 3. 
 - **Entrevistado**: 
