@@ -3292,10 +3292,14 @@ Finalmente, Salinas sugirió optimizar la velocidad de carga en ciertas seccione
 ![entrevista francesko](images/interviews/entrevista_francesko.png)
 
 2. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**:
-- **Link**:
+- **Entrevistado**: Nasthya del Carpio
+- **Duración**: 10:24
+- **Resumen**: Nasthya del Carpio, emprendedora de la marca Ecobags de Totegabs, señaló que el proceso de registro y configuración del perfil en la plataforma fue intuitivo y sencillo, tanto para ella como para el ingreso de datos de su emprendimiento. Destacó que la creación, edición y eliminación de actividades también fue clara y fácil de realizar, gracias a una interfaz amigable. Resaltó como aspecto más valioso la sección de estadísticas, ya que le permite obtener feedback clave desde la perspectiva del usuario, lo cual considera esencial para mejorar y hacer crecer su negocio. Como sugerencia, propuso incluir más tipos de suscripciones ajustadas al tamaño del emprendimiento.
+
+-  **Link**: [https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing](https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing)
+
+![entrevista nasthya](images/interviews/entrevista_nas.png)
+
 
 3. 
 - **Entrevistado**: 
