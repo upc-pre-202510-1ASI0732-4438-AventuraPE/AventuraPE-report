@@ -3262,10 +3262,12 @@ Finalmente, Salinas sugirió optimizar la velocidad de carga en ciertas seccione
   ![evidencia-entrevista-diego](images/interviews/evidencia-entrevista-diego.png)
 
 3. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**:
-- **Link**:
+- **Entrevistado**: Pamela Vela  
+- **Duración**: 13:42  
+- **Resumen**: La entrevistada ,una estudiante universitaria interesada en el aplicativo, tuvo una experiencia en general positiva con la plataforma, destacando la facilidad del proceso de inicio de sesión, aunque mencionó que el CAPTCHA puede resultar tedioso y poco confiable. Encontró intuitiva la búsqueda de actividades gracias a la posibilidad de usar palabras clave, lo que facilitó hallar eventos de interés. Valoró especialmente la funcionalidad del ícono de corazón para guardar favoritos, ya que al marcar una actividad esta se agrega de inmediato a su lista, con una respuesta clara del sistema. También resaltó como punto fuerte la opción de publicar reseñas, permitiéndole compartir su experiencia con otros usuarios. La navegación entre secciones y la presentación de información en las actividades le parecieron claras, completas y bien organizadas.   
+- **Link**: [https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing](https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing)  
+
+![alt text](images/chapter8/entrevaventur.png)  
 
 4. 
 - **Entrevistado**: 
@@ -3300,18 +3302,20 @@ Finalmente, Salinas sugirió optimizar la velocidad de carga en ciertas seccione
 
 ![entrevista nasthya](images/interviews/entrevista_nas.png)
 
-
 3. 
-- **Entrevistado**: Pamela Vela  
-- **Duración**: 13:42  
-- **Resumen**: La entrevistada ,una estudiante universitaria interesada en el aplicativo, tuvo una experiencia en general positiva con la plataforma, destacando la facilidad del proceso de inicio de sesión, aunque mencionó que el CAPTCHA puede resultar tedioso y poco confiable. Encontró intuitiva la búsqueda de actividades gracias a la posibilidad de usar palabras clave, lo que facilitó hallar eventos de interés. Valoró especialmente la funcionalidad del ícono de corazón para guardar favoritos, ya que al marcar una actividad esta se agrega de inmediato a su lista, con una respuesta clara del sistema. También resaltó como punto fuerte la opción de publicar reseñas, permitiéndole compartir su experiencia con otros usuarios. La navegación entre secciones y la presentación de información en las actividades le parecieron claras, completas y bien organizadas.  
-- **Link**: [https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing](https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing)
-
-4. 
 - **Entrevistado**: Diego Rosado  
 - **Duración**: 17:59  
 - **Resumen**: El entrevistado, un emprendedor con una tienda de ropa llamada Urbanoestilo, consideró que el proceso de registro fue claro, aunque exigente en el apartado de la contraseña, lo cual entiende como una medida necesaria de seguridad. Durante la creación de actividades, encontró confusa la sección de precios, ya que no se especifica si se refiere al costo de entrada al evento o al precio de los productos, por lo que sugiere mayor claridad textual. En cuanto a las estadísticas, señaló que sería útil incorporar indicadores de interés, como confirmaciones de asistencia o disponibilidad de vacantes, al estilo de plataformas como Facebook. Destacó como funcionalidad valiosa la posibilidad de crear eventos y sugirió que sería beneficioso tener interacción directa con las reseñas que los usuarios dejan sobre su emprendimiento.  
-- **Link**: [https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing](https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing)
+- **Link**: [https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing](https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing)  
+
+![alt text](images/chapter8/entreempr.png)  
+
+4. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
@@ -3328,7 +3332,7 @@ AventuraPe es una aplicación móvil y web diseñada para conectar a los usuario
 ![video_about_the_product](image-14.png)
 
 
-**ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)
+**ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)  
 
 # Conclusiones  
 ## Conclusiones y recomendaciones  
