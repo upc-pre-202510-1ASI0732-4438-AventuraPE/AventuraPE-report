@@ -3734,7 +3734,6 @@ Este enfoque asegurará que AventuraPE continúe evolucionando en función de lo
 | E05 | Gestión de Contenido | Herramientas para que los emprendedores mejoren la presentación de sus ofertas |
 
 ### 8.3.2. To-Be Product Backlog
-Este backlog prioriza las mejoras de rendimiento en la parte superior (US-TB-01 a US-TB-03), seguidas por funcionalidades que amplían el alcance de la plataforma (soporte multiidioma) y mejoran significativamente la experiencia del usuario (recomendaciones personalizadas). Las características de confianza y engagement (reseñas verificadas, notificaciones) tienen prioridad media, mientras que las mejoras visuales y de presentación completan el backlog.
 
 | # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
 |:-------:|---------------|--------|:------------------------:|
