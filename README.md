@@ -2951,7 +2951,9 @@ Para garantizar que nuestras soluciones satisfagan tanto los requerimientos func
 | **JUnit**    | Framework de pruebas (TDD)         | Permite realizar pruebas unitarias sobre pequeños bloques de código Java.  | Ejecutar pruebas automatizadas que verifiquen el correcto funcionamiento de las funcionalidades desarrolladas.          |
 | **Mockito**  | Librería de simulación (TDD)       | Facilita la creación de objetos simulados para pruebas.                    | Reproducir el comportamiento de componentes externos, permitiendo pruebas más precisas y controladas.                   |
 | **Cucumber** | Herramienta de pruebas (BDD)       | Utiliza el lenguaje Gherkin para definir escenarios basados en comportamiento. | Redactar pruebas comprensibles para todos los actores del proyecto, alineando el desarrollo con las necesidades del negocio. |  
+| **GitHub Actions**  | Plataforma de CI/CD                | Automatiza flujos de trabajo definidos en YAML dentro del repositorio.     | Dispara compilación, pruebas unitarias/integración y análisis estático en cada `push` o `pull request`.                 |
 
+Cada vez que un desarrollador hace `push` o abre un `pull request`, GitHub Actions ejecuta automáticamente nuestro pipeline de CI, validando compilación, pruebas y calidad de código antes de permitir cualquier merge a las ramas protegidas (`develop`, `main` y `feat/deploy`).
 ### 7.1.2. Build & Test Suite Pipeline Components  
 
 ![alt text](images/Testing-Suites-&-Validation/core-integration-tests-1.png) 
@@ -3172,10 +3174,83 @@ jobs:
 ```
 
 ## 7.4. Continuous Monitoring  
-### 7.4.1. Tools and Practices  
-### 7.4.2. Monitoring Pipeline Components  
-### 7.4.3. Alerting Pipeline Components  
-### 7.4.4. Notification Pipeline Components  
+### 7.4.1. Tools and Practices
+
+- Pruebas de carga y rendimiento
+
+Cuando necesitamos evaluar cómo responde una aplicación bajo condiciones de alta demanda, usamos JMeter (Apache). Esta herramienta nos permite simular múltiples usuarios enviando solicitudes simultáneas a nuestros servicios, lo que resulta ideal para pruebas de estrés, carga y rendimiento, tanto en aplicaciones web como en APIs REST y SOAP. De esta forma, identificamos cuellos de botella y optimizamos el desempeño antes de una implementación en producción.
+
+![apache](images/chapter-7/tools-and-practices/Apache_JMeter.png)
+
+- Monitoreo de experiencia del usuario (UX Monitoring)
+
+Para entender cómo interactúan los usuarios con nuestra plataforma y mejorar su experiencia, integramos herramientas como Matomo, una alternativa open source a Google Analytics. Con ella, realizamos un seguimiento detallado de visitas y eventos, manteniendo siempre el control total sobre los datos recopilados, lo cual refuerza nuestro compromiso con la privacidad.
+Complementamos esta información con Datadog, que nos brinda una visión completa del rendimiento de nuestras aplicaciones. A través del monitoreo de métricas, logs y rendimiento tanto del frontend como del backend, detectamos problemas en tiempo real y reaccionamos con agilidad ante cualquier incidencia.
+
+![matomo](images/chapter-7/tools-and-practices/matomo.png)
+
+![datadog](images/chapter-7/tools-and-practices/datadog.png)
+
+
+- Supervisión de APIs
+
+En cuanto a la supervisión de nuestras APIs, recurrimos a Hoppscotch, una herramienta ligera y de código abierto que utilizamos directamente desde el navegador. Gracias a su interfaz intuitiva, realizamos pruebas rápidas y colaborativas que nos ayudan a validar el comportamiento de los endpoints y a garantizar la fiabilidad de nuestras integraciones.
+
+![hoppscotch](images/chapter-7/tools-and-practices/hoppscotch.png)
+
+- Auditoría de calidad web (accesibilidad, SEO, rendimiento)
+
+Para asegurar que nuestras páginas web cumplan con los estándares de calidad, realizamos auditorías automáticas con Google Lighthouse. Esta herramienta analiza nuestras aplicaciones en términos de rendimiento, accesibilidad, optimización para motores de búsqueda (SEO) y buenas prácticas generales de desarrollo. Con sus reportes detallados, priorizamos mejoras técnicas y elevamos la calidad general de nuestras soluciones digitales.
+
+![Lighthouse](images/chapter-7/tools-and-practices/lighthouse.jpeg)
+
+- Monitoreo de disponibilidad y uptime
+
+Para asegurarnos de que nuestros servicios estén siempre disponibles, utilizamos Uptime Kuma, una solución de monitoreo autoalojada y de código abierto. Esta herramienta nos permite vigilar de forma continua la disponibilidad de APIs, sitios web y otros servicios críticos, generando alertas cuando detecta interrupciones y facilitando la trazabilidad de incidentes.
+
+![Uptime Kuma](images/chapter-7/tools-and-practices/uptime-kuma.png)
+
+
+### 7.4.2. Monitoring Pipeline Components
+
+En ecosistemas de aplicaciones basados en Spring Boot y Vue.js, se implementa una estrategia integral de monitoreo que permite mantener visibilidad completa sobre el estado y rendimiento de los sistemas en tiempo real.
+
+Para aplicaciones con Spring Boot, se utiliza Micrometer junto con Prometheus como sistema de métricas. Micrometer actúa como una fachada de métricas que se integra nativamente con Spring Boot Actuator, permitiendo recopilar métricas detalladas sobre JVM, pools de conexiones, rendimiento de endpoints HTTP y métricas de negocio personalizadas. Prometheus, por su parte, almacena estas métricas de forma eficiente y proporciona un potente lenguaje de consulta (PromQL) para análisis avanzados.
+
+![grafana](images/chapter-7/tools-and-practices/grafana.png)
+
+Se complementa Prometheus con Grafana, que ofrece dashboards interactivos y altamente personalizables. Se crean paneles específicos para monitorear el rendimiento de nuestras APIs REST, uso de memoria, throughput de transacciones y métricas de la base de datos. La integración entre Grafana y Prometheus permite crear alertas visuales y realizar análisis históricos de tendencias.
+
+![prometheus](images/chapter-7/tools-and-practices/prometheus.png)
+
+Para aplicaciones con Vue.js, se utiliza Sentry, este proporciona monitoreo de errores en tiempo real, seguimiento de rendimiento y análisis de user sessions. Esta herramienta captura excepciones JavaScript, errores de red y problemas de rendimiento, enviando información detallada sobre el contexto y stack trace de cada incidencia.
+
+![sentry](images/chapter-7/tools-and-practices/sentry.png)
+
+
+### 7.4.3. Alerting Pipeline Components
+
+El sistema de alertas está diseñado para proporcionar notificaciones proactivas y contextuales que permitan responder rápidamente ante cualquier anomalía o degradación del servicio.
+
+Se implementa Alertmanager como componente central del sistema de alertas. Esta herramienta se integra directamente con Prometheus y permite definir reglas de alertas basadas en métricas, agrupar alertas relacionadas, aplicar políticas de silenciamiento y enrutar notificaciones según su severidad y contexto.
+Se configuran alertas específicas para aplicaciones Spring Boot que monitorean tiempo de respuesta de endpoints, tasas de error HTTP, conexiones de base de datos activas y métricas de garbage collection de la JVM. Estas alertas ayudan a identificar degradaciones de rendimiento o problemas de capacidad antes de que impacten significativamente a los usuarios.
+
+![alert_manager](images/chapter-7/tools-and-practices/prometheus_alert_manager.png)
+
+Se implementa Wazuh para detección de anomalías en logs y eventos de seguridad. Esta herramienta analiza patrones de comportamiento y alerta sobre actividades sospechosas, intentos de acceso no autorizado o cambios inesperados en los patrones de uso de las aplicaciones.
+
+![wazuh](images/chapter-7/tools-and-practices/wazuh.png)
+
+
+### 7.4.4. Notification Pipeline Components
+
+El sistema de notificaciones está diseñado para ser flexible, escalable y capaz de llegar a los equipos correctos a través de múltiples canales según la naturaleza y severidad de cada incidencia.
+
+Se utiliza Gotify como servidor de notificaciones push autoalojado que centraliza el envío de mensajes a dispositivos móviles y aplicaciones web. Esta herramienta permite mantener control total sobre las notificaciones sin depender de servicios externos de terceros.Se configuran políticas de escalamiento que aumentan la urgencia y amplían el alcance de las notificaciones cuando las alertas no son reconocidas dentro de ventanas de tiempo predefinidas. Esto asegura que las incidencias críticas no pasen desapercibidas y reciban la atención necesaria de forma oportuna
+
+![gotify](images/chapter-7/tools-and-practices/gotify.png)
+
+
 
 # Part III: Experiment-Driven Lifecycle  
 
