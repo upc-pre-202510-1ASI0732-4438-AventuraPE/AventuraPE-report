@@ -3257,26 +3257,480 @@ Se utiliza Gotify como servidor de notificaciones push autoalojado que centraliz
 # Capítulo VIII: Experiment-Driven Development
 
 ## 8.1. Experiment Planning  
-### 8.1.1. As-Is Summary  
-### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims  
-### 8.1.3. Experiment-Ready Questions  
-### 8.1.4. Question Backlog  
-### 8.1.5. Experiment Cards  
+### 8.1.1. As-Is Summary
+
+**Rendimiento de módulos**
+
+- Gestión de comentarios
+
+La funcionalidad de comentarios presenta tiempos de respuesta que impactan la experiencia del usuario. Al realizar un comentario, el sistema requiere aproximadamente 1.5 segundos para mostrar el contenido publicado. Esta latencia se observa consistentemente en todas las interacciones de comentarios y puede afectar la fluidez de la conversación entre usuarios.
+
+- Publicación de actividades
+
+El proceso de publicación de actividades muestra un tiempo de procesamiento de aproximadamente 2 segundos desde la confirmación hasta la visualización del contenido. Este delay, aunque no crítico, representa una oportunidad de mejora para optimizar la percepción de velocidad de la plataforma.
+
+- Operaciones administrativas
+
+Las funciones administrativas, específicamente la eliminación de comentarios, presentan los tiempos de respuesta más elevados del sistema. El proceso de borrado de comentarios requiere entre 3 y 4 segundos para completarse y reflejar los cambios en la interfaz. Esta latencia puede impactar significativamente la eficiencia de las tareas de moderación.<br>
+
+**Compatibilidad y accesibilidad**
+
+- Diseño responsivo
+
+La plataforma cuenta con un diseño completamente responsivo que se adapta adecuadamente a diferentes tamaños de pantalla y dispositivos. La interfaz de usuario mantiene su funcionalidad y usabilidad tanto en dispositivos desktop como tablet y móviles.
+
+- Aplicación móvil
+
+Se dispone de una aplicación móvil nativa de android que complementa la experiencia web, proporcionando acceso completo a las funcionalidades principales de la plataforma desde dispositivos móviles.<br>
+
+**Limitaciones**
+
+- Soporte multiidioma
+
+Actualmente, la plataforma no cuenta con soporte para traducción a diferentes idiomas. Esta limitación restringe el alcance de la aplicación a usuarios que manejen únicamente el idioma base del sistema, representando una barrera significativa para la expansión internacional o el servicio a comunidades multilingües.
+
+- Modo oscuro
+
+La interfaz carece de modo oscuro como opción de visualización. Esta funcionalidad, cada vez más demandada por los usuarios modernos, no está disponible, lo que puede afectar la experiencia de uso en condiciones de poca luz o para usuarios que prefieren interfaces de bajo contraste.<br>
+
+
+**Oportunidades de mejora**
+
+- Optimización de rendimiento
+
+Reducción de tiempos de respuesta en operaciones de comentarios
+Mejora de la velocidad de publicación de actividades
+Optimización crítica de las operaciones administrativas de eliminación
+
+- Expansión funcional
+
+Implementación de sistema de internacionalización (i18n)
+Desarrollo de modo oscuro/claro intercambiable
+Evaluación de cacheo y optimización de consultas de base de datos
+
+- Experiencia del usuario
+
+Implementación de indicadores de carga durante operaciones largas
+Feedback visual inmediato para acciones del usuario
+Optimización de la interfaz administrativa para operaciones frecuentes
+
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+**Assumptions**
+
+- Los tiempos de respuesta elevados se deben principalmente a consultas de base de datos no optimizadas
+- La latencia de red contribuye significativamente a los delays observados
+El backend Spring Boot puede soportar mayor concurrencia con optimizaciones menores
+- La aplicación Vue.js está realizando re-renders innecesarios después de operaciones CRUD
+- Los 3-4 segundos de delay en eliminaciones administrativas incluyen validaciones de seguridad adicionales
+- Los usuarios abandonan acciones si el feedback tarda más de 2 segundos
+La ausencia de modo oscuro afecta negativamente la retención de usuarios nocturnos
+- La falta de soporte multiidioma limita el crecimiento en mercados internacionales
+- Los usuarios móviles tienen expectativas de rendimiento similares a los de desktop
+- Las imágenes y assets no están siendo optimizados para carga rápida
+
+
+**Knowlegde**
+
+- Métricas de usuario
+
+Para entender el comportamiento de los usuarios, es importante analizar la tasa exacta de abandono durante operaciones lentas, ya que permite identificar puntos críticos donde la experiencia se ve comprometida. Además, es necesario evaluar el impacto real de los delays en la satisfacción del usuario, lo cual puede incidir directamente en la retención. 
+
+Por otro lado, el porcentaje de usuarios que acceden desde dispositivos móviles frente a aquellos que utilizan desktop ofrece una visión clara para priorizar mejoras de usabilidad y diseño responsivo. Además de la necesidad de conocer la distribución geográfica de los usuarios potenciales, especialmente en regiones que requieren soporte multiidioma, con el fin de adaptar el sistema a sus necesidades lingüísticas y culturales.
+
+- Rendimiento técnico
+
+Es clave identificar cuellos de botella específicos en las consultas a la base de datos, ya que suelen representar una de las principales fuentes de lentitud en el sistema. Asimismo, la comparación entre el tiempo real de procesamiento en backend y la latencia de red permite obtener una imagen completa del rendimiento y de posibles puntos de optimización. 
+
+- Funcionalidades demandadas
+
+En cuanto a las funcionalidades, se debe conocer las preferencias reales de los usuarios respecto al uso del modo oscuro, ya que esta opción puede influir en la percepción de accesibilidad y personalización del sistema. También es esencial identificar los idiomas más demandados dentro de la base de usuarios.
+
+
+**Ideas**
+
+- Optimización de rendimiento
+
+  - Implementar caché Redis para consultas frecuentes de comentarios y actividades
+
+- Mejoras de UX/UI
+
+  - Feedback visual inmediato con estados de carga optimistas
+  - Modo oscuro implementado con CSS custom properties para switching rápido
+  - Tema system que respete preferencias del dispositivo del usuario
+
+- Funcionalidades nuevas
+
+  - Sistema i18n usando Vue I18n con lazy loading de traducciones
+  - Push notifications para comentarios y actividades importantes
+
+- Arquitectura y infraestructura
+
+  - Separación en microservicios para operaciones administrativas críticas
+  - Monitoring avanzado con métricas de business intelligence
+
+**Claims**
+
+- **Mejora de experiencia:** El modo oscuro puede mejorar significativamente la experiencia del usuario y la usabilidad, especialmente durante sesiones nocturnas o en ambientes con poca luz, lo que podría incrementar el tiempo de permanencia en la plataforma.
+
+- **Optimización de rendimiento:** La implementación de caché Redis y optimizaciones de consultas de base de datos puede reducir los tiempos de respuesta de comentarios y publicaciones en más del 50%, mejorando considerablemente la percepción de velocidad de la aplicación.
+
+- **Eficiencia administrativa:** La optimización de las operaciones administrativas, especialmente la eliminación de comentarios, puede reducir el tiempo de procesamiento de 3-4 segundos a menos de 1.5 segundos, incrementando significativamente la productividad del equipo de moderación.
+
+- **Expansión internacional:** La implementación de soporte multiidioma puede expandir la base de usuarios internacionales de manera considerable, al eliminar las barreras idiomáticas que actualmente limitan el alcance de la plataforma.
+
+- **Accesibilidad multiplataforma:** Se afirma que la sincronización mejorada entre la aplicación web y móvil, junto con notificaciones push, puede crear una experiencia unificada que incremente el engagement cross-platform de los usuarios.
+
+
+### 8.1.3. Experiment-Ready Questions
+
+| Question 	| Confidence 	| Risk 	| Impact 	| Interest 	| Total Score 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	| 8 - Tecnología madura y bien documentada, implementación directa con Spring Boot Data Redis 	| 3 - Riesgo medio por posible invalidación de caché y complejidad de configuración inicial 	| 9 - Mejora crítica en UX, directamente impacta satisfacción del usuario 	| 8 - Alto interés del equipo técnico, solución elegante a problema conocido 	| 28 	|
+| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	| 7 - Requiere análisis de queries existentes, pero técnicas conocidas de optimización 	| 2 - Bajo riesgo, cambios incrementales sin afectar funcionalidad 	| 8 - Impacto significativo en engagement de usuarios activos 	| 7 - Interés moderado-alto, mejora técnica importante 	| 24 	|
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| 6 - Funcionalidad popular, aunque requiere revisión completa de estilos CSS 	| 2 - Bajo riesgo, implementación técnica estándar 	| 6 - Mejora la experiencia del usuario, pero no es crítica 	| 9 - Muy alto interés de usuarios, especialmente aquellos que utilizan la aplicación en entornos oscuros 	| 22 	|
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| 8 - Problema identificado claramente, soluciones técnicas conocidas 	| 4 - Riesgo medio-alto por impacto en operaciones críticas de moderación 	| 9 - Impacto directo en eficiencia del equipo administrativo 	| 7 - Interés alto del equipo operativo por productividad 	| 28 	|
+| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| 4 - Implementación compleja, requiere reestructuración de contenido existente 	| 5 - Alto riesgo por impacto en toda la aplicación y mantenimiento futuro 	| 9 - Potencial expansión significativa del mercado objetivo 	| 7 - Interés alto por oportunidades de crecimiento internacional 	| 25 	|
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| 6 - Requiere configuración de service worker y backend notifications 	| 3 - Riesgo medio por permisos de usuario y posible spam 	| 7 - Potencial mejora en retención y reactivación de usuarios 	| 7 - Interés alto por estrategias de engagement 	| 23 	|
+
+
+### 8.1.4. Question Backlog
+
+| Prioridad 	| Pregunta 	|
+|:---:	|:---:	|
+| 8 	| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	|
+| 8 	| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	|
+| 5 	| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	|
+| 3 	| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	|
+| 2 	| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	|
+| 1 	| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	|
+
+### 8.1.5. Experiment Cards
+
+| Pregunta 	| Qué 	| Por qué 	| Hipótesis (con porcentaje) 	|
+|:---:	|:---:	|:---:	|:---:	|
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	| Implementar sistema de caché Redis para almacenar comentarios frecuentemente consultados y reducir carga en base de datos 	| Los comentarios representan el 60% de las consultas a BD. Tiempo actual de 1.5s impacta negativamente la experiencia de usuario y engagement 	| Si implementamos caché Redis para comentarios, entonces reduciremos el tiempo de respuesta en un 50% (de 1.5s a menos de 800ms), porque eliminaremos consultas repetitivas a la base de datos 	|
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| Optimizar queries de eliminación, implementar soft delete y mejorar índices de base de datos para operaciones administrativas 	| Moderadores reportan frustración por lentitud. Tiempo excesivo impacta productividad del equipo y capacidad de respuesta ante contenido problemático 	| Si optimizamos las operaciones administrativas, entonces reduciremos el tiempo de eliminación de comentarios en un 60% (de 3-4s a menos de 1.5s), porque eliminaremos cuellos de botella en las consultas de moderación 	|
+| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| Implementar sistema de internacionalización (i18n) con soporte para español e inglés, incluyendo interfaz, contenido y configuración regional 	| Analytics muestran 25% de visitantes internacionales que abandonan rápidamente. Barrera del idioma limita expansión de mercado 	| Si implementamos soporte multiidioma, entonces incrementaremos los registros internacionales en un 40% en 6 meses, porque eliminaremos la barrera del idioma para usuarios no hispanohablantes 	|
+| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	| Analizar y optimizar queries lentas, añadir índices apropiados y refactorizar consultas N+1 en el módulo de actividades 	| Usuarios abandonan proceso de publicación por lentitud. 2 segundos excede expectativas de respuesta en aplicaciones modernas 	| Si optimizamos las consultas de base de datos, entonces mejoraremos el tiempo de publicación en un 50% (de 2s a menos de 1s), porque eliminaremos consultas ineficientes y redundantes 	|
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| Implementar theme switcher con modo oscuro completo, incluyendo todos los componentes, formularios y elementos de la interfaz 	| 40% de usuarios activos durante horarios nocturnos. Modo oscuro reduce fatiga visual y es tendencia en aplicaciones modernas 	| Si añadimos modo oscuro, entonces incrementaremos el tiempo de sesión nocturna en un 25%, porque reduciremos la fatiga visual en entornos con poca luz 	|
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| Implementar sistema de notificaciones push web usando Service Workers, con segmentación por comportamiento de usuario 	| 35% de usuarios registrados se vuelven inactivos después de 2 semanas. Falta mecanismo para reactivar usuarios dormidos 	| Si implementamos notificaciones push segmentadas, entonces incrementaremos el re-engagement de usuarios inactivos en un 30%, porque les recordaremos contenido relevante y nuevas actividades 	|
 
 ## 8.2. Experiment Design  
-### 8.2.1. Hypotheses  
-### 8.2.2. Measures  
-### 8.2.3. Conditions  
-### 8.2.4. Scale Calculations and Decisions  
-### 8.2.5. Methods Selection  
-### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection  
+
+En esta sección, presentamos el diseño detallado de nuestros experimentos para validar las hipótesis clave de AventuraPE. Estos experimentos nos permitirán tomar decisiones basadas en datos sobre las características y funcionalidades de nuestra plataforma de turismo.
+
+### 8.2.1. Hypotheses
+
+Las siguientes hipótesis han sido formuladas basándonos en nuestro Lean UX Canvas y en las necesidades identificadas en los segmentos objetivo. Cada una aborda aspectos fundamentales de nuestra propuesta de valor para los usuarios y negocios locales.
+
+#### Card 1: Redis Cache for Comments
+
+|              | Hypothesis                                                                                                                    |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Question**      | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a menos de 800 ms?                       |
+| **Belief**        | Los comentarios representan el 60 % de las consultas a la base de datos y el tiempo actual de 1.5 s impacta UX.         |
+| **Hypothesis**    | Si implementamos un sistema de caché Redis para comentarios, entonces reduciremos el tiempo de respuesta a < 800 ms.      |
+| **Null Hypothesis** | La implementación de caché Redis no reducirá significativamente el tiempo de respuesta, manteniéndose ~ 1.5 s.         |
+
+#### Card 2: Optimización de Operaciones Administrativas
+
+|              | Hypothesis                                                                                                                          |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| **Question**      | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a menos de 1.5 s?            |
+| **Belief**        | Moderadores reportan frustración por la lentitud (3–4 s), impactando la productividad del equipo de moderación.               |
+| **Hypothesis**    | Si optimizamos consultas de eliminación (índices y soft delete), entonces reduciremos el tiempo a < 1.5 s.                       |
+| **Null Hypothesis** | Las optimizaciones no cambiarán significativamente el tiempo de eliminación, manteniéndose entre 3 y 4 s.                      |
+
+#### Card 3: Impacto de las Recomendaciones Personalizadas en la Satisfacción del Usuario
+
+| | Hypothesis |
+|---|---|
+| **Question** | ¿Aumentará la satisfacción del usuario al implementar un sistema de recomendaciones personalizadas de destinos turísticos? |
+| **Belief** | La personalización de recomendaciones basada en preferencias e intereses aumentará la satisfacción del usuario y reducirá el tiempo de planificación de viajes. |
+| **Hypothesis** | La implementación de recomendaciones personalizadas aumentará la satisfacción del usuario en un 25% y reducirá el tiempo de planificación en un 30% durante los primeros dos meses tras su lanzamiento. |
+| **Null Hypothesis** | Las recomendaciones personalizadas no tendrán un impacto significativo en la satisfacción del usuario ni en el tiempo de planificación de viajes. |
+
+#### Card 4: Efecto de Reseñas Verificadas en el Uso y Conversión de la Plataforma
+
+| | Hypothesis |
+|---|---|
+| **Question** | ¿Incrementará el uso de la plataforma al integrar reseñas y valoraciones de usuarios reales? |
+| **Belief** | Las opiniones auténticas de otros viajeros generarán mayor confianza y ayudarán a los usuarios a tomar mejores decisiones sobre destinos y servicios. |
+| **Hypothesis** | La integración de un sistema de reseñas verificadas incrementará el tiempo de permanencia en la plataforma en un 20% y las reservas completadas en un 15% en los tres meses posteriores a su implementación. |
+| **Null Hypothesis** | La integración de reseñas y valoraciones de usuarios no afectará significativamente el tiempo de permanencia en la plataforma ni las conversiones. |
+
+#### Card 5: Autenticidad Cultural como Estrategia para Impulsar Ventas Locales
+
+| | Hypothesis |
+|---|---|
+| **Question** | ¿Aumentarán las ventas de los negocios locales al destacar su autenticidad cultural y conexión con tradiciones peruanas? |
+| **Belief** | Resaltar la autenticidad cultural y el valor histórico de los negocios locales atraerá a turistas que buscan experiencias genuinas y únicas. |
+| **Hypothesis** | Los negocios locales que destaquen su autenticidad cultural en sus perfiles verán un aumento del 30% en reservas comparado con aquellos que no lo hagan, durante los primeros tres meses. |
+| **Null Hypothesi** | Destacar la autenticidad cultural no tendrá un impacto significativo en las reservas de los negocios locales. |
+
+
+
+### 8.2.2. Measures
+
+Para cada hipótesis, establecemos medidas específicas que nos permitirán evaluar objetivamente los resultados de nuestros experimentos. Estas métricas han sido seleccionadas por su relevancia y capacidad para proporcionar información valiosa sobre el comportamiento y satisfacción del usuario.
+
+
+#### Card 1: Redis Cache for Comments
+
+|         | Measure                                                                                         |
+|--------------|-----------------------------------------------------------------------------------------------|
+| **Question** | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a < 800 ms?   |
+| **Measure**  | Tiempo medio de respuesta de la API de comentarios (ms) medido en 100 solicitudes consecutivas. |
+
+#### Card 2: Optimización de Operaciones Administrativas
+
+|         | Measure                                                                                                      |
+|--------------|------------------------------------------------------------------------------------------------------------|
+| **Question** | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? |
+| **Measure**  | Tiempo medio de ejecución de la operación de eliminación de comentario (ms) medido en 50 operaciones sucesivas. |
+
+#### **Card 3: Estrategia de Medición para Recomendaciones Personalizadas**
+
+| | **Measure** |
+|---|---|
+| **Question** | ¿Cómo mediremos el impacto de las recomendaciones personalizadas en la satisfacción del usuario? |
+| **Measure** | Utilizaremos encuestas de satisfacción (CSAT) antes y después de la implementación, análisis del tiempo promedio para completar un itinerario, tasa de adopción de recomendaciones sugeridas, y seguimiento de interacciones con recomendaciones mediante herramientas de analítica. |
+
+
+#### **Card 4: Estrategia de Medición para Reseñas y Valoraciones**
+
+| | **Measure** |
+|---|---|
+| **Question** | ¿Cómo evaluaremos el impacto de las reseñas y valoraciones en el uso de la plataforma? |
+| **Measure** | Mediremos el tiempo promedio de sesión, páginas visitadas por usuario, tasa de clics en reseñas, correlación entre visualización de reseñas y conversiones, y encuestas sobre el factor de influencia de las reseñas en la decisión de reserva. |
+
+
+#### **Card 5: Estrategia de Medición para Autenticidad Cultural en Negocios Locales**
+
+| | **Measure** |
+|---|---|
+| **Question** | ¿De qué manera cuantificaremos el impacto de destacar la autenticidad cultural en los negocios locales? |
+| **Measure** | Compararemos las tasas de conversión entre perfiles que destacan autenticidad vs. perfiles estándar, análisis A/B de CTR en listados, encuestas a usuarios sobre motivaciones de reserva, y entrevistas con propietarios de negocios sobre cambios en volumen de visitantes. |
+
+
+### 8.2.3. Conditions
+
+Para cada experimento, establecemos condiciones experimentales y de control claras que nos permitirán comparar resultados y determinar la efectividad de las funcionalidades propuestas. Estas condiciones han sido diseñadas para minimizar variables confusas y obtener resultados válidos.
+
+#### Card 1: Redis Cache for Comments
+
+| Question                  | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a < 800 ms?                                                                                                            |
+|------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Experimental Condition** | Caché Redis habilitado para la ruta de comentarios; medición de tiempos tras poblado inicial de caché.          |
+| **Control Condition**      | Caché Redis deshabilitado (comportamiento actual); medición de tiempos en entorno de producción simulado.    |
+
+#### Card 2: Optimización de Operaciones Administrativas
+
+| Question                  | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s?                                                                                                            |
+|------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Experimental Condition** | Consultas de eliminación optimizadas (índices y soft delete) desplegadas en entorno de pruebas.                 |
+| **Control Condition**      | Código actual sin optimizaciones, ejecutado en el mismo entorno de pruebas y con la misma carga de trabajo.  |
+
+#### Card 3: Condiciones del Experimento para Recomendaciones Personalizadas
+
+| | Conditions |
+|---|---|
+| **Question** | ¿Cómo implementaremos el experimento para las recomendaciones personalizadas? |
+| **Condición Experimental** | Un grupo de usuarios recibirá recomendaciones altamente personalizadas basadas en sus preferencias, historial de navegación y datos demográficos, presentadas de forma prominente en la interfaz. |
+| **Condición de Control** | Un grupo de control recibirá recomendaciones genéricas basadas únicamente en popularidad general de los destinos, sin personalización específica para el usuario. |
+
+
+#### **Card 4: Condiciones del Experimento para Reseñas y Valoraciones**
+
+| | Conditions |
+|---|---|
+| **Question** | ¿Cómo evaluaremos el impacto de las reseñas y valoraciones de usuarios? |
+| **Condición Experimental** | Un segmento de usuarios verá perfiles de destinos y negocios con reseñas verificadas, fotos de usuarios reales y puntuaciones detalladas por categorías. |
+| **Condición de Control** | El grupo de control verá perfiles estándar sin reseñas destacadas, con información básica proporcionada por los negocios y destinos. |
+
+
+#### **Card 5: Condiciones del Experimento para Autenticidad Cultural en Negocios Locales**
+
+| | Conditions |
+|---|---|
+| **Question** | ¿Cómo mediremos el impacto de destacar la autenticidad cultural en negocios locales? |
+| **Condición Experimental** | Un conjunto de perfiles de negocios destacará explícitamente su autenticidad cultural, tradiciones peruanas y conexión con la comunidad local mediante etiquetas, narrativas y contenido visual específico. |
+| **Condición de Control** | Otro conjunto de perfiles de negocios similares presentará información estándar sin énfasis especial en autenticidad cultural o tradiciones locales. |
+
+
+### 8.2.4. Scale Calculations and Decisions
+
+Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis. Cada hipótesis se asocia con una **Scale Calculation**, una **Decision**, y se clasifica en un factor de éxito: Desfavorable, Aceptable, Ideal o Excelente.
+
+| Question                                                                                                  | Scale Calculation                                                                                                                                                                                                                                                                                                                                                       | Decision                                                                                                               | Desfavorable | Aceptable | Ideal | Excelente |
+|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------|-----------|-------|-----------|
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a menos de 800 ms?        | Creemos que al implementar caché Redis reduciremos el tiempo medio de respuesta de comentarios de 1.5 s a ≤ 800 ms.  <br>• Excelente: ≤ 600 ms  <br>• Ideal: ≤ 800 ms  <br>• Aceptable: 800–1 500 ms  <br>• Desfavorable: > 1 500 ms                                                                                                              | Activar Redis Cache en endpoints de comentarios para disminuir carga en BD.                                            |              |           |   X   |           |
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? | Creemos que al optimizar consultas (índices, soft delete) reduciremos el tiempo de eliminación de comentarios de 3–4 s a ≤ 1.5 s.  <br>• Excelente: ≤ 1.125 s  <br>• Ideal: ≤ 1.5 s  <br>• Aceptable: 1.5–3 s  <br>• Desfavorable: > 3 s                                                                                                     | Refactorizar queries y aplicar índices adecuados para operaciones administrativas.                                     |              |     X     |       |           |
+| ¿El soporte multiidioma incrementará los registros internacionales en un 40 % en 6 meses?                  | Creemos que al añadir i18n aumentaremos registros internacionales ≥ 40 % en 6 meses.  <br>• Excelente: ≥ 50 %  <br>• Ideal: ≥ 40 %  <br>• Aceptable: 20–40 %  <br>• Desfavorable: < 20 %                                                                                                                                                                              | Implementar soporte de español e inglés en toda la interfaz y contenido.                                              |              |     X     |       |           |
+| ¿Optimizar consultas de base de datos mejorará el tiempo de publicación de actividades de 2 s a < 1 s?     | Creemos que al refactorizar queries y añadir índices reduciremos el tiempo de publicación de 2 s a ≤ 1 s.  <br>• Excelente: ≤ 0.75 s  <br>• Ideal: ≤ 1 s  <br>• Aceptable: 1–2 s  <br>• Desfavorable: > 2 s                                                                                                                                                | Optimizar queries N+1 e índices en módulo de actividades antes de producción.                                          |              |           |   X   |           |
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios nocturnos en un 25 %?                         | Creemos que al implementar modo oscuro aumentaremos el tiempo de sesión de usuarios nocturnos (6PM–6AM) en ≥ 25 %.  <br>• Excelente: ≥ 30 %  <br>• Ideal: ≥ 25 %  <br>• Aceptable: 15–25 %  <br>• Desfavorable: < 15 %                                                                                                                                                   | Añadir switcher de tema claro/oscuro, respetando preferencias del sistema.                                             |              |           |   X   |           |
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos en un 30 %?                      | Creemos que al implementar notificaciones push segmentadas incrementaremos el re-engagement ≥ 30 %.  <br>• Excelente: ≥ 40 %  <br>• Ideal: ≥ 30 %  <br>• Aceptable: 20–30 %  <br>• Desfavorable: < 20 %                                                                                                                                                                 | Configurar y enviar notificaciones push web basadas en comportamiento de usuario.                                     |              |           |   X   |           |
+
+
+### 8.2.5. Methods Selection
+
+Para validar el rendimiento, la usabilidad y la escalabilidad de **AventuraPe**, hemos seleccionado un conjunto de herramientas que cubren pruebas funcionales, de carga, medición de métricas reales y análisis de experiencia de usuario:
+
+| Herramienta        | Precio                              | Capacidad de Análisis                                                                                   | Sencillez                                                   | Ventajas                                                                                                  |
+|--------------------|-------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| **Google Analytics** | Plan gratuito con límites          | Seguimiento de sesiones, flujo de usuarios, tasa de rebote, conversiones de reserva                     | Interfaz intuitiva y dashboards preconfigurados             | Permite entender el comportamiento real de los aventureros y medir aceptación de nuevas funcionalidades   |
+| **Lighthouse**     | Gratuito, CLI y extensión de Chrome | Auditoría automática de rendimiento, accesibilidad, buenas prácticas y SEO en cada página de la SPA     | Reportes claros con puntuaciones de 0 a 100 y recomendaciones | Ofrece guías concretas para optimizar tiempo de carga, interactividad y experiencia en dispositivos móviles |
+| **WebPageTest**    | Gratuito                            | Análisis detallado de tiempos de carga (TTFB, First Paint, Speed Index) desde múltiples ubicaciones     | Panel web sencillo, requiere configurar URL y ubicación     | Simula condiciones de red reales y permite comparar medianas de rendimiento geográfico                     |
+| **Selenium**       | Gratuito, código abierto            | Pruebas funcionales automatizadas de flujo de usuario (login, búsqueda, reserva, “Sorpréndeme”)         | Requiere scripting (JavaScript/Python), scripts reutilizables | Verifica que el frontend responda correctamente a interacciones críticas sin intervención manual           |
+| **Apache JMeter**  | Gratuito, código abierto            | Pruebas de carga y estrés del backend (API de reservas, listado de aventuras, sistema de comentarios)   | Interfaz gráfica con plantillas de test, curva de aprendizaje | Evalúa la capacidad de Aventura.pe para soportar múltiples usuarios concurrentes y detectar cuellos de botella |
+
+Cada herramienta aborda un aspecto clave de la calidad de **AventuraPe**:
+- **Google Analytics** y **Lighthouse** cubren la percepción y experiencia de usuario real.
+- **WebPageTest** mide tiempos de carga en distintos entornos.
+- **Selenium** asegura que las rutas críticas de usuario funcionen tras cada despliegue.
+- **JMeter** verifica la escalabilidad y estabilidad del sistema bajo carga.
+
+Con esta selección, podemos tomar decisiones informadas para optimizar la plataforma antes y después de cada lanzamiento.  
+
+### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
+
+Para asegurar que **AventuraPe** ofrezca una experiencia óptima a todos los usuarios, realizamos auditorías con **Lighthouse** en las tres vistas principales de la aplicación:  
+- **Panel de Administrador**  
+- **Interfaz de Aventurero**  
+- **Panel de Emprendedor**  
+
+Con estos informes definimos **objetivos**, **KPIs** y **métricas** clave, y comprobamos los resultados reales obtenidos tras el despliegue.
+
+#### Resultados de Lighthouse
+
+| Segmento      | Performance | Accessibility | Best Practices | SEO |
+|---------------|:-----------:|:-------------:|:--------------:|:---:|
+| Aventurero    |     94      |      94       |       96       |  83 |
+| Emprendedor   |     93      |      94       |       96       |  83 |
+| Administrador |     99      |      94       |       96       |  83 |
+
+#### Evidencia de auditoría Lighthouse
+
+![Lighthouse Aventurero](./images/chapter8/aventurerosinsight.png)
+![Lighthouse Emprendedor](./images/chapter8/emprendedorinsight.png)
+![Lighthouse Administrador](./images/chapter8/admininsight.png)
+
+---
+
+#### Objetivos y KPIs
+
+| Objetivo                                    | KPI (meta)                    | Resultado (Lighthouse)                    |
+|---------------------------------------------|-------------------------------|-------------------------------------------|
+| Cargar rápidamente la vista de Aventurero   | Performance ≥ 90              | 94                                        |
+| Garantizar accesibilidad en móviles         | Accessibility ≥ 95            | 94                                        |
+| Cumplir buenas prácticas de desarrollo      | Best Practices ≥ 90           | 96                                        |
+| Optimizar visibilidad de contenido          | SEO ≥ 80                      | 83                                        |
+|---------------------------------------------|-------------------------------|-------------------------------------------|
+| Cargar rápidamente la vista de Emprendedor  | Performance ≥ 90              | 93                                        |
+| Garantizar accesibilidad en escritorio      | Accessibility ≥ 90            | 94                                        |
+| Cumplir buenas prácticas de desarrollo      | Best Practices ≥ 90           | 96                                        |
+| Optimizar visibilidad de contenido          | SEO ≥ 80                      | 83                                        |
+|---------------------------------------------|-------------------------------|-------------------------------------------|
+| Cargar rápidamente el panel de Admin        | Performance ≥ 95              | 99                                        |
+| Asegurar interfaz accesible                 | Accessibility ≥ 95            | 94                                        |
+| Cumplir mejores prácticas críticas          | Best Practices ≥ 95           | 96                                        |
+| Mantener SEO básico                         | SEO ≥ 80                      | 83                                        |
+
+Estos resultados muestran que, tras el despliegue, **AventuraPe** cumple o supera la mayoría de los objetivos de rendimiento, accesibilidad y buenas prácticas, con espacio de mejora continua en SEO para todas las vistas.
+
+
 ### 8.2.7. Web and Mobile Tracking Plan  
 
-## 8.3. Experimentation  
-### 8.3.1. To-Be User Stories  
-### 8.3.2. To-Be Product Backlog  
-### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle  
-#### 8.3.3.1. To-Be Sprint Backlogs  
+Para AventuraPE, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar la planificación de viajes dentro de la plataforma y potenciar la participación de los usuarios. A medida que avancemos hacia la etapa final del proyecto, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
+
+El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
+
+#### 1. Implementación Inicial:
+
+Durante esta fase, nos enfocaremos en el lanzamiento de nuevas funcionalidades y en la recolección de datos iniciales para establecer una línea base de rendimiento.
+
+**Recopilación de Datos:**
+
+**Métricas de Uso**: Se recopilarán datos sobre el uso de la aplicación, incluyendo el número de usuarios activos, la duración de las sesiones, y las tasas de conversión en reservas de experiencias turísticas.
+
+**Interacciones de los Usuarios**: Se registrarán las interacciones de los usuarios con las nuevas funcionalidades, como clics en recomendaciones personalizadas, tiempo dedicado a explorar destinos, uso de mapas interactivos y participación en las reseñas de destinos turísticos.
+
+**Feedback de Usuarios**: A través de encuestas y herramientas de retroalimentación, se recogerán opiniones sobre la usabilidad de la plataforma y las nuevas funcionalidades implementadas, especialmente sobre la relevancia de las recomendaciones personalizadas.
+
+**Análisis Comparativo:**
+
+Se compararán los datos obtenidos durante esta fase con los datos históricos de la plataforma antes de la implementación de las nuevas funcionalidades, para evaluar el impacto inmediato de las mejoras en la experiencia de planificación de viajes.
+
+#### 2. Seguimiento Continuo:
+
+Después de la implementación inicial, se establecerá un proceso continuo de seguimiento para evaluar el rendimiento y realizar ajustes según sea necesario.
+
+**Recopilación de Datos:**
+
+**Métricas en Tiempo Real**: Se implementarán herramientas de análisis web y móvil para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar tendencias y patrones de uso en la planificación de viajes.
+
+**Segmentación de Usuarios**: Los datos se segmentarán por tipo de usuario (turistas nacionales, turistas internacionales, negocios locales) para entender mejor cómo cada grupo interactúa con la plataforma y sus necesidades específicas.
+
+**Tasa de Retención**: Se medirá la tasa de retención de usuarios a lo largo del tiempo para evaluar la efectividad de las nuevas funcionalidades, como el programa de recompensas, en mantener a los usuarios comprometidos con la plataforma.
+
+**Evaluación y Ajustes:**
+
+**Informes Periódicos**: Se generarán informes mensuales que resuman los hallazgos del seguimiento, incluyendo recomendaciones para ajustes y mejoras en la presentación de destinos turísticos y la experiencia de planificación de viajes.
+
+**Iteración Basada en Datos**: Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de los usuarios, asegurando que AventuraPE evolucione para satisfacer mejor las necesidades tanto de los viajeros como de los negocios turísticos locales.
+
+Este enfoque asegurará que AventuraPE continúe evolucionando en función de los datos y permita tomar decisiones informadas para mejorar la experiencia de planificación de viajes, descubrimiento de destinos auténticos y la conexión entre viajeros y negocios locales en la plataforma.
+##  8.3 Experimentation
+### 8.3.1. To-Be User Stories
+
+| User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|---------------|--------|-------------|--------------------------|---------------------------|
+| US-TB-01 | Optimización de carga de comentarios | Como usuario aventurero, quiero que la carga de comentarios sea más rápida (menos de 800ms), para poder revisar opiniones sobre actividades sin interrupciones en mi experiencia. | **Escenario 1: Carga rápida de comentarios**<br>Given que el usuario está viendo los detalles de una actividad<br>When el usuario navega a la sección de comentarios<br>Then el sistema carga los comentarios en menos de 800ms en el 95% de las solicitudes<br><br>**Escenario 2: Carga fluida con muchos comentarios**<br>Given que una actividad tiene más de 50 comentarios<br>When el usuario accede a la sección de comentarios<br>Then la interfaz se mantiene fluida y sin congelarse | E01 |
+| US-TB-02 | Optimización de eliminación de comentarios | Como administrador, quiero que el proceso de eliminación de comentarios inapropiados sea rápido (menos de 1.5s), para moderar eficientemente el contenido de la plataforma. | **Escenario 1: Eliminación rápida de comentarios**<br>Given que el administrador está revisando los comentarios <br>When el administrador selecciona eliminar un comentario<br>Then el sistema procesa la eliminación en menos de 1.5s<br><br>**Escenario 2: Confirmación inmediata**<br>Given que el administrador ha eliminado un comentario<br>When la operación se completa<br>Then el sistema muestra una confirmación visual inmediata<br><br>**Escenario 3: Registro de acciones de moderación**<br>Given que el administrador ha eliminado un comentario<br>When accede al historial de moderación<br>Then puede ver un registro detallado de sus acciones recientes | E01 |
+| US-TB-03 | Aceleración de publicación de actividades | Como emprendedor, quiero que la publicación de nuevas actividades sea más rápida (menos de 1s), para agilizar la gestión de mi oferta. | **Escenario 1: Publicación rápida**<br>Given que el emprendedor ha completado el formulario de actividad<br>When hace clic en el botón publicar<br>Then el sistema procesa y publica la actividad en menos de 1s en el 90% de los casos<br><br>**Escenario 2: Guardado automático**<br>Given que el emprendedor está creando una nueva actividad<br>When realiza cambios en el formulario<br>Then el sistema guarda automáticamente un borrador cada 30 segundos| E01 |
+| US-TB-04 | Recomendaciones personalizadas | Como usuario aventurero, quiero recibir recomendaciones personalizadas basadas en mis preferencias e historial, para descubrir actividades relevantes más fácilmente. | **Escenario 1: Recomendaciones basadas en historial**<br>Given que el usuario ha realizado búsquedas previas<br>When accede a la sección de recomendaciones<br>Then el sistema muestra actividades relacionadas con sus búsquedas anteriores<br><br>**Escenario 2: Recomendaciones basadas en valoraciones**<br>Given que el usuario ha calificado positivamente ciertas actividades<br>When accede a la sección de recomendaciones<br>Then el sistema muestra actividades similares a las mejor valoradas<br><br>**Escenario 3: Mejora continua del algoritmo**<br>Given que el usuario interactúa regularmente con la plataforma<br>When accede a recomendaciones a lo largo del tiempo<br>Then estas se vuelven progresivamente más relevantes | E02 |
+| US-TB-05 | Modo oscuro/claro | Como usuario aventurero, quiero poder alternar entre modo claro y oscuro, para adaptar la interfaz a mis condiciones de uso y preferencias visuales. | **Escenario 1: Cambio de modo instantáneo**<br>Given que el usuario está utilizando la aplicación<br>When activa el cambio de modo oscuro/claro en configuraciones<br>Then la interfaz cambia instantáneamente sin necesidad de recargar<br><br>**Escenario 2: Persistencia de preferencia**<br>Given que el usuario ha seleccionado el modo oscuro<br>When cierra sesión y vuelve a ingresar posteriormente<br>Then la aplicación mantiene el modo oscuro seleccionado<br><br>**Escenario 3: Configuración según sistema**<br>Given que el usuario tiene activado el modo oscuro en su dispositivo<br>When ingresa a la aplicación por primera vez<br>Then la aplicación adopta automáticamente el modo oscuro | E04 |
+| US-TB-06 | Soporte multiidioma | Como usuario internacional, quiero poder cambiar el idioma de la plataforma entre español e inglés, para utilizar AventuraPe en mi idioma preferido. | **Escenario 1: Cambio completo de idioma**<br>Given que el usuario está en la aplicación<br>When cambia el idioma en la configuración<br>Then el 100% del contenido de la interfaz se muestra en el idioma seleccionado<br><br>**Escenario 2: Persistencia de idioma**<br>Given que el usuario ha seleccionado inglés como idioma<br>When cierra sesión y vuelve a ingresar posteriormente<br>Then la aplicación mantiene el inglés como idioma configurado<br><br>**Escenario 3: Detección automática**<br>Given que el usuario tiene configurado inglés en su navegador<br>When accede a la aplicación por primera vez<br>Then la aplicación se muestra en inglés automáticamente | E04 |
+| US-TB-07 | Reseñas verificadas | Como usuario aventurero, quiero ver reseñas verificadas con etiquetas especiales, para confiar más en las opiniones de otros usuarios. | **Escenario 1: Visualización destacada**<br>Given que el usuario está viendo reseñas de una actividad<br>When visualiza una reseña verificada<br>Then esta aparece con una etiqueta o insignia visual distintiva<br><br>**Escenario 2: Criterio de verificación**<br>Given que el usuario ve una reseña verificada<br>When hace clic en la insignia de verificación<br>Then puede ver el criterio utilizado para la verificación<br><br>**Escenario 3: Filtrado de reseñas verificadas**<br>Given que el usuario está en la sección de reseñas<br>When activa el filtro "Solo verificadas"<br>Then se muestran únicamente las reseñas que han sido verificadas | E03 |
+| US-TB-08 | Destaque de autenticidad cultural | Como emprendedor, quiero destacar la autenticidad cultural de mi negocio en mi perfil, para atraer a turistas interesados en experiencias genuinas. | **Escenario 1: Campo de valor cultural**<br>Given que el emprendedor está editando su perfil<br>When accede a la sección de descripción del negocio<br>Then encuentra un campo específico para destacar su valor cultural/tradicional<br><br>**Escenario 2: Etiquetas culturales**<br>Given que el emprendedor está configurando su perfil<br>When navega a la sección de etiquetas<br>Then puede seleccionar etiquetas relacionadas con autenticidad cultural<br><br>**Escenario 3: Sección de historia local**<br>Given que el emprendedor está editando su perfil<br>When completa la información de su negocio<br>Then puede incluir una sección dedicada a la historia o tradiciones locales | E05 |
+| US-TB-09 | Notificaciones push de proximidad | Como usuario aventurero, quiero recibir notificaciones push sobre ofertas o actividades relevantes cerca de mi ubicación, para descubrir oportunidades espontáneas. | **Escenario 1: Control de frecuencia**<br>Given que el usuario está en configuración de notificaciones<br>When ajusta la frecuencia de notificaciones push<br>Then el sistema respeta esta preferencia para futuros envíos<br><br>**Escenario 2: Personalización por categorías**<br>Given que el usuario está en configuración de notificaciones<br>When selecciona categorías de interés para notificaciones<br>Then solo recibe alertas relacionadas con esas categorías<br><br>**Escenario 3: Configuración de radio geográfico**<br>Given que el usuario está configurando notificaciones<br>When ajusta el radio de distancia para notificaciones<br>Then solo recibe alertas de actividades dentro de ese radio desde su ubicación | E03 |
+
+#### Épicas Relacionadas
+
+| Epic ID | Título | Descripción |
+|---------|--------|-------------|
+| E01 | Optimización de Rendimiento | Mejoras enfocadas en la velocidad y eficiencia de los procesos críticos de la plataforma |
+| E02 | Mejora de Experiencia de Usuario | Funcionalidades que mejoran la interacción y satisfacción general del usuario |
+| E03 | Funcionalidades Sociales | Características que promueven la interacción, confianza y compromiso entre usuarios |
+| E04 | Internacionalización y Accesibilidad | Adaptaciones que permiten que la plataforma sea utilizada por un público más amplio |
+| E05 | Gestión de Contenido | Herramientas para que los emprendedores mejoren la presentación de sus ofertas |
+
+### 8.3.2. To-Be Product Backlog
+Este backlog prioriza las mejoras de rendimiento en la parte superior (US-TB-01 a US-TB-03), seguidas por funcionalidades que amplían el alcance de la plataforma (soporte multiidioma) y mejoran significativamente la experiencia del usuario (recomendaciones personalizadas). Las características de confianza y engagement (reseñas verificadas, notificaciones) tienen prioridad media, mientras que las mejoras visuales y de presentación completan el backlog.
+
+| # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
+|:-------:|---------------|--------|:------------------------:|
+| 1 | US-TB-01 | Optimización de carga de comentarios | 5 |
+| 2 | US-TB-02 | Optimización de eliminación de comentarios | 3 |
+| 3 | US-TB-03 | Aceleración de publicación de actividades | 5 |
+| 4 | US-TB-06 | Soporte multiidioma | 8 |
+| 5 | US-TB-04 | Recomendaciones personalizadas | 8 |
+| 6 | US-TB-07 | Reseñas verificadas | 5 |
+| 7 | US-TB-09 | Notificaciones push de proximidad | 8 |
+| 8 | US-TB-08 | Destaque de autenticidad cultural | 3 |
+| 9 | US-TB-05 | Modo oscuro/claro | 5 |
+
+
+Los story points reflejan la complejidad relativa de cada característica:
+- 8 puntos: Funcionalidades complejas que requieren cambios significativos en el backend y frontend
+- 5 puntos: Características de complejidad media con impacto moderado en los sistemas existentes
+- 3 puntos: Mejoras más sencillas que requieren cambios localizados
+
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+#### 8.3.3.1. To-Be Sprint Backlogs
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence  
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence  
@@ -3284,8 +3738,108 @@ Se utiliza Gotify como servidor de notificaciones push autoalojado que centraliz
 #### 8.3.3.6. Team Collaboration Insights  
 
 ### 8.3.4. To-Be Validation Interviews  
-#### 8.3.4.1. Diseño de Entrevistas  
+#### 8.3.4.1. Diseño de Entrevistas
+
+#### Preguntas para el segmento Aventurero:
+
+1. Sobre el proceso inicial: Cuéntanos tu experiencia al registrarte e iniciar sesión en la aplicación. ¿Qué aspectos te resultaron más intuitivos o confusos?
+
+2. Exploración y búsqueda: Describe cómo fue tu experiencia buscando actividades que te interesaran. ¿Cómo te resultó el proceso de filtrado y qué tan relevantes fueron los resultados que obtuviste?
+
+3. Interacción con actividades: Háblanos sobre tu experiencia al ver los detalles de una actividad y la facilidad para navegar entre las diferentes secciones. ¿Cómo evalúas la cantidad y calidad de la información presentada?
+
+4. Funcionalidades sociales: Explícanos cómo fue tu experiencia al guardar actividades en favoritos y al publicar reseñas. ¿Qué tan clara fue la respuesta del sistema al realizar estas acciones?
+
+
+#### Preguntas para el segmento Emprendedor:
+
+1. Proceso de registro y validación: Describe tu experiencia durante el proceso de registro como emprendedor y la configuración inicial de tu perfil de negocio. ¿Qué partes del proceso te parecieron más valiosas o complicadas?
+
+2. Creación y gestión de contenido: Cuéntanos cómo fue tu experiencia al crear, editar y gestionar tus actividades publicadas. ¿Qué aspectos de la interfaz facilitaron o dificultaron este proceso?
+
+3. Visualización de datos: ¿Cómo evalúas la sección de estadísticas y la información que proporciona sobre tus publicaciones? ¿Qué tan útil consideras esta información para tu negocio?
+
+4. Experiencia general: Desde tu perspectiva como emprendedor, ¿qué funcionalidades consideras más valiosas de la plataforma y qué mejoras sugerirías para optimizar tu experiencia?
+
 #### 8.3.4.2. Registro de Entrevistas  
+
+#### Sección aventureros
+
+1. 
+- **Entrevistado**: Salvador Diaz Aguirre
+- **Duración**: 7:15
+- **Resumen**: El entrevistado comentó sobre la facilidad de interacción con la página web, mencionó la armonía de colores que contribuye a una experiencia visual agradable y profesional. No obstante, identificó varias áreas de mejora que afectan la usabilidad general de la plataforma. Por un lado, expresó confusión por la presencia de textos en inglés que no están traducidos al español, lo cual genera barreras de comprensión para usuarios hispanohablantes. Asimismo, experimentó dificultades técnicas con la funcionalidad de favoritos y likes, reportando que estos botones no respondían correctamente o no guardaban las preferencias del usuario. Adicionalmente, sugirió mejorar la velocidad de carga de ciertas secciones, optimizar la navegación móvil para una mejor experiencia táctil, y implementar notificaciones más claras sobre las acciones realizadas.
+
+- **Link**: [https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing](https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing)
+
+![entrevista_salvador](images/interviews/entrevista_salvador.png)
+
+2. 
+- **Entrevistado**: Diego Salinas
+- **Duración**: 3:03
+- **Resumen**:
+Diego Salinas compartió sus impresiones sobre la plataforma web, destacando inicialmente la facilidad de interacción y la armonía de colores, que, según él, contribuyen a una experiencia visual agradable y profesional.
+Sin embargo, Salinas identificó varias áreas clave de mejora que impactan la usabilidad general. Señaló su confusión por la presencia de textos en inglés sin traducir, lo cual crea una barrera para los usuarios hispanohablantes. Además, reportó dificultades técnicas con las funcionalidades de favoritos y "me gusta", indicando que estos botones no respondían correctamente o no guardaban las preferencias del usuario.
+Finalmente, Salinas sugirió optimizar la velocidad de carga en ciertas secciones, mejorar la navegación móvil para una experiencia táctil más fluida y la implementación de notificaciones más claras sobre las acciones realizadas.
+
+- **Link**:[https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing](https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing)
+  ![evidencia-entrevista-diego](images/interviews/evidencia-entrevista-diego.png)
+
+3. 
+- **Entrevistado**: Pamela Vela  
+- **Duración**: 13:42  
+- **Resumen**: La entrevistada ,una estudiante universitaria interesada en el aplicativo, tuvo una experiencia en general positiva con la plataforma, destacando la facilidad del proceso de inicio de sesión, aunque mencionó que el CAPTCHA puede resultar tedioso y poco confiable. Encontró intuitiva la búsqueda de actividades gracias a la posibilidad de usar palabras clave, lo que facilitó hallar eventos de interés. Valoró especialmente la funcionalidad del ícono de corazón para guardar favoritos, ya que al marcar una actividad esta se agrega de inmediato a su lista, con una respuesta clara del sistema. También resaltó como punto fuerte la opción de publicar reseñas, permitiéndole compartir su experiencia con otros usuarios. La navegación entre secciones y la presentación de información en las actividades le parecieron claras, completas y bien organizadas.   
+- **Link**: [https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing](https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing)  
+
+![alt text](images/chapter8/entrevaventur.png)  
+
+4. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+5. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
+
+#### Sección emprendedores
+
+1. 
+- **Entrevistado**: Francesko Montesinos
+- **Duración**: 6:25
+- **Resumen**: El entrevistado comentó que experimentó dificultades durante el proceso de registro, específicamente con la configuración de contraseña, lo cual representa una barrera inicial. Sin embargo, una vez dentro de la plataforma, valoró positivamente la interfaz de gestión de contenido gracias a sus botones claros e indicaciones concisas que facilitaron la creación y edición de actividades. Además, considera muy útil la sección de estadísticas para comprender la percepción de sus clientes sobre las experiencias ofrecidas. Por otro lado, destaca como funcionalidad más valiosa la capacidad de publicar actividades, ya que le permite ganar visibilidad para su negocio local.
+
+- **Link**: [https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing](https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing)
+
+![entrevista francesko](images/interviews/entrevista_francesko.png)
+
+2. 
+- **Entrevistado**: Nasthya del Carpio
+- **Duración**: 10:24
+- **Resumen**: Nasthya del Carpio, emprendedora de la marca Ecobags de Totegabs, señaló que el proceso de registro y configuración del perfil en la plataforma fue intuitivo y sencillo, tanto para ella como para el ingreso de datos de su emprendimiento. Destacó que la creación, edición y eliminación de actividades también fue clara y fácil de realizar, gracias a una interfaz amigable. Resaltó como aspecto más valioso la sección de estadísticas, ya que le permite obtener feedback clave desde la perspectiva del usuario, lo cual considera esencial para mejorar y hacer crecer su negocio. Como sugerencia, propuso incluir más tipos de suscripciones ajustadas al tamaño del emprendimiento.
+
+-  **Link**: [https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing](https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing)
+
+![entrevista nasthya](images/interviews/entrevista_nas.png)
+
+3. 
+- **Entrevistado**: Diego Rosado  
+- **Duración**: 17:59  
+- **Resumen**: El entrevistado, un emprendedor con una tienda de ropa llamada Urbanoestilo, consideró que el proceso de registro fue claro, aunque exigente en el apartado de la contraseña, lo cual entiende como una medida necesaria de seguridad. Durante la creación de actividades, encontró confusa la sección de precios, ya que no se especifica si se refiere al costo de entrada al evento o al precio de los productos, por lo que sugiere mayor claridad textual. En cuanto a las estadísticas, señaló que sería útil incorporar indicadores de interés, como confirmaciones de asistencia o disponibilidad de vacantes, al estilo de plataformas como Facebook. Destacó como funcionalidad valiosa la posibilidad de crear eventos y sugirió que sería beneficioso tener interacción directa con las reseñas que los usuarios dejan sobre su emprendimiento.  
+- **Link**: [https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing](https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing)  
+
+![alt text](images/chapter8/entreempr.png)  
+
+4. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**:
+- **Link**:
+
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
@@ -3302,7 +3856,7 @@ AventuraPe es una aplicación móvil y web diseñada para conectar a los usuario
 ![video_about_the_product](image-14.png)
 
 
-**ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)
+**ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)  
 
 # Conclusiones  
 ## Conclusiones y recomendaciones  
