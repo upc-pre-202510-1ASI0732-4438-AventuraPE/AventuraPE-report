@@ -3618,9 +3618,58 @@ Con estos informes definimos **objetivos**, **KPIs** y **métricas** clave, y co
 Estos resultados muestran que, tras el despliegue, **AventuraPe** cumple o supera la mayoría de los objetivos de rendimiento, accesibilidad y buenas prácticas, con espacio de mejora continua en SEO para todas las vistas.
 
 
-### 8.2.7. Web and Mobile Tracking Plan  
+### 8.2.7. Web and Mobile Tracking Plan
 
-Para AventuraPE, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar la planificación de viajes dentro de la plataforma y potenciar la participación de los usuarios. A medida que avancemos hacia la etapa final del proyecto, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
+Para AventuraPE, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de facilitar las microaventuras espontáneas dentro de la plataforma y potenciar la participación de los usuarios. A medida que avancemos hacia la etapa final del proyecto, estableceremos un plan de seguimiento exhaustivo que nos permitirá evaluar de manera efectiva las mejoras implementadas en la plataforma.
+
+El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
+
+#### 1. Implementación Inicial:
+
+Durante esta fase, nos enfocaremos en el lanzamiento de nuevas funcionalidades y en la recolección de datos iniciales para establecer una línea base de rendimiento.
+
+**Recopilación de Datos:**
+
+- **Métricas de Uso**: Se recopilarán datos sobre el uso de la aplicación, incluyendo el número de usuarios activos, la duración de las sesiones, y las tasas de conversión en participación de microaventuras.
+
+- **Interacciones de los Usuarios**: Se registrarán las interacciones de los usuarios con las nuevas funcionalidades, como tiempo dedicado a explorar actividades, uso de filtros personalizados y participación en reseñas de experiencias.
+
+- **Feedback de Usuarios**: A través de encuestas y herramientas de retroalimentación, se recogerán opiniones sobre la usabilidad de la plataforma y las nuevas funcionalidades implementadas, especialmente sobre la relevancia de las recomendaciones personalizadas.
+
+**Análisis Comparativo:**
+
+Se compararán los datos obtenidos durante esta fase con los datos históricos de la plataforma antes de la implementación de las nuevas funcionalidades, para evaluar el impacto inmediato de las mejoras en la experiencia del usuario y su disposición a participar en microaventuras espontáneas.
+
+#### 2. Seguimiento Continuo:
+
+Después de la implementación inicial, se establecerá un proceso continuo de seguimiento para evaluar el rendimiento y realizar ajustes según sea necesario.
+
+**Recopilación de Datos:**
+
+- **Métricas en Tiempo Real**: Se implementarán herramientas de análisis web y móvil para monitorear el comportamiento de los usuarios en tiempo real, lo que permitirá identificar tendencias y patrones de uso en la búsqueda y participación de microaventuras.
+
+- **Segmentación de Usuarios**: Los datos se segmentarán por tipo de usuario (aventureros y emprendedores) para entender mejor cómo cada grupo interactúa con la plataforma y qué necesidades específicas presentan.
+
+- **Tasa de Retención**: Se medirá la tasa de retención de usuarios a lo largo del tiempo para evaluar la efectividad de las nuevas funcionalidades en mantener a los usuarios comprometidos con la plataforma.
+
+**Eventos Principales a Rastrear:**
+
+| Tipo de Usuario | Eventos | Propiedades a Capturar |
+|-----------------|---------|------------------------|
+| Aventureros | Búsqueda de actividades | Filtros utilizados, ubicación, duración de sesión |
+| Aventureros | Publicación de reseñas | Calificación otorgada, longitud del comentario, tiempo desde la actividad |
+| Aventureros | Añadir a favoritos | Tipo de actividad, ubicación, precio |
+| Emprendedores | Publicación de actividades | Tiempo de creación, completitud de datos, tipo de actividad |
+| Emprendedores | Visualización de estadísticas | Tiempo en la sección, métricas consultadas |
+| Emprendedores | Edición de actividades | Frecuencia, campos modificados |
+
+**Evaluación y Ajustes:**
+
+- **Informes Periódicos**: Se generarán informes mensuales que resuman los hallazgos del seguimiento, incluyendo recomendaciones para ajustes y mejoras en la presentación de experiencias y la experiencia de búsqueda y participación.
+
+- **Iteración Basada en Datos**: Se realizarán ajustes en la plataforma basados en los datos recopilados y en el feedback de los usuarios, asegurando que AventuraPE evolucione para satisfacer mejor las necesidades tanto de los aventureros como de los emprendedores locales.
+
+Este enfoque exhaustivo permitirá que AventuraPE optimice su oferta de microaventuras espontáneas, mejorando constantemente la experiencia del usuario y asegurando que tanto aventureros como empresarios obtengan el máximo valor de la plataforma.
 
 El monitoreo de las funcionalidades experimentales se llevará a cabo en dos etapas clave:
 
