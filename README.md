@@ -2614,7 +2614,25 @@ Para validar nuestro producto con usuarios reales, diseñamos un conjunto de pre
 
 #### Segmento: Emprendedores
 
-**Entrevista 01**
+1. 
+- **Entrevistado**: Francesko Montesinos
+- **Duración**: 6:25
+- **Resumen**: El entrevistado comentó que experimentó dificultades durante el proceso de registro, específicamente con la configuración de contraseña, lo cual representa una barrera inicial. Sin embargo, una vez dentro de la plataforma, valoró positivamente la interfaz de gestión de contenido gracias a sus botones claros e indicaciones concisas que facilitaron la creación y edición de actividades. Además, considera muy útil la sección de estadísticas para comprender la percepción de sus clientes sobre las experiencias ofrecidas. Por otro lado, destaca como funcionalidad más valiosa la capacidad de publicar actividades, ya que le permite ganar visibilidad para su negocio local.
+
+- **Link**: [https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing](https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing)
+
+![entrevista francesko](images/interviews/entrevista_francesko.png)
+
+2. 
+- **Entrevistado**: Nasthya del Carpio
+- **Duración**: 10:24
+- **Resumen**: Nasthya del Carpio, emprendedora de la marca Ecobags de Totegabs, señaló que el proceso de registro y configuración del perfil en la plataforma fue intuitivo y sencillo, tanto para ella como para el ingreso de datos de su emprendimiento. Destacó que la creación, edición y eliminación de actividades también fue clara y fácil de realizar, gracias a una interfaz amigable. Resaltó como aspecto más valioso la sección de estadísticas, ya que le permite obtener feedback clave desde la perspectiva del usuario, lo cual considera esencial para mejorar y hacer crecer su negocio. Como sugerencia, propuso incluir más tipos de suscripciones ajustadas al tamaño del emprendimiento.
+
+-  **Link**: [https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing](https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing)
+
+![entrevista nasthya](images/interviews/entrevista_nas.png)
+
+3.
 - Nombres: Jenna
 - Apellidos: Portalatino
 - Edad: 20
@@ -2630,77 +2648,44 @@ Enlace de entrevista: [Link de la entrevista](https://drive.google.com/file/d/1p
 Resumen de la entrevista:<br>
 Jenna, propietaria de la tienda de ropa "Todo Chic", mostró gran interés en AventuraPe durante la validación del producto. Destacó especialmente la facilidad para crear un perfil de negocio y la oportunidad de aumentar su visibilidad más allá de su distrito. Valoró positivamente las reseñas verificadas, mencionando que generan mayor confianza para potenciales clientes, y se entusiasmó con la posibilidad de destacar la autenticidad cultural de sus diseños inspirados en arte urbano local. Como sugerencia, propuso incluir la programación anticipada de publicaciones y acceso a estadísticas sobre el perfil demográfico de los visitantes a su página. Concluyó afirmando que definitivamente utilizaría la plataforma para su negocio, pues considera que la combinación de visibilidad, herramientas de destacado y confiabilidad la ayudarían a atraer más clientes, especialmente turistas y visitantes de otros distritos.
 
-**Entrevista 02** (Jose)
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
+4. 
+- **Entrevistado**: Diego Rosado  
+- **Duración**: 17:59  
+- **Resumen**: El entrevistado, un emprendedor con una tienda de ropa llamada Urbanoestilo, consideró que el proceso de registro fue claro, aunque exigente en el apartado de la contraseña, lo cual entiende como una medida necesaria de seguridad. Durante la creación de actividades, encontró confusa la sección de precios, ya que no se especifica si se refiere al costo de entrada al evento o al precio de los productos, por lo que sugiere mayor claridad textual. En cuanto a las estadísticas, señaló que sería útil incorporar indicadores de interés, como confirmaciones de asistencia o disponibilidad de vacantes, al estilo de plataformas como Facebook. Destacó como funcionalidad valiosa la posibilidad de crear eventos y sugirió que sería beneficioso tener interacción directa con las reseñas que los usuarios dejan sobre su emprendimiento.  
+- **Link**: [https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing](https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing)  
 
-Evidencia de la reunión:
+![alt text](images/chapter8/entreempr.png)  
 
-![Entrevista](./images/)
-
-Enlace de entrevista: [Link de la entrevista]()
-
-Resumen de la entrevista:
-
-**Entrevista 03** (Jimena)
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-
-Evidencia de la reunión:
-
-![Entrevista](./images/)
-
-Enlace de entrevista: [Link de la entrevista]()
-
-Resumen de la entrevista:
 
 #### Segmento: Aventureros
 
-**Entrevista 01** (Jimena)
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
+1. 
+- **Entrevistado**: Salvador Diaz Aguirre
+- **Duración**: 7:15
+- **Resumen**: El entrevistado comentó sobre la facilidad de interacción con la página web, mencionó la armonía de colores que contribuye a una experiencia visual agradable y profesional. No obstante, identificó varias áreas de mejora que afectan la usabilidad general de la plataforma. Por un lado, expresó confusión por la presencia de textos en inglés que no están traducidos al español, lo cual genera barreras de comprensión para usuarios hispanohablantes. Asimismo, experimentó dificultades técnicas con la funcionalidad de favoritos y likes, reportando que estos botones no respondían correctamente o no guardaban las preferencias del usuario. Adicionalmente, sugirió mejorar la velocidad de carga de ciertas secciones, optimizar la navegación móvil para una mejor experiencia táctil, y implementar notificaciones más claras sobre las acciones realizadas.
 
-Evidencia de la reunión:
+- **Link**: [https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing](https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing)
 
-![Entrevista](./images/)
+![entrevista_salvador](images/interviews/entrevista_salvador.png)
 
-Enlace de entrevista: [Link de la entrevista]()
+2. 
+- **Entrevistado**: Diego Salinas
+- **Duración**: 3:03
+- **Resumen**:
+Diego Salinas compartió sus impresiones sobre la plataforma web, destacando inicialmente la facilidad de interacción y la armonía de colores, que, según él, contribuyen a una experiencia visual agradable y profesional.
+Sin embargo, Salinas identificó varias áreas clave de mejora que impactan la usabilidad general. Señaló su confusión por la presencia de textos en inglés sin traducir, lo cual crea una barrera para los usuarios hispanohablantes. Además, reportó dificultades técnicas con las funcionalidades de favoritos y "me gusta", indicando que estos botones no respondían correctamente o no guardaban las preferencias del usuario.
+Finalmente, Salinas sugirió optimizar la velocidad de carga en ciertas secciones, mejorar la navegación móvil para una experiencia táctil más fluida y la implementación de notificaciones más claras sobre las acciones realizadas.
 
-Resumen de la entrevista:
+- **Link**:[https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing](https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing)
+  ![evidencia-entrevista-diego](images/interviews/evidencia-entrevista-diego.png)
 
-**Entrevista 02**
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
+3. 
+- **Entrevistado**: Pamela Vela  
+- **Duración**: 13:42  
+- **Resumen**: La entrevistada ,una estudiante universitaria interesada en el aplicativo, tuvo una experiencia en general positiva con la plataforma, destacando la facilidad del proceso de inicio de sesión, aunque mencionó que el CAPTCHA puede resultar tedioso y poco confiable. Encontró intuitiva la búsqueda de actividades gracias a la posibilidad de usar palabras clave, lo que facilitó hallar eventos de interés. Valoró especialmente la funcionalidad del ícono de corazón para guardar favoritos, ya que al marcar una actividad esta se agrega de inmediato a su lista, con una respuesta clara del sistema. También resaltó como punto fuerte la opción de publicar reseñas, permitiéndole compartir su experiencia con otros usuarios. La navegación entre secciones y la presentación de información en las actividades le parecieron claras, completas y bien organizadas.   
+- **Link**: [https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing](https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing)  
 
-Evidencia de la reunión:
-
-![Entrevista](./images/)
-
-Enlace de entrevista: [Link de la entrevista]()
-
-Resumen de la entrevista:
-
-**Entrevista 03**
-- Nombres: 
-- Apellidos: 
-- Edad: 
-- Distrito: 
-
-Evidencia de la reunión:
-
-![Entrevista](./images/)
-
-Enlace de entrevista: [Link de la entrevista]()
-
-Resumen de la entrevista:
+![alt text](images/chapter8/entrevaventur.png)  
 
 ### 6.3.3. Evaluaciones según heurísticas
 
@@ -2726,85 +2711,72 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 
 No están incluidas en esta versión de la evaluación las siguientes tareas:
 1. Procesamiento de pagos
-2. Chat directo entre aventureros y emprendedores
-3. Integración con redes sociales
+2. Integración con redes sociales
 
 #### ESCALA DE SEVERIDAD:
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
-<!--ejemplo
-| 1 | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco
-frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
--->
+
 | Nivel | Descripción |
 |-------|-------------|
-| 1 | |
-| 2 | |
-| 3 | |
-| 4 | |
+| 1 | Problema superficial: Puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. |
+| 2 | Problema menor: Puede causar confusión o frustración leve. La prioridad de corrección es baja. |
+| 3 | Problema importante: Dificulta significativamente la completitud de la tarea. Los usuarios pueden encontrar soluciones alternativas, pero la experiencia es deficiente. Debe corregirse con prioridad media-alta. |
+| 4 | Problema crítico: Impide que los usuarios completen tareas importantes o causa gran frustración. Debe corregirse inmediatamente. |
 
 #### TABLA RESUMEN:
-<!--ejemplo
-| 1 | No hay un control que permita regresar a la tienda
-durante el trámite de compra  | 3 | Usability: Libertad y control del
-usuario |
--->
+
 | # | Problema | Escala de severidad | Heurística/Principio violada(o) |
 |---|----------|---------------------|----------------------------------|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
+| 1 | Falta de retroalimentación visible al guardar elementos en favoritos | 2 | Usabilidad - Visibilidad del estado del sistema |
+| 2 | Proceso de registro e inicio de sesión confuso para usuarios nuevos | 3 | Usabilidad - Consistencia y estándares |
+| 3 | Filtros y búsqueda de actividades poco intuitivos | 3 | Arquitectura de información - Navegabilidad |
+| 4 | Proceso complejo para publicar nuevas actividades | 3 | Usabilidad - Simplicidad y eficiencia de uso |
 
 #### DESCRIPCIÓN DE PROBLEMAS:
-<!--ejemplo de como hacer la descripcion de problema
+
 ##### PROBLEMA #1: Falta de retroalimentación visible al guardar elementos en favoritos
-**Severidad:** 2  
-**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+- Severidad: 2
+- Heurística violada: Usabilidad - Visibilidad del estado del sistema
+- Problema:  
+Cuando un usuario guarda una actividad en favoritos, la aplicación no proporciona una confirmación clara de que la acción se ha realizado correctamente. El ícono de corazón cambia de color, pero varios usuarios reportaron incertidumbre sobre si la acción se había completado correctamente, especialmente con conexiones lentas. Durante las entrevistas de validación, 3 participantes intentaron guardar la misma actividad varias veces al no estar seguros si su acción había sido registrada.
 
-**Problema:**  
-Cuando un usuario guarda una actividad en favoritos, la aplicación no proporciona una confirmación clara de que la acción se ha realizado correctamente. El ícono de corazón cambia de color, pero varios usuarios reportaron incertidumbre sobre si la acción se había completado correctamente, especialmente con conexiones lentas.
+![Problema favoritos](./images/pb1.png)
 
-![Problema favoritos](./images/validacion/problema_favoritos.png)
-
-**Recomendación:**  
+- Recomendación:  
 Implementar un mensaje de confirmación temporal que aparezca brevemente indicando "Añadido a favoritos" o "Eliminado de favoritos" según corresponda. Este mensaje debe ser visible pero no intrusivo, y desaparecer automáticamente después de unos segundos. Además, se podría añadir una pequeña animación al icono de corazón para reforzar visualmente la acción realizada.
--->
 
-##### PROBLEMA #1: 
-- Severidad: 
-- Heurística violada:
-- Problema:
+##### PROBLEMA #2: Proceso de registro e inicio de sesión confuso para usuarios nuevos
+- Severidad: 3
+- Heurística violada: Usabilidad - Consistencia y estándares
+- Problema:  
+Los usuarios nuevos experimentaron confusión durante el proceso de registro, particularmente al distinguir entre el registro como "aventurero" o como "emprendedor". La terminología no fue intuitiva para varios participantes, quienes no entendían claramente las diferencias entre los tipos de cuenta. Adicionalmente, el formulario de registro solicitaba información considerada excesiva para una primera interacción, causando abandono del proceso en 4 de los 8 participantes evaluados.
 
-![Problema](./images/)
+![Problema registro](./images/pb2.png)
 
-- Recomendación:
+- Recomendación:  
+Simplificar el proceso de registro inicial solicitando solo información esencial (correo y contraseña). Clarificar las diferencias entre tipos de cuenta con descripciones breves y ejemplos visuales. Implementar un proceso progresivo donde la información adicional se solicite después del registro básico. Utilizar términos más descriptivos como "Busco experiencias" vs "Ofrezco experiencias" en lugar de "aventurero" y "emprendedor".
 
-##### PROBLEMA #2: 
-- Severidad: 
-- Heurística violada:
-- Problema:
+##### PROBLEMA #3: Filtros y búsqueda de actividades poco intuitivos
+- Severidad: 3
+- Heurística violada: Arquitectura de información - Navegabilidad
+- Problema:  
+Los usuarios tuvieron dificultades significativas para encontrar actividades específicas debido a un sistema de filtros confuso. Durante las pruebas, 6 de 8 participantes no pudieron localizar actividades por ubicación geográfica de manera eficiente. Las categorías de actividades resultaron ambiguas y los filtros combinados (como "actividades acuáticas" + "para principiantes") no funcionaban según lo esperado, mostrando resultados inconsistentes. Los participantes expresaron frustración al intentar refinar sus búsquedas.
 
-![Problema](./images/)
+![Problema registro](./images/pb3.png)
 
-- Recomendación:
+- Recomendación:  
+Rediseñar el sistema de filtros aplicando una estructura jerárquica clara. Incorporar un mapa interactivo para búsquedas por ubicación. Permitir la combinación de múltiples filtros de forma coherente y mostrar claramente los filtros activos. Implementar sugerencias basadas en búsquedas populares y añadir la función de autocompletar en el campo de búsqueda. Realizar pruebas de card sorting para mejorar la categorización de actividades según el modelo mental de los usuarios.
 
-##### PROBLEMA #3: 
-- Severidad: 
-- Heurística violada:
-- Problema:
+##### PROBLEMA #4: Proceso complejo para publicar nuevas actividades
+- Severidad: 3
+- Heurística violada: Usabilidad - Simplicidad y eficiencia de uso
+- Problema:  
+Los emprendedores encontraron excesivamente complejo el proceso para publicar nuevas actividades. El formulario requiere completar numerosos campos obligatorios dispersos en múltiples páginas sin indicación clara de progreso. Los 3 emprendedores evaluados necesitaron más de 15 minutos para completar una publicación y expresaron frustración por la cantidad de pasos requeridos. Un participante abandonó la tarea sin completarla debido a la complejidad percibida.
 
-![Problema](./images/)
+![Problema publciacion](./images/pb4.png)
 
-- Recomendación:
-
-##### PROBLEMA #4: 
-- Severidad: 
-- Heurística violada:
-- Problema:
-
-![Problema](./images/)
-
-- Recomendación:
+- Recomendación:  
+Reducir el número de campos obligatorios iniciales, permitiendo completar información adicional después de la publicación básica. Proporcionar ejemplos y consejos contextuales para cada sección. Añadir una función de vista previa para que los emprendedores visualicen cómo aparecerá su actividad antes de publicarla.
 
 ## 6.4. Auditoría de Experiencias de Usuario  
 ### 6.4.1. Auditoría realizada  
@@ -3744,108 +3716,6 @@ Los story points reflejan la complejidad relativa de cada característica:
 
 ### 8.3.4. To-Be Validation Interviews  
 #### 8.3.4.1. Diseño de Entrevistas
-
-#### Preguntas para el segmento Aventurero:
-
-1. Sobre el proceso inicial: Cuéntanos tu experiencia al registrarte e iniciar sesión en la aplicación. ¿Qué aspectos te resultaron más intuitivos o confusos?
-
-2. Exploración y búsqueda: Describe cómo fue tu experiencia buscando actividades que te interesaran. ¿Cómo te resultó el proceso de filtrado y qué tan relevantes fueron los resultados que obtuviste?
-
-3. Interacción con actividades: Háblanos sobre tu experiencia al ver los detalles de una actividad y la facilidad para navegar entre las diferentes secciones. ¿Cómo evalúas la cantidad y calidad de la información presentada?
-
-4. Funcionalidades sociales: Explícanos cómo fue tu experiencia al guardar actividades en favoritos y al publicar reseñas. ¿Qué tan clara fue la respuesta del sistema al realizar estas acciones?
-
-
-#### Preguntas para el segmento Emprendedor:
-
-1. Proceso de registro y validación: Describe tu experiencia durante el proceso de registro como emprendedor y la configuración inicial de tu perfil de negocio. ¿Qué partes del proceso te parecieron más valiosas o complicadas?
-
-2. Creación y gestión de contenido: Cuéntanos cómo fue tu experiencia al crear, editar y gestionar tus actividades publicadas. ¿Qué aspectos de la interfaz facilitaron o dificultaron este proceso?
-
-3. Visualización de datos: ¿Cómo evalúas la sección de estadísticas y la información que proporciona sobre tus publicaciones? ¿Qué tan útil consideras esta información para tu negocio?
-
-4. Experiencia general: Desde tu perspectiva como emprendedor, ¿qué funcionalidades consideras más valiosas de la plataforma y qué mejoras sugerirías para optimizar tu experiencia?
-
-#### 8.3.4.2. Registro de Entrevistas  
-
-#### Sección aventureros
-
-1. 
-- **Entrevistado**: Salvador Diaz Aguirre
-- **Duración**: 7:15
-- **Resumen**: El entrevistado comentó sobre la facilidad de interacción con la página web, mencionó la armonía de colores que contribuye a una experiencia visual agradable y profesional. No obstante, identificó varias áreas de mejora que afectan la usabilidad general de la plataforma. Por un lado, expresó confusión por la presencia de textos en inglés que no están traducidos al español, lo cual genera barreras de comprensión para usuarios hispanohablantes. Asimismo, experimentó dificultades técnicas con la funcionalidad de favoritos y likes, reportando que estos botones no respondían correctamente o no guardaban las preferencias del usuario. Adicionalmente, sugirió mejorar la velocidad de carga de ciertas secciones, optimizar la navegación móvil para una mejor experiencia táctil, y implementar notificaciones más claras sobre las acciones realizadas.
-
-- **Link**: [https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing](https://drive.google.com/file/d/17p9M2BTj7paYPc1mYoNfqMmTdtbJQQ2y/view?usp=sharing)
-
-![entrevista_salvador](images/interviews/entrevista_salvador.png)
-
-2. 
-- **Entrevistado**: Diego Salinas
-- **Duración**: 3:03
-- **Resumen**:
-Diego Salinas compartió sus impresiones sobre la plataforma web, destacando inicialmente la facilidad de interacción y la armonía de colores, que, según él, contribuyen a una experiencia visual agradable y profesional.
-Sin embargo, Salinas identificó varias áreas clave de mejora que impactan la usabilidad general. Señaló su confusión por la presencia de textos en inglés sin traducir, lo cual crea una barrera para los usuarios hispanohablantes. Además, reportó dificultades técnicas con las funcionalidades de favoritos y "me gusta", indicando que estos botones no respondían correctamente o no guardaban las preferencias del usuario.
-Finalmente, Salinas sugirió optimizar la velocidad de carga en ciertas secciones, mejorar la navegación móvil para una experiencia táctil más fluida y la implementación de notificaciones más claras sobre las acciones realizadas.
-
-- **Link**:[https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing](https://drive.google.com/file/d/1uklHfg3XEtAcMIacdWPaTz_tZgZ6pyLN/view?usp=sharing)
-  ![evidencia-entrevista-diego](images/interviews/evidencia-entrevista-diego.png)
-
-3. 
-- **Entrevistado**: Pamela Vela  
-- **Duración**: 13:42  
-- **Resumen**: La entrevistada ,una estudiante universitaria interesada en el aplicativo, tuvo una experiencia en general positiva con la plataforma, destacando la facilidad del proceso de inicio de sesión, aunque mencionó que el CAPTCHA puede resultar tedioso y poco confiable. Encontró intuitiva la búsqueda de actividades gracias a la posibilidad de usar palabras clave, lo que facilitó hallar eventos de interés. Valoró especialmente la funcionalidad del ícono de corazón para guardar favoritos, ya que al marcar una actividad esta se agrega de inmediato a su lista, con una respuesta clara del sistema. También resaltó como punto fuerte la opción de publicar reseñas, permitiéndole compartir su experiencia con otros usuarios. La navegación entre secciones y la presentación de información en las actividades le parecieron claras, completas y bien organizadas.   
-- **Link**: [https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing](https://drive.google.com/file/d/1SLI19_MtyYLYpVIEfZ-rB23MrBJF5Z0U/view?usp=sharing)  
-
-![alt text](images/chapter8/entrevaventur.png)  
-
-4. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**:
-- **Link**:
-
-5. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**:
-- **Link**:
-
-
-#### Sección emprendedores
-
-1. 
-- **Entrevistado**: Francesko Montesinos
-- **Duración**: 6:25
-- **Resumen**: El entrevistado comentó que experimentó dificultades durante el proceso de registro, específicamente con la configuración de contraseña, lo cual representa una barrera inicial. Sin embargo, una vez dentro de la plataforma, valoró positivamente la interfaz de gestión de contenido gracias a sus botones claros e indicaciones concisas que facilitaron la creación y edición de actividades. Además, considera muy útil la sección de estadísticas para comprender la percepción de sus clientes sobre las experiencias ofrecidas. Por otro lado, destaca como funcionalidad más valiosa la capacidad de publicar actividades, ya que le permite ganar visibilidad para su negocio local.
-
-- **Link**: [https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing](https://drive.google.com/file/d/15mcLTueNNdXs5OncOsnZheSLSPzXTbx8/view?usp=sharing)
-
-![entrevista francesko](images/interviews/entrevista_francesko.png)
-
-2. 
-- **Entrevistado**: Nasthya del Carpio
-- **Duración**: 10:24
-- **Resumen**: Nasthya del Carpio, emprendedora de la marca Ecobags de Totegabs, señaló que el proceso de registro y configuración del perfil en la plataforma fue intuitivo y sencillo, tanto para ella como para el ingreso de datos de su emprendimiento. Destacó que la creación, edición y eliminación de actividades también fue clara y fácil de realizar, gracias a una interfaz amigable. Resaltó como aspecto más valioso la sección de estadísticas, ya que le permite obtener feedback clave desde la perspectiva del usuario, lo cual considera esencial para mejorar y hacer crecer su negocio. Como sugerencia, propuso incluir más tipos de suscripciones ajustadas al tamaño del emprendimiento.
-
--  **Link**: [https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing](https://drive.google.com/file/d/1bk0w4G6WPKZb3pP6lzO0ri4J7TI4yfd5/view?usp=sharing)
-
-![entrevista nasthya](images/interviews/entrevista_nas.png)
-
-3. 
-- **Entrevistado**: Diego Rosado  
-- **Duración**: 17:59  
-- **Resumen**: El entrevistado, un emprendedor con una tienda de ropa llamada Urbanoestilo, consideró que el proceso de registro fue claro, aunque exigente en el apartado de la contraseña, lo cual entiende como una medida necesaria de seguridad. Durante la creación de actividades, encontró confusa la sección de precios, ya que no se especifica si se refiere al costo de entrada al evento o al precio de los productos, por lo que sugiere mayor claridad textual. En cuanto a las estadísticas, señaló que sería útil incorporar indicadores de interés, como confirmaciones de asistencia o disponibilidad de vacantes, al estilo de plataformas como Facebook. Destacó como funcionalidad valiosa la posibilidad de crear eventos y sugirió que sería beneficioso tener interacción directa con las reseñas que los usuarios dejan sobre su emprendimiento.  
-- **Link**: [https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing](https://drive.google.com/file/d/115bBT53X7JPj-xRcwHikO2aTMejDMcyn/view?usp=sharing)  
-
-![alt text](images/chapter8/entreempr.png)  
-
-4. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**:
-- **Link**:
-
-
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog  
