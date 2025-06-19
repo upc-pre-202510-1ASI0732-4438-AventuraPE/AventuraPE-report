@@ -3860,10 +3860,29 @@ AventuraPe es una aplicación móvil y web diseñada para conectar a los usuario
 
 # Conclusiones  
 ## Conclusiones y recomendaciones  
+El tercer hito del proyecto AventuraPe evidencia una evolución significativa en la validación técnica, funcional y experiencial de la plataforma. A través de un enfoque integral que combina DevOps, pruebas automatizadas, auditorías de experiencia de usuario y desarrollo guiado por experimentos, se lograron identificar y resolver cuellos de botella críticos, optimizar funcionalidades clave y priorizar mejoras basadas en datos reales. La implementación de un pipeline de integración y despliegue continuo (CI/CD), junto con herramientas de monitoreo, permitió asegurar calidad y estabilidad en todos los entornos. Asimismo, las entrevistas y auditorías cruzadas proporcionaron una retroalimentación valiosa para adaptar la plataforma a las necesidades reales de los usuarios. Finalmente, el diseño riguroso de experimentos mediante hipótesis, métricas e iteración controlada sienta las bases para una mejora continua basada en evidencia, alineando el desarrollo del producto con objetivos de negocio, experiencia del usuario y escalabilidad técnica. 
+
+Recomendamos seguir priorizando el ciclo de aprendizaje continuo mediante el uso sistemático de experimentos iterativos. Es clave mantener activa la recolección de feedback de usuarios y stakeholders, tanto cualitativa como cuantitativa, para ajustar el backlog en cada sprint. También se sugiere fortalecer el sistema de internacionalización, implementar funcionalidades de personalización progresiva, y escalar la infraestructura para soportar futuros crecimientos. Finalmente, mantener prácticas DevOps sólidas y monitoreo en tiempo real garantizará la estabilidad, calidad y escalabilidad sostenida de AventuraPe como plataforma digital de alto impacto. 
 
 # Video About-the-Team  
 
 # Bibliografía  
+- Beck, K. (2003). *Test-Driven Development: By Example*. Addison-Wesley.
+- Chelimsky, D., et al. (2010). *The RSpec Book: Behaviour Driven Development with RSpec, Cucumber, and Friends*. Pragmatic Bookshelf.
+- Humble, J., & Farley, D. (2010). *Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation*. Addison-Wesley.
+- Nielsen, J. (1994). *Heuristic Evaluation*. In *Usability Inspection Methods*. John Wiley & Sons.
+- Ries, E. (2011). *The Lean Startup: How Today’s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses*. Crown Business.
+- Knapp, J., Zeratsky, J., & Kowitz, B. (2016). *Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days*. Simon & Schuster.
+- Gamma, E., et al. (1994). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
+- Fielding, R. T. (2000). *Architectural Styles and the Design of Network-based Software Architectures*. University of California, Irvine.
+- [SonarQube Documentation](https://docs.sonarsource.com/)
+- [Lighthouse Documentation - Google Developers](https://developer.chrome.com/docs/lighthouse)
+- [Apache JMeter](https://jmeter.apache.org/)
+- [Selenium Documentation](https://www.selenium.dev/documentation/)
+- [GitHub Actions Docs](https://docs.github.com/actions)
+- [Vue I18n Documentation](https://vue-i18n.intlify.dev/)
+- [Prometheus Documentation](https://prometheus.io/docs/)
+- [Matomo – Web Analytics Platform](https://matomo.org)
 
 # Anexos  
 - **ANEXO A**:<br> [https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1](https://www.figma.com/design/XnZ4CmnkLFbmhpGQej7d7W/AventuraPe?node-id=151-2&t=jrNC7V95qrZFGvXF-1)
