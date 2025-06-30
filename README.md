@@ -2509,20 +2509,20 @@ Cabe recalcar que en perspectiva de proyecto implementamos **Domain-Driven Desig
 
 Para asegurar la calidad y seguridad del código, implementamos principalmente SonarQube como herramienta central de análisis estático:
 
-![SonarQube](./images/sonarQube-logo.jpg)
+![alt text](images/sonarQube/sonarQube-logo.jpg)
 
 **SonarQube:** Realizamos análisis exhaustivos sobre los diferentes controladores de nuestros bounded contexts principales:
   - FavoriteController: Verificamos la correcta implementación de los endpoints para guardar y eliminar favoritos, identificando posibles problemas de concurrencia y validación de datos.
 
-  ![SonarQube](./images/sonarQube_favorite.png)
+  ![alt text](images/sonarQube/sonarQube_favorite.png)
 
   - PublicationController: Analizamos la complejidad ciclomática y el manejo de excepciones, especialmente en los métodos de creación y actualización de publicaciones.
 
-  ![SonarQube](./images/sonarQube_publication.png)
+  ![alt text](images/sonarQube/sonarQube_publication.png)
 
   - ProfileController: Evaluamos el manejo seguro de datos personales y la correcta implementación de los permisos de acceso.
 
-  ![SonarQube](./images/sonarQube_profile.png)
+  ![alt text](images/sonarQube/sonarQube_profile.png)
 
 El análisis de SonarQube nos permitió identificar y corregir varios problemas potenciales:
 - Vulnerabilidades de seguridad en la validación de entradas de usuario
@@ -2740,7 +2740,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 - Problema:  
 Cuando un usuario guarda una actividad en favoritos, la aplicación no proporciona una confirmación clara de que la acción se ha realizado correctamente. El ícono de corazón cambia de color, pero varios usuarios reportaron incertidumbre sobre si la acción se había completado correctamente, especialmente con conexiones lentas. Durante las entrevistas de validación, 3 participantes intentaron guardar la misma actividad varias veces al no estar seguros si su acción había sido registrada.
 
-![Problema favoritos](./images/pb1.png)
+![alt text](images/pb/pb1.png)
 
 - Recomendación:  
 Implementar un mensaje de confirmación temporal que aparezca brevemente indicando "Añadido a favoritos" o "Eliminado de favoritos" según corresponda. Este mensaje debe ser visible pero no intrusivo, y desaparecer automáticamente después de unos segundos. Además, se podría añadir una pequeña animación al icono de corazón para reforzar visualmente la acción realizada.
@@ -2751,7 +2751,7 @@ Implementar un mensaje de confirmación temporal que aparezca brevemente indican
 - Problema:  
 Los usuarios nuevos experimentaron confusión durante el proceso de registro, particularmente al distinguir entre el registro como "aventurero" o como "emprendedor". La terminología no fue intuitiva para varios participantes, quienes no entendían claramente las diferencias entre los tipos de cuenta. Adicionalmente, el formulario de registro solicitaba información considerada excesiva para una primera interacción, causando abandono del proceso en 4 de los 8 participantes evaluados.
 
-![Problema registro](./images/pb2.png)
+![alt text](images/pb/pb2.png)
 
 - Recomendación:  
 Simplificar el proceso de registro inicial solicitando solo información esencial (correo y contraseña). Clarificar las diferencias entre tipos de cuenta con descripciones breves y ejemplos visuales. Implementar un proceso progresivo donde la información adicional se solicite después del registro básico. Utilizar términos más descriptivos como "Busco experiencias" vs "Ofrezco experiencias" en lugar de "aventurero" y "emprendedor".
@@ -2762,7 +2762,7 @@ Simplificar el proceso de registro inicial solicitando solo información esencia
 - Problema:  
 Los usuarios tuvieron dificultades significativas para encontrar actividades específicas debido a un sistema de filtros confuso. Durante las pruebas, 6 de 8 participantes no pudieron localizar actividades por ubicación geográfica de manera eficiente. Las categorías de actividades resultaron ambiguas y los filtros combinados (como "actividades acuáticas" + "para principiantes") no funcionaban según lo esperado, mostrando resultados inconsistentes. Los participantes expresaron frustración al intentar refinar sus búsquedas.
 
-![Problema registro](./images/pb3.png)
+![alt text](images/pb/pb3.png)
 
 - Recomendación:  
 Rediseñar el sistema de filtros aplicando una estructura jerárquica clara. Incorporar un mapa interactivo para búsquedas por ubicación. Permitir la combinación de múltiples filtros de forma coherente y mostrar claramente los filtros activos. Implementar sugerencias basadas en búsquedas populares y añadir la función de autocompletar en el campo de búsqueda. Realizar pruebas de card sorting para mejorar la categorización de actividades según el modelo mental de los usuarios.
@@ -2773,7 +2773,7 @@ Rediseñar el sistema de filtros aplicando una estructura jerárquica clara. Inc
 - Problema:  
 Los emprendedores encontraron excesivamente complejo el proceso para publicar nuevas actividades. El formulario requiere completar numerosos campos obligatorios dispersos en múltiples páginas sin indicación clara de progreso. Los 3 emprendedores evaluados necesitaron más de 15 minutos para completar una publicación y expresaron frustración por la cantidad de pasos requeridos. Un participante abandonó la tarea sin completarla debido a la complejidad percibida.
 
-![Problema publciacion](./images/pb4.png)
+![alt text](images/pb/pb4.png)
 
 - Recomendación:  
 Reducir el número de campos obligatorios iniciales, permitiendo completar información adicional después de la publicación básica. Proporcionar ejemplos y consejos contextuales para cada sección. Añadir una función de vista previa para que los emprendedores visualicen cómo aparecerá su actividad antes de publicarla.
