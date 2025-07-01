@@ -2778,16 +2778,6 @@ Los emprendedores encontraron excesivamente complejo el proceso para publicar nu
 - Recomendación:  
 Reducir el número de campos obligatorios iniciales, permitiendo completar información adicional después de la publicación básica. Proporcionar ejemplos y consejos contextuales para cada sección. Añadir una función de vista previa para que los emprendedores visualicen cómo aparecerá su actividad antes de publicarla.
 
-## 6.4. Auditoría de Experiencias de Usuario  
-### 6.4.1. Auditoría realizada  
-#### 6.4.1.1. Información del grupo auditado  
-#### 6.4.1.2. Cronograma de auditoría realizada  
-#### 6.4.1.3. Contenido de auditoría realizada  
-### 6.4.2. Auditoría recibida  
-#### 6.4.2.1. Información del grupo auditor  
-#### 6.4.2.2. Cronograma de auditoría recibida  
-#### 6.4.2.3. Contenido de auditoría recibida  
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos 
 
 ## 6.4. Auditoría de Experiencias de Usuario  
 
@@ -3776,8 +3766,7 @@ Los story points reflejan la complejidad relativa de cada característica:
 
 AventuraPe es una aplicación móvil y web diseñada para conectar a los usuarios con micro aventuras locales sin necesidad de planificación extensa. En este video, mostramos cómo nuestra plataforma utiliza filtros y una interfaz intuitiva para ofrecer experiencias cercanas, auténticas y accesibles, fomentando además el crecimiento de negocios locales.
 
-![video_about_the_product](image-14.png)
-
+![alt text](images/testing_mobile/image-14.png)
 
 **ANEXO M:** <br> [https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing](https://drive.google.com/file/d/1BSaLfhvNmE7qfJIATZLq4OWtYvKO9m-y/view?usp=sharing)  
 
