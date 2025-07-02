@@ -3381,8 +3381,8 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| Optimizar queries de eliminación, implementar soft delete y mejorar índices de base de datos para operaciones administrativas 	| Moderadores reportan frustración por lentitud. Tiempo excesivo impacta productividad del equipo y capacidad de respuesta ante contenido problemático 	| Si optimizamos las operaciones administrativas, entonces reduciremos el tiempo de eliminación de comentarios en un 60% (de 3-4s a menos de 1.5s), porque eliminaremos cuellos de botella en las consultas de moderación 	|
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| Implementar sistema de internacionalización (i18n) con soporte para español e inglés, incluyendo interfaz, contenido y configuración regional 	| Analytics muestran 25% de visitantes internacionales que abandonan rápidamente. Barrera del idioma limita expansión de mercado 	| Si implementamos soporte multiidioma, entonces incrementaremos los registros internacionales en un 40% en 6 meses, porque eliminaremos la barrera del idioma para usuarios no hispanohablantes 	|
 | ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	| Analizar y optimizar queries lentas, añadir índices apropiados y refactorizar consultas N+1 en el módulo de actividades 	| Usuarios abandonan proceso de publicación por lentitud. 2 segundos excede expectativas de respuesta en aplicaciones modernas 	| Si optimizamos las consultas de base de datos, entonces mejoraremos el tiempo de publicación en un 50% (de 2s a menos de 1s), porque eliminaremos consultas ineficientes y redundantes 	|
-| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| Implementar theme switcher con modo oscuro completo, incluyendo todos los componentes, formularios y elementos de la interfaz 	| 40% de usuarios activos durante horarios nocturnos. Modo oscuro reduce fatiga visual y es tendencia en aplicaciones modernas 	| Si añadimos modo oscuro, entonces incrementaremos el tiempo de sesión nocturna en un 25%, porque reduciremos la fatiga visual en entornos con poca luz 	|
 | ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| Implementar sistema de notificaciones push web usando Service Workers, con segmentación por comportamiento de usuario 	| 35% de usuarios registrados se vuelven inactivos después de 2 semanas. Falta mecanismo para reactivar usuarios dormidos 	| Si implementamos notificaciones push segmentadas, entonces incrementaremos el re-engagement de usuarios inactivos en un 30%, porque les recordaremos contenido relevante y nuevas actividades 	|
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| Implementar theme switcher con modo oscuro completo, incluyendo todos los componentes, formularios y elementos de la interfaz 	| 40% de usuarios activos durante horarios nocturnos. Modo oscuro reduce fatiga visual y es tendencia en aplicaciones modernas 	| Si añadimos modo oscuro, entonces incrementaremos el tiempo de sesión nocturna en un 25%, porque reduciremos la fatiga visual en entornos con poca luz 	|
 
 ## 8.2. Experiment Design  
 
@@ -3392,51 +3392,14 @@ En esta sección, presentamos el diseño detallado de nuestros experimentos para
 
 Las siguientes hipótesis han sido formuladas basándonos en nuestro Lean UX Canvas y en las necesidades identificadas en los segmentos objetivo. Cada una aborda aspectos fundamentales de nuestra propuesta de valor para los usuarios y negocios locales.
 
-#### Card 1: Redis Cache for Comments
-
-|              | Hypothesis                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Question**      | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a menos de 800 ms?                       |
-| **Belief**        | Los comentarios representan el 60 % de las consultas a la base de datos y el tiempo actual de 1.5 s impacta UX.         |
-| **Hypothesis**    | Si implementamos un sistema de caché Redis para comentarios, entonces reduciremos el tiempo de respuesta a < 800 ms.      |
-| **Null Hypothesis** | La implementación de caché Redis no reducirá significativamente el tiempo de respuesta, manteniéndose ~ 1.5 s.         |
-
-#### Card 2: Optimización de Operaciones Administrativas
-
-|              | Hypothesis                                                                                                                          |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| **Question**      | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a menos de 1.5 s?            |
-| **Belief**        | Moderadores reportan frustración por la lentitud (3–4 s), impactando la productividad del equipo de moderación.               |
-| **Hypothesis**    | Si optimizamos consultas de eliminación (índices y soft delete), entonces reduciremos el tiempo a < 1.5 s.                       |
-| **Null Hypothesis** | Las optimizaciones no cambiarán significativamente el tiempo de eliminación, manteniéndose entre 3 y 4 s.                      |
-
-#### Card 3: Impacto de las Recomendaciones Personalizadas en la Satisfacción del Usuario
-
-| | Hypothesis |
-|---|---|
-| **Question** | ¿Aumentará la satisfacción del usuario al implementar un sistema de recomendaciones personalizadas de destinos turísticos? |
-| **Belief** | La personalización de recomendaciones basada en preferencias e intereses aumentará la satisfacción del usuario y reducirá el tiempo de planificación de viajes. |
-| **Hypothesis** | La implementación de recomendaciones personalizadas aumentará la satisfacción del usuario en un 25% y reducirá el tiempo de planificación en un 30% durante los primeros dos meses tras su lanzamiento. |
-| **Null Hypothesis** | Las recomendaciones personalizadas no tendrán un impacto significativo en la satisfacción del usuario ni en el tiempo de planificación de viajes. |
-
-#### Card 4: Efecto de Reseñas Verificadas en el Uso y Conversión de la Plataforma
-
-| | Hypothesis |
-|---|---|
-| **Question** | ¿Incrementará el uso de la plataforma al integrar reseñas y valoraciones de usuarios reales? |
-| **Belief** | Las opiniones auténticas de otros viajeros generarán mayor confianza y ayudarán a los usuarios a tomar mejores decisiones sobre destinos y servicios. |
-| **Hypothesis** | La integración de un sistema de reseñas verificadas incrementará el tiempo de permanencia en la plataforma en un 20% y las reservas completadas en un 15% en los tres meses posteriores a su implementación. |
-| **Null Hypothesis** | La integración de reseñas y valoraciones de usuarios no afectará significativamente el tiempo de permanencia en la plataforma ni las conversiones. |
-
-#### Card 5: Autenticidad Cultural como Estrategia para Impulsar Ventas Locales
-
-| | Hypothesis |
-|---|---|
-| **Question** | ¿Aumentarán las ventas de los negocios locales al destacar su autenticidad cultural y conexión con tradiciones peruanas? |
-| **Belief** | Resaltar la autenticidad cultural y el valor histórico de los negocios locales atraerá a turistas que buscan experiencias genuinas y únicas. |
-| **Hypothesis** | Los negocios locales que destaquen su autenticidad cultural en sus perfiles verán un aumento del 30% en reservas comparado con aquellos que no lo hagan, durante los primeros tres meses. |
-| **Null Hypothesi** | Destacar la autenticidad cultural no tendrá un impacto significativo en las reservas de los negocios locales. |
-
+| **Question**                                                                                                         | **Belief**                                                                                                               | **Hypothesis**                                                                                                      | **Null Hypothesis**                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms?                    | Al reducir la cantidad de accesos a la base de datos mediante caché, mejorará significativamente el tiempo de respuesta. | Si implementamos Redis para caché de comentarios, entonces el tiempo de respuesta bajará a menos de 800ms.          | Implementar Redis no tendrá un efecto significativo en el tiempo de respuesta de comentarios.                          |
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | La lentitud actual se debe a consultas ineficientes y falta de optimización de índices.                                  | Si optimizamos las operaciones administrativas, entonces el tiempo de eliminación de comentarios será menor a 1.5s. | La optimización de operaciones administrativas no reducirá significativamente el tiempo de eliminación de comentarios. |
+| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Muchos usuarios internacionales abandonan la app por no entender el idioma.                                              | Si se implementa soporte multiidioma, los registros internacionales aumentarán en un 40% en 6 meses.                | El soporte multiidioma no generará un incremento significativo en los registros internacionales.                       |
+| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? | Consultas N+1 y falta de índices ralentizan el proceso de publicación.                                                   | Si se optimizan las consultas e índices, el tiempo de publicación será menor a 1s.                                  | Optimizar las consultas no mejorará significativamente el tiempo de publicación de actividades.                        |
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos?                                           | Recordar a los usuarios contenido relevante puede motivarlos a volver.                                                   | Si se implementan notificaciones push segmentadas, el re-engagement de usuarios inactivos aumentará en un 30%.      | Las notificaciones push no tendrán un efecto significativo en el re-engagement de usuarios inactivos.                  |
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)?                   | Reducir la fatiga visual con modo oscuro fomentará sesiones más largas en la noche.                                      | Si se implementa modo oscuro, el tiempo de sesión durante la noche aumentará en un 25%.                             | El modo oscuro no afectará significativamente la duración de sesión durante la noche.                                  |
 
 
 ### 8.2.2. Measures
@@ -3444,101 +3407,44 @@ Las siguientes hipótesis han sido formuladas basándonos en nuestro Lean UX Can
 Para cada hipótesis, establecemos medidas específicas que nos permitirán evaluar objetivamente los resultados de nuestros experimentos. Estas métricas han sido seleccionadas por su relevancia y capacidad para proporcionar información valiosa sobre el comportamiento y satisfacción del usuario.
 
 
-#### Card 1: Redis Cache for Comments
+| **Question**                                                                                                         | **Measure**                                                                                                                                                         |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms?                    | Tiempo promedio de respuesta de la API de comentarios antes y después de implementar Redis (ms), medido con herramientas como Postman/New Relic durante carga real. |
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | Tiempo promedio de ejecución de la operación de eliminación de comentarios, obtenido de logs del servidor o APM (Application Performance Monitoring).               |
+| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Número de nuevos registros de usuarios con IPs fuera de países hispanohablantes, comparado entre periodos de 6 meses antes y después de la implementación.          |
+| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? | Tiempo promedio desde que el usuario envía una actividad hasta que se confirma su publicación en el sistema, medido con herramientas de trazabilidad backend.       |
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos?                                           | Porcentaje de usuarios inactivos que regresan a la app después de recibir notificaciones push, comparado con el grupo de control sin notificaciones.                |
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)?                   | Tiempo promedio de sesión entre las 6PM y 6AM de usuarios con modo oscuro activo, comparado con usuarios sin modo oscuro durante el mismo horario.                  |
 
-|         | Measure                                                                                         |
-|--------------|-----------------------------------------------------------------------------------------------|
-| **Question** | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a < 800 ms?   |
-| **Measure**  | Tiempo medio de respuesta de la API de comentarios (ms) medido en 100 solicitudes consecutivas. |
-
-#### Card 2: Optimización de Operaciones Administrativas
-
-|         | Measure                                                                                                      |
-|--------------|------------------------------------------------------------------------------------------------------------|
-| **Question** | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? |
-| **Measure**  | Tiempo medio de ejecución de la operación de eliminación de comentario (ms) medido en 50 operaciones sucesivas. |
-
-#### **Card 3: Estrategia de Medición para Recomendaciones Personalizadas**
-
-| | **Measure** |
-|---|---|
-| **Question** | ¿Cómo mediremos el impacto de las recomendaciones personalizadas en la satisfacción del usuario? |
-| **Measure** | Utilizaremos encuestas de satisfacción (CSAT) antes y después de la implementación, análisis del tiempo promedio para completar un itinerario, tasa de adopción de recomendaciones sugeridas, y seguimiento de interacciones con recomendaciones mediante herramientas de analítica. |
-
-
-#### **Card 4: Estrategia de Medición para Reseñas y Valoraciones**
-
-| | **Measure** |
-|---|---|
-| **Question** | ¿Cómo evaluaremos el impacto de las reseñas y valoraciones en el uso de la plataforma? |
-| **Measure** | Mediremos el tiempo promedio de sesión, páginas visitadas por usuario, tasa de clics en reseñas, correlación entre visualización de reseñas y conversiones, y encuestas sobre el factor de influencia de las reseñas en la decisión de reserva. |
-
-
-#### **Card 5: Estrategia de Medición para Autenticidad Cultural en Negocios Locales**
-
-| | **Measure** |
-|---|---|
-| **Question** | ¿De qué manera cuantificaremos el impacto de destacar la autenticidad cultural en los negocios locales? |
-| **Measure** | Compararemos las tasas de conversión entre perfiles que destacan autenticidad vs. perfiles estándar, análisis A/B de CTR en listados, encuestas a usuarios sobre motivaciones de reserva, y entrevistas con propietarios de negocios sobre cambios en volumen de visitantes. |
 
 
 ### 8.2.3. Conditions
 
 Para cada experimento, establecemos condiciones experimentales y de control claras que nos permitirán comparar resultados y determinar la efectividad de las funcionalidades propuestas. Estas condiciones han sido diseñadas para minimizar variables confusas y obtener resultados válidos.
 
-#### Card 1: Redis Cache for Comments
+| **Question**                                                                                                         | **Experimental Condition**                                                           | **Control Condition**                                                                    |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms?                    | Usuarios acceden a los comentarios con Redis activado (caché en uso).                | Usuarios acceden a los comentarios sin Redis (acceso directo a base de datos).           |
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | Sistema con operaciones administrativas optimizadas (consultas e índices mejorados). | Sistema sin optimización (versión actual de las operaciones administrativas).            |
+| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Usuarios internacionales acceden a la app con soporte multiidioma habilitado.        | Usuarios internacionales acceden a la app solo en español (versión monolingüe).          |
+| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? | Módulo de publicación de actividades con queries optimizadas e índices añadidos.     | Módulo de publicación de actividades con queries y estructura actual (sin optimización). |
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos?                                           | Usuarios inactivos reciben notificaciones push personalizadas según comportamiento.  | Usuarios inactivos no reciben notificaciones (grupo de control).                         |
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)?                   | Usuarios con modo oscuro activado durante sesiones entre 6PM-6AM.                    | Usuarios con solo modo claro disponible durante el mismo rango horario.                  |
 
-| Question                  | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a < 800 ms?                                                                                                            |
-|------------------------|------------------------------------------------------------------------------------------------------------------|
-| **Experimental Condition** | Caché Redis habilitado para la ruta de comentarios; medición de tiempos tras poblado inicial de caché.          |
-| **Control Condition**      | Caché Redis deshabilitado (comportamiento actual); medición de tiempos en entorno de producción simulado.    |
-
-#### Card 2: Optimización de Operaciones Administrativas
-
-| Question                  | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s?                                                                                                            |
-|------------------------|------------------------------------------------------------------------------------------------------------------|
-| **Experimental Condition** | Consultas de eliminación optimizadas (índices y soft delete) desplegadas en entorno de pruebas.                 |
-| **Control Condition**      | Código actual sin optimizaciones, ejecutado en el mismo entorno de pruebas y con la misma carga de trabajo.  |
-
-#### Card 3: Condiciones del Experimento para Recomendaciones Personalizadas
-
-| | Conditions |
-|---|---|
-| **Question** | ¿Cómo implementaremos el experimento para las recomendaciones personalizadas? |
-| **Condición Experimental** | Un grupo de usuarios recibirá recomendaciones altamente personalizadas basadas en sus preferencias, historial de navegación y datos demográficos, presentadas de forma prominente en la interfaz. |
-| **Condición de Control** | Un grupo de control recibirá recomendaciones genéricas basadas únicamente en popularidad general de los destinos, sin personalización específica para el usuario. |
-
-
-#### **Card 4: Condiciones del Experimento para Reseñas y Valoraciones**
-
-| | Conditions |
-|---|---|
-| **Question** | ¿Cómo evaluaremos el impacto de las reseñas y valoraciones de usuarios? |
-| **Condición Experimental** | Un segmento de usuarios verá perfiles de destinos y negocios con reseñas verificadas, fotos de usuarios reales y puntuaciones detalladas por categorías. |
-| **Condición de Control** | El grupo de control verá perfiles estándar sin reseñas destacadas, con información básica proporcionada por los negocios y destinos. |
-
-
-#### **Card 5: Condiciones del Experimento para Autenticidad Cultural en Negocios Locales**
-
-| | Conditions |
-|---|---|
-| **Question** | ¿Cómo mediremos el impacto de destacar la autenticidad cultural en negocios locales? |
-| **Condición Experimental** | Un conjunto de perfiles de negocios destacará explícitamente su autenticidad cultural, tradiciones peruanas y conexión con la comunidad local mediante etiquetas, narrativas y contenido visual específico. |
-| **Condición de Control** | Otro conjunto de perfiles de negocios similares presentará información estándar sin énfasis especial en autenticidad cultural o tradiciones locales. |
 
 
 ### 8.2.4. Scale Calculations and Decisions
 
 Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis. Cada hipótesis se asocia con una **Scale Calculation**, una **Decision**, y se clasifica en un factor de éxito: Desfavorable, Aceptable, Ideal o Excelente.
 
-| Question                                                                                                  | Scale Calculation                                                                                                                                                                                                                                                                                                                                                       | Decision                                                                                                               | Desfavorable | Aceptable | Ideal | Excelente |
-|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------|-----------|-------|-----------|
-| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a menos de 800 ms?        | Creemos que al implementar caché Redis reduciremos el tiempo medio de respuesta de comentarios de 1.5 s a ≤ 800 ms.  <br>• Excelente: ≤ 600 ms  <br>• Ideal: ≤ 800 ms  <br>• Aceptable: 800–1 500 ms  <br>• Desfavorable: > 1 500 ms                                                                                                              | Activar Redis Cache en endpoints de comentarios para disminuir carga en BD.                                            |              |           |   X   |           |
-| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? | Creemos que al optimizar consultas (índices, soft delete) reduciremos el tiempo de eliminación de comentarios de 3–4 s a ≤ 1.5 s.  <br>• Excelente: ≤ 1.125 s  <br>• Ideal: ≤ 1.5 s  <br>• Aceptable: 1.5–3 s  <br>• Desfavorable: > 3 s                                                                                                     | Refactorizar queries y aplicar índices adecuados para operaciones administrativas.                                     |              |     X     |       |           |
-| ¿El soporte multiidioma incrementará los registros internacionales en un 40 % en 6 meses?                  | Creemos que al añadir i18n aumentaremos registros internacionales ≥ 40 % en 6 meses.  <br>• Excelente: ≥ 50 %  <br>• Ideal: ≥ 40 %  <br>• Aceptable: 20–40 %  <br>• Desfavorable: < 20 %                                                                                                                                                                              | Implementar soporte de español e inglés en toda la interfaz y contenido.                                              |              |     X     |       |           |
-| ¿Optimizar consultas de base de datos mejorará el tiempo de publicación de actividades de 2 s a < 1 s?     | Creemos que al refactorizar queries y añadir índices reduciremos el tiempo de publicación de 2 s a ≤ 1 s.  <br>• Excelente: ≤ 0.75 s  <br>• Ideal: ≤ 1 s  <br>• Aceptable: 1–2 s  <br>• Desfavorable: > 2 s                                                                                                                                                | Optimizar queries N+1 e índices en módulo de actividades antes de producción.                                          |              |           |   X   |           |
-| ¿El modo oscuro incrementará el tiempo de sesión de usuarios nocturnos en un 25 %?                         | Creemos que al implementar modo oscuro aumentaremos el tiempo de sesión de usuarios nocturnos (6PM–6AM) en ≥ 25 %.  <br>• Excelente: ≥ 30 %  <br>• Ideal: ≥ 25 %  <br>• Aceptable: 15–25 %  <br>• Desfavorable: < 15 %                                                                                                                                                   | Añadir switcher de tema claro/oscuro, respetando preferencias del sistema.                                             |              |           |   X   |           |
-| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos en un 30 %?                      | Creemos que al implementar notificaciones push segmentadas incrementaremos el re-engagement ≥ 30 %.  <br>• Excelente: ≥ 40 %  <br>• Ideal: ≥ 30 %  <br>• Aceptable: 20–30 %  <br>• Desfavorable: < 20 %                                                                                                                                                                 | Configurar y enviar notificaciones push web basadas en comportamiento de usuario.                                     |              |           |   X   |           |
+| **Question**                                                                                                    | **Scale Calculation**                                                                                                                                                                                                            | **Decision**                                                                       | **Desfavorable** | **Aceptable** | **Ideal** | **Excelente** |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------- | ------------- | --------- | ------------- |
+| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5 s a menos de 800 ms?             | Creemos que al implementar caché Redis reduciremos el tiempo medio de respuesta de comentarios de 1.5 s a ≤ 800 ms.<br>• Excelente: ≤ 600 ms<br>• Ideal: ≤ 800 ms<br>• Aceptable: 800–1500 ms<br>• Desfavorable: > 1500 ms       | Activar Redis Cache en endpoints de comentarios para disminuir carga en BD.        |                  |               | X         |               |
+| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? | Creemos que al optimizar consultas (índices, soft delete) reduciremos el tiempo de eliminación de comentarios de 3–4 s a ≤ 1.5 s.<br>• Excelente: ≤ 1.125 s<br>• Ideal: ≤ 1.5 s<br>• Aceptable: 1.5–3 s<br>• Desfavorable: > 3 s | Refactorizar queries y aplicar índices adecuados para operaciones administrativas. |                  | X             |           |               |
+| ¿El soporte multiidioma incrementará los registros internacionales en un 40 % en 6 meses?                       | Creemos que al añadir i18n aumentaremos registros internacionales ≥ 40 % en 6 meses.<br>• Excelente: ≥ 50 %<br>• Ideal: ≥ 40 %<br>• Aceptable: 20–40 %<br>• Desfavorable: < 20 %                                                 | Implementar soporte de español e inglés en toda la interfaz y contenido.           |                  | X             |           |               |
+| ¿Optimizar consultas de base de datos mejorará el tiempo de publicación de actividades de 2 s a < 1 s?          | Creemos que al refactorizar queries y añadir índices reduciremos el tiempo de publicación de 2 s a ≤ 1 s.<br>• Excelente: ≤ 0.75 s<br>• Ideal: ≤ 1 s<br>• Aceptable: 1–2 s<br>• Desfavorable: > 2 s                              | Optimizar queries N+1 e índices en módulo de actividades antes de producción.      |                  |               | X         |               |
+| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos en un 30 %?                           | Creemos que al implementar notificaciones push segmentadas incrementaremos el re-engagement ≥ 30 %.<br>• Excelente: ≥ 40 %<br>• Ideal: ≥ 30 %<br>• Aceptable: 20–30 %<br>• Desfavorable: < 20 %                                  | Configurar y enviar notificaciones push web basadas en comportamiento de usuario.  |                  |               | X         |               |
+| ¿El modo oscuro incrementará el tiempo de sesión de usuarios nocturnos en un 25 %?                              | Creemos que al implementar modo oscuro aumentaremos el tiempo de sesión de usuarios nocturnos (6PM–6AM) en ≥ 25 %.<br>• Excelente: ≥ 30 %<br>• Ideal: ≥ 25 %<br>• Aceptable: 15–25 %<br>• Desfavorable: < 15 %                   | Añadir switcher de tema claro/oscuro, respetando preferencias del sistema.         |                  |               | X         |               |
 
 
 ### 8.2.5. Methods Selection
