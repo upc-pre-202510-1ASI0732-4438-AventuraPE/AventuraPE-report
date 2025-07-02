@@ -3660,10 +3660,25 @@ Los story points reflejan la complejidad relativa de cada característica:
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
+**Sección emprendedor** <br>
+
+![alt text](images/to-be-front-end/av-buscar.png)
+![alt text](images/to-be-front-end/av-favoritos.png)
+![alt text](images/to-be-front-end/av-inicio.png)
+![alt text](images/to-be-front-end/av-perfil.png)
+
+
+**Sección aventurero** <br>
+
+![alt text](images/to-be-front-end/em-estadistica.png)
+![alt text](images/to-be-front-end/em-home.png)
+![alt text](images/to-be-front-end/em-perfil.png)
+![alt text](images/to-be-front-end/em-suscrp.png)
+
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence  
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence  
-#### 8.3.3.6. Team Collaboration Insights  
+#### 8.3.3.6. Team Collaboration Insights
 
 ### 8.3.4. To-Be Validation Interviews  
 #### 8.3.4.1. Diseño de Entrevistas
