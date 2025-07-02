@@ -3650,14 +3650,29 @@ Los story points reflejan la complejidad relativa de cada característica:
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
 #### 8.3.3.1. To-Be Sprint Backlogs
+
+| **US**   | **TA** | **Título**                            | **Descripción**                                                                  | **Author**       | **ToBe / Doing / Done** |
+| -------- | ------ | ------------------------------------- | -------------------------------------------------------------------------------- | ---------------- | ----------------------- |
+| US-TB-05 | TA001  | Diseñar selector de modo              | Crear diseño visual del switch para cambiar entre modo claro y oscuro            | Jimena | Done                    |
+|           | TA002  | Implementar switcher de modo          | Codificar botón de cambio de modo | Jimena             | Done                    |
+|           | TA003  | Aplicar estilos oscuros a componentes | Estilizar todos los elementos clave de la UI para modo oscuro                    | Jimena           | Done                    |
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
-#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence  
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence  
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence  
 #### 8.3.3.6. Team Collaboration Insights  
 
 ### 8.3.4. To-Be Validation Interviews  
 #### 8.3.4.1. Diseño de Entrevistas
+
+**Para el modo oscuro** <br>
+- ¿Has notado la opción de modo oscuro en la aplicación?
+- ¿Prefieres el modo oscuro al modo claro?
+- ¿Sientes que mejora tu experiencia de uso, especialmente de noche?
+
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog  
