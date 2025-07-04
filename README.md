@@ -3650,14 +3650,66 @@ Los story points reflejan la complejidad relativa de cada característica:
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
 #### 8.3.3.1. To-Be Sprint Backlogs
+
+| **US**   | **TA** | **Título**                            | **Descripción**                                                                  | **Author**       | **ToBe / Doing / Done** |
+| -------- | ------ | ------------------------------------- | -------------------------------------------------------------------------------- | ---------------- | ----------------------- |
+| US-TB-05 | TA001  | Diseñar selector de modo              | Crear diseño visual del switch para cambiar entre modo claro y oscuro            | Jimena | Done                    |
+|           | TA002  | Implementar switcher de modo          | Codificar botón de cambio de modo | Jimena             | Done                    |
+|           | TA003  | Aplicar estilos oscuros a componentes | Estilizar todos los elementos clave de la UI para modo oscuro                    | Jimena           | Done                    |
+|           | TA004  | Implementar switcher de modo mobile   | Codificar botón de cambio de modo en mobile | Jimena             | Done                    |
+|           | TA005  | Aplicar estilos oscuros a componentes mobile | Estilizar todos los elementos clave de la UI para modo oscuro en mobile   | Jimena           | Done                    |
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
-#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence  
-#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence  
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+
+- **Modo oscuro** <br>
+
+**Sección emprendedor** <br>
+
+![alt text](images/to-be-front-end/av-buscar.png)
+![alt text](images/to-be-front-end/av-favoritos.png)
+![alt text](images/to-be-front-end/av-inicio.png)
+![alt text](images/to-be-front-end/av-perfil.png)
+
+<br>
+
+**Sección aventurero** <br>
+
+![alt text](images/to-be-front-end/em-estadistica.png)
+![alt text](images/to-be-front-end/em-home.png)
+![alt text](images/to-be-front-end/em-perfil.png)
+![alt text](images/to-be-front-end/em-suscrp.png)
+
+
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+**Sección emprendedor** <br>
+
+![alt text](images/to-be-mobile/em-estatistics.png)
+![alt text](images/to-be-mobile/em-cuenta.png)
+
+<br>
+
+**Sección aventurero** <br>
+![alt text](images/to-be-mobile/av-buscar-mob.jpg) 
+![alt text](images/to-be-mobile/av-detalle-mob.jpg) 
+![alt text](images/to-be-mobile/av-home-mob.jpg)
+
+
+
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence  
-#### 8.3.3.6. Team Collaboration Insights  
+#### 8.3.3.6. Team Collaboration Insights
 
 ### 8.3.4. To-Be Validation Interviews  
 #### 8.3.4.1. Diseño de Entrevistas
+
+**Para el modo oscuro** <br>
+- ¿Has notado la opción de modo oscuro en la aplicación?
+- ¿Prefieres el modo oscuro al modo claro?
+- ¿Sientes que mejora tu experiencia de uso, especialmente de noche?
+
+
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog  
