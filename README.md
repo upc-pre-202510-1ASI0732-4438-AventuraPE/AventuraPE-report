@@ -3379,7 +3379,7 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 |:---:	|:---:	|:---:	|:---:	|
 | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	| Implementar sistema de caché Redis para almacenar comentarios frecuentemente consultados y reducir carga en base de datos 	| Los comentarios representan el 60% de las consultas a BD. Tiempo actual de 1.5s impacta negativamente la experiencia de usuario y engagement 	| Si implementamos caché Redis para comentarios, entonces reduciremos el tiempo de respuesta en un 50% (de 1.5s a menos de 800ms), porque eliminaremos consultas repetitivas a la base de datos 	|
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| Optimizar queries de eliminación, implementar soft delete y mejorar índices de base de datos para operaciones administrativas 	| Moderadores reportan frustración por lentitud. Tiempo excesivo impacta productividad del equipo y capacidad de respuesta ante contenido problemático 	| Si optimizamos las operaciones administrativas, entonces reduciremos el tiempo de eliminación de comentarios en un 60% (de 3-4s a menos de 1.5s), porque eliminaremos cuellos de botella en las consultas de moderación 	|
-| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| Implementar sistema de internacionalización (i18n) con soporte para español e inglés, incluyendo interfaz, contenido y configuración regional 	| Analytics muestran 25% de visitantes internacionales que abandonan rápidamente. Barrera del idioma limita expansión de mercado 	| Si implementamos soporte multiidioma, entonces incrementaremos los registros internacionales en un 40% en 6 meses, porque eliminaremos la barrera del idioma para usuarios no hispanohablantes 	|
+| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| Implementar sistema de internacionalización (i18n) con soporte para español e inglés en la interfaz web del aventurero 	| Analytics muestran 25% de visitantes internacionales que abandonan rápidamente. Barrera del idioma limita expansión de mercado 	| Si implementamos soporte multiidioma, entonces incrementaremos los registros internacionales de aventureros en un 40% en 6 meses, porque eliminaremos la barrera del idioma para usuarios no hispanohablantes 	|
 | ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	| Analizar y optimizar queries lentas, añadir índices apropiados y refactorizar consultas N+1 en el módulo de actividades 	| Usuarios abandonan proceso de publicación por lentitud. 2 segundos excede expectativas de respuesta en aplicaciones modernas 	| Si optimizamos las consultas de base de datos, entonces mejoraremos el tiempo de publicación en un 50% (de 2s a menos de 1s), porque eliminaremos consultas ineficientes y redundantes 	|
 | ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| Implementar sistema de notificaciones push web usando Service Workers, con segmentación por comportamiento de usuario 	| 35% de usuarios registrados se vuelven inactivos después de 2 semanas. Falta mecanismo para reactivar usuarios dormidos 	| Si implementamos notificaciones push segmentadas, entonces incrementaremos el re-engagement de usuarios inactivos en un 30%, porque les recordaremos contenido relevante y nuevas actividades 	|
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| Implementar theme switcher con modo oscuro completo, incluyendo todos los componentes, formularios y elementos de la interfaz 	| 40% de usuarios activos durante horarios nocturnos. Modo oscuro reduce fatiga visual y es tendencia en aplicaciones modernas 	| Si añadimos modo oscuro, entonces incrementaremos el tiempo de sesión nocturna en un 25%, porque reduciremos la fatiga visual en entornos con poca luz 	|
@@ -3650,15 +3650,49 @@ Los story points reflejan la complejidad relativa de cada característica:
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
 #### 8.3.3.1. To-Be Sprint Backlogs
+Basándome en la información proporcionada sobre las experiment cards y los desarrolladores asignados, aquí está la tabla completa del Sprint Backlog:
+
+#### 8.3.3.1. To-Be Sprint Backlogs
 
 | **US**   | **TA** | **Título**                            | **Descripción**                                                                  | **Author**       | **ToBe / Doing / Done** |
 | -------- | ------ | ------------------------------------- | -------------------------------------------------------------------------------- | ---------------- | ----------------------- |
-| US-TB-05 | TA001  | Diseñar selector de modo              | Crear diseño visual del switch para cambiar entre modo claro y oscuro            | Jimena | Done                    |
-|           | TA002  | Implementar switcher de modo          | Codificar botón de cambio de modo | Jimena             | Done                    |
-|           | TA003  | Aplicar estilos oscuros a componentes | Estilizar todos los elementos clave de la UI para modo oscuro                    | Jimena           | Done                    |
-|           | TA004  | Implementar switcher de modo mobile   | Codificar botón de cambio de modo en mobile | Jimena             | Done                    |
-|           | TA005  | Aplicar estilos oscuros a componentes mobile | Estilizar todos los elementos clave de la UI para modo oscuro en mobile   | Jimena           | Done                    |
+| US-TB-01 | TA001  | Configurar servidor Redis             | Instalar y configurar Redis server para caché de comentarios                    | Jair Castillo    | Done                    |
+|          | TA002  | Implementar caché Redis en backend    | Integrar Redis con Spring Boot para almacenar comentarios frecuentes          | Jair Castillo    | Done                    |
+|          | TA003  | Optimizar consultas de comentarios   | Refactorizar queries de comentarios para usar caché cuando sea posible         | Jair Castillo    | Done                    |
+|          | TA004  | Configurar TTL para caché             | Establecer tiempo de vida para entradas de caché de comentarios                | Jair Castillo    | Done                    |
+|          | TA005  | Monitoreo de performance Redis        | Implementar métricas para monitorear eficiencia del caché                      | Jair Castillo    | Done                    |
+| US-TB-02 | TA006  | Análisis de queries de eliminación    | Identificar cuellos de botella en operaciones de eliminación administrativa    | José Gutierrez   | Done                    |
+|          | TA007  | Implementar soft delete               | Cambiar eliminación física por soft delete para mejorar performance            | José Gutierrez   | Done                    |
+|          | TA008  | Optimizar índices de base de datos    | Crear índices apropiados para consultas de moderación                          | José Gutierrez   | Done                    |
+|          | TA009  | Refactorizar controlador admin        | Optimizar lógica del controlador de operaciones administrativas                | José Gutierrez   | Done                    |
+|          | TA010  | Testing de performance admin          | Validar que eliminaciones de comentarios sean < 1.5s                           | José Gutierrez   | Done                    |
+| US-TB-03 | TA011  | Análisis de queries de publicación    | Identificar consultas N+1 y cuellos de botella en publicación de actividades   | Estefano Jaque   | Done                    |
+|          | TA012  | Optimizar consultas de actividades   | Refactorizar queries del módulo de actividades para mejorar rendimiento        | Estefano Jaque   | Done                    |
+|          | TA013  | Implementar índices para actividades | Añadir índices apropiados en tablas relacionadas con actividades               | Estefano Jaque   | Done                    |
+|          | TA014  | Optimizar carga de imágenes          | Implementar lazy loading y optimización de imágenes en publicaciones           | Estefano Jaque   | Done                    |
+|          | TA015  | Testing de performance publicación   | Validar que publicación de actividades sea < 1s                                | Estefano Jaque   | Done                    |
+| US-TB-04 | TA016  | Diseñar algoritmo de recomendaciones  | Crear lógica para recomendaciones basadas en historial de usuario             | Jair Castillo    | Done                    |
+|          | TA017  | Implementar IA Barbara Nexus          | Integrar sistema de IA para análisis de preferencias de usuario               | Jair Castillo    | Done                    |
+|          | TA018  | Crear endpoint de recomendaciones     | Desarrollar API para servir recomendaciones personalizadas                    | Jair Castillo    | Done                    |
+|          | TA019  | Integrar recomendaciones en frontend  | Mostrar recomendaciones personalizadas en interfaz de aventurero              | Barbara Quezada  | Done                    |
+|          | TA020  | Sistema de feedback de recomendaciones| Implementar métricas para mejorar algoritmo de recomendaciones                | Jair Castillo    | Done                    |
+| US-TB-05 | TA021  | Diseñar selector de modo              | Crear diseño visual del switch para cambiar entre modo claro y oscuro          | Jimena Cama      | Done                    |
+|          | TA022  | Implementar switcher de modo          | Codificar botón de cambio de modo en web                                       | Jimena Cama      | Done                    |
+|          | TA023  | Aplicar estilos oscuros a componentes | Estilizar todos los elementos clave de la UI para modo oscuro en web           | Jimena Cama      | Done                    |
+|          | TA024  | Implementar switcher de modo mobile   | Codificar botón de cambio de modo en aplicación móvil                          | Jimena Cama      | Done                    |
+|          | TA025  | Aplicar estilos oscuros a componentes mobile | Estilizar todos los elementos clave de la UI para modo oscuro en mobile | Jimena Cama      | Done                    |
+| US-TB-06 | TA026  | Configurar Vue I18n                   | Instalar y configurar sistema de internacionalización                          | Barbara Quezada  | Done                    |
+|          | TA027  | Crear archivos de traducción         | Desarrollar archivos JSON con traducciones español/inglés                      | Barbara Quezada  | Done                    |
+|          | TA028  | Implementar selector de idioma        | Crear componente UI para cambio de idioma en tiempo real                       | Barbara Quezada  | Done                    |
+|          | TA029  | Traducir interfaces principales       | Aplicar i18n a todas las vistas web de aventurero                                  | Barbara Quezada  | Done                    |
+|          | TA030  | Persistir preferencia de idioma       | Guardar selección de idioma en localStorage del usuario                        | Barbara Quezada  | Done                    |
 
+Esta distribución ahora respeta correctamente las asignaciones mencionadas:
+- **Jair Castillo**: Redis Cache, IA Barbara Nexus, y Notificaciones Push
+- **José Gutierrez**: Optimización de operaciones administrativas y segmentación de usuarios
+- **Barbara Quezada**: Soporte multiidioma e interfaces de usuario
+- **Jimena Cama**: Modo oscuro para web y móvil
+- **Estefano Jaque**: Optimización de consultas de base de datos
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
