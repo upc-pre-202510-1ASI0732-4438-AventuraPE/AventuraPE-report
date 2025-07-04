@@ -3675,6 +3675,9 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
+<!--![alt text](images/to-be-front-end/redis.jpg)-->
+<!--![alt text](images/to-be-front-end/redis.jpg)-->
+
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 - **Redis Cache** <br>
 <!--![alt text](images/to-be-front-end/redis.jpg)-->
@@ -3738,6 +3741,7 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 #### 8.3.3.6. Team Collaboration Insights
 
 ### 8.3.4. To-Be Validation Interviews  
+
 #### 8.3.4.1. Diseño de Entrevistas
 
 **Para el modo oscuro** <br>
@@ -3745,6 +3749,69 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 - ¿Prefieres el modo oscuro al modo claro?
 - ¿Sientes que mejora tu experiencia de uso, especialmente de noche?
 
+**Para Redis Cache (optimización de comentarios)** <br>
+- ¿Has notado alguna diferencia en la velocidad de carga de los comentarios?
+- ¿Qué tan importante es para ti que los comentarios aparezcan rápidamente?
+- ¿La rapidez actual en la carga de comentarios afecta tu experiencia al navegar por las actividades?
+
+**Para la optimización de operaciones administrativas** <br>
+- Como administrador, ¿has notado mejoras en la velocidad de las operaciones de moderación?
+- ¿Qué tan crítico es para ti que la eliminación de comentarios sea rápida?
+- ¿La velocidad actual de las operaciones administrativas te permite moderar contenido de manera eficiente?
+
+**Para el soporte multiidioma** <br>
+- ¿Has utilizado la función de cambio de idioma en la aplicación?
+- ¿Qué tan completa te parece la traducción al inglés?
+- ¿Consideras que tener la aplicación en tu idioma preferido mejora significativamente tu experiencia de uso?
+- ¿Recomendarías esta aplicación a personas que no hablan español?
+
+**Para la optimización de consultas de base de datos (publicación de actividades)** <br>
+- Como emprendedor, ¿has notado mejoras en la velocidad al publicar nuevas actividades?
+- ¿Qué tan importante es para ti que el proceso de publicación sea rápido?
+- ¿La velocidad actual te permite gestionar tus actividades de manera eficiente?
+- ¿Has experimentado alguna frustración relacionada con la lentitud al publicar contenido?
+
+#### 8.3.4.1. Registro de Entrevistas
+
+1. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**: 
+- **Link**:<br>
+[]()
+<img src="images/interviews/"><br><br>
+
+2. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**: 
+- **Link**:<br>
+[]()
+<img src="images/interviews/"><br><br>
+
+3. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**: 
+- **Link**:<br>
+[]()
+<img src="images/interviews/"><br><br>
+
+4. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**: 
+- **Link**:<br>
+[]()
+<img src="images/interviews/"><br><br>
+
+5. 
+- **Entrevistado**: 
+- **Duración**: 
+- **Resumen**: 
+- **Link**:<br>
+[]()
+<img src="images/interviews/"><br><br>
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
