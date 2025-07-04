@@ -3347,7 +3347,7 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 
 - **Expansión internacional:** La implementación de soporte multiidioma puede expandir la base de usuarios internacionales de manera considerable, al eliminar las barreras idiomáticas que actualmente limitan el alcance de la plataforma.
 
-- **Accesibilidad multiplataforma:** Se afirma que la sincronización mejorada entre la aplicación web y móvil, junto con notificaciones push, puede crear una experiencia unificada que incremente el engagement cross-platform de los usuarios.
+- **Accesibilidad multiplataforma:** Se afirma que la sincronización mejorada entre la aplicación web y móvil, puede crear una experiencia unificada que incremente el engagement cross-platform de los usuarios.
 
 
 ### 8.1.3. Experiment-Ready Questions
@@ -3359,7 +3359,6 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| 6 - Funcionalidad popular, aunque requiere revisión completa de estilos CSS 	| 2 - Bajo riesgo, implementación técnica estándar 	| 6 - Mejora la experiencia del usuario, pero no es crítica 	| 9 - Muy alto interés de usuarios, especialmente aquellos que utilizan la aplicación en entornos oscuros 	| 22 	|
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| 8 - Problema identificado claramente, soluciones técnicas conocidas 	| 4 - Riesgo medio-alto por impacto en operaciones críticas de moderación 	| 9 - Impacto directo en eficiencia del equipo administrativo 	| 7 - Interés alto del equipo operativo por productividad 	| 28 	|
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| 4 - Implementación compleja, requiere reestructuración de contenido existente 	| 5 - Alto riesgo por impacto en toda la aplicación y mantenimiento futuro 	| 9 - Potencial expansión significativa del mercado objetivo 	| 7 - Interés alto por oportunidades de crecimiento internacional 	| 25 	|
-| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| 6 - Requiere configuración de service worker y backend notifications 	| 3 - Riesgo medio por permisos de usuario y posible spam 	| 7 - Potencial mejora en retención y reactivación de usuarios 	| 7 - Interés alto por estrategias de engagement 	| 23 	|
 
 
 ### 8.1.4. Question Backlog
@@ -3370,7 +3369,6 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | 8 	| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	|
 | 5 	| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	|
 | 3 	| ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	|
-| 2 	| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	|
 | 1 	| ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	|
 
 ### 8.1.5. Experiment Cards
@@ -3381,7 +3379,6 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| Optimizar queries de eliminación, implementar soft delete y mejorar índices de base de datos para operaciones administrativas 	| Moderadores reportan frustración por lentitud. Tiempo excesivo impacta productividad del equipo y capacidad de respuesta ante contenido problemático 	| Si optimizamos las operaciones administrativas, entonces reduciremos el tiempo de eliminación de comentarios en un 60% (de 3-4s a menos de 1.5s), porque eliminaremos cuellos de botella en las consultas de moderación 	|
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| Implementar sistema de internacionalización (i18n) con soporte para español e inglés en la interfaz web del aventurero 	| Analytics muestran 25% de visitantes internacionales que abandonan rápidamente. Barrera del idioma limita expansión de mercado 	| Si implementamos soporte multiidioma, entonces incrementaremos los registros internacionales de aventureros en un 40% en 6 meses, porque eliminaremos la barrera del idioma para usuarios no hispanohablantes 	|
 | ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	| Analizar y optimizar queries lentas, añadir índices apropiados y refactorizar consultas N+1 en el módulo de actividades 	| Usuarios abandonan proceso de publicación por lentitud. 2 segundos excede expectativas de respuesta en aplicaciones modernas 	| Si optimizamos las consultas de base de datos, entonces mejoraremos el tiempo de publicación en un 50% (de 2s a menos de 1s), porque eliminaremos consultas ineficientes y redundantes 	|
-| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos? 	| Implementar sistema de notificaciones push web usando Service Workers, con segmentación por comportamiento de usuario 	| 35% de usuarios registrados se vuelven inactivos después de 2 semanas. Falta mecanismo para reactivar usuarios dormidos 	| Si implementamos notificaciones push segmentadas, entonces incrementaremos el re-engagement de usuarios inactivos en un 30%, porque les recordaremos contenido relevante y nuevas actividades 	|
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| Implementar theme switcher con modo oscuro completo, incluyendo todos los componentes, formularios y elementos de la interfaz 	| 40% de usuarios activos durante horarios nocturnos. Modo oscuro reduce fatiga visual y es tendencia en aplicaciones modernas 	| Si añadimos modo oscuro, entonces incrementaremos el tiempo de sesión nocturna en un 25%, porque reduciremos la fatiga visual en entornos con poca luz 	|
 
 ## 8.2. Experiment Design  
@@ -3398,7 +3395,6 @@ Las siguientes hipótesis han sido formuladas basándonos en nuestro Lean UX Can
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | La lentitud actual se debe a consultas ineficientes y falta de optimización de índices.                                  | Si optimizamos las operaciones administrativas, entonces el tiempo de eliminación de comentarios será menor a 1.5s. | La optimización de operaciones administrativas no reducirá significativamente el tiempo de eliminación de comentarios. |
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Muchos usuarios internacionales abandonan la app por no entender el idioma.                                              | Si se implementa soporte multiidioma, los registros internacionales aumentarán en un 40% en 6 meses.                | El soporte multiidioma no generará un incremento significativo en los registros internacionales.                       |
 | ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? | Consultas N+1 y falta de índices ralentizan el proceso de publicación.                                                   | Si se optimizan las consultas e índices, el tiempo de publicación será menor a 1s.                                  | Optimizar las consultas no mejorará significativamente el tiempo de publicación de actividades.                        |
-| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos?                                           | Recordar a los usuarios contenido relevante puede motivarlos a volver.                                                   | Si se implementan notificaciones push segmentadas, el re-engagement de usuarios inactivos aumentará en un 30%.      | Las notificaciones push no tendrán un efecto significativo en el re-engagement de usuarios inactivos.                  |
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)?                   | Reducir la fatiga visual con modo oscuro fomentará sesiones más largas en la noche.                                      | Si se implementa modo oscuro, el tiempo de sesión durante la noche aumentará en un 25%.                             | El modo oscuro no afectará significativamente la duración de sesión durante la noche.                                  |
 
 
@@ -3413,7 +3409,6 @@ Para cada hipótesis, establecemos medidas específicas que nos permitirán eval
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | Tiempo promedio de ejecución de la operación de eliminación de comentarios, obtenido de logs del servidor o APM (Application Performance Monitoring).               |
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Número de nuevos registros de usuarios con IPs fuera de países hispanohablantes, comparado entre periodos de 6 meses antes y después de la implementación.          |
 | ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? | Tiempo promedio desde que el usuario envía una actividad hasta que se confirma su publicación en el sistema, medido con herramientas de trazabilidad backend.       |
-| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos?                                           | Porcentaje de usuarios inactivos que regresan a la app después de recibir notificaciones push, comparado con el grupo de control sin notificaciones.                |
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)?                   | Tiempo promedio de sesión entre las 6PM y 6AM de usuarios con modo oscuro activo, comparado con usuarios sin modo oscuro durante el mismo horario.                  |
 
 
@@ -3428,7 +3423,6 @@ Para cada experimento, establecemos condiciones experimentales y de control clar
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | Sistema con operaciones administrativas optimizadas (consultas e índices mejorados). | Sistema sin optimización (versión actual de las operaciones administrativas).            |
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Usuarios internacionales acceden a la app con soporte multiidioma habilitado.        | Usuarios internacionales acceden a la app solo en español (versión monolingüe).          |
 | ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? | Módulo de publicación de actividades con queries optimizadas e índices añadidos.     | Módulo de publicación de actividades con queries y estructura actual (sin optimización). |
-| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos?                                           | Usuarios inactivos reciben notificaciones push personalizadas según comportamiento.  | Usuarios inactivos no reciben notificaciones (grupo de control).                         |
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)?                   | Usuarios con modo oscuro activado durante sesiones entre 6PM-6AM.                    | Usuarios con solo modo claro disponible durante el mismo rango horario.                  |
 
 
@@ -3443,7 +3437,6 @@ Este enfoque utiliza métricas para evaluar el cumplimiento de las hipótesis. C
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3–4 s a < 1.5 s? | Creemos que al optimizar consultas (índices, soft delete) reduciremos el tiempo de eliminación de comentarios de 3–4 s a ≤ 1.5 s.<br>• Excelente: ≤ 1.125 s<br>• Ideal: ≤ 1.5 s<br>• Aceptable: 1.5–3 s<br>• Desfavorable: > 3 s | Refactorizar queries y aplicar índices adecuados para operaciones administrativas. |                  | X             |           |               |
 | ¿El soporte multiidioma incrementará los registros internacionales en un 40 % en 6 meses?                       | Creemos que al añadir i18n aumentaremos registros internacionales ≥ 40 % en 6 meses.<br>• Excelente: ≥ 50 %<br>• Ideal: ≥ 40 %<br>• Aceptable: 20–40 %<br>• Desfavorable: < 20 %                                                 | Implementar soporte de español e inglés en toda la interfaz y contenido.           |                  | X             |           |               |
 | ¿Optimizar consultas de base de datos mejorará el tiempo de publicación de actividades de 2 s a < 1 s?          | Creemos que al refactorizar queries y añadir índices reduciremos el tiempo de publicación de 2 s a ≤ 1 s.<br>• Excelente: ≤ 0.75 s<br>• Ideal: ≤ 1 s<br>• Aceptable: 1–2 s<br>• Desfavorable: > 2 s                              | Optimizar queries N+1 e índices en módulo de actividades antes de producción.      |                  |               | X         |               |
-| ¿Notificaciones push incrementarán el re-engagement de usuarios inactivos en un 30 %?                           | Creemos que al implementar notificaciones push segmentadas incrementaremos el re-engagement ≥ 30 %.<br>• Excelente: ≥ 40 %<br>• Ideal: ≥ 30 %<br>• Aceptable: 20–30 %<br>• Desfavorable: < 20 %                                  | Configurar y enviar notificaciones push web basadas en comportamiento de usuario.  |                  |               | X         |               |
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios nocturnos en un 25 %?                              | Creemos que al implementar modo oscuro aumentaremos el tiempo de sesión de usuarios nocturnos (6PM–6AM) en ≥ 25 %.<br>• Excelente: ≥ 30 %<br>• Ideal: ≥ 25 %<br>• Aceptable: 15–25 %<br>• Desfavorable: < 15 %                   | Añadir switcher de tema claro/oscuro, respetando preferencias del sistema.         |                  |               | X         |               |
 
 
@@ -3616,7 +3609,6 @@ Este enfoque asegurará que AventuraPE continúe evolucionando en función de lo
 | US-TB-05 | Modo oscuro/claro | Como usuario aventurero, quiero poder alternar entre modo claro y oscuro, para adaptar la interfaz a mis condiciones de uso y preferencias visuales. | **Escenario 1: Cambio de modo instantáneo**<br>Given que el usuario está utilizando la aplicación<br>When activa el cambio de modo oscuro/claro en configuraciones<br>Then la interfaz cambia instantáneamente sin necesidad de recargar<br><br>**Escenario 2: Persistencia de preferencia**<br>Given que el usuario ha seleccionado el modo oscuro<br>When cierra sesión y vuelve a ingresar posteriormente<br>Then la aplicación mantiene el modo oscuro seleccionado<br><br>**Escenario 3: Configuración según sistema**<br>Given que el usuario tiene activado el modo oscuro en su dispositivo<br>When ingresa a la aplicación por primera vez<br>Then la aplicación adopta automáticamente el modo oscuro | E04 |
 | US-TB-06 | Soporte multiidioma | Como usuario internacional, quiero poder cambiar el idioma de la plataforma entre español e inglés, para utilizar AventuraPe en mi idioma preferido. | **Escenario 1: Cambio completo de idioma**<br>Given que el usuario está en la aplicación<br>When cambia el idioma en la configuración<br>Then el 100% del contenido de la interfaz se muestra en el idioma seleccionado<br><br>**Escenario 2: Persistencia de idioma**<br>Given que el usuario ha seleccionado inglés como idioma<br>When cierra sesión y vuelve a ingresar posteriormente<br>Then la aplicación mantiene el inglés como idioma configurado<br><br>**Escenario 3: Detección automática**<br>Given que el usuario tiene configurado inglés en su navegador<br>When accede a la aplicación por primera vez<br>Then la aplicación se muestra en inglés automáticamente | E04 |
 | US-TB-07 | Reseñas verificadas | Como usuario aventurero, quiero ver reseñas verificadas con etiquetas especiales, para confiar más en las opiniones de otros usuarios. | **Escenario 1: Visualización destacada**<br>Given que el usuario está viendo reseñas de una actividad<br>When visualiza una reseña verificada<br>Then esta aparece con una etiqueta o insignia visual distintiva<br><br>**Escenario 2: Criterio de verificación**<br>Given que el usuario ve una reseña verificada<br>When hace clic en la insignia de verificación<br>Then puede ver el criterio utilizado para la verificación<br><br>**Escenario 3: Filtrado de reseñas verificadas**<br>Given que el usuario está en la sección de reseñas<br>When activa el filtro "Solo verificadas"<br>Then se muestran únicamente las reseñas que han sido verificadas | E03 |
-| US-TB-08 | Notificaciones push de proximidad | Como usuario aventurero, quiero recibir notificaciones push sobre ofertas o actividades relevantes cerca de mi ubicación, para descubrir oportunidades espontáneas. | **Escenario 1: Control de frecuencia**<br>Given que el usuario está en configuración de notificaciones<br>When ajusta la frecuencia de notificaciones push<br>Then el sistema respeta esta preferencia para futuros envíos<br><br>**Escenario 2: Personalización por categorías**<br>Given que el usuario está en configuración de notificaciones<br>When selecciona categorías de interés para notificaciones<br>Then solo recibe alertas relacionadas con esas categorías<br><br>**Escenario 3: Configuración de radio geográfico**<br>Given que el usuario está configurando notificaciones<br>When ajusta el radio de distancia para notificaciones<br>Then solo recibe alertas de actividades dentro de ese radio desde su ubicación | E03 |
 
 #### Épicas Relacionadas
 
@@ -3638,7 +3630,6 @@ Este enfoque asegurará que AventuraPE continúe evolucionando en función de lo
 | 4 | US-TB-06 | Soporte multiidioma | 8 |
 | 5 | US-TB-04 | Recomendaciones personalizadas | 8 |
 | 6 | US-TB-07 | Reseñas verificadas | 5 |
-| 7 | US-TB-08 | Notificaciones push de proximidad | 8 |
 | 8 | US-TB-05 | Modo oscuro/claro | 5 |
 
 
@@ -3671,11 +3662,6 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 |          | TA013  | Implementar índices para actividades | Añadir índices apropiados en tablas relacionadas con actividades               | Estefano Jaque   | Done                    |
 |          | TA014  | Optimizar carga de imágenes          | Implementar lazy loading y optimización de imágenes en publicaciones           | Estefano Jaque   | Done                    |
 |          | TA015  | Testing de performance publicación   | Validar que publicación de actividades sea < 1s                                | Estefano Jaque   | Done                    |
-| US-TB-04 | TA016  | Diseñar algoritmo de recomendaciones  | Crear lógica para recomendaciones basadas en historial de usuario             | Jair Castillo    | Done                    |
-|          | TA017  | Implementar IA Barbara Nexus          | Integrar sistema de IA para análisis de preferencias de usuario               | Jair Castillo    | Done                    |
-|          | TA018  | Crear endpoint de recomendaciones     | Desarrollar API para servir recomendaciones personalizadas                    | Jair Castillo    | Done                    |
-|          | TA019  | Integrar recomendaciones en frontend  | Mostrar recomendaciones personalizadas en interfaz de aventurero              | Barbara Quezada  | Done                    |
-|          | TA020  | Sistema de feedback de recomendaciones| Implementar métricas para mejorar algoritmo de recomendaciones                | Jair Castillo    | Done                    |
 | US-TB-05 | TA021  | Diseñar selector de modo              | Crear diseño visual del switch para cambiar entre modo claro y oscuro          | Jimena Cama      | Done                    |
 |          | TA022  | Implementar switcher de modo          | Codificar botón de cambio de modo en web                                       | Jimena Cama      | Done                    |
 |          | TA023  | Aplicar estilos oscuros a componentes | Estilizar todos los elementos clave de la UI para modo oscuro en web           | Jimena Cama      | Done                    |
@@ -3687,14 +3673,20 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 |          | TA029  | Traducir interfaces principales       | Aplicar i18n a todas las vistas web de aventurero                                  | Barbara Quezada  | Done                    |
 |          | TA030  | Persistir preferencia de idioma       | Guardar selección de idioma en localStorage del usuario                        | Barbara Quezada  | Done                    |
 
-Esta distribución ahora respeta correctamente las asignaciones mencionadas:
-- **Jair Castillo**: Redis Cache, IA Barbara Nexus, y Notificaciones Push
-- **José Gutierrez**: Optimización de operaciones administrativas y segmentación de usuarios
-- **Barbara Quezada**: Soporte multiidioma e interfaces de usuario
-- **Jimena Cama**: Modo oscuro para web y móvil
-- **Estefano Jaque**: Optimización de consultas de base de datos
+
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+- **Redis Cache** <br>
+<!--![alt text](images/to-be-front-end/redis.jpg)-->
+
+- **Optimización de operaciones administrativas**<br>
+<!--![alt text](images/to-be-front-end/op.jpg)-->
+
+- **Cambiar de idioma** <br>
+
+**Sección aventurero** <br>
+![alt text](images/to-be-front-end/switch1.jpg)
+![alt text](images/to-be-front-end/switch2.jpg)
 
 
 - **Modo oscuro** <br>
@@ -3715,8 +3707,11 @@ Esta distribución ahora respeta correctamente las asignaciones mencionadas:
 ![alt text](images/to-be-front-end/em-perfil.png)
 ![alt text](images/to-be-front-end/em-suscrp.png)
 
+- **Optimización de consultas de base de datos** <br>
+<!--![alt text](images/to-be-front-end/consulta.jpg)-->
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+- **Modo oscuro** <br>
 
 **Sección emprendedor** <br>
 
@@ -3730,7 +3725,14 @@ Esta distribución ahora respeta correctamente las asignaciones mencionadas:
 ![alt text](images/to-be-mobile/av-detalle-mob.jpg) 
 ![alt text](images/to-be-mobile/av-home-mob.jpg)
 
+- **Redis Cache** <br>
+<!--![alt text](images/to-be-front-end/img.jpg)-->
 
+- **Optimización de operaciones administrativas**<br>
+<!--![alt text](images/to-be-front-end/img.jpg)-->
+
+- **Optimización de consultas de base de datos** <br>
+<!--![alt text](images/to-be-front-end/img.jpg)-->
 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence  
 #### 8.3.3.6. Team Collaboration Insights
