@@ -3660,6 +3660,9 @@ Los story points reflejan la complejidad relativa de cada característica:
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
+
+- **Modo oscuro** <br>
+
 **Sección emprendedor** <br>
 
 ![alt text](images/to-be-front-end/av-buscar.png)
@@ -3667,6 +3670,7 @@ Los story points reflejan la complejidad relativa de cada característica:
 ![alt text](images/to-be-front-end/av-inicio.png)
 ![alt text](images/to-be-front-end/av-perfil.png)
 
+<br>
 
 **Sección aventurero** <br>
 
@@ -3676,7 +3680,22 @@ Los story points reflejan la complejidad relativa de cada característica:
 ![alt text](images/to-be-front-end/em-suscrp.png)
 
 
-#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence  
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+**Sección emprendedor** <br>
+
+![alt text](images/to-be-mobile/em-estatistics.png)
+![alt text](images/to-be-mobile/em-cuenta.png)
+
+<br>
+
+**Sección aventurero** <br>
+![alt text](images/to-be-mobile/av-buscar-mob.jpg) 
+![alt text](images/to-be-mobile/av-detalle-mob.jpg) 
+![alt text](images/to-be-mobile/av-home-mob.jpg)
+
+
+
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence  
 #### 8.3.3.6. Team Collaboration Insights
 
@@ -3687,6 +3706,7 @@ Los story points reflejan la complejidad relativa de cada característica:
 - ¿Has notado la opción de modo oscuro en la aplicación?
 - ¿Prefieres el modo oscuro al modo claro?
 - ¿Sientes que mejora tu experiencia de uso, especialmente de noche?
+
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
