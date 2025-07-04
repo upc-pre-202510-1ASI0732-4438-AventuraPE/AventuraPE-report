@@ -3684,7 +3684,7 @@ En esta sección presentamos las evidencias visuales de las mejoras implementada
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 - **Redis Cache** <br>
-<!--![alt text](images/to-be-front-end/redis.jpg)-->
+![alt text](images/evidence/evidence_experimente-card_cache.jpeg)
 
 - **Optimización de operaciones administrativas**<br>
 <!--![alt text](images/to-be-front-end/op.jpg)-->
