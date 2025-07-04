@@ -3675,8 +3675,12 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
-<!--![alt text](images/to-be-front-end/redis.jpg)-->
-<!--![alt text](images/to-be-front-end/redis.jpg)-->
+
+En esta sección presentamos las evidencias visuales de las mejoras implementadas en la landing page de AventuraPE como parte de nuestros experimentos to-be. Las modificaciones se enfocaron en optimizar la experiencia del usuario y mejorar la conversión de visitantes, incorporando elementos visuales más atractivos, información más clara sobre nuestra propuesta de valor, y una navegación más intuitiva.
+
+![alt text](images/chapter8/landing1.jpg)
+![alt text](images/chapter8/landing2.jpg)
+![alt text](images/chapter8/landing3.jpg)
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 - **Redis Cache** <br>
