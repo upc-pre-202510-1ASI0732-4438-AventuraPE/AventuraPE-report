@@ -3656,6 +3656,8 @@ Los story points reflejan la complejidad relativa de cada característica:
 | US-TB-05 | TA001  | Diseñar selector de modo              | Crear diseño visual del switch para cambiar entre modo claro y oscuro            | Jimena | Done                    |
 |           | TA002  | Implementar switcher de modo          | Codificar botón de cambio de modo | Jimena             | Done                    |
 |           | TA003  | Aplicar estilos oscuros a componentes | Estilizar todos los elementos clave de la UI para modo oscuro                    | Jimena           | Done                    |
+|           | TA004  | Implementar switcher de modo mobile   | Codificar botón de cambio de modo en mobile | Jimena             | Done                    |
+|           | TA005  | Aplicar estilos oscuros a componentes mobile | Estilizar todos los elementos clave de la UI para modo oscuro en mobile   | Jimena           | Done                    |
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
