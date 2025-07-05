@@ -3778,12 +3778,13 @@ En esta sección presentamos las evidencias visuales de las mejoras implementada
 #### 8.3.4.1. Registro de Entrevistas
 
 1. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**: 
-- **Link**:<br>
-[]()
-<img src="images/interviews/"><br><br>
+- **Entrevistado**: Diego Salinas
+- **Duración**: 5:24
+- **Resumen**: El entrevistado mencionó que el modo claro no le resulta molesto, ya que no es excesivamente blanco. Sin embargo, señaló que el modo oscuro, aunque le parece ligeramente demasiado oscuro, es su preferido, especialmente porque suele organizar este tipo de actividades durante la noche, momento en el que le resulta más cómodo utilizarlo.
+- **Link**: [https://drive.google.com/file/d/1aEGklYpWDiRSUvUT4akvzcDkYowvX6nO/view?usp=sharing]([https://drive.google.com/file/d/1aEGklYpWDiRSUvUT4akvzcDkYowvX6nO/view?usp=sharing])
+<br>
+
+<img src="images/interviews/interview-to-be-diego.png"><br><br>
 
 2. 
 - **Entrevistado**: 
