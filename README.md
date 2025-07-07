@@ -3816,7 +3816,7 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
 
-- **Optimización de operaciones administrativas**<br>
+- **Optimización de consultas de base de datos**<br>
     - Antes de los cambios, la publicación con imagen tardaba entre 60–70 ms.
     - Luego de implementar la optimización en el frontend, los tiempos bajaron a un promedio de 18–55 ms.
     - Las publicaciones sin imagen no variaron, manteniéndose en ~9 ms.
@@ -3824,7 +3824,7 @@ Basándome en la información proporcionada sobre las experiment cards y los des
     - Esto confirma que la lentitud observada inicialmente se debía al peso de la imagen mal tratada desde frontend. 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog  
 
-- **Optimización de operaciones administrativas**<br>
+- **Optimización de consultas de base de datos**<br>
     - "¿Existen consultas N+1 en la publicación de actividades?"   
       → Resuelto, no se encontraron.
     - "¿La optimización de imágenes en frontend puede reducir significativamente el tiempo de publicación?"   
