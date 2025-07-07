@@ -3657,11 +3657,11 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 |          | TA008  | Optimizar índices de base de datos    | Crear índices apropiados para consultas de moderación                          | José Gutierrez   | Done                    |
 |          | TA009  | Refactorizar controlador admin        | Optimizar lógica del controlador de operaciones administrativas                | José Gutierrez   | Done                    |
 |          | TA010  | Testing de performance admin          | Validar que eliminaciones de comentarios sean < 1.5s                           | José Gutierrez   | Done                    |
-| US-TB-03 | TA011  | Análisis de queries de publicación    | Identificar consultas N+1 y cuellos de botella en publicación de actividades   | Estefano Jaque   | Done                    |
-|          | TA012  | Optimizar consultas de actividades   | Refactorizar queries del módulo de actividades para mejorar rendimiento        | Estefano Jaque   | Done                    |
-|          | TA013  | Implementar índices para actividades | Añadir índices apropiados en tablas relacionadas con actividades               | Estefano Jaque   | Done                    |
-|          | TA014  | Optimizar carga de imágenes          | Implementar lazy loading y optimización de imágenes en publicaciones           | Estefano Jaque   | Done                    |
-|          | TA015  | Testing de performance publicación   | Validar que publicación de actividades sea < 1s                                | Estefano Jaque   | Done                    |
+| US-TB-03 | TA011  | Análisis de queries de publicación     | Identificar posibles consultas N+1 y cuellos de botella en el módulo de publicación | Estefano Jaque   | Done   |
+|          | TA012  | Medición de performance actual         | Medir el tiempo promedio de publicación de actividades                        | Estefano Jaque   | Done   |
+|          | TA013  | Optimización de carga desde frontend   | Implementar compresión base64 y mejora de envío de imagen desde frontend web  | Estefano Jaque   | Done   |
+|          | TA014  | Trazabilidad con logs                  | Registrar logs de tiempo de publicación y queries ejecutadas                  | Estefano Jaque   | Done   |
+|          | TA015  | Validación de mejoras                  | Comparar tiempos antes y después de los cambios con pruebas reales            | Estefano Jaque   | Done   |
 | US-TB-05 | TA021  | Diseñar selector de modo              | Crear diseño visual del switch para cambiar entre modo claro y oscuro          | Jimena Cama      | Done                    |
 |          | TA022  | Implementar switcher de modo          | Codificar botón de cambio de modo en web                                       | Jimena Cama      | Done                    |
 |          | TA023  | Aplicar estilos oscuros a componentes | Estilizar todos los elementos clave de la UI para modo oscuro en web           | Jimena Cama      | Done                    |
@@ -3728,7 +3728,45 @@ La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando 
 ![alt text](images/to-be-front-end/em-suscrp.png)
 
 - **Optimización de consultas de base de datos** <br>
-<!--![alt text](images/to-be-front-end/consulta.jpg)-->
+  **Antes de los cambios**:  
+  - Se realizaban publicaciones desde el frontend sin optimización en el tratamiento de imágenes.  
+  - El envío de imágenes no estaba garantizado en formato base64, lo que generaba mayor peso o fallos en la serialización.  
+
+  **Capturas:**  
+  - Publicación sin imagen (tiempo: 37 ms)    
+
+  ![alt text](images/chapter8/tiempouno.png)  
+  
+  - Publicación con imagen sin optimizar (tiempo: 20 ms aprox.)    
+
+  ![alt text](images/chapter8/tiemunocero.png)     
+
+  ![alt text](images/chapter8/front.png)
+
+  ![alt text](images/chapter8/aesdos.png)  
+   
+  **Después de los cambios**:  
+  - Se implementó compresión base64 en el componente `ActivityFormModal.vue`.    
+  ![alt text](images/chapter8/depcompr.png)    
+  ![alt text](images/chapter8/codigofrontcambio.png)     
+  
+  - Se añadió `FileReader` para convertir imágenes a base64 antes de enviarlas al backend.  
+
+  **Capturas:**  
+  - Publicación sin imagen optimizada (tiempo: 21 ms)  
+
+  ![alt text](images/chapter8/foto2.png)  
+
+  - Publicación con imagen optimizada (tiempo mínimo alcanzado: 19 ms)  
+
+  ![alt text](images/chapter8/foto1.png)  
+
+  ![alt text](images/chapter8/front.png)
+
+  ![alt text](images/chapter8/aes.png)  
+
+  **Conclusión**:  
+  Gracias a la optimización del tratamiento de imágenes en el frontend, se logró una reducción significativa en el tiempo de publicación incluso cuando se incluía imagen. Esto demuestra una mejora real en la experiencia de usuario.  
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 - **Modo oscuro** <br>
@@ -3752,7 +3790,7 @@ La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando 
 <!--![alt text](images/to-be-front-end/img.jpg)-->
 
 - **Optimización de consultas de base de datos** <br>
-<!--![alt text](images/to-be-front-end/img.jpg)-->
+Actualmente, la optimización fue implementada únicamente en la aplicación web. No se han realizado cambios en una aplicación nativa móvil, ya que esta no forma parte del alcance del presente experimento. 
 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
 
@@ -3772,6 +3810,25 @@ Conclusión:
 
 La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando el rendimiento de la operación dentro del umbral "Excelente" definido en el experimento. Esto demuestra que las optimizaciones implementadas son efectivas para mejorar la eficiencia en tareas críticas de moderación.
 
+
+- **Optimización de consultas de base de datos** <br>  
+Se realizaron las siguientes acciones sobre la REST API desarrollada con Spring Boot:  
+
+  - Activación de logs SQL (`spring.jpa.show-sql=true`) para identificar posibles consultas N+1.   
+
+  ![alt text](images/chapter8/dkos.png)  
+
+  - Registro del tiempo de publicación dentro de `PublicationCommandServiceImpl` mediante logs SLF4J.     
+
+  ![alt text](images/chapter8/waa.png)  
+
+  - Confirmación de que no se generan consultas N+1 en el flujo de publicación.  
+
+  - Medición del tiempo exacto en que se realiza la operación `publicationRepository.save()` y consultas asociadas.  
+  ![alt text](images/chapter8/adas.png)  
+
+  **Resultado:**  
+  Todas las publicaciones (con y sin imagen) se completan en menos de 100 ms. La consulta de publicaciones y sus aventuras asociadas se realiza con joins sin evidencias de N+1.  
 #### 8.3.3.6. Team Collaboration Insights
 
 ### 8.3.4. To-Be Validation Interviews  
@@ -3841,12 +3898,14 @@ La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando 
 <img src="images/interviews/"><br><br>
 
 5. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**: 
-- **Link**:<br>
-[]()
-<img src="images/interviews/"><br><br>
+- **Entrevistado**: Lucia Rosado
+- **Duración**: 07:42
+- **Resumen**:   
+Lucia , quien gestiona sus propias experiencias turísticas dentro de la plataforma, indicó que no percibió un cambio drástico en los tiempos de publicación, ya que el proceso ya era ágil antes de los cambios. Sin embargo, destacó que ahora la carga es más estable y confiable, sobre todo al subir imágenes, donde antes experimentaba pequeñas demoras o fallos. Considera que una publicación rápida es crítica para su flujo de trabajo diario, ya que constantemente actualiza su oferta de actividades. A pesar de no notar una mejora explícita en segundos, valora la solidez y respuesta fluida del sistema como un avance importante.  
+- **Link**:<br>  
+[https://drive.google.com/file/d/1Qz6WDaL1L6utlf6JQ2E_enm0eMd6bU5Y/view?usp=sharing](https://drive.google.com/file/d/1Qz6WDaL1L6utlf6JQ2E_enm0eMd6bU5Y/view?usp=sharing)  
+
+![alt text](images/chapter8/entrevista.png) 
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
