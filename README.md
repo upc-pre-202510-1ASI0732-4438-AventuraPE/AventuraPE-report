@@ -3926,7 +3926,15 @@ Lucia , quien gestiona sus propias experiencias turísticas dentro de la platafo
     - "¿El sistema de logs permite observar claramente el impacto de cada operación?"     
       → Confirmado, útil para debugging futuro.
 ## 8.5. Continuous Learning  
-### 8.5.1. Shareback Session Artifacts: Learning Workflow  
+### 8.5.1. Shareback Session Artifacts: Learning Workflow 
+
+- **Optimización de consultas de base de datos** <br>  
+  Durante la retro del sprint, se compartieron los siguientes aprendizajes:  
+
+    - La importancia de revisar el **tratamiento de imágenes** en operaciones críticas del frontend.  
+    - La utilidad de **instrumentar el backend con logs de tiempo real** para validar mejoras.  
+    - Cómo un cambio pequeño (conversión base64) puede tener un impacto fuerte en la percepción de velocidad del usuario.  
+    - Recomendación futura: integrar herramientas como Actuator o Prometheus para visualizar métricas sin depender solo de logs    
 
 ## 8.6. To-Be Software Platform Pre-launch  
 ### 8.6.1. About-the-Product Intro Video  
