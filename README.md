@@ -3909,8 +3909,22 @@ Lucia , quien gestiona sus propias experiencias turísticas dentro de la platafo
 
 ## 8.4. Experiment Aftermath & Analysis  
 ### 8.4.1. Analysis and Interpretation of Results  
+
+- **Optimización de consultas de base de datos**<br>
+    - Antes de los cambios, la publicación con imagen tardaba entre 60–70 ms.
+    - Luego de implementar la optimización en el frontend, los tiempos bajaron a un promedio de 18–55 ms.
+    - Las publicaciones sin imagen no variaron, manteniéndose en ~9 ms.
+    - No se detectaron consultas N+1 ni operaciones redundantes.
+    - Esto confirma que la lentitud observada inicialmente se debía al peso de la imagen mal tratada desde frontend. 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog  
 
+- **Optimización de consultas de base de datos**<br>
+    - "¿Existen consultas N+1 en la publicación de actividades?"   
+      → Resuelto, no se encontraron.
+    - "¿La optimización de imágenes en frontend puede reducir significativamente el tiempo de publicación?"   
+      → Confirmado.
+    - "¿El sistema de logs permite observar claramente el impacto de cada operación?"     
+      → Confirmado, útil para debugging futuro.
 ## 8.5. Continuous Learning  
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow  
 
