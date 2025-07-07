@@ -3787,12 +3787,12 @@ En esta sección presentamos las evidencias visuales de las mejoras implementada
 <img src="images/interviews/interview-to-be-diego.png"><br><br>
 
 2. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**: 
+- **Entrevistado**: Francesko Montesinos
+- **Duración**: 3:35
+- **Resumen**: El entrevistado, Francesko Montesinos, compartió su entusiasmo por la reciente implementación del Redis Cache en los sistemas. Destacó cómo esta mejora tecnológica ha impactado positivamente su experiencia, afirmando que ahora "lo ve todo mucho más fluido". Explicó que la velocidad de respuesta y la eficiencia en la carga de datos han mejorado significativamente, lo que le permite realizar sus tareas y navegar por las interfaces con una agilidad sin precedentes. Esta optimización, según Montesinos, ha resultado en una experiencia de usuario notablemente superior y una mayor productividad en su día a día.
 - **Link**:<br>
-[]()
-<img src="images/interviews/"><br><br>
+[https://drive.google.com/file/d/9bCDefGhIjKlMnOpQrStUvWxYz12345/view?usp=sharing](https://drive.google.com/file/d/9bCDefGhIjKlMnOpQrStUvWxYz12345/view?usp=sharing)
+<img src="images/interviews/valitadion-interview-francesko.png"><br><br>
 
 3. 
 - **Entrevistado**: 
