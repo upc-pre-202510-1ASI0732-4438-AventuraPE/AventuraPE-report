@@ -3687,7 +3687,20 @@ En esta sección presentamos las evidencias visuales de las mejoras implementada
 ![alt text](images/evidence/evidence_experimente-card_cache.jpeg)
 
 - **Optimización de operaciones administrativas**<br>
-<!--![alt text](images/to-be-front-end/op.jpg)-->
+
+En esta sección mostramos la comparación de tiempos entre la eliminación tradicional (hard delete) y la optimización implementada mediante soft delete. Esta evidencia respalda el cumplimiento de la hipótesis planteada en el experimento "¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s?".
+
+**Hard delete (antes de la optimización):**
+
+![hardDelete](images/xpcard/xpcardANTES.png)
+
+**Soft delete (después de la optimización):**
+
+![softDelete](images/xpcard/xpcardTEST1.png)
+
+Conclusión:
+
+La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando el rendimiento de la operación dentro del umbral "Excelente" definido en el experimento. Esto demuestra que las optimizaciones implementadas son efectivas para mejorar la eficiencia en tareas críticas de moderación.
 
 - **Cambiar de idioma** <br>
 
@@ -3741,7 +3754,24 @@ En esta sección presentamos las evidencias visuales de las mejoras implementada
 - **Optimización de consultas de base de datos** <br>
 <!--![alt text](images/to-be-front-end/img.jpg)-->
 
-#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence  
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+- **Optimización de operaciones administrativas**<br>
+
+En esta sección mostramos la comparación de tiempos entre la eliminación tradicional (hard delete) y la optimización implementada mediante soft delete. Esta evidencia respalda el cumplimiento de la hipótesis planteada en el experimento "¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s?".
+
+**Hard delete (antes de la optimización):**
+
+![hardDelete](images/xpcard/xpcardANTES.png)
+
+**Soft delete (después de la optimización):**
+
+![softDelete](images/xpcard/xpcardTEST1.png)
+
+Conclusión:
+
+La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando el rendimiento de la operación dentro del umbral "Excelente" definido en el experimento. Esto demuestra que las optimizaciones implementadas son efectivas para mejorar la eficiencia en tareas críticas de moderación.
+
 #### 8.3.3.6. Team Collaboration Insights
 
 ### 8.3.4. To-Be Validation Interviews  
@@ -3795,12 +3825,12 @@ En esta sección presentamos las evidencias visuales de las mejoras implementada
 <img src="images/interviews/valitadion-interview-francesko.png"><br><br>
 
 3. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**: 
+- **Entrevistado**: Nasthya del Carpio
+- **Duración**: 3:01
+- **Resumen**: La entrevistada indicó que la experiencia actual al eliminar comentarios es muy positiva, destacando la rapidez con la que el sistema responde. Considera que esta mejora es crítica para mantener el control de la comunidad, especialmente ante contenido inapropiado. Señaló que la velocidad en las operaciones de moderación permite una gestión mucho más fluida y eficiente, ya que puede concentrarse en tomar decisiones en lugar de esperar que el sistema reaccione. Además, valoró que estas mejoras técnicas se reflejen directamente en su experiencia diaria como administradora.
 - **Link**:<br>
-[]()
-<img src="images/interviews/"><br><br>
+[https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7](https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7)
+<img src="images/interviews/interview-to-be-nasthya.png"><br><br>
 
 4. 
 - **Entrevistado**: 
