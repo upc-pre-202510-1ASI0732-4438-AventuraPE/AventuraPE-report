@@ -3865,12 +3865,13 @@ Se realizaron las siguientes acciones sobre la REST API desarrollada con Spring 
 
 5. 
 - **Entrevistado**: Lucia Rosado
-- **Duración**: 
+- **Duración**: 07:42
 - **Resumen**:   
-Lucia , quien gestiona sus propias experiencias turísticas dentro de la plataforma, indicó que no percibió un cambio drástico en los tiempos de publicación, ya que el proceso ya era ágil antes de los cambios. Sin embargo, destacó que ahora la carga es más estable y confiable, sobre todo al subir imágenes, donde antes experimentaba pequeñas demoras o fallos. Considera que una publicación rápida es crítica para su flujo de trabajo diario, ya que constantemente actualiza su oferta de actividades. A pesar de no notar una mejora explícita en segundos, valora la solidez y respuesta fluida del sistema como un avance importante.
-- **Link**:<br>
-[]()
-![alt text](images/chapter8/entreempr.png)  
+Lucia , quien gestiona sus propias experiencias turísticas dentro de la plataforma, indicó que no percibió un cambio drástico en los tiempos de publicación, ya que el proceso ya era ágil antes de los cambios. Sin embargo, destacó que ahora la carga es más estable y confiable, sobre todo al subir imágenes, donde antes experimentaba pequeñas demoras o fallos. Considera que una publicación rápida es crítica para su flujo de trabajo diario, ya que constantemente actualiza su oferta de actividades. A pesar de no notar una mejora explícita en segundos, valora la solidez y respuesta fluida del sistema como un avance importante.  
+- **Link**:<br>  
+[https://drive.google.com/file/d/1Qz6WDaL1L6utlf6JQ2E_enm0eMd6bU5Y/view?usp=sharing](https://drive.google.com/file/d/1Qz6WDaL1L6utlf6JQ2E_enm0eMd6bU5Y/view?usp=sharing)  
+
+![alt text](images/chapter8/entrevista.png) 
 
   ## 8.4. Experiment Aftermath & Analysis  
   ### 8.4.1. Analysis and Interpretation of Results  
