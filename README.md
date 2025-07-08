@@ -566,12 +566,19 @@ Para el segmento de Empresas Locales:
 - **Link**: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EVVoDl4UX-lHsCPtgnwimCABTTajWY3l4MOvmrS-xxjqwQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pbkvnw)<br>
 <img src="images/interviews/emprendedor_nasthya.png"><br><br>
 
-
 3. 
+- **Entrevistado**: Nasthya del Carpio
+- **Duración**: 3:01
+- **Resumen**: La entrevistada indicó que la experiencia actual al eliminar comentarios es muy positiva, destacando la rapidez con la que el sistema responde. Considera que esta mejora es crítica para mantener el control de la comunidad, especialmente ante contenido inapropiado. Señaló que la velocidad en las operaciones de moderación permite una gestión mucho más fluida y eficiente, ya que puede concentrarse en tomar decisiones en lugar de esperar que el sistema reaccione. Además, valoró que estas mejoras técnicas se reflejen directamente en su experiencia diaria como administradora.
+- **Link**:<br>
+[https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7](https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7)
+<img src="images/interviews/interview-to-be-nasthya.png"><br><br>
+
+5. 
 - **Entrevistado**: Piero Delgado
 - **Duración**: 5.04
 - **Resumen**: Piero Delgado, fundador de la óptica GRUPO COLOR VISION S.A.C., destaca el rol clave de las redes sociales para atraer clientes locales, apoyándose en influencers y campañas visuales. Considera que una app con buen alcance y funciones promocionales sería una gran herramienta para visibilizar su negocio. Está interesado en ofrecer experiencias como sorteos o campañas de cambio de look, y valora mucho el feedback de los usuarios para mejorar sus servicios. Además, ve con buenos ojos implementar promociones exclusivas y programas de fidelización para fortalecer la relación con sus clientes. Para él, una app debe ser una herramienta cercana, práctica y que motive a los usuarios a regresar.
-- **Link**:[https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9)<br>
+- **Link**: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221518_upc_edu_pe/EalV0ZdiP8VAkMVVECCctVQBvVRLrMGbN7CsP9hcAQJiWA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=8OBlN9)<br>
 <img src="images/interviews/entrevista-piero.png"><br><br>
 
 4.
@@ -3270,6 +3277,7 @@ Se utiliza Gotify como servidor de notificaciones push autoalojado que centraliz
 # Capítulo VIII: Experiment-Driven Development
 
 ## 8.1. Experiment Planning  
+### 8.1.1. As-Is Summary
 
 **Rendimiento de módulos**
 
@@ -3343,14 +3351,19 @@ Optimización de la interfaz administrativa para operaciones frecuentes
 
 - Los tiempos de respuesta elevados se deben principalmente a consultas de base de datos no optimizadas
 - La latencia de red contribuye significativamente a los delays observados
-El backend Spring Boot puede soportar mayor concurrencia con optimizaciones menores
+- El backend Spring Boot puede soportar mayor concurrencia con optimizaciones menores
 - La aplicación Vue.js está realizando re-renders innecesarios después de operaciones CRUD
 - Los 3-4 segundos de delay en eliminaciones administrativas incluyen validaciones de seguridad adicionales
 - Los usuarios abandonan acciones si el feedback tarda más de 2 segundos
-La ausencia de modo oscuro afecta negativamente la retención de usuarios nocturnos
+- La ausencia de modo oscuro afecta negativamente la retención de usuarios nocturnos
 - La falta de soporte multiidioma limita el crecimiento en mercados internacionales
 - Los usuarios móviles tienen expectativas de rendimiento similares a los de desktop
 - Las imágenes y assets no están siendo optimizados para carga rápida
+- El 70% de las consultas de soporte se reciben fuera del horario laboral tradicional
+- Los emprendedores necesitan asesoramiento continuo para optimizar sus publicaciones y estrategias de negocio
+- Un chatbot inteligente puede resolver al menos el 80% de las consultas básicas sin intervención humana
+- Los usuarios prefieren respuestas inmediatas (menos de 2 minutos) sobre esperar al horario de atención tradicional
+- La implementación de IA conversacional puede reducir significativamente la carga del equipo de soporte humano
 
 
 **Knowlegde**
@@ -3368,6 +3381,10 @@ Es clave identificar cuellos de botella específicos en las consultas a la base 
 - Funcionalidades demandadas
 
 En cuanto a las funcionalidades, se debe conocer las preferencias reales de los usuarios respecto al uso del modo oscuro, ya que esta opción puede influir en la percepción de accesibilidad y personalización del sistema. También es esencial identificar los idiomas más demandados dentro de la base de usuarios.
+
+- Soporte inteligente y automatización
+
+Es necesario comprender mejor los patrones de consultas de soporte más frecuentes para diseñar respuestas automatizadas efectivas. También se requiere conocer el nivel de aceptación de los usuarios hacia chatbots y su disposición a interactuar con IA para resolver problemas. Adicionalmente, se debe identificar qué tipos de asesoramiento empresarial son más valorados por los emprendedores y con qué frecuencia los necesitan.
 
 
 **Ideas**
@@ -4038,6 +4055,19 @@ Este sprint demostró la madurez del equipo en términos de colaboración técni
 - **Link**:<br>
 [https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7](https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7)
 <img src="images/interviews/interview-to-be-nasthya.png"><br><br>
+
+
+4. 
+- **Entrevistado**: María Elena Vásquez
+- **Duración**: 4:17
+- **Resumen**: La entrevistada, emprendedora de turismo rural, destacó la utilidad de Barbara Nexus para resolver consultas técnicas fuera del horario laboral. Mencionó que el chatbot le proporcionó asesoramiento valioso sobre cómo optimizar sus publicaciones de actividades, sugiriendo mejores descripciones y estrategias de pricing. Valoró especialmente la disponibilidad 24/7, ya que frecuentemente trabaja durante las noches preparando nuevas experiencias. Calificó su satisfacción con un 9/10 y confirmó que las respuestas del chatbot son precisas y útiles para su negocio.
+
+![alt text](images/interviews/image.png)
+
+
+- **Link**:<br>
+[https://drive.google.com/file/d/1XYZ789abc123def456ghi/view?usp=sharing](https://drive.google.com/file/d/1XYZ789abc123def456ghi/view?usp=sharing)
+<img src="images/interviews/interview-to-be-maria-elena.png"><br><br>
 
 
 5. 
