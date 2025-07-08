@@ -3920,6 +3920,15 @@ Lucia , quien gestiona sus propias experiencias turísticas dentro de la platafo
     - Las publicaciones sin imagen no variaron, manteniéndose en ~9 ms.
     - No se detectaron consultas N+1 ni operaciones redundantes.
     - Esto confirma que la lentitud observada inicialmente se debía al peso de la imagen mal tratada desde frontend. 
+
+- **Optimización de operaciones administrativas (Soft Delete)**  
+    - Antes de la optimización, la operación de eliminación de comentarios (hard delete) presentaba un tiempo promedio de **2.51 segundos**, lo cual excedía el umbral aceptable definido en la hipótesis (< 1.5s).
+    - Luego de implementar la técnica de **soft delete**, el tiempo de respuesta disminuyó drásticamente a **0.056 segundos**, representando una mejora superior al **97%**.
+    - Esta mejora coloca el resultado dentro del umbral **"Excelente"**, según la escala establecida en el experimento (< 1.125s).
+    - La diferencia evidencia que el principal cuello de botella no estaba en la lógica del controlador, sino en las operaciones físicas sobre la base de datos.
+    - La implementación de índices adecuados y la refactorización del controlador contribuyeron también a la eficiencia general del sistema.
+    - Por lo tanto, se confirma que la hipótesis se cumple, validando la efectividad del soft delete como estrategia para mejorar el rendimiento en tareas de moderación.
+
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog  
 
 - **Optimización de consultas de base de datos**<br>
@@ -3929,6 +3938,15 @@ Lucia , quien gestiona sus propias experiencias turísticas dentro de la platafo
       → Confirmado.
     - "¿El sistema de logs permite observar claramente el impacto de cada operación?"     
       → Confirmado, útil para debugging futuro.
+
+- **Optimización de operaciones administrativas (soft delete)**  
+    - "¿El soft delete mejora significativamente los tiempos de eliminación frente al hard delete?"  
+      → Confirmado. Se observó una reducción del tiempo de eliminación de **2.51s (hard delete)** a **0.056s (soft delete)**.  
+    - "¿La implementación de índices y refactorización del controlador contribuyen a esta mejora?"  
+      → Confirmado. Los cambios estructurales ayudaron a estabilizar los tiempos por debajo del umbral ideal.  
+    - "¿La operación de eliminación optimizada se mantiene dentro de los estándares de rendimiento bajo carga?"  
+      → Confirmado durante pruebas automatizadas con JUnit. La velocidad se mantuvo constante, incluso con múltiples eliminaciones consecutivas.
+
 ## 8.5. Continuous Learning  
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow 
 
@@ -3939,6 +3957,15 @@ Lucia , quien gestiona sus propias experiencias turísticas dentro de la platafo
     - La utilidad de **instrumentar el backend con logs de tiempo real** para validar mejoras.  
     - Cómo un cambio pequeño (conversión base64) puede tener un impacto fuerte en la percepción de velocidad del usuario.  
     - Recomendación futura: integrar herramientas como Actuator o Prometheus para visualizar métricas sin depender solo de logs    
+
+- **Optimización de operaciones administrativas** <br>  
+  Durante la retro del sprint, se compartieron los siguientes aprendizajes:  
+
+    - Aprendimos que aplicar **soft delete** no solo mejora la performance, sino que también aporta flexibilidad para futuras funciones como recuperación de datos o auditoría.  
+    - Validamos el impacto positivo de **refactorizar el controlador administrativo**, lo cual simplificó la lógica y permitió mayor escalabilidad.  
+    - Confirmamos que el **uso de pruebas automatizadas (JUnit)** es clave para obtener datos precisos y reproducibles al medir rendimiento.  
+    - Se destacó la necesidad de **definir umbrales claros** (ideal, aceptable, excelente) desde el inicio del experimento para evaluar efectividad de forma objetiva.  
+    - Recomendación futura: incorporar herramientas de APM (como New Relic o Spring Boot Actuator) para monitorear el rendimiento de operaciones críticas en tiempo real.
 
 ## 8.6. To-Be Software Platform Pre-launch  
 ### 8.6.1. About-the-Product Intro Video  
