@@ -62,7 +62,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 # Contenido
 - [**Student Outcome**](#student-outcome)
 
-## [Capítulo I: Introducción](#capítulo-i-introducción)
+[Capítulo I: Introducción](#capítulo-i-introducción)
 - [1.1. Startup Profile](#11-startup-profile)
   - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
   - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -75,7 +75,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
     - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
 - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-## [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+[Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
 - [2.1. Competidores](#21-competidores)
   - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
   - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -91,13 +91,13 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
 - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
-## [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+[Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
 - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
 - [3.2. User Stories](#32-user-stories)
 - [3.3. Product Backlog](#33-product-backlog)
 - [3.4. Impact Mapping](#34-impact-mapping)
 
-## [Capítulo IV: Product Design](#capítulo-iv-product-design)
+[Capítulo IV: Product Design](#capítulo-iv-product-design)
 - [4.1. Style Guidelines](#41-style-guidelines)
   - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
   - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
@@ -137,7 +137,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 - [4.10. Database Design](#410-database-design)
   - [4.10.1. Relational/Non-Relational Database Diagram](#4101-relationalnon-relational-database-diagram)
 
-## [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
+[Capítulo V: Product Implementation](#capítulo-v-product-implementation)
 - [5.1. Software Configuration Management](#51-software-configuration-management)
   - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
   - [5.1.2. Source Code Management](#512-source-code-management)
@@ -153,9 +153,9 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   - [5.2.7. Team Collaboration Insights](#527-team-collaboration-insights)
 - [5.3. Video About-the-Product](#53-video-about-the-product)
 
-## [Part II: Verification, Validation & Pipeline](#part-ii-verification-validation--pipeline)
+[Part II: Verification, Validation & Pipeline](#part-ii-verification-validation--pipeline)
 
-## [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
+[Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
 - [6.1. Testing Suites & Validation](#61-testing-suites--validation)
   - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
   - [6.1.2. Core Integration Tests](#612-core-integration-tests)
@@ -181,7 +181,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
     - [6.4.2.3. Contenido de auditoría recibida](#6423-contenido-de-auditoría-recibida)
     - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
 
-## [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+[Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
 - [7.1. Continuous Integration](#71-continuous-integration)
   - [7.1.1. Tools and Practices](#711-tools-and-practices)
   - [7.1.2. Build & Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
@@ -197,9 +197,9 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
   - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
 
-## [Part III: Experiment-Driven Lifecycle](#part-iii-experiment-driven-lifecycle)
+[Part III: Experiment-Driven Lifecycle](#part-iii-experiment-driven-lifecycle)
 
-## [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+[Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
 - [8.1. Experiment Planning](#81-experiment-planning)
   - [8.1.1. As-Is Summary](#811-as-is-summary)
   - [8.1.2. Raw Material](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
@@ -235,12 +235,17 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
   - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
 
-## [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-## [Video About-the-Team](#video-about-the-team)
-## [Bibliografía](#bibliografía)
-## [Anexos](#anexos)
+[Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 
-# Student Outcome
+[Video About-the-Team](#video-about-the-team)
+
+[Bibliografía](#bibliografía)
+
+[Anexos](#anexos)
+
+
+
+## Student Outcome
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |----|----|----|
@@ -3951,6 +3956,16 @@ El tercer hito del proyecto AventuraPe evidencia una evolución significativa en
 Recomendamos seguir priorizando el ciclo de aprendizaje continuo mediante el uso sistemático de experimentos iterativos. Es clave mantener activa la recolección de feedback de usuarios y stakeholders, tanto cualitativa como cuantitativa, para ajustar el backlog en cada sprint. También se sugiere fortalecer el sistema de internacionalización, implementar funcionalidades de personalización progresiva, y escalar la infraestructura para soportar futuros crecimientos. Finalmente, mantener prácticas DevOps sólidas y monitoreo en tiempo real garantizará la estabilidad, calidad y escalabilidad sostenida de AventuraPe como plataforma digital de alto impacto. 
 
 # Video About-the-Team  
+
+Este video muestra el trabajo colaborativo del equipo responsable del desarrollo de AventuraPe, una aplicación móvil diseñada para conectar a los usuarios con micro aventuras locales de forma rápida, personalizada y sin necesidad de planificación extensa.
+
+A través de escenas de reuniones, testimonios del equipo, sesiones de diseño y desarrollo, se evidencia cómo el equipo aplicó metodologías ágiles, diseño centrado en el usuario y buenas prácticas de programación para construir una solución funcional y culturalmente contextualizada.
+
+El video destaca la participación activa de cada integrante en distintas etapas del proyecto: desde la planificación de sprints y la implementación del frontend y backend, hasta la validación de funcionalidades clave. Refleja además el compromiso del equipo con la creación de una experiencia digital significativa, inclusiva y alineada con las necesidades reales de los usuarios.
+
+![alt text](images/evidence/video-about-the-team.png)
+
+URL: [https://drive.google.com/file/d/1sgIVLrH_awHJiXjbMf_TxCadPLfuBEYx/view?usp=drive_link](https://drive.google.com/file/d/1sgIVLrH_awHJiXjbMf_TxCadPLfuBEYx/view?usp=drive_link)
 
 # Bibliografía  
 - Beck, K. (2003). *Test-Driven Development: By Example*. Addison-Wesley.
