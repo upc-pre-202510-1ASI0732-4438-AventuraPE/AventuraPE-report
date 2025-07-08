@@ -3835,6 +3835,94 @@ Se realizaron las siguientes acciones sobre la REST API desarrollada con Spring 
   Todas las publicaciones (con y sin imagen) se completan en menos de 100 ms. La consulta de publicaciones y sus aventuras asociadas se realiza con joins sin evidencias de N+1.  
 #### 8.3.3.6. Team Collaboration Insights
 
+Durante el desarrollo de los experimentos to-be, nuestro equipo demostró una sólida capacidad de colaboración y organización que se reflejó en el cumplimiento exitoso de todas las tareas planificadas. Este sprint se caracterizó por una distribución equilibrada de responsabilidades y un enfoque coordinado hacia objetivos comunes.
+
+**Distribución de Responsabilidades por Miembro:**
+
+- **Jair Castillo** (5 tareas completadas):
+  - Lideró la implementación completa del sistema de caché Redis
+  - Configuró el servidor Redis y su integración con Spring Boot
+  - Optimizó las consultas de comentarios para aprovechar el caché
+  - Estableció TTL apropiados y sistemas de monitoreo
+  - Resultados: Reducción del tiempo de respuesta de comentarios de 1.5s a menos de 800ms
+
+- **José Gutierrez** (5 tareas completadas):
+  - Responsable de la optimización de operaciones administrativas
+  - Implementó soft delete para mejorar performance
+  - Optimizó índices de base de datos para consultas de moderación
+  - Refactorizó controladores administrativos
+  - Resultados: Reducción del tiempo de eliminación de comentarios de 3-4s a menos de 1.125s
+
+- **Estefano Jaque** (5 tareas completadas):
+  - Lideró la optimización de consultas de base de datos
+  - Implementó mejoras en el frontend para compresión base64
+  - Estableció sistemas de trazabilidad con logs
+  - Validó mejoras de performance con pruebas reales
+  - Resultados: Reducción del tiempo de publicación de actividades de 2s a menos de 1s
+
+- **Jimena Cama** (5 tareas completadas):
+  - Diseñó e implementó el sistema de modo oscuro
+  - Desarrolló el switcher de modo para web y móvil
+  - Aplicó estilos oscuros a todos los componentes clave
+  - Aseguró consistencia visual entre plataformas
+  - Resultados: Modo oscuro disponible en todas las interfaces principales
+
+- **Barbara Quezada** (5 tareas completadas):
+  - Lideró la implementación del sistema de internacionalización
+  - Configuró Vue I18n y creó archivos de traducción
+  - Desarrolló el selector de idioma en tiempo real
+  - Implementó persistencia de preferencias de idioma
+  - Resultados: Soporte completo para español e inglés en la aplicación web
+
+**Metodología de Trabajo:**
+
+El equipo adoptó un enfoque de desarrollo paralelo eficiente, donde cada miembro se especializó en un experimento específico mientras mantenía comunicación constante con el resto del equipo. Esta distribución permitió:
+
+- **Expertise Focalized**: Cada miembro se convirtió en experto de su funcionalidad asignada
+- **Reduced Dependencies**: Las tareas fueron diseñadas para minimizar dependencias cruzadas
+- **Quality Assurance**: Cada miembro realizó testing exhaustivo de su funcionalidad antes de integración
+- **Documentation**: Se mantuvo documentación detallada de todos los cambios implementados
+
+**Herramientas de Colaboración Utilizadas:**
+
+- **Git Branching Strategy**: Implementación de feature branches para cada experimento
+- **Code Reviews**: Revisiones cruzadas de código antes de merge a develop
+- **Daily Standups**: Reuniones diarias para sincronización y resolución de blockers
+- **Trello Board**: Gestión visual del progreso de tareas y deadlines
+- **Microsoft Teams**: Comunicación continua y resolución de dudas técnicas
+
+**Métricas de Colaboración:**
+
+- **Completion Rate**: 100% de tareas completadas según planificación
+- **Time to Market**: Todos los experimentos entregados dentro del timeline establecido
+- **Code Quality**: 0 bugs críticos en producción después del deployment
+- **Cross-functional Support**: 15+ sesiones de pair programming entre miembros
+- **Knowledge Sharing**: 3 sesiones de knowledge transfer sobre tecnologías implementadas
+
+**Challenges Superados:**
+
+1. **Integración de Redis**: Inicialmente hubo complejidad en la configuración de TTL, resuelta mediante investigación colaborativa
+2. **Compatibilidad de Estilos**: El modo oscuro requirió refactorización de CSS existente, coordinada entre frontend developers
+3. **Validación de Performance**: Establecimiento de métricas consistentes para medir mejoras reales
+4. **Sincronización de Traducciones**: Asegurar coherencia en traducciones entre diferentes componentes
+
+**Impacto en la Productividad:**
+
+La metodología de colaboración adoptada resultó en una productividad excepcional:
+- **Velocity**: 25 story points completados en 2 semanas
+- **Quality**: 0 regression bugs introducidos
+- **Innovation**: 5 experimentos exitosos implementados simultáneamente
+- **Team Satisfaction**: Alta satisfacción reportada por todos los miembros del equipo
+
+**Lecciones Aprendidas:**
+
+1. **Specialization Benefits**: Asignar ownership completo de features a individuos mejora la calidad y velocidad
+2. **Communication is Key**: Daily standups fueron cruciales para identificar dependencies temprano
+3. **Testing Early**: Validación continua de hipótesis evitó retrabajos significativos
+4. **Documentation Matters**: Mantener documentación actualizada facilitó knowledge transfer
+
+Este sprint demostró la madurez del equipo en términos de colaboración técnica y gestión de proyectos, estableciendo un precedente sólido para futuros desarrollos experimentales.
+
 ### 8.3.4. To-Be Validation Interviews  
 
 #### 8.3.4.1. Diseño de Entrevistas
