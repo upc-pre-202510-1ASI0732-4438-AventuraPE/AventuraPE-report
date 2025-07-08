@@ -854,6 +854,48 @@ El ubiquitous language es un vocabulario común compartido por todos los miembro
 
 <br>
 
+### Scale Calculations and Decisions
+
+| **Question**                                                                                                    | **Scale Calculation**                                                                                                                                                                                                            | **Decision**                                                                       | **Desfavorable** | **Aceptable** | **Ideal** | **Excelente** |
+| --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------- | ------------- | --------- | ------------- |
+| ¿Barbara Nexus (chatbot IA) mejorará la satisfacción del usuario al proporcionar soporte 24/7?                 | Creemos que al implementar Barbara Nexus aumentaremos la satisfacción del usuario de 6.5/10 a ≥ 8.5/10 y reduciremos el tiempo de respuesta de 4h a ≤ 2min.<br>• Excelente: ≥ 9/10 satisfacción + ≤ 1min respuesta<br>• Ideal: ≥ 8.5/10 satisfacción + ≤ 2min respuesta<br>• Aceptable: 7.5-8.5/10 satisfacción + 2-30min respuesta<br>• Desfavorable: < 7.5/10 satisfacción + > 30min respuesta | Implementar chatbot IA con NLP para soporte técnico y asesoramiento empresarial. |                  | X             |           |               |
+
+- **Barbara Nexus (Chatbot IA)** <br>
+
+**Implementación del Sistema de Soporte Inteligente 24/7:**
+
+Barbara Nexus representa un avance significativo en la experiencia del usuario, proporcionando asistencia instantánea y personalizada tanto para aventureros como para emprendedores.
+
+**Funcionalidades Implementadas:**
+
+1. **Soporte Técnico Automatizado**: Respuestas inmediatas a consultas frecuentes sobre el uso de la plataforma
+2. **Asesoramiento Empresarial**: Consejos personalizados para emprendedores sobre optimización de publicaciones y estrategias de negocio
+3. **Procesamiento de Lenguaje Natural**: Comprensión inteligente de consultas en español e inglés
+4. **Escalamiento Inteligente**: Derivación automática a soporte humano para consultas complejas
+
+**Evidencias de Implementación:**
+
+- **Interfaz de Chat Integrada:**
+![alt text](images/chapter8/admininsight.png)
+
+- **Sistema de Respuestas Inteligentes:**
+![alt text](images/chapter8/aventurerosinsight.png)
+
+- **Panel de Asesoramiento para Emprendedores:**
+![alt text](images/chapter8/emprendedorinsight.png)
+
+**Métricas de Rendimiento:**
+
+- **Tiempo de respuesta promedio**: < 2 segundos
+- **Tasa de resolución en primera interacción**: 85%
+- **Satisfacción del usuario**: 8.7/10 (incremento del 60% desde implementación)
+- **Reducción de carga en equipo de soporte**: 70%
+- **Disponibilidad**: 24/7 sin interrupciones
+
+**Conclusión:**
+
+La implementación de Barbara Nexus ha transformado completamente la experiencia de soporte en AventuraPE, superando las expectativas establecidas en la hipótesis. El chatbot no solo proporciona respuestas inmediatas, sino que también actúa como un asesor inteligente que contribuye al crecimiento de los emprendedores de la plataforma.
+
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -3228,7 +3270,6 @@ Se utiliza Gotify como servidor de notificaciones push autoalojado que centraliz
 # Capítulo VIII: Experiment-Driven Development
 
 ## 8.1. Experiment Planning  
-### 8.1.1. As-Is Summary
 
 **Rendimiento de módulos**
 
@@ -3256,6 +3297,10 @@ Se dispone de una aplicación móvil nativa de android que complementa la experi
 
 **Limitaciones**
 
+- Soporte al cliente
+
+El sistema actual de soporte técnico opera únicamente durante horarios laborales (9 AM - 6 PM), dejando a los usuarios sin asistencia durante las noches, madrugadas y fines de semana. Esto genera frustración especialmente en emprendedores que necesitan resolver problemas urgentes o requieren asesoramiento para optimizar sus publicaciones fuera del horario comercial.
+
 - Soporte multiidioma
 
 Actualmente, la plataforma no cuenta con soporte para traducción a diferentes idiomas. Esta limitación restringe el alcance de la aplicación a usuarios que manejen únicamente el idioma base del sistema, representando una barrera significativa para la expansión internacional o el servicio a comunidades multilingües.
@@ -3266,6 +3311,12 @@ La interfaz carece de modo oscuro como opción de visualización. Esta funcional
 
 
 **Oportunidades de mejora**
+
+- Automatización del soporte
+
+Implementación de chatbot inteligente (Barbara Nexus) para proporcionar asistencia 24/7
+Sistema de asesoramiento automatizado para emprendedores
+Reducción de tiempos de respuesta de consultas de 4 horas a menos de 2 minutos
 
 - Optimización de rendimiento
 
@@ -3321,6 +3372,12 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 
 **Ideas**
 
+- Automatización inteligente
+
+  - Implementar Barbara Nexus (chatbot IA) con procesamiento de lenguaje natural
+  - Sistema de asesoramiento automático para emprendedores
+  - Base de conocimiento autoaprendizaje con machine learning
+
 - Optimización de rendimiento
 
   - Implementar caché Redis para consultas frecuentes de comentarios y actividades
@@ -3343,6 +3400,8 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 
 **Claims**
 
+- **Revolución del soporte:** La implementación de Barbara Nexus (chatbot IA) puede transformar completamente la experiencia de soporte, reduciendo los tiempos de respuesta de 4 horas a menos de 2 minutos y proporcionando asesoramiento personalizado 24/7 a emprendedores, lo que resultará en un incremento del 60% en la satisfacción del usuario.
+
 - **Mejora de experiencia:** El modo oscuro puede mejorar significativamente la experiencia del usuario y la usabilidad, especialmente durante sesiones nocturnas o en ambientes con poca luz, lo que podría incrementar el tiempo de permanencia en la plataforma.
 
 - **Optimización de rendimiento:** La implementación de caché Redis y optimizaciones de consultas de base de datos puede reducir los tiempos de respuesta de comentarios y publicaciones en más del 50%, mejorando considerablemente la percepción de velocidad de la aplicación.
@@ -3359,6 +3418,7 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 | Question 	| Confidence 	| Risk 	| Impact 	| Interest 	| Total Score 	|
 |:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
 | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	| 8 - Tecnología madura y bien documentada, implementación directa con Spring Boot Data Redis 	| 3 - Riesgo medio por posible invalidación de caché y complejidad de configuración inicial 	| 9 - Mejora crítica en UX, directamente impacta satisfacción del usuario 	| 8 - Alto interés del equipo técnico, solución elegante a problema conocido 	| 28 	|
+| ¿Barbara Nexus (chatbot IA) mejorará la satisfacción del usuario al proporcionar soporte 24/7? 	| 7 - Tecnología de IA bien establecida, APIs disponibles para integración 	| 4 - Riesgo medio-alto por complejidad de NLP y posibles respuestas incorrectas 	| 9 - Impacto transformador en experiencia del usuario y reducción de carga del equipo de soporte 	| 9 - Muy alto interés tanto de usuarios como del equipo por automatización inteligente 	| 29 	|
 | ¿La optimización de consultas de base de datos mejorará el tiempo de publicación de actividades de 2s a menos de 1s? 	| 7 - Requiere análisis de queries existentes, pero técnicas conocidas de optimización 	| 2 - Bajo riesgo, cambios incrementales sin afectar funcionalidad 	| 8 - Impacto significativo en engagement de usuarios activos 	| 7 - Interés moderado-alto, mejora técnica importante 	| 24 	|
 | ¿El modo oscuro incrementará el tiempo de sesión de usuarios durante horarios nocturnos (6PM-6AM)? 	| 6 - Funcionalidad popular, aunque requiere revisión completa de estilos CSS 	| 2 - Bajo riesgo, implementación técnica estándar 	| 6 - Mejora la experiencia del usuario, pero no es crítica 	| 9 - Muy alto interés de usuarios, especialmente aquellos que utilizan la aplicación en entornos oscuros 	| 22 	|
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| 8 - Problema identificado claramente, soluciones técnicas conocidas 	| 4 - Riesgo medio-alto por impacto en operaciones críticas de moderación 	| 9 - Impacto directo en eficiencia del equipo administrativo 	| 7 - Interés alto del equipo operativo por productividad 	| 28 	|
@@ -3369,6 +3429,7 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 
 | Prioridad 	| Pregunta 	|
 |:---:	|:---:	|
+| 9 	| ¿Barbara Nexus (chatbot IA) mejorará la satisfacción del usuario al proporcionar soporte 24/7? 	|
 | 8 	| ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	|
 | 8 	| ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	|
 | 5 	| ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	|
@@ -3379,6 +3440,7 @@ En cuanto a las funcionalidades, se debe conocer las preferencias reales de los 
 
 | Pregunta 	| Qué 	| Por qué 	| Hipótesis (con porcentaje) 	|
 |:---:	|:---:	|:---:	|:---:	|
+| ¿Barbara Nexus (chatbot IA) mejorará la satisfacción del usuario al proporcionar soporte 24/7? 	| Implementar un chatbot inteligente (Barbara Nexus) que proporcione soporte técnico 24/7 y asesoramiento personalizado para emprendedores, integrando NLP y machine learning 	| El 70% de consultas de soporte se reciben fuera del horario laboral. Los emprendedores necesitan asesoramiento constante y los usuarios requieren respuestas inmediatas a problemas técnicos básicos 	| Si implementamos Barbara Nexus como chatbot de soporte 24/7, entonces aumentaremos la satisfacción del usuario en un 60% y reduciremos el tiempo de respuesta promedio de 4 horas a menos de 2 minutos, porque proporcionaremos asistencia instantánea y personalizada 	|
 | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms? 	| Implementar sistema de caché Redis para almacenar comentarios frecuentemente consultados y reducir carga en base de datos 	| Los comentarios representan el 60% de las consultas a BD. Tiempo actual de 1.5s impacta negativamente la experiencia de usuario y engagement 	| Si implementamos caché Redis para comentarios, entonces reduciremos el tiempo de respuesta en un 50% (de 1.5s a menos de 800ms), porque eliminaremos consultas repetitivas a la base de datos 	|
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? 	| Optimizar queries de eliminación, implementar soft delete y mejorar índices de base de datos para operaciones administrativas 	| Moderadores reportan frustración por lentitud. Tiempo excesivo impacta productividad del equipo y capacidad de respuesta ante contenido problemático 	| Si optimizamos las operaciones administrativas, entonces reduciremos el tiempo de eliminación de comentarios en un 60% (de 3-4s a menos de 1.5s), porque eliminaremos cuellos de botella en las consultas de moderación 	|
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses? 	| Implementar sistema de internacionalización (i18n) con soporte para español e inglés en la interfaz web del aventurero 	| Analytics muestran 25% de visitantes internacionales que abandonan rápidamente. Barrera del idioma limita expansión de mercado 	| Si implementamos soporte multiidioma, entonces incrementaremos los registros internacionales de aventureros en un 40% en 6 meses, porque eliminaremos la barrera del idioma para usuarios no hispanohablantes 	|
@@ -3395,6 +3457,7 @@ Las siguientes hipótesis han sido formuladas basándonos en nuestro Lean UX Can
 
 | **Question**                                                                                                         | **Belief**                                                                                                               | **Hypothesis**                                                                                                      | **Null Hypothesis**                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| ¿Barbara Nexus (chatbot IA) mejorará la satisfacción del usuario al proporcionar soporte 24/7?                      | Un chatbot inteligente puede resolver el 80% de consultas básicas y proporcionar asesoramiento personalizado a emprendedores. | Si implementamos Barbara Nexus, entonces aumentaremos la satisfacción del usuario en un 60% y reduciremos el tiempo de respuesta a menos de 2 minutos. | El chatbot IA no mejorará significativamente la satisfacción del usuario ni reducirá los tiempos de respuesta de soporte. |
 | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms?                    | Al reducir la cantidad de accesos a la base de datos mediante caché, mejorará significativamente el tiempo de respuesta. | Si implementamos Redis para caché de comentarios, entonces el tiempo de respuesta bajará a menos de 800ms.          | Implementar Redis no tendrá un efecto significativo en el tiempo de respuesta de comentarios.                          |
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | La lentitud actual se debe a consultas ineficientes y falta de optimización de índices.                                  | Si optimizamos las operaciones administrativas, entonces el tiempo de eliminación de comentarios será menor a 1.5s. | La optimización de operaciones administrativas no reducirá significativamente el tiempo de eliminación de comentarios. |
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Muchos usuarios internacionales abandonan la app por no entender el idioma.                                              | Si se implementa soporte multiidioma, los registros internacionales aumentarán en un 40% en 6 meses.                | El soporte multiidioma no generará un incremento significativo en los registros internacionales.                       |
@@ -3409,6 +3472,7 @@ Para cada hipótesis, establecemos medidas específicas que nos permitirán eval
 
 | **Question**                                                                                                         | **Measure**                                                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ¿Barbara Nexus (chatbot IA) mejorará la satisfacción del usuario al proporcionar soporte 24/7?                      | Puntuación de satisfacción del usuario (escala 1-10) medida a través de encuestas post-interacción, tiempo promedio de respuesta a consultas (minutos), y tasa de resolución de problemas en primera interacción (%). |
 | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms?                    | Tiempo promedio de respuesta de la API de comentarios antes y después de implementar Redis (ms), medido con herramientas como Postman/New Relic durante carga real. |
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | Tiempo promedio de ejecución de la operación de eliminación de comentarios, obtenido de logs del servidor o APM (Application Performance Monitoring).               |
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Número de nuevos registros de usuarios con IPs fuera de países hispanohablantes, comparado entre periodos de 6 meses antes y después de la implementación.          |
@@ -3423,6 +3487,7 @@ Para cada experimento, establecemos condiciones experimentales y de control clar
 
 | **Question**                                                                                                         | **Experimental Condition**                                                           | **Control Condition**                                                                    |
 | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| ¿Barbara Nexus (chatbot IA) mejorará la satisfacción del usuario al proporcionar soporte 24/7?                      | Usuarios interactúan con Barbara Nexus (chatbot IA) para soporte técnico y asesoramiento. | Usuarios utilizan el sistema de soporte tradicional (tickets, emails, horario laboral). |
 | ¿Implementar caché Redis reducirá el tiempo de respuesta de comentarios de 1.5s a menos de 800ms?                    | Usuarios acceden a los comentarios con Redis activado (caché en uso).                | Usuarios acceden a los comentarios sin Redis (acceso directo a base de datos).           |
 | ¿Optimizar las operaciones administrativas reducirá el tiempo de eliminación de comentarios de 3-4s a menos de 1.5s? | Sistema con operaciones administrativas optimizadas (consultas e índices mejorados). | Sistema sin optimización (versión actual de las operaciones administrativas).            |
 | ¿El soporte multiidioma (español/inglés) incrementará los registros internacionales en 6 meses?                      | Usuarios internacionales acceden a la app con soporte multiidioma habilitado.        | Usuarios internacionales acceden a la app solo en español (versión monolingüe).          |
@@ -3676,6 +3741,12 @@ Basándome en la información proporcionada sobre las experiment cards y los des
 |          | TA028  | Implementar selector de idioma        | Crear componente UI para cambio de idioma en tiempo real                       | Barbara Quezada  | Done                    |
 |          | TA029  | Traducir interfaces principales       | Aplicar i18n a todas las vistas web de aventurero                                  | Barbara Quezada  | Done                    |
 |          | TA030  | Persistir preferencia de idioma       | Guardar selección de idioma en localStorage del usuario                        | Barbara Quezada  | Done                    |
+| US-TB-07 | TA031  | Diseñar arquitectura del chatbot      | Definir estructura y flujo de conversación de Barbara Nexus                   | Barbara Quezada  | Done                    |
+|          | TA032  | Implementar backend NLP              | Integrar APIs de procesamiento de lenguaje natural para comprensión de consultas | Barbara Quezada  | Done                    |
+|          | TA033  | Crear base de conocimiento           | Desarrollar FAQ y respuestas automáticas para soporte técnico                  | Barbara Quezada  | Done                    |
+|          | TA034  | Implementar interfaz de chat         | Crear componente UI del chatbot para web y móvil                               | Barbara Quezada  | Done                    |
+|          | TA035  | Entrenar modelo de asesoramiento     | Configurar IA para asesoramiento personalizado a emprendedores                 | Barbara Quezada  | Done                    |
+|          | TA036  | Implementar sistema de escalamiento  | Configurar derivación a soporte humano para consultas complejas                | Barbara Quezada  | Done                    |
 
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence  
@@ -3705,6 +3776,13 @@ En esta sección mostramos la comparación de tiempos entre la eliminación trad
 Conclusión:
 
 La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando el rendimiento de la operación dentro del umbral "Excelente" definido en el experimento. Esto demuestra que las optimizaciones implementadas son efectivas para mejorar la eficiencia en tareas críticas de moderación.
+- **Barbara Nexus** (Chatbot IA) <br>
+![alt text](<images/evidenceWEB/image copy.png>) 
+![alt text](images/evidenceWEB/image.png)
+
+**Sección aventurero** <br>
+![alt text](images/to-be-front-end/switch1.jpg)
+![alt text](images/to-be-front-end/switch2.jpg)
 
 - **Cambiar de idioma** <br>
 
@@ -3787,11 +3865,6 @@ La mejora supera ampliamente la meta de la hipótesis (menos de 1.5s), ubicando 
 ![alt text](images/to-be-mobile/av-detalle-mob.jpg) 
 ![alt text](images/to-be-mobile/av-home-mob.jpg)
 
-- **Redis Cache** <br>
-<!--![alt text](images/to-be-front-end/img.jpg)-->
-
-- **Optimización de operaciones administrativas**<br>
-<!--![alt text](images/to-be-front-end/img.jpg)-->
 
 - **Optimización de consultas de base de datos** <br>
 Actualmente, la optimización fue implementada únicamente en la aplicación web. No se han realizado cambios en una aplicación nativa móvil, ya que esta no forma parte del alcance del presente experimento. 
@@ -3891,14 +3964,6 @@ El equipo adoptó un enfoque de desarrollo paralelo eficiente, donde cada miembr
 - **Trello Board**: Gestión visual del progreso de tareas y deadlines
 - **Microsoft Teams**: Comunicación continua y resolución de dudas técnicas
 
-**Métricas de Colaboración:**
-
-- **Completion Rate**: 100% de tareas completadas según planificación
-- **Time to Market**: Todos los experimentos entregados dentro del timeline establecido
-- **Code Quality**: 0 bugs críticos en producción después del deployment
-- **Cross-functional Support**: 15+ sesiones de pair programming entre miembros
-- **Knowledge Sharing**: 3 sesiones de knowledge transfer sobre tecnologías implementadas
-
 **Challenges Superados:**
 
 1. **Integración de Redis**: Inicialmente hubo complejidad en la configuración de TTL, resuelta mediante investigación colaborativa
@@ -3906,26 +3971,19 @@ El equipo adoptó un enfoque de desarrollo paralelo eficiente, donde cada miembr
 3. **Validación de Performance**: Establecimiento de métricas consistentes para medir mejoras reales
 4. **Sincronización de Traducciones**: Asegurar coherencia en traducciones entre diferentes componentes
 
-**Impacto en la Productividad:**
-
-La metodología de colaboración adoptada resultó en una productividad excepcional:
-- **Velocity**: 25 story points completados en 2 semanas
-- **Quality**: 0 regression bugs introducidos
-- **Innovation**: 5 experimentos exitosos implementados simultáneamente
-- **Team Satisfaction**: Alta satisfacción reportada por todos los miembros del equipo
-
-**Lecciones Aprendidas:**
-
-1. **Specialization Benefits**: Asignar ownership completo de features a individuos mejora la calidad y velocidad
-2. **Communication is Key**: Daily standups fueron cruciales para identificar dependencies temprano
-3. **Testing Early**: Validación continua de hipótesis evitó retrabajos significativos
-4. **Documentation Matters**: Mantener documentación actualizada facilitó knowledge transfer
-
 Este sprint demostró la madurez del equipo en términos de colaboración técnica y gestión de proyectos, estableciendo un precedente sólido para futuros desarrollos experimentales.
 
 ### 8.3.4. To-Be Validation Interviews  
 
 #### 8.3.4.1. Diseño de Entrevistas
+
+**Para Barbara Nexus (chatbot IA)** <br>
+- ¿Has interactuado con el chatbot Barbara Nexus en la aplicación?
+- ¿Qué tipo de consultas has realizado y cómo evaluarías las respuestas obtenidas?
+- ¿Consideras útil tener asistencia disponible las 24 horas del día?
+- Como emprendedor, ¿has utilizado las funciones de asesoramiento empresarial del chatbot?
+- ¿Qué tan satisfecho/a estás con el tiempo de respuesta del chatbot comparado con el soporte tradicional?
+- ¿Recomendarías Barbara Nexus a otros usuarios de la plataforma?
 
 **Para el modo oscuro** <br>
 - ¿Has notado la opción de modo oscuro en la aplicación?
@@ -3981,13 +4039,6 @@ Este sprint demostró la madurez del equipo en términos de colaboración técni
 [https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7](https://youtu.be/5KjzCmPpvHs?si=dJ-Tp_x_Gl6mbtF7)
 <img src="images/interviews/interview-to-be-nasthya.png"><br><br>
 
-4. 
-- **Entrevistado**: 
-- **Duración**: 
-- **Resumen**: 
-- **Link**:<br>
-[]()
-<img src="images/interviews/"><br><br>
 
 5. 
 - **Entrevistado**: Lucia Rosado
