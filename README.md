@@ -3752,13 +3752,12 @@ Este enfoque asegurará que AventuraPE continúe evolucionando en función de lo
 
 | # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
 |:-------:|---------------|--------|:------------------------:|
-| 1 | US-TB-01 | Optimización de carga de comentarios | 5 |
-| 2 | US-TB-02 | Optimización de eliminación de comentarios | 3 |
-| 3 | US-TB-03 | Aceleración de publicación de actividades | 5 |
-| 4 | US-TB-06 | Soporte multiidioma | 8 |
-| 5 | US-TB-04 | Recomendaciones personalizadas | 8 |
-| 6 | US-TB-07 | Reseñas verificadas | 5 |
-| 8 | US-TB-05 | Modo oscuro/claro | 5 |
+| 1 | US-TB-07 | Barbara Nexus (chatbot IA) | 8 |
+| 2 | US-TB-01 | Optimización de carga de comentarios | 5 |
+| 3 | US-TB-02 | Optimización de eliminación de comentarios | 3 |
+| 4 | US-TB-03 | Aceleración de publicación de actividades | 5 |
+| 5 | US-TB-06 | Soporte multiidioma | 8 |
+| 6 | US-TB-05 | Modo oscuro/claro | 5 |
 
 
 Los story points reflejan la complejidad relativa de cada característica:
